@@ -5,8 +5,8 @@ import Dynamic from "./dynamic";
 const PageHead = (props) => {
   return (
     <div>
-      <Static />
       <Dynamic title={props.title} />
+      <Static />
     </div>
   );
 };
