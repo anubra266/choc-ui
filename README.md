@@ -1,34 +1,120 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/anubra266/choc-ui/Tests?style=for-the-badge)](https://github.com/anubra266/choc-ui/actions?query=workflow%3ATests)
+
+[![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
+[![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
+
+</div>
+<br />
+
+## About Choc UI
+
+**CHOC** is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
+
+## Components
+
+-   [ ] Elements - TailwindUI
+    -   [ ] Headers
+    -   [ ] Banners
+    -   [ ] Flyout Menus
+    -   [ ] Cards - Meraki UI
+-   [ ] Page Sections - TailwindUI, Kutty
+    -   [ ] Heros - Meraki UI
+    -   [ ] Feature Sections - Meraki UI
+    -   [ ] CTA Sections
+    -   [ ] Pricing Sections
+    -   [ ] Header Sections
+    -   [ ] FAQs
+    -   [ ] Newsletter Sections
+    -   [ ] Stats
+    -   [ ] Testimonials
+    -   [ ] Blog Sections -
+    -   [ ] Contact Sections
+    -   [ ] Footers - Meraki UI
+    -   [ ] Logo Clouds
+-   [ ] Navigation - TailwindUI
+    -   [ ] Navbars - Meraki UI
+    -   [ ] Vertical Navigation (Menus)
+    -   [ ] Sidebar Navigation
+-   [ ] Headings - TailwindUI
+    -   [ ] Page Headings
+    -   [ ] Card Headings
+    -   [ ] Section Headings
+-   [ ] Application Shells - TailwindUI
+    -   [ ] Stacked Layouts
+    -   [ ] Sidebar Layouts - Kutty
+    -   [ ] Multi Column Layouts
+-   [ ] Example Pages - Meraki UI, Kutty
+    -   [ ] Login Pages
+    -   [ ] Registration Pages
+    -   [ ] Error Pages
+
+## Build Locally
+
+Follow these steps to run project on your local server.
+
+**Clone this repo**
 
 ```bash
-npm run dev
-# or
+git clone https://github.com/anubra266/choc-ui.git
+```
+
+**Install PHP Dependencies**
+
+```bash
+composer install
+```
+
+**Create Env File**
+
+```bash
+cp .env.example .env
+```
+
+**Generate App Key**
+
+```bash
+php artisan key:generate
+```
+
+**Download npm dependecies**
+
+```bash
+npm install
+```
+
+**OR**
+
+```bash
+yarn
+```
+
+**Build Project's Javascript Code**
+
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Start Project Server - Default Port:8000**
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+php artisan serve
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Contributing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-## Learn More
+Fork the Project
 
-To learn more about Next.js, take a look at the following resources:
+-   Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+-   Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+-   Push to the Branch (`git push origin feature/AmazingFeature`)
+-   Open a Pull Request
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. See [LICENSE](./LICENSE.md) for more information.
