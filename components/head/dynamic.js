@@ -1,8 +1,9 @@
 import React from "react";
+import Head from "next/head";
 
 const Dynamic = (props) => {
   return (
-    <React.Fragment>
+    <Head>
       <title>Choc UI - {props.title}</title>
 
       <meta name="title" content={`Choc UI - ${props.title}`} />
@@ -13,7 +14,7 @@ const Dynamic = (props) => {
 
       <meta property="twitter:title" content={`Choc UI - ${props.title}`} />
       <meta property="twitter:description" content={`${props.title}`} />
-    </React.Fragment>
+    </Head>
   );
 };
 
