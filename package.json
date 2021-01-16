@@ -14,6 +14,8 @@
     "framer-motion": "^3.2.1",
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-icons": "^4.1.0",
+    "react-remove-scroll": "^2.4.1"
   }
 }
