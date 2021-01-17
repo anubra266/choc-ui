@@ -14,6 +14,7 @@
     "framer-motion": "^3.2.1",
     "json-variables": "^9.0.3",
     "next": "10.0.5",
+    "raw-loader": "^4.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.1.0",
