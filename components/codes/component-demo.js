@@ -18,7 +18,7 @@ const ComponentDemo = (props) => {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <Demo />
+          <Demo demo />
         </TabPanel>
         <TabPanel height="300px" overflowY="auto">
           <CodeBlock language="jsx">{code}</CodeBlock>
