@@ -9,14 +9,17 @@ import {
   Link,
   useColorMode,
   useColorModeValue,
-  useDisclosure, 
+  useDisclosure,
   useUpdateEffect,
   Image,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
-import { FaMoon, FaSun, FaHeart } from "react-icons/fa";
-import { MobileNavButton, MobileNavContent } from "@/navbars/chuina/mobile-nav";
-import SponsorButton from "@/navbars/chuina/sponsor-button";
+import { FaMoon, FaSun } from "react-icons/fa";
+import {
+  MobileNavButton,
+  MobileNavContent,
+} from "~/components/codes/headers/chuihe/mobile-nav";
+import SponsorButton from "~/components/codes/headers/chuihe/sponsor-button";
 
 const GithubIcon = (props) => (
   <svg viewBox="0 0 20 20" {...props}>
@@ -27,7 +30,7 @@ const GithubIcon = (props) => (
   </svg>
 );
 
-const NavbarContent = () => {
+const HeaderContent = () => {
   const mobileNav = useDisclosure();
 
   const { toggleColorMode: toggleMode } = useColorMode();
@@ -110,7 +113,7 @@ const NavbarContent = () => {
   );
 };
 
-const ChakraUINavbar = (props) => {
+const ChakraUIHeader = (props) => {
   const bg = useColorModeValue("white", "gray.800");
   const ref = React.useRef();
   const [y, setY] = React.useState(0);
@@ -138,10 +141,10 @@ const ChakraUINavbar = (props) => {
       {...props}
     >
       <chakra.div height="4.5rem" mx="auto" maxW="1200px">
-        <NavbarContent />
+        <HeaderContent />
       </chakra.div>
     </chakra.header>
   );
 };
 
-export default ChakraUINavbar;
+export default ChakraUIHeader;

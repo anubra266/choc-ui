@@ -4,11 +4,11 @@ import PageHead from "~/components/head";
 import DocsLayout from "~/components/layouts/docs/index";
 import ComponentDemo from "@/component-demo";
 
-const Navbars = () => {
+const Headers = () => {
   return (
     <DocsLayout>
-      <PageHead title="Navbars" />
-      <PageHeader>Navbars</PageHeader>
+      <PageHead title="Headers" />
+      <PageHeader>Headers</PageHeader>
       <Section>
         <Section.Header>
           <Section.a
@@ -16,13 +16,13 @@ const Navbars = () => {
             rel="noopener"
             href="https://chakra-ui.com"
           >
-            Chakra UI Site Navbar
+            Chakra UI Site Header
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
-              path="navbars/chuina"
+              path="headers/chuihe"
               file="index"
               multiple={["mobile-nav", "sponsor-button"]}
             />
@@ -32,4 +32,4 @@ const Navbars = () => {
     </DocsLayout>
   );
 };
-export default Navbars;
+export default Headers;

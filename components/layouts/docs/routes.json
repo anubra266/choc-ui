@@ -20,7 +20,7 @@
       "routes": [
         {
           "title": "headers",
-          "route": "{prefix}header"
+          "route": "{prefix}headers"
         }
       ]
     },
