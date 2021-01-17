@@ -3,6 +3,7 @@ module.exports = {
   webpack: (config, options) => {
     const custom_alias = {
       "~": path.resolve("./"),
+      "@": path.resolve("./components/codes"),
     };
     var aliases = config.resolve.alias;
 

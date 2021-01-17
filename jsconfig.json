@@ -3,7 +3,8 @@
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-      "~/*": ["./*"]
+      "~/*": ["./*"],
+      "@/*": ["./components/codes/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
