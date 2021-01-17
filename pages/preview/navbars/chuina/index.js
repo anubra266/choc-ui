@@ -127,7 +127,7 @@ const ChakraUINavbar = (props) => {
       shadow={y > height ? "sm" : undefined}
       transition="box-shadow 0.2s"
       top="0"
-      position={!props.demo && "fixed"}
+      position={props && !props.demo && "fixed"}
       zIndex="1"
       bg={bg}
       left="0"

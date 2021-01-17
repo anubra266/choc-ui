@@ -1,12 +1,36 @@
 import React from "react";
-import { Tab, Tabs, TabList, TabPanel, TabPanels, Box } from "@chakra-ui/react";
+import {
+  Tab,
+  Tabs,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Box,
+  Button,
+  Link,
+} from "@chakra-ui/react";
 import { CodeBlock } from "~/components/docs/codeblock";
 
 const ComponentDemo = (props) => {
   const getCode = (file) =>
-    require(`!!raw-loader!./${props.path}/${file}`).default;
-  const Demo = require(`./${props.path}/${props.file}`).default;
+    require(`!!raw-loader!~/pages/preview/${props.path}/${file}`).default;
+  const Demo = require(`~/pages/preview/${props.path}/${props.file}`).default;
   const code = getCode(props.file);
+  const previewButton = (
+    <Link isExternal href={`/preview/${props.path}`}>
+      <Button
+        pos="absolute"
+        right={4}
+        top={2}
+        size="sm"
+        bg="gray.700"
+        color="white"
+        _hover={{ bg: "black" }}
+      >
+        Enlarge
+      </Button>
+    </Link>
+  );
   return (
     <Tabs variant="enclosed">
       <TabList>
@@ -18,7 +42,10 @@ const ComponentDemo = (props) => {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <Demo demo />
+          <Box pos="relative">
+            <Demo demo />
+            {previewButton}
+          </Box>
         </TabPanel>
         <TabPanel height="300px" overflowY="auto">
           <CodeBlock language="jsx">{code}</CodeBlock>
