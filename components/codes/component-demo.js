@@ -13,9 +13,10 @@ import { CodeBlock } from "~/components/docs/codeblock";
 
 const ComponentDemo = (props) => {
   const getCode = (file) =>
-    require(`!!raw-loader!~/pages/preview/${props.path}/${file}`).default;
+    require(`!!raw-loader!~/components/codes/${props.path}/${file}`).default;
   const Demo = require(`~/pages/preview/${props.path}/${props.file}`).default;
-  const code = getCode(props.file);
+  const code = require(`!!raw-loader!~/pages/preview/${props.path}/${props.file}`)
+    .default;
   const previewButton = (
     <Link isExternal href={`/preview/${props.path}`}>
       <Button

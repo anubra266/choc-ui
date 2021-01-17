@@ -9,14 +9,14 @@ import {
   Link,
   useColorMode,
   useColorModeValue,
-  useDisclosure,
+  useDisclosure, 
   useUpdateEffect,
   Image,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 import { FaMoon, FaSun, FaHeart } from "react-icons/fa";
-import { MobileNavButton, MobileNavContent } from "./mobile-nav";
-import SponsorButton from "./sponsor-button";
+import { MobileNavButton, MobileNavContent } from "@/navbars/chuina/mobile-nav";
+import SponsorButton from "@/navbars/chuina/sponsor-button";
 
 const GithubIcon = (props) => (
   <svg viewBox="0 0 20 20" {...props}>
