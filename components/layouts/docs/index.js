@@ -5,14 +5,14 @@ import PageTransition from "./page-transition";
 import Container from "./container";
 import { Box } from "@chakra-ui/react";
 
-const Docs = () => {
+const Docs = ({children}) => {
   return (
     <SiteLayout>
       <Container as="main" className="main-content">
         <Box display={{ base: "block", md: "flex" }}>
           <Sidebar />
           <div style={{ flex: 1 }}>
-            <Box
+            <Box 
               id="content"
               pt={3}
               px={5}
