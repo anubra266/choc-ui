@@ -23,6 +23,16 @@
           "route": "{prefix}header"
         }
       ]
+    },
+    {
+      "title": "navigation",
+      "prefix": "/docs/navigation/",
+      "routes": [
+        {
+          "title": "navbars",
+          "route": "{prefix}navbars"
+        }
+      ]
     }
   ]
 }
