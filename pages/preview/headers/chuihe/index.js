@@ -18,8 +18,8 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import {
   MobileNavButton,
   MobileNavContent,
-} from "~/components/codes/headers/chuihe/mobile-nav";
-import SponsorButton from "~/components/codes/headers/chuihe/sponsor-button";
+} from "~/components/codes/headers/mobile-nav";
+import SponsorButton from "~/components/codes/headers/sponsor-button";
 
 const GithubIcon = (props) => (
   <svg viewBox="0 0 20 20" {...props}>
@@ -53,16 +53,6 @@ const HeaderContent = () => {
                 style={{ height: "50px", float: "left" }}
                 mr={2}
               />
-              <chakra.h1
-                mx="auto"
-                fontSize="2em"
-                display={{ base: "none", md: "block" }}
-                fontFamily="heading"
-                fontWeight="bold"
-                style={{ float: "right" }}
-              >
-                App
-              </chakra.h1>
             </HStack>
           </Link>
         </Flex>
@@ -138,7 +128,6 @@ const ChakraUIHeader = (props) => {
       borderTop="6px solid"
       borderTopColor="brand.400"
       width="full"
-      {...props}
     >
       <chakra.div height="4.5rem" mx="auto" maxW="1200px">
         <HeaderContent />

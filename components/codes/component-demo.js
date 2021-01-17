@@ -13,10 +13,14 @@ import { CodeBlock } from "~/components/docs/codeblock";
 
 const ComponentDemo = (props) => {
   const getCode = (file) =>
-    require(`!!raw-loader!~/components/codes/${props.path}/${file}`).default;
+    require(`!!raw-loader!~/components/codes/${file}`).default;
   const Demo = require(`~/pages/preview/${props.path}/${props.file}`).default;
   const code = require(`!!raw-loader!~/pages/preview/${props.path}/${props.file}`)
     .default;
+  const getName = (file) => {
+    const arr = file.split("/");
+    return arr[arr.length - 1];
+  };
   const previewButton = (
     <Link isExternal href={`/preview/${props.path}`}>
       <Button
@@ -38,7 +42,7 @@ const ComponentDemo = (props) => {
         <Tab>Demo</Tab>
         <Tab>Code - index.js </Tab>
         {props.multiple.map((file, fid) => (
-          <Tab key={`c-file-name-${fid}`}>{file}.js</Tab>
+          <Tab key={`c-file-name-${fid}`}>{getName(file)}.js</Tab>
         ))}
       </TabList>
       <TabPanels>

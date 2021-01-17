@@ -24,7 +24,27 @@ const Headers = () => {
             <ComponentDemo
               path="headers/chuihe"
               file="index"
-              multiple={["mobile-nav", "sponsor-button"]}
+              multiple={["headers/mobile-nav", "headers/sponsor-button"]}
+            />
+          </Section.p>
+        </Section.Content>
+      </Section>
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://tailwindui.com/components/marketing/elements/headers#component-1c0390a81b16cf5028aeff08be955766"
+          >
+            Simple links centered
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo
+              path="headers/slce"
+              file="index"
+              multiple={["headers/mobile-nav", "headers/slce/features"]}
             />
           </Section.p>
         </Section.Content>
