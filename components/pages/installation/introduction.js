@@ -12,7 +12,7 @@ import {
     gissue,
     chrisham,
 } from "./variables";
-
+console.log('navbars', navbars)
 const Introduction = () => {
     return (
         <Section>

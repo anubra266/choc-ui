@@ -1,7 +1,7 @@
 import React from "react";
 import { Link as CLink } from "@chakra-ui/react";
 import { linkStyle } from "~/components/docs";
-import Link from "next/router";
+import Link from "next/link";
 
 export const antd = (
   <CLink href="https://ant.design" target="_blank" {...linkStyle}>
@@ -10,55 +10,22 @@ export const antd = (
   </CLink>
 );
 export const chakraui = (
-  <article href="https://chakra-ui.com" target="_blank" {...linkStyle}>
+  <CLink href="https://chakra-ui.com" target="_blank" {...linkStyle}>
     {" "}
     Chakra UI
-  </article>
-);
-export const pagelayouts = (
-  <React.Fragment>
-    {" "}
-    <Link href="" style={linkStyle}>
-      Page Layouts
-    </Link>{" "}
-  </React.Fragment>
-);
-
-export const navbars = (
-  <React.Fragment>
-    {" "}
-    <Link href="" style={linkStyle}>
-      Navbars
-    </Link>{" "}
-  </React.Fragment>
-);
-export const sidebars = (
-  <React.Fragment>
-    {" "}
-    <Link href="" style={linkStyle}>
-      Sidebars
-    </Link>{" "}
-  </React.Fragment>
-);
-export const hoc = (
-  <React.Fragment>
-    {" "}
-    <Link href="" style={linkStyle}>
-      Molecular Components
-    </Link>{" "}
-  </React.Fragment>
+  </CLink>
 );
 
 export const gissue = (
-  <a
+  <CLink
     href="https://github.com/chakra-ui/chakra-ui/issues/2940"
     target="_blank"
     {...linkStyle}
   >
     {" "}
     Github Issue
-  </a>
-);
+  </CLink>
+  );
 
 export const chrisham = (
   <CLink href="https://github.com/ChristineTham" target="_blank" {...linkStyle}>
@@ -66,3 +33,37 @@ export const chrisham = (
     Christine Ham
   </CLink>
 );
+    
+export const pagelayouts = (
+      <React.Fragment>
+        {" "}
+        <Link href="" style={linkStyle}>
+          Page Layouts
+        </Link>{" "}
+      </React.Fragment>
+    );
+    
+    export const navbars = (
+      <React.Fragment>
+        {" "}
+        <Link href="" style={linkStyle}>
+          Navbars
+        </Link>{" "}
+      </React.Fragment>
+    );
+    export const sidebars = (
+      <React.Fragment>
+        {" "}
+        <Link href="" style={linkStyle}>
+          Sidebars
+        </Link>{" "}
+      </React.Fragment>
+    );
+    export const hoc = (
+      <React.Fragment>
+        {" "}
+        <Link href="" style={linkStyle}>
+          Molecular Components
+        </Link>{" "}
+      </React.Fragment>
+    );
