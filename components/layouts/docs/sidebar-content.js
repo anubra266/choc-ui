@@ -4,7 +4,7 @@ import { Box, Stack, useColorModeValue } from "@chakra-ui/react";
 
 import routes from "./routes.json";
 import jVar from "json-variables";
-import { InertiaLink } from "@inertiajs/inertia-react";
+import Link from "next/link"
 
 const routesParsed = jVar(routes, {
     heads: "{",
@@ -14,7 +14,7 @@ const RouteLink = ({ children, section, href }) => {
     return section ? (
         children
     ) : (
-        <InertiaLink href={route(href)}>{children}</InertiaLink>
+        <Link href={route(href)}>{children}</Link>
     );
 };
 const MenuLink = ({ children, active, section, href }) => {
