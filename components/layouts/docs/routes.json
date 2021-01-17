@@ -1,0 +1,28 @@
+{
+  "sections": [
+    {
+      "title": "getting started",
+      "prefix": "docs/",
+      "routes": [
+        {
+          "title": "installation",
+          "route": "{prefix}installation"
+        },
+        {
+          "title": "configuration",
+          "route": "{prefix}configuration"
+        }
+      ]
+    },
+    {
+      "title": "elements",
+      "prefix": "docs/elements/",
+      "routes": [
+        {
+          "title": "headers",
+          "route": "{prefix}header"
+        }
+      ]
+    }
+  ]
+}
