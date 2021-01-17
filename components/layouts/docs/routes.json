@@ -2,7 +2,7 @@
   "sections": [
     {
       "title": "getting started",
-      "prefix": "docs/",
+      "prefix": "/docs/",
       "routes": [
         {
           "title": "installation",
@@ -16,7 +16,7 @@
     },
     {
       "title": "elements",
-      "prefix": "docs/elements/",
+      "prefix": "/docs/elements/",
       "routes": [
         {
           "title": "headers",
