@@ -3,7 +3,6 @@ import {
   chakra,
   Flex,
   HStack,
-  Box,
   Icon,
   IconButton,
   Link,

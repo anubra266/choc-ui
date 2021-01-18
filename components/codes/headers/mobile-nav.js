@@ -90,7 +90,7 @@ export function MobileNavContent(props) {
                     mr={2}
                   />
                   <HStack spacing="5">
-                    <SponsorButton display="flex" />
+                    {!props.noSponsor && <SponsorButton display="flex" />}
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>
                 </Flex>
@@ -101,9 +101,9 @@ export function MobileNavContent(props) {
                   setShadow(scrolled ? "md" : undefined);
                 }}
               >
-              <li>Home</li>
-              <li>About</li>
-              <li>Blog</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Blog</li>
               </ScrollView>
             </Flex>
           </motion.div>

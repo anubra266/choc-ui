@@ -36,6 +36,22 @@ const Headers = () => {
             rel="noopener"
             href="https://tailwindui.com/components/marketing/elements/headers#component-1c0390a81b16cf5028aeff08be955766"
           >
+            Centered with bottom border
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="headers/cwbh" file="index" multiple={["headers/mobile-nav", "headers/slce/features"]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://tailwindui.com/components/marketing/elements/headers#component-a2aed5adfe85cafed1898b5def5eb40a"
+          >
             Simple links centered
           </Section.a>
         </Section.Header>

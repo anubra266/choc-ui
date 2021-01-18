@@ -1,7 +1,18 @@
 import React from "react";
-import { chakra, Box, Stack, Link, SimpleGrid } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Stack,
+  Link,
+  useColorModeValue,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
 const Section = (props) => {
+  const ic = useColorModeValue("brand.600", "brand.50");
+  const hbg = useColorModeValue("gray.50", "brand.400");
+  const tcl = useColorModeValue("gray.900", "gray.50");
+  const dcl = useColorModeValue("gray.500", "gray.50");
   return (
     <Link
       m={-3}
@@ -9,14 +20,14 @@ const Section = (props) => {
       display="flex"
       alignItems="start"
       borderRadius="lg"
-      _hover={{ bg: "gray.50" }}
+      _hover={{ bg: hbg }}
       href="#"
     >
       <chakra.svg
         flexShrink={0}
         h={6}
         w={6}
-        color="brand.600"
+        color={ic}
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -26,10 +37,10 @@ const Section = (props) => {
         {props.children}
       </chakra.svg>
       <Box ml={4}>
-        <chakra.p fontSize="sm" fontWeight="700" color="gray.900">
+        <chakra.p fontSize="sm" fontWeight="700" color={tcl}>
           {props.title}
         </chakra.p>
-        <chakra.p mt={1} fontSize="sm" color="gray.500">
+        <chakra.p mt={1} fontSize="sm" color={dcl}>
           {props.description}
         </chakra.p>
       </Box>
@@ -38,12 +49,15 @@ const Section = (props) => {
 };
 
 export default function () {
+  const bg = useColorModeValue("white", "gray.800");
+  const hbg = useColorModeValue("gray.50", "brand.400");
+  const hbgh = useColorModeValue("gray.100", "brand.500");
+  const tcl = useColorModeValue("gray.900", "gray.50");
   return (
     <React.Fragment>
       <SimpleGrid
         pos="relative"
         gap={{ base: 6, sm: 8 }}
-        bg="white"
         px={5}
         py={6}
         p={{ sm: 8 }}
@@ -109,7 +123,7 @@ export default function () {
           />
         </Section>
       </SimpleGrid>
-      <Box px={{ base: 5, sm: 8 }} py={5} bg="gray.50" display={{ sm: "flex" }}>
+      <Box px={{ base: 5, sm: 8 }} py={5} bg={hbg} display={{ sm: "flex" }}>
         <Stack direction={{ base: "row" }} spacing={{ base: 6, sm: 10 }}>
           <Box display="flow-root">
             <Link
@@ -120,8 +134,8 @@ export default function () {
               alignItems="center"
               borderRadius="md"
               fontSize="md"
-              color="gray.900"
-              _hover={{ bg: "gray.100" }}
+              color={tcl}
+              _hover={{ bg: hbgh }}
             >
               <chakra.svg
                 flexShrink={0}
@@ -160,8 +174,8 @@ export default function () {
               alignItems="center"
               borderRadius="md"
               fontSize="md"
-              color="gray.900"
-              _hover={{ bg: "gray.100" }}
+              color={tcl}
+              _hover={{ bg: hbgh }}
             >
               <chakra.svg
                 flexShrink={0}

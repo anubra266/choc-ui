@@ -18,7 +18,7 @@
 ## Components
 
 -   [ ] Elements - TailwindUI
-    -   [ ] Headers
+    -   [x] Headers
     -   [ ] Banners
     -   [ ] Flyout Menus
     -   [ ] Cards - Meraki UI
