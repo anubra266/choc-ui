@@ -12,7 +12,7 @@ import {
   Image,
   Box,
   useDisclosure,
-  Spacer
+  Spacer,
 } from "@chakra-ui/react";
 import {
   MobileNavButton,
@@ -40,7 +40,7 @@ const HeaderContent = () => {
         </Link>
         <Box pos="relative" display={{ base: "none", md: "inline-flex" }}>
           <HStack spacing={1}>
-            <Popover placement="bottom-start">
+            <Popover placement="bottom">
               <PopoverTrigger>
                 <Button
                   bg={bg}
@@ -55,8 +55,14 @@ const HeaderContent = () => {
                   Features
                 </Button>
               </PopoverTrigger>
-              <PopoverContent bg={bg} w="100vw" maxW="md" _focus={{ boxShadow: "md" }}>
-                <Features />
+              <PopoverContent
+                bg={bg}
+                _focus={{ boxShadow: "none", borderRadius: "none" }}
+                width="98vw"
+                pos="relative"
+                right={0}
+              >
+                <Features h />
               </PopoverContent>
             </Popover>
             <Button
@@ -113,12 +119,7 @@ export default function (props) {
 
   return (
     <React.Fragment>
-      <chakra.header
-        bg={bg}
-        w="100%"
-        px={{ base: 2, sm: 4 }}
-        py={4}
-      >
+      <chakra.header bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4}>
         <HeaderContent />
       </chakra.header>
       <chakra.div boxShadow={props && props.demo && "md"} p={150} />

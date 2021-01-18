@@ -48,14 +48,14 @@ const Section = (props) => {
   );
 };
 
-export default function () {
-  const bg = useColorModeValue("white", "gray.800");
+export default function (props) {
   const hbg = useColorModeValue("gray.50", "brand.400");
   const hbgh = useColorModeValue("gray.100", "brand.500");
   const tcl = useColorModeValue("gray.900", "gray.50");
   return (
     <React.Fragment>
       <SimpleGrid
+        columns={props.h ? 5 : 1}
         pos="relative"
         gap={{ base: 6, sm: 8 }}
         px={5}

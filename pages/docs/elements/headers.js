@@ -41,7 +41,11 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/cwbh" file="index" multiple={["headers/mobile-nav", "headers/slce/features"]} />
+            <ComponentDemo
+              path="headers/cwbh"
+              file="index"
+              multiple={["headers/mobile-nav", "headers/slce/features"]}
+            />
           </Section.p>
         </Section.Content>
       </Section>
@@ -66,25 +70,45 @@ const Headers = () => {
         </Section.Content>
       </Section>
       <Section>
-      <Section.Header>
-        <Section.a
-          target="_blank"
-          rel="noopener"
-          href="https://tailwindui.com/components/marketing/elements/headers#component-c2e98654c961b126b887a7909c121d4b"
-        >
-          Simple links on left
-        </Section.a>
-      </Section.Header>
-      <Section.Content>
-        <Section.p>
-          <ComponentDemo
-            path="headers/slol"
-            file="index"
-            multiple={["headers/mobile-nav", "headers/slce/features"]}
-          />
-        </Section.p>
-      </Section.Content>
-    </Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://tailwindui.com/components/marketing/elements/headers#component-c2e98654c961b126b887a7909c121d4b"
+          >
+            Simple links on left
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo
+              path="headers/slol"
+              file="index"
+              multiple={["headers/mobile-nav", "headers/slce/features"]}
+            />
+          </Section.p>
+        </Section.Content>
+      </Section>
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://tailwindui.com/components/marketing/elements/headers#component-363ff3ec22979c3722842d62aa751178"
+          >
+            With full-width flyouts
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo
+              path="headers/wfwf"
+              file="index"
+              multiple={["headers/mobile-nav", "headers/slce/features"]}
+            />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };
