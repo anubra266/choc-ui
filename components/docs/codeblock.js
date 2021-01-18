@@ -26,6 +26,7 @@ export const CodeBlock = (props) => {
                 customStyle={{
                     background: "transparent",
                     fontSize: "0.9rem",
+                    height:"100%"
                 }}
             />
             {copyButton}

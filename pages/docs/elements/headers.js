@@ -42,7 +42,7 @@ const Headers = () => {
         <Section.Content>
           <Section.p>
             <ComponentDemo
-              path="headers/cwbh"
+              path="headers/cwbb"
               file="index"
               multiple={["headers/mobile-nav", "headers/slce/features"]}
             />

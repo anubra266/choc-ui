@@ -55,7 +55,7 @@ export default function (props) {
   return (
     <React.Fragment>
       <SimpleGrid
-        columns={props.h ? 5 : 1}
+        columns={props.h ? { base: 1, md: 3, lg: 5 } : 1}
         pos="relative"
         gap={{ base: 6, sm: 8 }}
         px={5}

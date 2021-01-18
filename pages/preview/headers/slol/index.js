@@ -108,7 +108,7 @@ const HeaderContent = () => {
     </React.Fragment>
   );
 };
-export default function (props) {
+export default function Slol(props) {
   const bg = useColorModeValue("white", "gray.800");
 
   return (

@@ -18,7 +18,7 @@ const Docs = ({children}) => {
               px={5}
               mt="4.5rem"
               mx="auto"
-              maxW="48rem"
+              maxW="55rem"
               minH="76vh"
             >
               <PageTransition>{children}</PageTransition>

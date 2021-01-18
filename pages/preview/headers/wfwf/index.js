@@ -114,12 +114,12 @@ const HeaderContent = () => {
     </React.Fragment>
   );
 };
-export default function (props) {
+export default function WfWf(props) {
   const bg = useColorModeValue("white", "gray.800");
 
   return (
     <React.Fragment>
-      <chakra.header bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4}>
+      <chakra.header h="100%" bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4}>
         <HeaderContent />
       </chakra.header>
       <chakra.div boxShadow={props && props.demo && "md"} p={150} />

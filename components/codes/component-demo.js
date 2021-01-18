@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  chakra,
   Tab,
   Tabs,
   TabList,
@@ -32,14 +33,14 @@ const ComponentDemo = (props) => {
         color="white"
         _hover={{ bg: "black" }}
       >
-        Enlarge
+        Demo
       </Button>
     </Link>
   );
   return (
     <Tabs variant="enclosed">
       <TabList>
-        <Tab>Demo</Tab>
+        <Tab>Preview</Tab>
         <Tab>Code - index.js </Tab>
         {props.multiple.map((file, fid) => (
           <Tab key={`c-file-name-${fid}`}>{getName(file)}.js</Tab>
@@ -47,8 +48,14 @@ const ComponentDemo = (props) => {
       </TabList>
       <TabPanels>
         <TabPanel>
-          <Box pos="relative">
-            <Demo demo />
+          <Box pos="relative" h="400px">
+            <Box
+              as="iframe"
+              src={`/preview/${props.path}`}
+              w="100%"
+              h="100%"
+              border="none"
+            />
             {previewButton}
           </Box>
         </TabPanel>
@@ -56,8 +63,10 @@ const ComponentDemo = (props) => {
           <CodeBlock language="jsx">{code}</CodeBlock>
         </TabPanel>
         {props.multiple.map((file, fid) => (
-          <TabPanel height="300px" overflowY="auto" key={`c-file-code-${fid}`}>
-            <CodeBlock language="jsx">{getCode(file)}</CodeBlock>
+          <TabPanel overflowY="auto" key={`c-file-code-${fid}`}>
+            <Box pos="relative" h="400px">
+              <CodeBlock language="jsx">{getCode(file)}</CodeBlock>
+            </Box>
           </TabPanel>
         ))}
       </TabPanels>

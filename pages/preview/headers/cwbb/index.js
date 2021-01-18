@@ -37,7 +37,7 @@ const HeaderContent = () => {
             mr={2}
           />
         </Link>
-        <Box pos="relative" display={{ base: "hidden", md: "inline-flex" }}>
+        <Box pos="relative" display={{ base: "none", md: "inline-flex" }}>
           <HStack spacing={1}>
             <Popover>
               <PopoverTrigger>
