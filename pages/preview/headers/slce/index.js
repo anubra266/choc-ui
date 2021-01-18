@@ -64,12 +64,13 @@ const HeaderContent = () => {
                   alignItems="center"
                   fontSize="md"
                   _hover={{ color: "gray.900" }}
+                  _focus={{ boxShadow: "none" }}
                   rightIcon={<IoIosArrowDown />}
                 >
                   Features
                 </Button>
               </PopoverTrigger>
-              <PopoverContent w="100vw" maxW="md">
+              <PopoverContent w="100vw" maxW="md" _focus={{ boxShadow: "md" }}>
                 <Features />
               </PopoverContent>
             </Popover>
@@ -80,6 +81,7 @@ const HeaderContent = () => {
               alignItems="center"
               fontSize="md"
               _hover={{ color: "gray.900" }}
+              _focus={{ boxShadow: "none" }}
             >
               Blog
             </Button>
@@ -90,6 +92,7 @@ const HeaderContent = () => {
               alignItems="center"
               fontSize="md"
               _hover={{ color: "gray.900" }}
+              _focus={{ boxShadow: "none" }}
             >
               Pricing
             </Button>
