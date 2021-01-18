@@ -115,24 +115,27 @@ const ChakraUIHeader = (props) => {
   }, [scrollY]);
 
   return (
-    <chakra.header
-      ref={ref}
-      shadow={y > height ? "sm" : undefined}
-      transition="box-shadow 0.2s"
-      top="0"
-      position={props && !props.demo && "fixed"}
-      zIndex="1"
-      bg={bg}
-      left="0"
-      right="0"
-      borderTop="6px solid"
-      borderTopColor="brand.400"
-      width="full"
-    >
-      <chakra.div height="4.5rem" mx="auto" maxW="1200px">
-        <HeaderContent />
-      </chakra.div>
-    </chakra.header>
+    <React.Fragment>
+      <chakra.header
+        ref={ref}
+        shadow={y > height ? "sm" : undefined}
+        transition="box-shadow 0.2s"
+        top="0"
+        position={props && !props.demo && "fixed"}
+        zIndex="1"
+        bg={bg}
+        left="0"
+        right="0"
+        borderTop="6px solid"
+        borderTopColor="brand.400"
+        width="full"
+      >
+        <chakra.div height="4.5rem" mx="auto" maxW="1200px">
+          <HeaderContent />
+        </chakra.div>
+      </chakra.header>
+      <chakra.div boxShadow={props && props.demo && "md"} p={150} />
+    </React.Fragment>
   );
 };
 
