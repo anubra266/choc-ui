@@ -12,12 +12,12 @@ const routesParsed = jVar(routes, {
   tails: "}",
 });
 const RouteLink = ({ children, section, href }) => {
-  return section ? children : <Link href={href}>{children}</Link>;
+  return section ? children : <Link href={href}>{children}</Link>; 
 };
 const MenuLink = ({ children, active, section, href }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
-    bg: useColorModeValue("brand.400", "gray.600"),
+    bg: useColorModeValue("brand.400", "gray.500"),
     color: "brand.50",
     boxShadow: "lg",
     borderRight: "3px solid",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   chakra,
   Tab,
@@ -9,8 +9,13 @@ import {
   Box,
   Button,
   Link,
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
 } from "@chakra-ui/react";
 import { CodeBlock } from "~/components/docs/codeblock";
+import { ImDisplay } from "react-icons/im";
 
 const ComponentDemo = (props) => {
   const getCode = (file) =>
@@ -37,6 +42,7 @@ const ComponentDemo = (props) => {
       </Button>
     </Link>
   );
+  const [width, setWidth] = useState(100);
   return (
     <Tabs variant="enclosed">
       <TabList>
@@ -48,11 +54,19 @@ const ComponentDemo = (props) => {
       </TabList>
       <TabPanels>
         <TabPanel>
+          <Slider value={width} onChange={(val) => setWidth(val)}>
+            <SliderTrack bg="brand.100">
+              <SliderFilledTrack bg="brand.500" /> 
+            </SliderTrack>
+            <SliderThumb boxSize={6}>
+              <Box color="brand.500" as={ImDisplay} />
+            </SliderThumb>
+          </Slider>
           <Box pos="relative" h="400px">
             <Box
               as="iframe"
               src={`/preview/${props.path}`}
-              w="100%"
+              w={`${width}%`}
               h="100%"
               border="none"
             />
