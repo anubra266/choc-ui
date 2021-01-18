@@ -40,7 +40,7 @@ const HeaderContent = () => {
         </Link>
         <Box pos="relative" display={{ base: "hidden", md: "inline-flex" }}>
           <HStack spacing={1}>
-            <Popover>
+            <Popover placement="bottom-start">
               <PopoverTrigger>
                 <Button
                   bg={bg}
