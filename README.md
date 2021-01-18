@@ -1,8 +1,9 @@
+<a style="color:red"><b>Help!!! THe Site is ugly. If you can shine it, make a pull request or as little as color combination suggestions.</b></a>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
 
 <div align="center">
-
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/anubra266/choc-ui/Tests?style=for-the-badge)](https://github.com/anubra266/choc-ui/actions?query=workflow%3ATests)
+ 
 
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
 [![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
