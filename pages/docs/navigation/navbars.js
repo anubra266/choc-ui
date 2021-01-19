@@ -4,11 +4,11 @@ import { PageHeader, Section } from "~/components/docs";
 import ComponentDemo from "@/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
-const Fresh = () => {
+const Navbars = () => {
   return (
     <DocsLayout>
-      <PageHead title="Fresh" />
-      <PageHeader>Fresh</PageHeader>
+      <PageHead title="Navbars" />
+      <PageHeader>Navbars</PageHeader>
       <Section>
         <Section.Header>
           <Section.a
@@ -16,12 +16,12 @@ const Fresh = () => {
             rel="noopener"
             href="https://chakra-ui.com"
           >
-            Name
+            Guest Simple Links Right
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/chuihe" file="index" multiple={[]} />
+            <ComponentDemo path="navbars/gslr" file="index" multiple={[]} />
           </Section.p>
         </Section.Content>
       </Section>
@@ -29,4 +29,4 @@ const Fresh = () => {
   );
 };
 
-export default Fresh;
+export default Navbars;
