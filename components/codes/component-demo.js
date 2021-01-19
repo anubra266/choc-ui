@@ -48,15 +48,16 @@ const ComponentDemo = (props) => {
       <TabList>
         <Tab>Preview</Tab>
         <Tab>Code - index.js </Tab>
-        {props.multiple.map((file, fid) => (
-          <Tab key={`c-file-name-${fid}`}>{getName(file)}.js</Tab>
-        ))}
+        {props.multiple &&
+          props.multiple.map((file, fid) => (
+            <Tab key={`c-file-name-${fid}`}>{getName(file)}.js</Tab>
+          ))}
       </TabList>
       <TabPanels>
         <TabPanel>
           <Slider value={width} onChange={(val) => setWidth(val)}>
             <SliderTrack bg="brand.100">
-              <SliderFilledTrack bg="brand.500" /> 
+              <SliderFilledTrack bg="brand.500" />
             </SliderTrack>
             <SliderThumb boxSize={6}>
               <Box color="brand.500" as={ImDisplay} />
@@ -76,13 +77,14 @@ const ComponentDemo = (props) => {
         <TabPanel height="300px" overflowY="auto">
           <CodeBlock language="jsx">{code}</CodeBlock>
         </TabPanel>
-        {props.multiple.map((file, fid) => (
-          <TabPanel overflowY="auto" key={`c-file-code-${fid}`}>
-            <Box pos="relative" h="400px">
-              <CodeBlock language="jsx">{getCode(file)}</CodeBlock>
-            </Box>
-          </TabPanel>
-        ))}
+        {props.multiple &&
+          props.multiple.map((file, fid) => (
+            <TabPanel overflowY="auto" key={`c-file-code-${fid}`}>
+              <Box pos="relative" h="400px">
+                <CodeBlock language="jsx">{getCode(file)}</CodeBlock>
+              </Box>
+            </TabPanel>
+          ))}
       </TabPanels>
     </Tabs>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box,  Image, Badge } from "@chakra-ui/react";
+import { Box,Container, Image, Badge, useColorModeValue } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 const Cpwe = () => {
   const property = {
@@ -14,16 +14,28 @@ const Cpwe = () => {
   };
 
   return (
-    <Box
-      justify="center"
-      align="center"
+    <Container
       pos="fixed"
       top="50%"
       left="50%"
       transform="translate(-50%,-50%)"
+      bg="gray.600"
+      p={50}
+      width="3xl"
+      centerContent
     >
-      <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-        <Image src={property.imageUrl} alt={property.imageAlt} />
+      <Box
+        bg={useColorModeValue("white", "gray.800")}
+        maxW="sm"
+        borderWidth="1px"
+        borderRadius="lg"
+        boxShadow="lg"
+      >
+        <Image
+          src={property.imageUrl}
+          alt={property.imageAlt}
+          borderTopRadius="lg"
+        />
 
         <Box p="6">
           <Box d="flex" alignItems="baseline">
@@ -74,7 +86,7 @@ const Cpwe = () => {
           </Box>
         </Box>
       </Box>
-    </Box>
+    </Container>
   );
 };
 
