@@ -16,7 +16,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <SiteLayout>
-      <PageHead title="Chackra UI Prebuilt Components" />
+      <PageHead title="Chakra UI Prebuilt Components" />
       <Box mb={20}>
         <Box
           as="section"
