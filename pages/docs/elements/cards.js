@@ -129,21 +129,40 @@ const Cards = () => {
       </Section>
 
       <Section>
-      <Section.Header>
-        <Section.a
-          target="_blank"
-          rel="noopener"
-          href="https://merakiui.com/"
-        >
-          Testimonial
-        </Section.a>
-      </Section.Header>
-      <Section.Content>
-        <Section.p>
-          <ComponentDemo path="cards/mtes" file="index" />
-        </Section.p>
-      </Section.Content>
-    </Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://merakiui.com/"
+          >
+            Testimonial
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="cards/mtes" file="index" />
+          </Section.p>
+        </Section.Content>
+      </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://merakiui.com/"
+          >
+            User
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="cards/muser" file="index" />
+          </Section.p>
+        </Section.Content>
+      </Section>
+
+    
     </DocsLayout>
   );
 };
