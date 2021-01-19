@@ -19,12 +19,16 @@
       "prefix": "/docs/elements/",
       "routes": [
         {
-          "title": "headers",
-          "route": "{prefix}headers"
+          "title": "alerts",
+          "route": "{prefix}alerts"
         },
         {
           "title": "cards",
           "route": "{prefix}cards"
+        },
+        {
+          "title": "headers",
+          "route": "{prefix}headers"
         }
       ]
     },

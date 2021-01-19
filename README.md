@@ -20,7 +20,7 @@
 - [ ] Elements - TailwindUI
   - [x] Headers
   - [x] Cards - Meraki UI
-  - [ ] Alerts - Meraki UI
+  - [x] Alerts - Meraki UI
   - [ ] Pagination - Meraki UI
 - [ ] Page Sections - TailwindUI, Kutty
   - [ ] Heros - Meraki UI
