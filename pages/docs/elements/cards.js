@@ -82,6 +82,23 @@ const Cards = () => {
           <Section.a
             target="_blank"
             rel="noopener"
+            href="https://merakiui.com/"
+          >
+            Product With Evaluation
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="cards/pwe" file="index" />
+          </Section.p>
+        </Section.Content>
+      </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
             href="https://chakra-ui.com/docs/layout/box#usage-1"
           >
             Product with Evaluation 1
