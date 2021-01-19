@@ -162,7 +162,22 @@ const Cards = () => {
         </Section.Content>
       </Section>
 
-    
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://merakiui.com/"
+          >
+            User with Details
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="cards/muwd" file="index" height="600px" />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };
