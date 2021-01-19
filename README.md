@@ -61,23 +61,6 @@ Follow these steps to run project on your local server.
 git clone https://github.com/anubra266/choc-ui.git
 ```
 
-**Install PHP Dependencies**
-
-```bash
-composer install
-```
-
-**Create Env File**
-
-```bash
-cp .env.example .env
-```
-
-**Generate App Key**
-
-```bash
-php artisan key:generate
-```
 
 **Download npm dependecies**
 
@@ -97,11 +80,6 @@ yarn
 yarn dev
 ```
 
-**Start Project Server - Default Port:8000**
-
-```bash
-php artisan serve
-```
 
 ## Contributing
 
