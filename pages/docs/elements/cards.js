@@ -21,7 +21,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/ma" file="index"/>
+            <ComponentDemo path="cards/ma" file="index" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -33,16 +33,32 @@ const Cards = () => {
             rel="noopener"
             href="https://merakiui.com/"
           >
-          Article With SM icons
+            Article With SM icons
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/awsi" file="index"/>
+            <ComponentDemo path="cards/awsi" file="index" />
           </Section.p>
         </Section.Content>
       </Section>
 
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://merakiui.com/"
+          >
+            Article With Image{" "}
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="cards/awi" file="index" height="600px" />
+          </Section.p>
+        </Section.Content>
+      </Section>
 
       <Section>
         <Section.Header>
@@ -56,7 +72,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/cpwe" file="index"/>
+            <ComponentDemo path="cards/cpwe" file="index" height="500px" />
           </Section.p>
         </Section.Content>
       </Section>

@@ -63,7 +63,7 @@ const ComponentDemo = (props) => {
               <Box color="brand.500" as={ImDisplay} />
             </SliderThumb>
           </Slider>
-          <Box pos="relative" h="400px">
+          <Box pos="relative" h={props.height || "400px"}>
             <Box
               as="iframe"
               src={`/preview/${props.path}`}
