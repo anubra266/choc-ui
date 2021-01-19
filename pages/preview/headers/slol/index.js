@@ -121,7 +121,6 @@ export default function Slol(props) {
       >
         <HeaderContent />
       </chakra.header>
-      <chakra.div boxShadow={props && props.demo && "md"} p={150} />
     </React.Fragment>
   );
 }

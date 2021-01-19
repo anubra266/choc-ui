@@ -122,7 +122,6 @@ export default function WfWf(props) {
       <chakra.header h="100%" bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4}>
         <HeaderContent />
       </chakra.header>
-      <chakra.div boxShadow={props && props.demo && "md"} p={150} />
     </React.Fragment>
   );
 }

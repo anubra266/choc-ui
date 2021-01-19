@@ -133,7 +133,6 @@ const ChakraUIHeader = (props) => {
           <HeaderContent />
         </chakra.div>
       </chakra.header>
-      <chakra.div boxShadow={props && props.demo && "md"} p={150} />
     </React.Fragment>
   );
 };

@@ -54,7 +54,12 @@ const HeaderContent = () => {
                   Features
                 </Button>
               </PopoverTrigger>
-              <PopoverContent bg={bg} w="100vw" maxW="md" _focus={{ boxShadow: "md" }}>
+              <PopoverContent
+                bg={bg}
+                w="100vw"
+                maxW="md"
+                _focus={{ boxShadow: "md" }}
+              >
                 <Features />
               </PopoverContent>
             </Popover>
@@ -122,7 +127,6 @@ export default function (props) {
       >
         <HeaderContent />
       </chakra.header>
-      <chakra.div boxShadow={props && props.demo && "md"} p={150} />
     </React.Fragment>
   );
 }
