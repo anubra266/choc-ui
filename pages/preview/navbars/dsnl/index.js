@@ -121,6 +121,33 @@ export default function Dsnl() {
             <chakra.h1 fontSize="2xl">Settings</chakra.h1>
           </HStack>
           <HStack spacing={3} display="flex" alignItems="center">
+            <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
+              <Button
+                variant="ghost"
+                href="#"
+                leftIcon={<AiFillHome />}
+                size="sm"
+              >
+                Dashboard
+              </Button>
+              <Button
+                variant="solid"
+                colorScheme="brand"
+                href="#"
+                leftIcon={<AiOutlineInbox />}
+                size="sm"
+              >
+                Inbox
+              </Button>
+              <Button
+                variant="ghost"
+                href="#"
+                leftIcon={<BsFillCameraVideoFill />}
+                size="sm"
+              >
+                Videos
+              </Button>
+            </HStack>
             <chakra.a
               p={3}
               color={useColorModeValue("gray.800", "inherit")}
@@ -146,7 +173,7 @@ export default function Dsnl() {
         mx={2}
         borderWidth={0}
         overflowX="auto"
-        >
+      >
         <Tabs defaultIndex={1} borderBottomColor="transparent">
           <TabList>
             <Tab py={4} m={0} _focus={{ boxShadow: "none" }}>
