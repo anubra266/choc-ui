@@ -17,6 +17,10 @@ import {
   InputLeftElement,
   Input,
   Avatar,
+  Tabs,
+  TabList,
+  Tab,
+  Spacer,
 } from "@chakra-ui/react";
 import {
   AiOutlineMenu,
@@ -27,21 +31,22 @@ import {
 } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 
-export default function Dsll() {
+export default function Dsnl() {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
 
   return (
-    <React.Fragment>
+    <Box boxShadow="md">
       <chakra.header
         bg={bg}
+        borderColor="gray.600"
+        borderBottomWidth={1}
         w="100%"
         px={{ base: 2, sm: 4 }}
         py={4}
-        boxShadow="md"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
-          <HStack display="flex" spacing={3} alignItems="center">
+          <HStack spacing={4} display="flex" alignItems="center">
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
                 display={{ base: "flex", md: "none" }}
@@ -113,48 +118,9 @@ export default function Dsll() {
               />
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
-
-            <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
-              <Button
-                variant="ghost"
-                href="#"
-                leftIcon={<AiFillHome />}
-                size="sm"
-              >
-                Dashboard
-              </Button>
-              <Button
-                variant="solid"
-                colorScheme="brand"
-                href="#"
-                leftIcon={<AiOutlineInbox />}
-                size="sm"
-              >
-                Inbox
-              </Button>
-              <Button
-                variant="ghost"
-                href="#"
-                leftIcon={<BsFillCameraVideoFill />}
-                size="sm"
-              >
-                Videos
-              </Button>
-            </HStack>
+            <chakra.h1 fontSize="2xl">Settings</chakra.h1>
           </HStack>
-          <HStack
-            spacing={3}
-            display={mobileNav.isOpen ? "none":"flex"}
-            alignItems="center"
-          >
-            <InputGroup>
-              <InputLeftElement
-                pointerEvents="none"
-                children={<AiOutlineSearch />}
-              />
-              <Input type="tel" placeholder="Search..." />
-            </InputGroup>
-
+          <HStack spacing={3} display="flex" alignItems="center">
             <chakra.a
               p={3}
               color={useColorModeValue("gray.800", "inherit")}
@@ -174,6 +140,46 @@ export default function Dsll() {
           </HStack>
         </Flex>
       </chakra.header>
-    </React.Fragment>
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        mx={2}
+        borderWidth={0}
+        overflowX="auto"
+        >
+        <Tabs defaultIndex={1} borderBottomColor="transparent">
+          <TabList>
+            <Tab py={4} m={0} _focus={{ boxShadow: "none" }}>
+              Basic
+            </Tab>
+            <Tab py={4} m={0} _focus={{ boxShadow: "none" }}>
+              Integrations
+            </Tab>
+            <Tab py={4} m={0} _focus={{ boxShadow: "none" }}>
+              Notifications
+            </Tab>
+            <Tab py={4} m={0} _focus={{ boxShadow: "none" }}>
+              Usage
+            </Tab>
+            <Tab py={4} m={0} _focus={{ boxShadow: "none" }}>
+              Billing
+            </Tab>{" "}
+            <Tab isDisabled py={4} m={0}>
+              Advanced
+            </Tab>
+          </TabList>
+        </Tabs>
+        <Spacer />
+        <HStack spacing={3} alignItems="center">
+          <InputGroup display={{ base: "none", lg: "block" }} ml="auto">
+            <InputLeftElement
+              pointerEvents="none"
+              children={<AiOutlineSearch />}
+            />
+            <Input type="tel" placeholder="Search..." />
+          </InputGroup>
+        </HStack>
+      </Flex>
+    </Box>
   );
 }

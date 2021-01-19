@@ -22,7 +22,13 @@ export default function Gslr() {
 
   return (
     <React.Fragment>
-      <chakra.header bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4} boxShadow="md">
+      <chakra.header
+        bg={bg}
+        w="100%"
+        px={{ base: 2, sm: 4 }}
+        py={4}
+        boxShadow="md"
+      >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <chakra.a
             href="/"
@@ -38,6 +44,7 @@ export default function Gslr() {
             />
             <VisuallyHidden>Choc</VisuallyHidden>
           </chakra.a>
+          <chakra.h1 fontSize="4xl">Choc</chakra.h1>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
               spacing={1}
