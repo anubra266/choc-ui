@@ -3,7 +3,7 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
 
 <div align="center">
- 
+
 
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
 [![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
@@ -17,41 +17,37 @@
 
 ## Components
 
--   [ ] Elements - TailwindUI
-    -   [x] Headers
-    -   [ ] Banners
-    -   [ ] Flyout Menus
-    -   [ ] Cards - Meraki UI
--   [ ] Page Sections - TailwindUI, Kutty
-    -   [ ] Heros - Meraki UI
-    -   [ ] Feature Sections - Meraki UI
-    -   [ ] CTA Sections
-    -   [ ] Pricing Sections
-    -   [ ] Header Sections
-    -   [ ] FAQs
-    -   [ ] Newsletter Sections
-    -   [ ] Stats
-    -   [ ] Testimonials
-    -   [ ] Blog Sections -
-    -   [ ] Contact Sections
-    -   [ ] Footers - Meraki UI
-    -   [ ] Logo Clouds
--   [ ] Navigation - TailwindUI
-    -   [x] Navbars - Meraki UI
-    -   [ ] Vertical Navigation (Menus)
-    -   [ ] Sidebar Navigation
--   [ ] Headings - TailwindUI
-    -   [ ] Page Headings
-    -   [ ] Card Headings
-    -   [ ] Section Headings
--   [ ] Application Shells - TailwindUI
-    -   [ ] Stacked Layouts
-    -   [ ] Sidebar Layouts - Kutty
-    -   [ ] Multi Column Layouts
--   [ ] Example Pages - Meraki UI, Kutty
-    -   [ ] Login Pages
-    -   [ ] Registration Pages
-    -   [ ] Error Pages
+- [ ] Elements - TailwindUI
+  - [x] Headers
+  - [ ] Cards - Meraki UI
+- [ ] Page Sections - TailwindUI, Kutty
+  - [ ] Heros - Meraki UI
+  - [ ] Feature Sections - Meraki UI
+  - [ ] CTA Sections
+  - [ ] Pricing Sections
+  - [ ] FAQs
+  - [ ] Newsletter Sections
+  - [ ] Stats
+  - [ ] Testimonials
+  - [ ] Blog Sections -
+  - [ ] Contact Sections
+  - [ ] Footers - Meraki UI
+  - [ ] Logo Clouds
+- [ ] Navigation - TailwindUI
+  - [x] Navbars - Meraki UI
+  - [ ] Vertical Navigation (Menus)
+  - [ ] Sidebar Navigation
+- [ ] Headings - TailwindUI
+  - [ ] Card Headings
+  - [ ] Section Headings
+- [ ] Application Shells - TailwindUI
+  - [ ] Stacked Layouts
+  - [ ] Sidebar Layouts - Kutty
+  - [ ] Multi Column Layouts
+- [ ] Example Pages - Meraki UI, Kutty
+  - [ ] Login Pages
+  - [ ] Registration Pages
+  - [ ] Error Pages
 
 ## Build Locally
 
@@ -111,10 +107,10 @@ Contributions are what make the open source community such an amazing place to b
 
 Fork the Project
 
--   Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
--   Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
--   Push to the Branch (`git push origin feature/AmazingFeature`)
--   Open a Pull Request
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
 ## License
 

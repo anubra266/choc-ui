@@ -21,6 +21,10 @@
         {
           "title": "headers",
           "route": "{prefix}headers"
+        },
+        {
+          "title": "cards",
+          "route": "{prefix}cards"
         }
       ]
     },
