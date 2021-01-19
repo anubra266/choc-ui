@@ -14,7 +14,7 @@ const Navbars = () => {
           <Section.a
             target="_blank"
             rel="noopener"
-            href="https://chakra-ui.com"
+            href="https://kutty.netlify.app/components/headers/"
           >
             Guest Simple Links Right
           </Section.a>
@@ -22,6 +22,23 @@ const Navbars = () => {
         <Section.Content>
           <Section.p>
             <ComponentDemo path="navbars/gslr" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://kutty.netlify.app/components/headers/"
+          >
+            Dashboard Simple Links Left
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="navbars/dsll" file="index" multiple={[]} />
           </Section.p>
         </Section.Content>
       </Section>

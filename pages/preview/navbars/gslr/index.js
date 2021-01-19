@@ -12,8 +12,9 @@ import {
   VStack,
   Image,
   IconButton,
+  CloseButton,
 } from "@chakra-ui/react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Gslr() {
   const bg = useColorModeValue("white", "gray.800");
@@ -21,7 +22,7 @@ export default function Gslr() {
 
   return (
     <React.Fragment>
-      <chakra.header bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4}>
+      <chakra.header bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4} boxShadow="md">
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <chakra.a
             href="/"
@@ -58,7 +59,7 @@ export default function Gslr() {
                 display={{ base: "flex", md: "none" }}
                 aria-label="Open menu"
                 fontSize="20px"
-                color="gray.800"
+                color={useColorModeValue("gray.800", "inherit")}
                 variant="ghost"
                 icon={<AiOutlineMenu />}
                 onClick={mobileNav.onOpen}
@@ -74,21 +75,13 @@ export default function Gslr() {
                 p={2}
                 pb={4}
                 m={2}
-                bg="white"
+                bg={bg}
                 spacing={3}
                 borderRadius="sm"
                 boxShadow="sm"
               >
-                <IconButton
-                  flex="none"
-                  justifySelf="self-end"
-                  px={2}
-                  ml={2}
+                <CloseButton
                   aria-label="Close menu"
-                  fontSize="20px"
-                  color="gray.800"
-                  variant="ghost"
-                  icon={<AiOutlineClose />}
                   onClick={mobileNav.onClose}
                 />
 
