@@ -1,5 +1,11 @@
 import React from "react";
-import { Box,Container, Image, Badge, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Image,
+  Badge,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 const Cpwe = () => {
   const property = {
