@@ -2,7 +2,6 @@ import {
   IconButton,
   useColorMode,
   useColorModeValue,
-  Box,
 } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
@@ -20,20 +19,18 @@ export const ThemeSwitcher = () => {
   const { toggleColorMode: toggleMode } = useColorMode();
   return (
     !inIframe() && (
-      <Box pos="fixed" right={0} bottom={5}>
-        <IconButton
-          borderRightRadius={0}
-          borderLeftRadius="full"
-          size="md"
-          fontSize="lg"
-          aria-label={`Switch to ${text} mode`}
-          variant="solid"
-          colorScheme="brand"
-          ml={{ base: "0", md: "3" }}
-          onClick={toggleMode}
-          icon={<SwitchIcon />}
-        />
-      </Box>
+      <IconButton
+        borderRightRadius={0}
+        borderLeftRadius="full"
+        size="md"
+        fontSize="lg"
+        aria-label={`Switch to ${text} mode`}
+        variant="solid"
+        colorScheme="brand"
+        ml={{ base: "0", md: "3" }}
+        onClick={toggleMode}
+        icon={<SwitchIcon />}
+      />
     )
   );
 };

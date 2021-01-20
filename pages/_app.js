@@ -1,7 +1,7 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import NextNprogress from "nextjs-progressbar";
 import "../styles/globals.css";
-import { ThemeSwitcher } from "~/components/theme-switcher";
+import SiteSettings from "~/components/site-settings";
 
 const colors = {
   brand: {
@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
         height="2"
       />
       <Component {...pageProps} />
-      <ThemeSwitcher />
+      <SiteSettings />
     </ChakraProvider>
   );
 }
