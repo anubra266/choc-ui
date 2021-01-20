@@ -21,7 +21,7 @@ const Heros = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-          Work in progress!
+            <ComponentDemo path="heros/kh1" file="index" multiple={[]} />
           </Section.p>
         </Section.Content>
       </Section>
