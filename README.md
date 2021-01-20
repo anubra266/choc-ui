@@ -4,7 +4,6 @@
 
 <div align="center">
 
-
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
 [![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
 
@@ -17,13 +16,13 @@
 
 ## Components
 
-- [x] Elements - TailwindUI
+- [x] Elements
   - [x] Headers
-  - [x] Cards - Meraki UI
-  - [x] Alerts - Meraki UI
-  - [x] Pagination - Meraki UI
-- [ ] Page Sections - TailwindUI, Kutty
-  - [ ] Heros - Meraki UI
+  - [x] Cards
+  - [x] Alerts
+  - [x] Pagination
+- [ ] Page Sections
+  - [x] Heros
   - [ ] Feature Sections - Meraki UI
   - [ ] CTA Sections
   - [ ] Pricing Sections
@@ -42,14 +41,14 @@
 - [ ] Headings - TailwindUI
   - [ ] Card Headings
   - [ ] Section Headings
-- [ ] Application Shells - TailwindUI
-  - [ ] Stacked Layouts
-  - [ ] Sidebar Layouts - Kutty
-  - [ ] Multi Column Layouts
 - [ ] Example Pages - Meraki UI, Kutty
   - [ ] Login Pages
   - [ ] Registration Pages
   - [ ] Error Pages
+- [ ] Application Shells - TailwindUI
+  - [ ] Stacked Layouts
+  - [ ] Sidebar Layouts - Kutty
+  - [ ] Multi Column Layouts
 
 ## Build Locally
 
@@ -60,7 +59,6 @@ Follow these steps to run project on your local server.
 ```bash
 git clone https://github.com/anubra266/choc-ui.git
 ```
-
 
 **Download npm dependecies**
 
@@ -79,7 +77,6 @@ yarn
 ```bash
 yarn dev
 ```
-
 
 ## Contributing
 

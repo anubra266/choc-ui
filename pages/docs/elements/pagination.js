@@ -58,7 +58,7 @@ const Pagination = () => {
               path="pagination/scp"
               file="index"
               multiple={[]}
-              height="100px"
+              height="400px"
             />
           </Section.p>
         </Section.Content>
@@ -72,7 +72,7 @@ const Pagination = () => {
             path="pagination/pg"
             file="index"
             multiple={[]}
-            height="100px"
+            height="400px"
           />
         </Section.p>
       </Section.Content>

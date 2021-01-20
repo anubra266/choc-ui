@@ -25,13 +25,14 @@ const MenuLink = ({ children, active, section, href }) => {
   const sectionStyle = {
     textTransform: "uppercase",
     fontWeight: 800,
-    fontSize: "0.7rem",
+    fontSize: "xs",
   };
   const baseStyle = {
     borderColor: borderColor,
     _hover: activeStyle,
     cursor: "pointer",
     textTransform: "capitalize",
+    fontSize:"xs"
   };
   return (
     <RouteLink href={href} section={section}>

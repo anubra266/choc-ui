@@ -37,6 +37,20 @@
       ]
     },
     {
+      "title": "page sections",
+      "prefix": "/docs/page-sections/",
+      "routes": [
+        {
+          "title": "features",
+          "route": "{prefix}features"
+        },
+        {
+          "title": "heros",
+          "route": "{prefix}heros"
+        }
+      ]
+    },
+    {
       "title": "navigation",
       "prefix": "/docs/navigation/",
       "routes": [

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  chakra,
   Tab,
   Tabs,
   TabList,
@@ -13,6 +12,7 @@ import {
   SliderTrack,
   SliderFilledTrack,
   SliderThumb,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { CodeBlock } from "~/components/docs/codeblock";
 import { ImDisplay } from "react-icons/im";
@@ -59,7 +59,7 @@ const ComponentDemo = (props) => {
             <SliderTrack bg="brand.100">
               <SliderFilledTrack bg="brand.500" />
             </SliderTrack>
-            <SliderThumb boxSize={6}>
+            <SliderThumb boxSize={6} zIndex="base">
               <Box color="brand.500" as={ImDisplay} />
             </SliderThumb>
           </Slider>
@@ -70,6 +70,11 @@ const ComponentDemo = (props) => {
               w={`${width}%`}
               h="100%"
               border="none"
+              key={useColorModeValue(
+                `/preview/${props.path}1`,
+                `/preview/${props.path}2`
+              )}
+              loading="lazy"
             />
             {previewButton}
           </Box>
