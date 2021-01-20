@@ -13,6 +13,7 @@ import {
   SliderTrack,
   SliderFilledTrack,
   SliderThumb,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { CodeBlock } from "~/components/docs/codeblock";
 import { ImDisplay } from "react-icons/im";
@@ -70,6 +71,11 @@ const ComponentDemo = (props) => {
               w={`${width}%`}
               h="100%"
               border="none"
+              key={useColorModeValue(
+                `/preview/${props.path}1`,
+                `/preview/${props.path}2`
+              )}
+              loading="lazy"
             />
             {previewButton}
           </Box>
