@@ -17,7 +17,7 @@ const RouteLink = ({ children, section, href }) => {
 const MenuLink = ({ children, active, section, href }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
-    bg: useColorModeValue("brand.400", "gray.500"),
+    bg: useColorModeValue("brand.400", "gray.900"),
     color: "brand.50",
     boxShadow: "lg",
     borderRight: "3px solid",
