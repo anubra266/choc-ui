@@ -1,9 +1,23 @@
 import React from "react";
-import { chakra, Flex, useColorModeValue, Icon } from "@chakra-ui/react";
+import {
+  chakra,
+  Flex,
+  useColorModeValue,
+  Icon,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Button,
+} from "@chakra-ui/react";
 
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { HiDotsHorizontal } from "react-icons/hi";
-import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  ChevronDownIcon,
+} from "@chakra-ui/icons";
 
 const PagButton = (props) => {
   const activeStyle = {
@@ -96,6 +110,17 @@ const Ma = () => {
             boxSize={4}
           />
         </PagButton>
+        <Menu>
+          <MenuButton ml={1} as={Button} rightIcon={<ChevronDownIcon />}>
+            10 / page
+          </MenuButton>
+          <MenuList>
+            <MenuItem>20 / page</MenuItem> 
+            <MenuItem>30 / page</MenuItem> 
+            <MenuItem>40 / page</MenuItem> 
+            <MenuItem>50 / page</MenuItem> 
+          </MenuList>
+        </Menu>
       </Flex>
     </Flex>
   );

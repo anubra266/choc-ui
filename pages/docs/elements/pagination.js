@@ -49,6 +49,20 @@ const Pagination = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+        <Section.Header>Size Changer</Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo
+              path="pagination/scp"
+              file="index"
+              multiple={[]}
+              height="100px"
+            />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };
