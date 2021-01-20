@@ -73,13 +73,12 @@ const KuttyHero = () => {
         </SimpleGrid>
         <Stack
           display="flex"
-          flexDirection={{ base: "column", md: "row" }}
+          direction={{ base: "column", md: "row" }}
           justifyContent={{ base: "start", md: "center" }}
           mb={3}
           spacing={{ base: 2, md: 8 }}
           fontSize="xs"
           color="gray.600"
-          width="100%"
         >
           <Flex alignItems="center">
             <Icon
