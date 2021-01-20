@@ -3,13 +3,11 @@ import {
   chakra,
   Box,
   useColorModeValue,
-  Flex,
   Button,
   Stack,
   Image,
   Text,
   Icon,
-  Container,
 } from "@chakra-ui/react";
 
 const KuttyHero = () => {
