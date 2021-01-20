@@ -4,13 +4,8 @@ import {
   Box,
   useColorModeValue,
   Flex,
-  SimpleGrid,
-  GridItem,
-  VisuallyHidden,
-  Input,
   Button,
   HStack,
-  Icon,
 } from "@chakra-ui/react";
 
 const KuttyHero = () => {
