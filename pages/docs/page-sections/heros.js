@@ -93,6 +93,40 @@ const Heros = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://kutty.netlify.app/components/heroes/"
+          >
+            With Angled Image
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="heros/twai" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://kutty.netlify.app/components/heroes/"
+          >
+           Simple Centered
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="heros/tsc" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };
