@@ -60,7 +60,7 @@ const ComponentDemo = (props) => {
             <SliderTrack bg="brand.100">
               <SliderFilledTrack bg="brand.500" />
             </SliderTrack>
-            <SliderThumb boxSize={6}>
+            <SliderThumb boxSize={6} zIndex="base">
               <Box color="brand.500" as={ImDisplay} />
             </SliderThumb>
           </Slider>

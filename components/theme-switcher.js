@@ -22,6 +22,8 @@ export const ThemeSwitcher = () => {
     !inIframe() && (
       <Box pos="fixed" right={0} bottom={5}>
         <IconButton
+          borderRightRadius={0}
+          borderLeftRadius="full"
           size="md"
           fontSize="lg"
           aria-label={`Switch to ${text} mode`}
