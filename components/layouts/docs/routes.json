@@ -29,6 +29,10 @@
         {
           "title": "headers",
           "route": "{prefix}headers"
+        },
+        {
+          "title": "pagination",
+          "route": "{prefix}pagination"
         }
       ]
     },

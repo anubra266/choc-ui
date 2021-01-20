@@ -76,6 +76,7 @@ export default function Home() {
                     size="lg"
                     colorScheme="brand"
                     rightIcon={<FaArrowRight fontSize="0.8em" />}
+                    cursor="pointer"
                   >
                     Get Started
                   </Button>
