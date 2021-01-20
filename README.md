@@ -42,14 +42,14 @@
 - [ ] Headings - TailwindUI
   - [ ] Card Headings
   - [ ] Section Headings
-- [ ] Application Shells - TailwindUI
-  - [ ] Stacked Layouts
-  - [ ] Sidebar Layouts - Kutty
-  - [ ] Multi Column Layouts
 - [ ] Example Pages - Meraki UI, Kutty
   - [ ] Login Pages
   - [ ] Registration Pages
   - [ ] Error Pages
+- [ ] Application Shells - TailwindUI
+  - [ ] Stacked Layouts
+  - [ ] Sidebar Layouts - Kutty
+  - [ ] Multi Column Layouts
 
 ## Build Locally
 
