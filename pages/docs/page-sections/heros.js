@@ -25,6 +25,23 @@ const Heros = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://kutty.netlify.app/components/heroes/"
+          >
+            Kutty Hero 2
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="heros/kh2" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };
