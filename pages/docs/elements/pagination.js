@@ -35,6 +35,20 @@ const Pagination = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+        <Section.Header>More Pages</Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo
+              path="pagination/mp"
+              file="index"
+              multiple={[]}
+              height="100px"
+            />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };

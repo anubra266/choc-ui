@@ -46,7 +46,11 @@ const Ma = () => {
     >
       <Flex>
         <PagButton disabled>
-          <Icon as={IoIosArrowBack} color="white" boxSize={4} />
+          <Icon
+            as={IoIosArrowBack}
+            color={useColorModeValue("gray.700", "gray.200")}
+            boxSize={4}
+          />
         </PagButton>
         <PagButton>1</PagButton>
         <PagButton active>2</PagButton>
@@ -54,7 +58,11 @@ const Ma = () => {
         <PagButton>4</PagButton>
         <PagButton>5</PagButton>
         <PagButton>
-          <Icon as={IoIosArrowForward} color="white" boxSize={4} />
+          <Icon
+            as={IoIosArrowForward}
+            color={useColorModeValue("gray.700", "gray.200")}
+            boxSize={4}
+          />
         </PagButton>
       </Flex>
     </Container>
