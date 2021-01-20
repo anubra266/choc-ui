@@ -2,7 +2,7 @@ import React from "react";
 import {
   chakra,
   Box,
-  Container,
+  useColorModeValue,
   Flex,
   SimpleGrid,
   GridItem,
@@ -13,6 +13,24 @@ import {
   Icon,
 } from "@chakra-ui/react";
 
+const Feature = (props) => (
+  <Flex alignItems="center" color={useColorModeValue(null, "white")}>
+    <Icon
+      boxSize={4}
+      mr={1}
+      color="green.600"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      ></path>
+    </Icon>
+    {props.children}
+  </Flex>
+);
 const KuttyHero = () => {
   return (
     <Box px={4} py={32} mx="auto">
@@ -25,7 +43,7 @@ const KuttyHero = () => {
           mb={3}
           fontSize={{ base: "4xl", md: "5xl" }}
           fontWeight={{ base: "bold", md: "extrabold" }}
-          color="gray.900"
+          color={useColorModeValue("gray.900", "gray.100")}
           lineHeight="shorter"
         >
           A secure, faster way to transfer.
@@ -80,54 +98,9 @@ const KuttyHero = () => {
           fontSize="xs"
           color="gray.600"
         >
-          <Flex alignItems="center">
-            <Icon
-              boxSize={4}
-              mr={1}
-              color="green.600"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </Icon>
-            No credit card required
-          </Flex>
-          <Flex alignItems="center">
-            <Icon
-              boxSize={4}
-              mr={1}
-              color="green.600"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </Icon>
-            14 days free
-          </Flex>
-          <Flex alignItems="center">
-            <Icon
-              boxSize={4}
-              mr={1}
-              color="green.600"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </Icon>
-            Cancel anytime
-          </Flex>
+          <Feature>No credit card required</Feature>
+          <Feature>14 days free</Feature>
+          <Feature>Cancel anytime</Feature>
         </Stack>
       </Box>
     </Box>
