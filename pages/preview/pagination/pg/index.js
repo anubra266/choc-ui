@@ -1,7 +1,7 @@
 import React from "react";
 import {
   chakra,
-  Flex,
+  Text,
   useColorModeValue,
   Icon,
   Menu,
@@ -9,6 +9,9 @@ import {
   MenuList,
   MenuItem,
   Button,
+  Input,
+  HStack,
+  Box,
 } from "@chakra-ui/react";
 
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -47,7 +50,7 @@ const MButton = (props) => {
   const [hovered, setHovered] = React.useState(false);
   return (
     <chakra.a
-      w={8}
+      w={4}
       py={2}
       color={useColorModeValue("gray.700", "gray.200")}
       onMouseOver={() => setHovered(true)}
@@ -75,7 +78,7 @@ const MButton = (props) => {
 };
 const Ma = () => {
   return (
-    <Flex
+    <Box
       pos="fixed"
       top="50%"
       left="50%"
@@ -86,7 +89,7 @@ const Ma = () => {
       justifyContent="center"
       alignItems="center"
     >
-      <Flex>
+      <HStack>
         <PagButton>
           <Icon
             as={IoIosArrowBack}
@@ -113,14 +116,18 @@ const Ma = () => {
             10 / page
           </MenuButton>
           <MenuList>
-            <MenuItem>20 / page</MenuItem> 
-            <MenuItem>30 / page</MenuItem> 
-            <MenuItem>40 / page</MenuItem> 
-            <MenuItem>50 / page</MenuItem> 
+            <MenuItem>20 / page</MenuItem>
+            <MenuItem>30 / page</MenuItem>
+            <MenuItem>40 / page</MenuItem>
+            <MenuItem>50 / page</MenuItem>
           </MenuList>
         </Menu>
-      </Flex>
-    </Flex>
+        <HStack>
+          <Text wordBreak="unset">Go to:</Text>
+          <Input width="50px" />
+        </HStack>
+      </HStack>
+    </Box>
   );
 };
 

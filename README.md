@@ -17,11 +17,11 @@
 
 ## Components
 
-- [ ] Elements - TailwindUI
+- [x] Elements - TailwindUI
   - [x] Headers
   - [x] Cards - Meraki UI
   - [x] Alerts - Meraki UI
-  - [ ] Pagination - Meraki UI
+  - [x] Pagination - Meraki UI
 - [ ] Page Sections - TailwindUI, Kutty
   - [ ] Heros - Meraki UI
   - [ ] Feature Sections - Meraki UI

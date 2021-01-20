@@ -63,6 +63,20 @@ const Pagination = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+      <Section.Header>Page Jumper</Section.Header>
+      <Section.Content>
+        <Section.p>
+          <ComponentDemo
+            path="pagination/pg"
+            file="index"
+            multiple={[]}
+            height="100px"
+          />
+        </Section.p>
+      </Section.Content>
+    </Section>
     </DocsLayout>
   );
 };
