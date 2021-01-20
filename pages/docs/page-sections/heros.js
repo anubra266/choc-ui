@@ -14,14 +14,14 @@ const Heros = () => {
           <Section.a
             target="_blank"
             rel="noopener"
-            href="https://chakra-ui.com"
+            href="https://kutty.netlify.app/components/heroes/"
           >
-            Name
+            Kutty Hero 1
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/chuihe" file="index" multiple={[]} />
+          Work in progress!
           </Section.p>
         </Section.Content>
       </Section>
