@@ -55,7 +55,7 @@ const Features = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="features/fgl" file="index" multiple={[]} />
+            <ComponentDemo path="features/fgi" file="index" multiple={[]} />
           </Section.p>
         </Section.Content>
       </Section>

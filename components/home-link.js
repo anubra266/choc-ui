@@ -19,7 +19,8 @@ export const HomeLink = () => {
           borderLeftRadius="full"
           size="md"
           fontSize="lg"
-          aria-label={`Home`}
+          p={4}
+          aria-label={`Go to Home`}
           variant="solid"
           colorScheme="brand"
           ml={{ base: "0", md: "3" }}

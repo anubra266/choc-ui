@@ -1,9 +1,38 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const Static = () => {
+  const router = useRouter();
+  const isPreview = router.pathname.includes("preview");
   return (
     <Head>
+      {isPreview && (
+        <>
+          <title>Choc UI - Component Preview</title>
+
+          <meta name="title" content="Choc UI - Component Preview" />
+          <meta
+            name="description"
+            content="Preview beautiful components from Choc UI"
+          />
+
+          <meta property="og:title" content="Choc UI - Component Preview" />
+          <meta
+            property="og:description"
+            content="Preview beautiful components from Choc UI"
+          />
+
+          <meta
+            property="twitter:title"
+            content="Choc UI - Component Preview"
+          />
+          <meta
+            property="twitter:description"
+            content="Preview beautiful components from Choc UI"
+          />
+        </>
+      )}
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="theme-color" content="blue" />
       <meta property="og:type" content="website" />
