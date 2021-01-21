@@ -4,7 +4,6 @@
 
 <div align="center">
 
-
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
 [![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
 
@@ -22,8 +21,8 @@
   - [x] Cards
   - [x] Alerts
   - [x] Pagination
-- [ ] Page Sections - TailwindUI, Kutty
-  - [ ] Heros - Meraki UI
+- [ ] Page Sections
+  - [x] Heros
   - [ ] Feature Sections - Meraki UI
   - [ ] CTA Sections
   - [ ] Pricing Sections
@@ -61,7 +60,6 @@ Follow these steps to run project on your local server.
 git clone https://github.com/anubra266/choc-ui.git
 ```
 
-
 **Download npm dependecies**
 
 ```bash
@@ -79,7 +77,6 @@ yarn
 ```bash
 yarn dev
 ```
-
 
 ## Contributing
 
