@@ -1,4 +1,5 @@
 import { HomeLink } from "~/components/home-link";
+import { CopyCode } from "~/components/copy-code";
 import { ThemeSwitcher } from "~/components/theme-switcher";
 import { Stack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
@@ -18,6 +19,7 @@ export default function Ss() {
     isPreview &&
     !inIframe() && (
       <Stack pos="fixed" right={0} bottom={5}>
+        <CopyCode />
         <HomeLink />
         <ThemeSwitcher />
       </Stack>

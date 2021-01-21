@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  chakra,
   Tab,
   Tabs,
   TabList,
