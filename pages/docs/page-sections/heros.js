@@ -16,7 +16,7 @@ const Heros = () => {
             rel="noopener"
             href="https://kutty.netlify.app/components/heroes/"
           >
-            Kutty Hero 1
+            With Signup
           </Section.a>
         </Section.Header>
         <Section.Content>
@@ -33,7 +33,7 @@ const Heros = () => {
             rel="noopener"
             href="https://kutty.netlify.app/components/heroes/"
           >
-            Kutty Hero 2
+            Simple Centered
           </Section.a>
         </Section.Header>
         <Section.Content>
@@ -50,7 +50,7 @@ const Heros = () => {
             rel="noopener"
             href="https://kutty.netlify.app/components/heroes/"
           >
-            Kutty Hero 3
+            Split
           </Section.a>
         </Section.Header>
         <Section.Content>
@@ -67,7 +67,7 @@ const Heros = () => {
             rel="noopener"
             href="https://kutty.netlify.app/components/heroes/"
           >
-            Kutty Hero 4
+            With App Screenshot
           </Section.a>
         </Section.Header>
         <Section.Content>
@@ -84,7 +84,7 @@ const Heros = () => {
             rel="noopener"
             href="https://kutty.netlify.app/components/heroes/"
           >
-            Kutty Hero 5
+            Kutty Signup form
           </Section.a>
         </Section.Header>
         <Section.Content>
@@ -118,7 +118,7 @@ const Heros = () => {
             rel="noopener"
             href="https://kutty.netlify.app/components/heroes/"
           >
-           Simple Centered
+           Simple Centered 2
           </Section.a>
         </Section.Header>
         <Section.Content>

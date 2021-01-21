@@ -2,55 +2,114 @@ import React from "react";
 import {
   chakra,
   Box,
-  GridItem,
   useColorModeValue,
-  Button,
-  Stack,
-  Center,
-  Flex,
-  Text,
   Icon,
-  SimpleGrid,
-  VisuallyHidden,
-  Input,
-  VStack,
-  IconButton,
+  Image,
+  HStack,
+  Stack,
 } from "@chakra-ui/react";
 
 const KuttyHero = () => {
   return (
-    <div class="relative bg-white overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-      <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-    <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-    <div class="sm:text-center lg:text-left">
-      <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-        <span class="block xl:inline">Data to enrich your</span>
-        <span class="block text-indigo-600 xl:inline">online business</span>
-      </h1>
-      <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
-      </p>
-      <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-        <div class="rounded-md shadow">
-          <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-            Get started
-          </a>
-        </div>
-        <div class="mt-3 sm:mt-0 sm:ml-3">
-          <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
-            Live demo
-          </a>
-        </div>
-      </div>
-    </div>
-  </main>
-  </div>
-  </div>
-  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" />
-  </div>
-  </div>
+    <Box pos="relative" overflow="hidden">
+      <Box maxW="7xl" mx="auto">
+        <Box
+          pos="relative"
+          pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
+          w="100%"
+          border="solid 1px transparent"
+        >
+          <Box
+            mt={{ base: 10 }}
+            mx="auto"
+            maxW={{ base: "7xl" }}
+            px={{ base: 4, sm: 6, lg: 8 }}
+            mt={{ base: 12, md: 16, lg: 20, xl: 28 }}
+          >
+            <Box
+              textAlign="center"
+              width={{ base: "100%", md: 11 / 12, xl: 8 / 12 }}
+              mx="auto"
+            >
+              <chakra.h1
+                fontSize={{ base: "4xl", sm: "5xl", md: "6xl" }}
+                letterSpacing="tight"
+                lineHeight="short"
+                fontWeight="extrabold"
+                color={useColorModeValue("gray.900", "white")}
+              >
+                <chakra.span display={{ base: "block", xl: "inline" }}>
+                  Data to enrich your{" "}
+                </chakra.span>
+                <chakra.span
+                  display={{ base: "block", xl: "inline" }}
+                  color={useColorModeValue("brand.600", "brand.400")}
+                >
+                  online business
+                </chakra.span>
+              </chakra.h1>
+              <chakra.p
+                mt={{ base: 3, sm: 5, md: 5 }}
+                mx={{ sm: "auto", lg: 0 }}
+                mb={6}
+                fontSize={{ base: "lg", md: "xl" }}
+                color="gray.500"
+                lineHeight="base"
+              >
+                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+                fugiat aliqua.
+              </chakra.p>
+              <Stack
+                direction={{ base: "column", sm: "column", md: "row" }}
+                mb={{ base: 4, md: 8 }}
+                spacing={{ base: 4, md: 2 }}
+                justifyContent="center"
+              >
+                <Box borderRadius="full" boxShadow="md">
+                  <chakra.a
+                    href="#"
+                    w="100%"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    border="solid 1px transparent"
+                    fontSize={{ base: "md", md: "lg" }}
+                    borderRadius="md"
+                    color="white"
+                    bg="brand.600"
+                    _hover={{ bg: "brand.700" }}
+                    px={{ base: 8, md: 10 }}
+                    py={{ base: 3, md: 4 }}
+                  >
+                    Get started
+                  </chakra.a>
+                </Box>
+                <Box mt={[3, 0]} ml={[null, 3]}>
+                  <chakra.a
+                    href="#"
+                    w="100%"
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    px={{ base: 8, md: 10 }}
+                    py={{ base: 3, md: 4 }}
+                    border="solid 1px transparent"
+                    fontSize={{ base: "md", md: "lg" }}
+                    borderRadius="md"
+                    color="brand.700"
+                    bg="brand.100"
+                    _hover={{ bg: "brand.200" }}
+                  >
+                    Live demo
+                  </chakra.a>
+                </Box>
+              </Stack>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
