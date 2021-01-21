@@ -30,7 +30,7 @@ const backgroundOpacity = (bg, opacity) => ({
 const KuttyHero = () => {
   return (
     <SimpleGrid
-      columns={{ base: 1, md: 2 }}
+      columns={{ base: 1, lg: 2 }}
       class="bg-opacity-25"
       {...backgroundOpacity("brand.500", 0.25)}
     >

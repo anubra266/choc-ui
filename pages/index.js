@@ -116,7 +116,7 @@ export default function Home() {
                     ></path>
                   </g>
                 </Icon> by{" "}
-                <Link isExternal href="https://twitter.com">
+                <Link isExternal href="https://twitter.com/anubra266">
                   Anuoluwapo Abraham
                 </Link>
               </Text>

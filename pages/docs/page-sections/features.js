@@ -59,6 +59,23 @@ const Features = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://kutty.netlify.app/components/features/"
+          >
+            With feature list
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="features/wfl" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };
