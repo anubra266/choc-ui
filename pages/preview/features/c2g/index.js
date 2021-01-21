@@ -95,11 +95,11 @@ const Ma = () => {
           </Box>
 
           <Box mt={10}>
-            <Box
-              display={{ md: "grid" }}
-              gridRowGap={{ md: 10 }}
-              gridColumnGap={{ md: 8 }}
-              gridTemplateColumns={{ md: "repeat(2,1fr)" }}
+            <SimpleGrid
+              spacingX={{ base: 10, md: 0 }}
+              columns={{ md: 2 }}
+              rowGap={{ md: 8 }}
+              columnGap={{ md: 10 }}
               class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
             >
               <Feature
@@ -157,7 +157,7 @@ const Ma = () => {
                   d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
                 />
               </Feature>
-            </Box>
+            </SimpleGrid>
           </Box>
         </Box>
       </Box>

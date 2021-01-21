@@ -4,23 +4,15 @@ import Sidebar from "./sidebar";
 import PageTransition from "./page-transition";
 import Container from "./container";
 import { Box } from "@chakra-ui/react";
-
-const Docs = ({children}) => {
+const Docs = ({ children }) => {
   return (
     <SiteLayout>
       <Container as="main" className="main-content">
         <Box display={{ base: "block", md: "flex" }}>
           <Sidebar />
+         
           <div style={{ flex: 1 }}>
-            <Box 
-              id="content"
-              pt={3}
-              px={5}
-              mt="4.5rem"
-              mx="auto"
-              maxW="55rem"
-              minH="76vh"
-            >
+            <Box id="content" pt={3} px={5} mt="4.5rem" mx="auto" minH="76vh">
               <PageTransition>{children}</PageTransition>
             </Box>
           </div>
