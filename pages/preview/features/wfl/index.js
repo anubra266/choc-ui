@@ -18,7 +18,7 @@ const Feature = (props) => {
         boxSize={5}
         mt={1}
         mr={2}
-        color={useColorModeValue("brand.500")}
+        color={useColorModeValue("brand.500","brand.300")}
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -30,7 +30,7 @@ const Feature = (props) => {
       </Icon>
       <chakra.p
         fontSize="lg"
-        color={useColorModeValue("gray.700")}
+        color={useColorModeValue("gray.700","gray.400")}
         {...props}
       />
     </Flex>
@@ -74,8 +74,7 @@ export default function Wfl() {
               mb={6}
               fontSize={{ base: "lg", md: "xl" }}
               textAlign={{ base: "center", sm: "left" }}
-              color={useColorModeValue("gray.600")}
-              class="mb-6 text-lg text-center text-gray-600 sm:text-left md:text-xl"
+              color={useColorModeValue("gray.600","gray.500")}
             >
               Let's put our heads together to build a successful partnership to
               benefit both your customers and your business.
