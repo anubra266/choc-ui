@@ -8,7 +8,7 @@ const SponsorButton = props => (
     alignItems="center"
     as="a"
     aria-label="Sponsor Choc UI on Open Collective"
-    href={''}
+    href="https://patreon.com/anubra266"
     target="_blank"
     rel="noopener noreferrer"
     bg="gray.50"
