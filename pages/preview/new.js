@@ -1,7 +1,7 @@
 import React from "react";
 import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
 
-const Ma = () => {
+export default function(){
   return (
     <Flex
     pos="fixed"
@@ -19,4 +19,3 @@ const Ma = () => {
   );
 };
 
-export default Ma;
