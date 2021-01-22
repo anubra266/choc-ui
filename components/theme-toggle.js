@@ -1,7 +1,7 @@
 import React from "react";
 import {
   IconButton,
-  Link,
+  Tooltip,
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -12,16 +12,21 @@ export const ThemeToggle = () => {
   const text = useColorModeValue("dark", "light");
   const { toggleColorMode: toggleMode } = useColorMode();
   return (
-    <IconButton
-      size="md"
-      p={4}
-      fontSize="lg"
-      aria-label={`Switch to ${text} mode`}
-      variant="ghost"
-      colorScheme="brand"
-      ml={{ base: "0", md: "3" }}
-      onClick={toggleMode}
-      icon={<SwitchIcon />}
-    />
+    <Tooltip
+      shouldWrapChildren
+      hasArrow
+      label={`Switch to ${text} mode`}
+      placement="left-start"
+    >
+      <IconButton
+        size="md"
+        fontSize="lg"
+        aria-label={`Switch to ${text} mode`}
+        variant="ghost"
+        colorScheme="brand"
+        onClick={toggleMode}
+        icon={<SwitchIcon />}
+      />
+    </Tooltip>
   );
 };
