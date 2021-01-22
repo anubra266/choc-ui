@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Image,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -27,8 +20,8 @@ const Ma = () => {
         maxW="2xl"
       >
         <Image
-        borderTopRadius="lg"
-        w="100%"
+          borderTopRadius="lg"
+          w="100%"
           h={64}
           objectFit="cover"
           src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"

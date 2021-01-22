@@ -1,0 +1,80 @@
+import React from "react";
+import {
+  chakra,
+  Box,
+  Container,
+  Image,
+  Flex,
+  useColorModeValue,
+} from "@chakra-ui/react";
+
+const Ma = () => {
+  return (
+    <Box
+      pos="fixed"
+      top="50%"
+      left="50%"
+      transform="translate(-50%,-50%)"
+      bg="gray.600"
+      p={50}
+      width="6xl"
+    >
+      <Box
+        bg={useColorModeValue("white", "gray.800")}
+        mx={{ lg: 8 }}
+        display={{ lg: "flex" }}
+        maxW={{ lg: "5xl" }}
+        boxShadow={{ lg: "lg" }}
+        borderRadius={{ lg: "lg" }}
+      >
+        <Box w={{ lg: 1 / 2 }}>
+          <Box
+            h={{ base: 64, lg: "100%" }}
+            borderRadius={{ lg: "lg" }}
+            bgSize="cover"
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')",
+            }}
+          ></Box>
+        </Box>
+
+        <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: 1 / 2 }}>
+          <chakra.h2
+            fontSize={{ base: "2xl", md: "3xl" }}
+            color={useColorModeValue("gray.800", "white")}
+            fontWeight="bold"
+          >
+            Build Your New{" "}
+            <chakra.span color={useColorModeValue("brand.600", "brand.400")}>
+              Idea
+            </chakra.span>
+          </chakra.h2>
+          <chakra.p mt={4} color={useColorModeValue("gray.600", "gray.400")}>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            modi reprehenderit vitae exercitationem aliquid dolores ullam
+            temporibus enim expedita aperiam mollitia iure consectetur dicta
+            tenetur, porro consequuntur saepe accusantium consequatur.
+          </chakra.p>
+
+          <Box mt={8}>
+            <chakra.a
+              href="#"
+              bg="gray.900"
+              color="gray.100"
+              px={5}
+              py={3}
+              fontWeight="semibold"
+              borderRadius="lg"
+              _hover={{ bg: "gray.800" }}
+            >
+              Start Now
+            </chakra.a>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  );
+};
+
+export default Ma;

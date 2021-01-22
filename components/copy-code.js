@@ -15,7 +15,6 @@ export const CopyCode = () => {
   const arr = url.split("/");
   const code = require(`!!raw-loader!~/pages/preview/${arr[2]}/${arr[3]}`)
     .default;
-  console.log("code", code);
   const { hasCopied, onCopy } = useClipboard(code);
   return (
     <React.Fragment>

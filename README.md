@@ -23,7 +23,7 @@
   - [x] Pagination
 - [ ] Page Sections
   - [x] Heros
-  - [ ] Feature Sections - Meraki UI
+  - [x] Feature Sections
   - [ ] CTA Sections
   - [ ] Pricing Sections
   - [ ] FAQs
