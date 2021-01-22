@@ -10,7 +10,7 @@ export default function(){
     transform="translate(-50%,-50%)"
     bg="gray.600"
     p={20}
-    width="auto"
+    width="100%"
     justifyContent="center"
     alignItems="center"
     >

@@ -24,7 +24,24 @@ const CTA = () => {
             <ComponentDemo path="cta/sj" file="index" multiple={[]} />
           </Section.p>
         </Section.Content>
-      </Section>
+      </Section>    
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://tailwindui.com/components/marketing/sections/cta-sections#component-8f2857c2b9324bb3fe8b1c455438ae07"
+          >
+            Simple Stacked
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="cta/sst" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>    
     </DocsLayout>
   );
 };

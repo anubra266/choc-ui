@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Box,  Flex, useColorModeValue } from "@chakra-ui/react";
 
 export default function Sj() {
   return (
