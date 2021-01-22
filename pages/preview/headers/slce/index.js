@@ -26,7 +26,7 @@ import Features from "@/headers/slce/features";
 
 const HeaderContent = () => {
   const bg = useColorModeValue("white", "gray.800");
-  const cl = useColorModeValue("gray.800","white");
+  const cl = useColorModeValue("gray.800", "white");
   const mobileNav = useDisclosure();
 
   const mobileNavBtnRef = React.useRef();
@@ -116,12 +116,16 @@ const HeaderContent = () => {
           />
         </Flex>
       </Flex>
-      <MobileNavContent noSponsor isOpen={mobileNav.isOpen} onClose={mobileNav.onClose} />
+      <MobileNavContent
+        noSponsor
+        isOpen={mobileNav.isOpen}
+        onClose={mobileNav.onClose}
+      />
     </React.Fragment>
   );
 };
 
-export default Header (props) {
+export default function Header(props) {
   const bg = useColorModeValue("white", "gray.800");
   const ref = React.useRef();
   const [y, setY] = React.useState(0);
