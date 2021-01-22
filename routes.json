@@ -51,6 +51,10 @@
         {
           "title": "heros",
           "route": "{prefix}heros"
+        },
+        {
+          "title": "pricing",
+          "route": "{prefix}pricing"
         }
       ]
     },

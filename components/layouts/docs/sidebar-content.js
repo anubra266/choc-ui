@@ -2,7 +2,7 @@ import React from "react";
 
 import { Box, Stack, useColorModeValue } from "@chakra-ui/react";
 
-import routes from "./routes.json";
+import routes from "~/routes.json";
 import jVar from "json-variables";
 import Link from "next/link";
 import { useRouter } from "next/router";
