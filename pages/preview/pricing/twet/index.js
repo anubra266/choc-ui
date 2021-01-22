@@ -33,7 +33,8 @@ const Feature = (props) => {
 export default function Pricing() {
   return (
     <Flex
-      pos="fixed"
+      pos="absolute"
+      overflow="auto"
       top="50%"
       left="50%"
       transform="translate(-50%,-50%)"

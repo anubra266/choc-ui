@@ -19,7 +19,7 @@
   - [x] Cards
   - [x] Alerts
   - [x] Pagination
-  - [ ] Badges
+  - [x] Badges
   - [ ] Empty - Antd
   - [ ] Result - Antd
   - [ ] Message - Antd

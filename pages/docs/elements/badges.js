@@ -4,24 +4,24 @@ import { PageHeader, Section } from "~/components/docs";
 import ComponentDemo from "@/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
-const Pricing = () => {
+const Badges = () => {
   return (
     <DocsLayout>
-      <PageHead title="Pricing Components" />
-      <PageHeader>Pricing</PageHeader>
+      <PageHead title="Badges" />
+      <PageHeader>Badges</PageHeader>
       <Section>
         <Section.Header>
           <Section.a
             target="_blank"
             rel="noopener"
-            href="https://tailwindui.com/components/marketing/sections/pricing#component-d91bc5ed1deb87275decb69f70274650"
+            href="https://chakra-ui.com"
           >
-            Three tiers with emphasized tier
+            Icon with badge{" "}
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="pricing/twet" file="index" multiple={[]}  height="500px" />
+            <ComponentDemo path="badges/bwi" file="index" multiple={[]}  height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -29,4 +29,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Badges;

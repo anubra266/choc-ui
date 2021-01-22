@@ -23,6 +23,10 @@
           "route": "{prefix}alerts"
         },
         {
+          "title": "badges",
+          "route": "{prefix}badges"
+        },
+        {
           "title": "cards",
           "route": "{prefix}cards"
         },
