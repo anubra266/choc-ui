@@ -23,6 +23,10 @@
           "route": "{prefix}alerts"
         },
         {
+          "title": "badges",
+          "route": "{prefix}badges"
+        },
+        {
           "title": "cards",
           "route": "{prefix}cards"
         },
@@ -51,6 +55,10 @@
         {
           "title": "heros",
           "route": "{prefix}heros"
+        },
+        {
+          "title": "pricing",
+          "route": "{prefix}pricing"
         }
       ]
     },

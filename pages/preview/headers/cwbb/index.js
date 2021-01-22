@@ -111,7 +111,7 @@ const HeaderContent = () => {
     </React.Fragment>
   );
 };
-export default function (props) {
+export default function Header (props) {
   const bg = useColorModeValue("white", "gray.800");
   const bor = useColorModeValue("gray.100", "brand.600");
 

@@ -121,7 +121,7 @@ const HeaderContent = () => {
   );
 };
 
-export default function (props) {
+export default Header (props) {
   const bg = useColorModeValue("white", "gray.800");
   const ref = React.useRef();
   const [y, setY] = React.useState(0);

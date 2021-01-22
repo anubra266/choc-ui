@@ -48,7 +48,7 @@ const Section = (props) => {
   );
 };
 
-export default function (props) {
+export default function Feature (props) {
   const hbg = useColorModeValue("gray.50", "brand.400");
   const hbgh = useColorModeValue("gray.100", "brand.500");
   const tcl = useColorModeValue("gray.900", "gray.50");
