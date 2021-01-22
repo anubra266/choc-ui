@@ -8,23 +8,23 @@ const CTA = () => {
   return (
     <DocsLayout>
       <PageHead title="CTA Sections" />
-      <PageHeader>CTA</PageHeader>
-      {/*(<Section>
+      <PageHeader>Call to Action</PageHeader>
+      <Section>
         <Section.Header>
           <Section.a
             target="_blank"
             rel="noopener"
-            href="https://chakra-ui.com"
+            href="https://tailwindui.com/components/marketing/sections/cta-sections#component-90c79fbd0596cc4e601da985ca825994"
           >
-            Name
+            Simple Justified
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/chuihe" file="index" multiple={[]} />
+            <ComponentDemo path="cta/sj" file="index" multiple={[]} />
           </Section.p>
         </Section.Content>
-      </Section>)*/}
+      </Section>
     </DocsLayout>
   );
 };
