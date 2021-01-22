@@ -37,7 +37,7 @@
   - [ ] Footers - Meraki UI
   - [ ] Logo Clouds
 - [ ] Navigation - TailwindUI
-  - [x] Navbars - Meraki UI
+  - [x] Navbars
   - [ ] Vertical Navigation (Menus)
   - [ ] Sidebar Navigation
 - [ ] Headings - TailwindUI
