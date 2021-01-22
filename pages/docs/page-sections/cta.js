@@ -76,6 +76,23 @@ const CTA = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+      <Section.Header>
+        <Section.a
+          target="_blank"
+          rel="noopener"
+          href="https://tailwindui.com/components/marketing/sections/cta-sections#component-b731164a9948a780a5a346d9e637b053"
+        >
+         Brand Panel with App Screenshot
+        </Section.a>
+      </Section.Header>
+      <Section.Content>
+        <Section.p>
+          <ComponentDemo path="cta/was" file="index" multiple={[]} />
+        </Section.p>
+      </Section.Content>
+    </Section>
     </DocsLayout>
   );
 };
