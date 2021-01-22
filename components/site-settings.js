@@ -21,6 +21,7 @@ export default function Ss() {
       <Stack
         direction="column"
         pos="fixed"
+        zIndex={1000}
         right={0}
         bottom={70}
         width={10}
