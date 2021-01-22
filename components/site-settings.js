@@ -1,7 +1,7 @@
 import { HomeLink } from "~/components/home-link";
 import { CopyCode } from "~/components/copy-code";
-import { ThemeSwitcher } from "~/components/theme-switcher";
-import { Stack } from "@chakra-ui/react";
+import { ThemeToggle } from "~/components/theme-toggle";
+import { Stack,Flex } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 function inIframe() {
@@ -18,11 +18,11 @@ export default function Ss() {
   return (
     isPreview &&
     !inIframe() && (
-      <Stack pos="fixed" right={0} bottom={5}>
+      <Flex direction="column" pos="fixed" right={0} bottom={5}>
         <CopyCode />
         <HomeLink />
-        <ThemeSwitcher />
-      </Stack>
+        <ThemeToggle />
+      </Flex>
     )
   );
 }

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  IconButton,
-  useColorMode,
-  Icon,
-  useColorModeValue,
-  Link,
-  useClipboard,
-} from "@chakra-ui/react";
+import { IconButton, Icon, useClipboard } from "@chakra-ui/react";
 import { IoCopy, IoCheckmarkDoneSharp } from "react-icons/io5";
 import { useRouter } from "next/router";
 
@@ -18,14 +11,12 @@ export const CopyCode = () => {
   const { hasCopied, onCopy } = useClipboard(code);
   return (
     <React.Fragment>
-      <IconButton
-        borderRightRadius={0}
-        borderLeftRadius="full"
+      <IconButton 
         size="md"
         fontSize="lg"
         aria-label={`Copy Code`}
         p={4}
-        variant="solid"
+        variant="ghost"
         colorScheme={hasCopied ? "green" : "teal"}
         ml={{ base: "0", md: "3" }}
         onClick={onCopy}

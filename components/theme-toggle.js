@@ -1,18 +1,23 @@
-import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import React from "react";
+import {
+  IconButton,
+  Link,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
-export const ThemeSwitcher = () => {
+export const ThemeToggle = () => {
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
   const text = useColorModeValue("dark", "light");
   const { toggleColorMode: toggleMode } = useColorMode();
   return (
     <IconButton
-      borderRightRadius={0}
-      borderLeftRadius="full"
       size="md"
+      p={4}
       fontSize="lg"
       aria-label={`Switch to ${text} mode`}
-      variant="solid"
+      variant="ghost"
       colorScheme="brand"
       ml={{ base: "0", md: "3" }}
       onClick={toggleMode}

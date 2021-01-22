@@ -9,22 +9,17 @@ import {
 import { MdHome } from "react-icons/md";
 
 export const HomeLink = () => {
-  const text = useColorModeValue("dark", "light");
-  const { toggleColorMode: toggleMode } = useColorMode();
   return (
     <React.Fragment>
       <Link href="/" isExternal>
         <IconButton
-          borderRightRadius={0}
-          borderLeftRadius="full"
           size="md"
           fontSize="lg"
           p={4}
           aria-label={`Go to Home`}
-          variant="solid"
+          variant="ghost"
           colorScheme="brand"
           ml={{ base: "0", md: "3" }}
-          onClick={toggleMode}
           icon={<Icon as={MdHome} boxSize={6} />}
         />
       </Link>

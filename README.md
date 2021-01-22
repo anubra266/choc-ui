@@ -21,6 +21,10 @@
   - [x] Cards
   - [x] Alerts
   - [x] Pagination
+  - [ ] Empty - Antd
+  - [ ] Result - Antd
+  - [ ] Message - Antd
+  - [ ] Notification - Antd
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections
@@ -45,10 +49,11 @@
   - [ ] Login Pages
   - [ ] Registration Pages
   - [ ] Error Pages
-- [ ] Application Shells - TailwindUI
-  - [ ] Stacked Layouts
+- [ ] Application Shells
   - [ ] Sidebar Layouts - Kutty
-  - [ ] Multi Column Layouts
+  - [ ] Page Layouts - Antd
+  - [ ] Stacked Layouts - TailwindUI
+  - [ ] Multi Column Layouts - TailwindUI
 
 ## Build Locally
 
