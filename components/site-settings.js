@@ -1,7 +1,7 @@
 import { HomeLink } from "~/components/home-link";
 import { CopyCode } from "~/components/copy-code";
 import { ThemeToggle } from "~/components/theme-toggle";
-import { Stack,Flex } from "@chakra-ui/react";
+import { useColorModeValue, Stack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 function inIframe() {
@@ -18,11 +18,22 @@ export default function Ss() {
   return (
     isPreview &&
     !inIframe() && (
-      <Flex direction="column" pos="fixed" right={0} bottom={5}>
+      <Stack
+        direction="column"
+        pos="fixed"
+        zIndex={1000}
+        right={0}
+        bottom={70}
+        width={10}
+        border="solid transparent"
+        boxShadow="lg"
+        borderLeftRadius="lg"
+        bg={useColorModeValue("white", "gray.700")}
+      >
         <CopyCode />
         <HomeLink />
         <ThemeToggle />
-      </Flex>
+      </Stack>
     )
   );
 }

@@ -41,7 +41,11 @@
       "prefix": "/docs/page-sections/",
       "routes": [
         {
-          "title": "features",
+          "title": "call to action",
+          "route": "{prefix}cta"
+        },
+        {
+          "title": "features sections",
           "route": "{prefix}features"
         },
         {

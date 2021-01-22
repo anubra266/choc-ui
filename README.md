@@ -26,7 +26,7 @@
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections
-  - [ ] CTA Sections
+  - [x] CTA Sections
   - [ ] Pricing Sections
   - [ ] FAQs
   - [ ] Newsletter Sections
