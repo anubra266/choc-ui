@@ -1,5 +1,3 @@
-<a style="color:red"><b>Help!!! THe Site is ugly. If you can shine it, make a pull request or as little as color combination suggestions.</b></a>
-
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
 
 <div align="center">
@@ -55,44 +53,10 @@
   - [ ] Stacked Layouts - TailwindUI
   - [ ] Multi Column Layouts - TailwindUI
 
-## Build Locally
-
-Follow these steps to run project on your local server.
-
-**Clone this repo**
-
-```bash
-git clone https://github.com/anubra266/choc-ui.git
-```
-
-**Download npm dependecies**
-
-```bash
-npm install
-```
-
-**OR**
-
-```bash
-yarn
-```
-
-**Build Project's Javascript Code**
-
-```bash
-yarn dev
-```
-
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated. See [Contributing.md](./CONTRIBUTING.md)
 
-Fork the Project
-
-- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-- Push to the Branch (`git push origin feature/AmazingFeature`)
-- Open a Pull Request
 
 ## License
 
