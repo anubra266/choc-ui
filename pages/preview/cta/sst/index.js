@@ -27,7 +27,7 @@ export default function Sj() {
       >
         <SimpleGrid
           maxW="7xl"
-          w="5xl"
+          w={{md:"3xl", lg: "4xl" }}
           alignItems="center"
           columns={{ base: 1, lg: 2, xl: 3 }}
           spacing={4}
@@ -66,6 +66,7 @@ export default function Sj() {
                   py={3}
                   border="solid transparent"
                   fontWeight="bold"
+                  w="100%"
                   borderRadius="md"
                   color={useColorModeValue("white")}
                   bg={useColorModeValue("brand.600", "brand.500")}
@@ -83,6 +84,7 @@ export default function Sj() {
                 boxShadow="md"
               >
                 <chakra.a
+                  w="100%"
                   href="#"
                   display="inline-flex"
                   alignItems="center"

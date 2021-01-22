@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Stack } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Stack,
+  Flex,
+  useColorModeValue,
+  SimpleGrid,
+} from "@chakra-ui/react";
 
 export default function Sj() {
   return (
@@ -14,16 +21,13 @@ export default function Sj() {
       justifyContent="center"
       alignItems="center"
     >
-      <Box bg={useColorModeValue("gray.50", "gray.800")}>
+      <Box bg={useColorModeValue("white", "gray.800")} w="100%">
         <Box
-          maxW="7xl"
-          w={{ md: "3xl", lg: "4xl" }}
+          w={{ base: "100%", md: 3 / 4, lg: 2 / 4 }}
+          px={4}
+          py={20}
           mx="auto"
-          py={{ base: 12, lg: 16 }}
-          px={{ base: 4, lg: 8 }}
-          display={{ lg: "flex" }}
-          alignItems={{ lg: "center" }}
-          justifyContent={{ lg: "space-between" }}
+          textAlign={{ base: "left", md: "center" }}
         >
           <chakra.h2
             fontSize={{ base: "3xl", sm: "4xl" }}
@@ -32,6 +36,7 @@ export default function Sj() {
             lineHeight="shorter"
             color={useColorModeValue("gray.900", "gray.100")}
             textShadow="2px 0 currentcolor"
+            mb={6}
           >
             <chakra.span display="block">Ready to dive in?</chakra.span>
             <chakra.span
@@ -42,9 +47,9 @@ export default function Sj() {
             </chakra.span>
           </chakra.h2>
           <Stack
+            justifyContent={{ base: "left", md: "center" }}
             direction={{ base: "column", sm: "row" }}
-            mt={{ base: 8, lg: 0 }}
-            shrink={{ lg: 0 }}
+            spacing={2}
           >
             <Box display="inline-flex" borderRadius="md" boxShadow="md">
               <chakra.a
