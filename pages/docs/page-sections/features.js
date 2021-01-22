@@ -76,6 +76,40 @@ const Features = () => {
           </Section.p>
         </Section.Content>
       </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://tailwindui.com/components/marketing/sections/feature-sections#component-a49bfb9517be12ba0fe0dd841c3a8766"
+          >
+            Offset 2x2 grid{" "}
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="features/o2g" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
+
+      <Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://kutty.netlify.app/components/features/"
+          >
+            Alternative side-by-side with media
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="features/asm" file="index" multiple={[]} />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };
