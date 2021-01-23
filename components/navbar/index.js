@@ -47,7 +47,7 @@ const HeaderContent = () => {
               <Image
                 alt="logo"
                 src="/logo.png"
-                style={{ height: "50px", float: "left" }}
+                style={{ height: "30px", float: "left" }}
                 mr={2}
               />
               <chakra.h1
@@ -81,8 +81,7 @@ const HeaderContent = () => {
                 as={GithubIcon}
                 display="block"
                 transition="color 0.2s"
-                w="5"
-                h="5"
+                boxSize={5}
                 _hover={{ color: "gray.600" }}
               />
             </CLink>
@@ -137,7 +136,7 @@ const Header = (props) => {
       width="full"
       {...props}
     >
-      <chakra.div height="4.5rem" mx="auto" maxW="1200px">
+      <chakra.div height="4.5rem" mx="auto">
         <HeaderContent />
       </chakra.div>
     </chakra.header>

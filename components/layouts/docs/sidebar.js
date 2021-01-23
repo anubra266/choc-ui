@@ -14,21 +14,7 @@ const Sidebar = () => {
   const SidebarIcon = isOpen ? MdClose : MdMenu;
   return (
     <React.Fragment>
-      <IconButton
-        pos="fixed"
-        top={10}
-        zIndex={10}
-        left={0}
-        borderLeftRadius={0}
-        size="md"
-        fontSize="lg"
-        aria-label={`Toggle Sidebar`}
-        variant="solid"
-        colorScheme="brand"
-        onClick={isOpen ? onClose : onOpen}
-        icon={<SidebarIcon />}
-      />
-      {isOpen && (
+      {isOpen ? (
         <Box
           as="nav"
           aria-label="Main Navigation"
@@ -46,10 +32,39 @@ const Sidebar = () => {
           flexShrink={0}
           display={{ base: "none", md: "block" }}
           boxShadow="lg"
-          bg={useColorModeValue("brand.50", "brand.600")}
         >
+          <IconButton
+            position="sticky"
+            mt={1}
+            right={0}
+            top={0}
+            zIndex={10}
+            borderLeftRadius={0}
+            size="md"
+            fontSize="lg"
+            aria-label={`Toggle Sidebar`}
+            variant="solid"
+            colorScheme="brand"
+            onClick={onClose}
+            icon={<SidebarIcon />}
+          />
           <SidebarContent />
         </Box>
+      ) : (
+        <IconButton
+          pos="fixed"
+          top={20}
+          zIndex={10}
+          left={0}
+          borderLeftRadius={0}
+          size="md"
+          fontSize="lg"
+          aria-label={`Toggle Sidebar`}
+          variant="solid"
+          colorScheme="brand"
+          onClick={onOpen}
+          icon={<SidebarIcon />}
+        />
       )}
     </React.Fragment>
   );

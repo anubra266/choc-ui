@@ -1,9 +1,11 @@
+// a
+
 import React from "react";
 import SiteLayout from "~/components/layouts/site";
 import Sidebar from "./sidebar";
 import PageTransition from "./page-transition";
 import Container from "./container";
-import { Box, Icon, Link, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Credits from "~/components/credits";
 const Docs = ({ children }) => {
   return (
