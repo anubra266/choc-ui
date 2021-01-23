@@ -18,12 +18,15 @@ const colors = {
     900: "#080819",
   },
 };
-
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: false,
+};
 function MyApp({ Component, pageProps }) {
-  const theme = extendTheme({ colors });
+  const theme = extendTheme({ colors, config });
 
   return (
-    <ChakraProvider theme={theme}> 
+    <ChakraProvider theme={theme}>
       <NextNprogress
         color="#29D"
         startPosition={0.3}

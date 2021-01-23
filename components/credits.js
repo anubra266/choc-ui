@@ -2,7 +2,7 @@ import { Text, Icon, Link } from "@chakra-ui/react";
 
 export default function Credits() {
   return (
-    <Text maxW="560px" mx="auto" opacity={0.7} fontSize="xs" mt="6">
+    <Text maxW="560px" mx="auto" opacity={0.7} textAlign="center" fontSize="xs" mt="16">
       Proudly developed in{" "}
       <Icon viewBox="0 0 48 48" boxSize={4}>
         <g>

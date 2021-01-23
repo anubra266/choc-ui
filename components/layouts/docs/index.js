@@ -17,12 +17,11 @@ const Docs = ({ children }) => {
           <div style={{ flex: 1 }}>
             <Box id="content" pt={3} px={5} mt="4.5rem" mx="auto" minH="76vh">
               <PageTransition>{children}</PageTransition>
-
               <Credits />
             </Box>
           </div>
         </Box>
-      </Container>
+        </Container>
     </SiteLayout>
   );
 };
