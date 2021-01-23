@@ -1,3 +1,5 @@
+//a
+
 import React, { useState } from "react";
 import {
   Tab,
@@ -13,6 +15,8 @@ import {
   SliderFilledTrack,
   SliderThumb,
   useColorModeValue,
+  chakra,
+  Fade,
 } from "@chakra-ui/react";
 import { CodeBlock } from "~/components/docs/codeblock";
 import { ImDisplay } from "react-icons/im";
@@ -43,6 +47,8 @@ const ComponentDemo = (props) => {
     </Link>
   );
   const [width, setWidth] = useState(100);
+  const [loading, setLoading] = useState(true);
+
   return (
     <Tabs variant="enclosed">
       <TabList>
@@ -75,7 +81,26 @@ const ComponentDemo = (props) => {
                 `/preview/${props.path}2`
               )}
               loading="lazy"
+              onLoad={() => setLoading(false)}
             />
+            <Fade in={loading}>
+              <Box
+                bg="black"
+                opacity={0.7}
+                pos="absolute"
+                top={0}
+                left={0}
+                bottom={0}
+                right={0}
+                fontWeight="bold"
+                fontSize="2xl"
+                alignItems="center"
+                justifyContent="center"
+                display={loading ? "flex" : "flex"}
+              >
+                <chakra.span>Loading... </chakra.span>
+              </Box>
+            </Fade>
             {previewButton}
           </Box>
         </TabPanel>
