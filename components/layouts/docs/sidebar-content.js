@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Stack, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Box, Stack, useColorModeValue } from "@chakra-ui/react";
 
 import routes from "~/routes.json";
 import jVar from "json-variables";
@@ -12,13 +12,13 @@ const routesParsed = jVar(routes, {
   tails: "}",
 });
 const RouteLink = ({ children, section, href }) => {
-  return section ? children : <Link href={href}>{children}</Link>; 
+  return section ? children : <Link href={href}>{children}</Link>;
 };
 const MenuLink = ({ children, active, section, href }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
-    bg: useColorModeValue("brand.400", "gray.900"),
-    color: "brand.50",
+    bg: useColorModeValue("brand.100", "gray.700"),
+    color: useColorModeValue("brand.600", "brand.100"),
     boxShadow: "lg",
     borderRight: "3px solid",
   };
@@ -32,12 +32,14 @@ const MenuLink = ({ children, active, section, href }) => {
     _hover: activeStyle,
     cursor: "pointer",
     textTransform: "capitalize",
-    fontSize:"xs"
+    fontSize: "sm",
+    fontWeight: "bold",
+    border:"solid transparent"
   };
   return (
     <RouteLink href={href} section={section}>
       <Box
-        p={3}
+        p={2}
         pl={8}
         {...(section ? sectionStyle : baseStyle)}
         {...(active && activeStyle)}
@@ -53,7 +55,7 @@ const SidebarContent = () => {
   return (
     <Stack spacing={0}>
       {routesParsed.sections.map((section, sid) => (
-        <React.Fragment key={sid}>
+        <chakra.div pt={sid !== 0 && 5} key={sid}>
           <MenuLink section>{section.title}</MenuLink>
           {section.routes.map((link, lid) => (
             <MenuLink
@@ -64,7 +66,7 @@ const SidebarContent = () => {
               {link.title}
             </MenuLink>
           ))}
-        </React.Fragment>
+        </chakra.div>
       ))}
     </Stack>
   );
