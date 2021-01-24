@@ -38,23 +38,20 @@ const ComponentDemo = (props) => {
   const preCode = require(`!!raw-loader!~/pages/preview/${props.path}`).default;
   const postCode = cleanCode(preCode, props.path);
   const codeEditor = useDisclosure();
-  const [editorKey, setEditorKey] = useState("editor");
-  const [previewKey, setPreviewKey] = useState("preview");
-  const resetDemo = () => {
-    setEditorKey(Math.random());
-    setPreviewKey(Math.random());
-  };
+  const [demoKey, setDemoKey] = useState("demo");
+  const resetDemo = () => setDemoKey(Math.random());
+
   const editorProps = { codeEditor, code: postCode, resetDemo };
   return (
     <React.Fragment>
-      <LiveProvider scope={demoScope} code={postCode}>
+      <LiveProvider key={demoKey} scope={demoScope} code={postCode}>
         <Box
           pos="relative"
           minH={props.height || "500px"}
           py={3}
           overflow="auto"
         >
-          <LivePreview key={previewKey} />
+          <LivePreview />
         </Box>
         <CodeActions {...props} {...editorProps} />
         <Collapse in={codeEditor.isOpen} animateOpacity>
@@ -70,7 +67,7 @@ const ComponentDemo = (props) => {
             fontSize="sm"
             resize="vertical"
           >
-            <LiveEditor key={editorKey} />
+            <LiveEditor />
           </Box>
         </Collapse>
         <Box
