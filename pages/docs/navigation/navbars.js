@@ -21,7 +21,7 @@ const Navbars = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="navbars/gslr" file="index" multiple={[]} />
+            <ComponentDemo path="navbars/gslr" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -38,7 +38,7 @@ const Navbars = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="navbars/dsll" file="index" multiple={[]} />
+            <ComponentDemo path="navbars/dsll" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -55,7 +55,7 @@ const Navbars = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="navbars/dsnl" file="index" multiple={[]} />
+            <ComponentDemo path="navbars/dsnl" />
           </Section.p>
         </Section.Content>
       </Section>

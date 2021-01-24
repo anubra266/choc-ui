@@ -21,7 +21,7 @@ const Fresh = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/chuihe" file="index" multiple={[]} />
+            <ComponentDemo path="headers/chuihe" />
           </Section.p>
         </Section.Content>
       </Section>

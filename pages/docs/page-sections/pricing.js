@@ -21,7 +21,7 @@ const Pricing = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="pricing/twet" file="index" multiple={[]}  height="700px" />
+            <ComponentDemo path="pricing/twet" height="700px" />
           </Section.p>
         </Section.Content>
       </Section>

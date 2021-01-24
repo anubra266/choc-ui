@@ -21,12 +21,7 @@ const Badges = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="badges/bwi"
-              file="index"
-              multiple={[]}
-              height="100px"
-            />
+            <ComponentDemo path="badges/bwi" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>

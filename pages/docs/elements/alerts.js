@@ -21,12 +21,7 @@ const Alerts = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="alerts/success"
-              file="index"
-              height="100px"
-              multiple={[]}
-            />
+            <ComponentDemo path="alerts/success" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -43,12 +38,7 @@ const Alerts = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="alerts/info"
-              file="index"
-              height="100px"
-              multiple={[]}
-            />
+            <ComponentDemo path="alerts/info" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -65,12 +55,7 @@ const Alerts = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="alerts/warning"
-              file="index"
-              height="100px"
-              multiple={[]}
-            />
+            <ComponentDemo path="alerts/warning" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -87,12 +72,7 @@ const Alerts = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="alerts/error"
-              file="index"
-              height="100px"
-              multiple={[]}
-            />
+            <ComponentDemo path="alerts/error" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -109,12 +89,7 @@ const Alerts = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="alerts/notification"
-              file="index"
-              multiple={[]}
-              height="100px"
-            />
+            <ComponentDemo path="alerts/notification" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>

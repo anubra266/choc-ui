@@ -1,40 +1,14 @@
 import React, { useState } from "react";
-import {
-  Tab,
-  Tabs,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Box,
-  Button,
-  Link,
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
-  useColorModeValue,
-  chakra,
-  Fade,
-  Flex,
-  Collapse,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Box, Collapse, useDisclosure } from "@chakra-ui/react";
 
 import CodeActions from "./actions";
-import {
-  LiveProvider,
-  LiveEditor,
-  LiveError,
-  LivePreview,
-  withLive,
-} from "react-live";
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
 import { demoScope } from "./demo-scope";
 
 import { cleanCode } from "./clean-code";
 
 const ComponentDemo = (props) => {
-  // TODO remove file="index" && multiple={[]}
   const preCode = require(`!!raw-loader!~/pages/preview/${props.path}`).default;
   const postCode = cleanCode(preCode, props.path);
   const codeEditor = useDisclosure();

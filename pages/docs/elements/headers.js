@@ -21,11 +21,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="headers/chuihe"
-              file="index"
-              multiple={["headers/mobile-nav", "headers/sponsor-button"]}
-            />
+            <ComponentDemo path="headers/chuihe" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -41,11 +37,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="headers/cwbb"
-              file="index"
-              multiple={["headers/mobile-nav", "headers/slce/features"]}
-            />
+            <ComponentDemo path="headers/cwbb" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -61,11 +53,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="headers/slce"
-              file="index"
-              multiple={["headers/mobile-nav", "headers/slce/features"]}
-            />
+            <ComponentDemo path="headers/slce" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -81,11 +69,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="headers/slol"
-              file="index"
-              multiple={["headers/mobile-nav", "headers/slce/features"]}
-            />
+            <ComponentDemo path="headers/slol" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -101,11 +85,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="headers/wfwf"
-              file="index"
-              multiple={["headers/mobile-nav", "headers/slce/features"]}
-            />
+            <ComponentDemo path="headers/wfwf" />
           </Section.p>
         </Section.Content>
       </Section>

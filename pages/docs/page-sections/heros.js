@@ -21,7 +21,7 @@ const Heros = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="heros/kh1" file="index" multiple={[]} />
+            <ComponentDemo path="heros/kh1" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -38,7 +38,7 @@ const Heros = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="heros/kh2" file="index" multiple={[]} />
+            <ComponentDemo path="heros/kh2" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -55,7 +55,7 @@ const Heros = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="heros/kh3" file="index" multiple={[]} />
+            <ComponentDemo path="heros/kh3" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -72,7 +72,7 @@ const Heros = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="heros/kh4" file="index" multiple={[]} />
+            <ComponentDemo path="heros/kh4" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -89,7 +89,7 @@ const Heros = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="heros/kh5" file="index" multiple={[]} />
+            <ComponentDemo path="heros/kh5" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -106,7 +106,7 @@ const Heros = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="heros/twai" file="index" multiple={[]} />
+            <ComponentDemo path="heros/twai" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -118,12 +118,12 @@ const Heros = () => {
             rel="noopener"
             href="https://kutty.netlify.app/components/heroes/"
           >
-           Simple Centered 2
+            Simple Centered 2
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="heros/tsc" file="index" multiple={[]} />
+            <ComponentDemo path="heros/tsc" />
           </Section.p>
         </Section.Content>
       </Section>
