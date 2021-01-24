@@ -72,7 +72,7 @@ const CTA = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cta/swi" file="index" multiple={[]} />
+            <ComponentDemo path="cta/swi" file="index" multiple={[]} height="600px"  />
           </Section.p>
         </Section.Content>
       </Section>
@@ -89,7 +89,7 @@ const CTA = () => {
       </Section.Header>
       <Section.Content>
         <Section.p>
-          <ComponentDemo path="cta/was" file="index" multiple={[]} />
+          <ComponentDemo path="cta/was" file="index" multiple={[]} height="600px" />
         </Section.p>
       </Section.Content>
     </Section>

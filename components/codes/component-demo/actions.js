@@ -1,5 +1,6 @@
 import { Flex, useColorModeValue, IconButton, Tooltip } from "@chakra-ui/react";
 import { MdRefresh } from "react-icons/md";
+import { BiLinkExternal } from "react-icons/bi";
 import { AiOutlineCodeSandbox, AiOutlineCodepen } from "react-icons/ai";
 import { IoIosCopy, IoMdCode } from "react-icons/io";
 
@@ -26,10 +27,11 @@ export default function CodeActions(props) {
       bg={useColorModeValue("gray.200", "gray.700")}
       borderBottomRadius="lg"
       px={5}
-      py={1 }
+      py={1}
     >
       <ActionButton icon={<IoMdCode />} label="Toggle Component Code" />
       <ActionButton icon={<IoIosCopy />} label="Copy Component Code" />
+      <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />
       <ActionButton
         icon={<AiOutlineCodeSandbox />}
         label="Open Code in Codesandbox"

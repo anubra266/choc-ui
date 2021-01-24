@@ -11,16 +11,12 @@ import {
 export default function Sj() {
   return (
     <Flex
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
-      bg="gray.600"
-      p={20}
-      width="100%"
-      justifyContent="center"
-      alignItems="center"
-    >
+    bg="gray.600"
+    p={50}
+    w="full"
+    alignItems="center"
+    justifyContent="center"
+  >
       <Box
         bgGradient="linear(to-r, white, purple.300)"
         bg={useColorModeValue(null, "gray.800")}

@@ -4,15 +4,11 @@ import { chakra, Box, Flex, useColorModeValue, Stack } from "@chakra-ui/react";
 export default function Sj() {
   return (
     <Flex
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
       bg="gray.600"
-      p={20}
-      width="100%"
-      justifyContent="center"
+      p={50}
+      w="full"
       alignItems="center"
+      justifyContent="center"
     >
       <Box bg={useColorModeValue("gray.50", "gray.800")}>
         <Box

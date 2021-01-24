@@ -7,6 +7,8 @@ const aiIcons = require("react-icons/ai");
 const mdIcons = require("react-icons/md");
 const faIcons = require("react-icons/fa");
 const hiIcons = require("react-icons/hi");
+const biIcons = require("react-icons/bi");
+const fiIcons = require("react-icons/fi");
 const mobileComps = require("~/components/codes/headers/mobile-nav");
 import SponsorButton from "~/components/codes/headers/sponsor-button";
 import Features from "@/headers/slce/features";
@@ -21,6 +23,8 @@ export const demoScope = {
   ...mdIcons,
   ...faIcons,
   ...hiIcons,
+  ...biIcons,
+  ...fiIcons,
   ...mobileComps,
   SponsorButton,
   Features,
