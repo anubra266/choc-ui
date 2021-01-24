@@ -15,7 +15,7 @@ const Provider = () => {
         </Section.p>
         <Section.p>
           Go to the root of your application and do this:
-          <CodeBlock language="jsx">{provider}</CodeBlock>
+          <CodeBlock lang="jsx">{provider}</CodeBlock>
         </Section.p>
         <Section.p>
           <Alert

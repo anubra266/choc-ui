@@ -13,6 +13,8 @@ import { AiOutlineCodeSandbox, AiOutlineCodepen } from "react-icons/ai";
 import { IoIosCopy, IoMdCode } from "react-icons/io";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 
+import { editOnlineCdp, editOnlineCds } from "./edit-online";
+
 const ActionButton = (props) => {
   return (
     <Tooltip hasArrow placement="top" label={props.label}>
@@ -58,10 +60,15 @@ export default function CodeActions(props) {
         <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />{" "}
       </Link>
       <ActionButton
+        onClick={() => editOnlineCds(code, props.path)}
         icon={<AiOutlineCodeSandbox />}
         label="Open Code in Codesandbox"
       />
-      <ActionButton icon={<AiOutlineCodepen />} label="Open code in codepen" />{" "}
+      <ActionButton
+        onClick={() => editOnlineCdp(code, props.path)}
+        icon={<AiOutlineCodepen />}
+        label="Open code in codepen"
+      />{" "}
       <ActionButton
         icon={<MdRefresh />}
         onClick={props.resetDemo}
