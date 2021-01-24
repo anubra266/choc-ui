@@ -2,7 +2,6 @@ import React from "react";
 import {
   chakra,
   Box,
-  Container,
   Image,
   Flex,
   Icon,
@@ -14,15 +13,12 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 
 const Ma = () => {
   return (
-    <Container
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
       bg="gray.600"
       p={50}
-      width="3xl"
-      centerContent
+      w="full"
+      alignItems="center"
+      justifyContent="center"
     >
       <Box
         w="sm"
@@ -105,7 +101,7 @@ const Ma = () => {
           </Flex>
         </Box>
       </Box>
-    </Container>
+    </Flex>
   );
 };
 

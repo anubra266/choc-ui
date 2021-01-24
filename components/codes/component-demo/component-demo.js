@@ -20,22 +20,20 @@ import {
 } from "@chakra-ui/react";
 import { CodeBlock } from "~/components/docs/codeblock";
 
-import * as ioIcons from "react-icons/io";
-
 import CodeActions from "./actions";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import { demoScope } from "./demo-scope";
 
-import * as ChakraComps from "@chakra-ui/react";
+
 import { cleanCode } from "./clean-code";
-const bsIcons = require("react-icons/bs");
 const ComponentDemo = (props) => {
   const preCode = require(`!!raw-loader!~/pages/preview/${props.path}/${props.file}`)
     .default;
-  const postCode = cleanCode(preCode);
 
-  const scope = { ...ChakraComps, ...ioIcons, ...bsIcons };
+  const postCode = cleanCode(preCode);
+ 
   return (
-    <LiveProvider scope={scope} code={postCode}>
+    <LiveProvider scope={demoScope} code={postCode}>
       <Box pos="relative" h="auto" py={3}>
         <LivePreview />
       </Box>

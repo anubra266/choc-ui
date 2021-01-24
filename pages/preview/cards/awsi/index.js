@@ -1,24 +1,15 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { chakra, Box, Flex, useColorModeValue } from "@chakra-ui/react";
 
-import {AiOutlineTwitter,AiOutlineLink} from "react-icons/ai"
+import { AiOutlineTwitter, AiOutlineLink } from "react-icons/ai";
 const Ma = () => {
   return (
-    <Container
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
       bg="gray.600"
       p={50}
-      width="3xl"
-      centerContent
+      w="full"
+      alignItems="center"
+      justifyContent="center"
     >
       <Box
         w="100%"
@@ -103,7 +94,7 @@ const Ma = () => {
               _hover={{ color: useColorModeValue("gray.700", "gray.300") }}
               cursor="pointer"
             >
-             <AiOutlineTwitter />
+              <AiOutlineTwitter />
             </chakra.a>
 
             <chakra.a
@@ -117,7 +108,7 @@ const Ma = () => {
           </Flex>
         </Box>
       </Box>
-    </Container>
+    </Flex>
   );
 };
 

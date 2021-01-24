@@ -13,9 +13,9 @@ import { IoMdAlert } from "react-icons/io";
 const Ma = () => {
   return (
     <Flex
-      w="full"
       bg="gray.600"
       p={50}
+      w="full"
       alignItems="center"
       justifyContent="center"
     >
