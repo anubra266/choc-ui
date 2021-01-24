@@ -23,7 +23,6 @@
     "react-icons": "^4.1.0",
     "react-live": "^2.2.3",
     "react-remove-scroll": "^2.4.1",
-    "react-syntax-highlighter": "^15.4.3",
     "transform-imports": "^2.1.1"
   }
 }

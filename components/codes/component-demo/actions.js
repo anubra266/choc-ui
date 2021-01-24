@@ -62,7 +62,11 @@ export default function CodeActions(props) {
         label="Open Code in Codesandbox"
       />
       <ActionButton icon={<AiOutlineCodepen />} label="Open code in codepen" />{" "}
-      <ActionButton icon={<MdRefresh />} label="Reset Demo Code" />
+      <ActionButton
+        icon={<MdRefresh />}
+        onClick={props.resetDemo}
+        label="Reset Demo Code"
+      />
     </Flex>
   );
 }
