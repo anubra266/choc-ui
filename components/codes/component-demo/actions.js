@@ -1,4 +1,10 @@
-import { Flex, useColorModeValue, IconButton, Tooltip } from "@chakra-ui/react";
+import {
+  Flex,
+  useColorModeValue,
+  IconButton,
+  Tooltip,
+  Link,
+} from "@chakra-ui/react";
 import { MdRefresh } from "react-icons/md";
 import { BiLinkExternal } from "react-icons/bi";
 import { AiOutlineCodeSandbox, AiOutlineCodepen } from "react-icons/ai";
@@ -29,9 +35,17 @@ export default function CodeActions(props) {
       px={5}
       py={1}
     >
-      <ActionButton icon={<IoMdCode />} label="Toggle Component Code" />
+      <ActionButton
+        icon={<IoMdCode />}
+        label={`${
+          props.codeEditor.isOpen ? "Hide" : "Show"
+        } Editable Component Code`}
+        onClick={() => props.codeEditor.onToggle()}
+      />
       <ActionButton icon={<IoIosCopy />} label="Copy Component Code" />
-      <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />
+      <Link isExternal href={`/preview/${props.path}`}>
+        <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />{" "}
+      </Link>
       <ActionButton
         icon={<AiOutlineCodeSandbox />}
         label="Open Code in Codesandbox"

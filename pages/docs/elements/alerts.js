@@ -112,8 +112,8 @@ const Alerts = () => {
             <ComponentDemo
               path="alerts/notification"
               file="index"
-              height="100px"
               multiple={[]}
+              height="100px"
             />
           </Section.p>
         </Section.Content>

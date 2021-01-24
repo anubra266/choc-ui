@@ -16,27 +16,50 @@ import {
   chakra,
   Fade,
   Flex,
-  IconButton,
+  Collapse,
+  useDisclosure,
 } from "@chakra-ui/react";
-import { CodeBlock } from "~/components/docs/codeblock";
 
 import CodeActions from "./actions";
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import {
+  LiveProvider,
+  LiveEditor,
+  LiveError,
+  LivePreview,
+  withLive,
+} from "react-live";
+
 import { demoScope } from "./demo-scope";
 
 import { cleanCode } from "./clean-code";
 const ComponentDemo = (props) => {
-  const preCode = require(`!!raw-loader!~/pages/preview/${props.path}/${props.file}`)
-    .default;
-
+  const preCode = require(`!!raw-loader!~/pages/preview/${props.path}`).default;
   const postCode = cleanCode(preCode);
-
+  // TODO remove file="index" && multiple={[]}
+  const codeEditor = useDisclosure();
+  const editorProps = { codeEditor };
   return (
     <LiveProvider scope={demoScope} code={postCode}>
       <Box pos="relative" minH={props.height || "500px"} py={3} overflow="auto">
         <LivePreview />
       </Box>
-      <CodeActions />
+      <CodeActions {...props} {...editorProps} />
+      <Collapse in={codeEditor.isOpen} animateOpacity>
+        <Box
+          pos="relative"
+          shadow="lg"
+          bg="brand.900"
+          rounded="lg"
+          p={2}
+          mt={6}
+          h={300}
+          overflow="auto"
+          fontSize="sm"
+          resize="vertical"
+        >
+          <LiveEditor />
+        </Box>
+      </Collapse>
       <Box
         _empty={{ display: "none" }}
         bg="red.600"
