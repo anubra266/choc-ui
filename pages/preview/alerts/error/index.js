@@ -49,7 +49,7 @@ const Ma = () => {
           </Box>
         </Box>
       </Flex>
-    </Container>
+    </Flex>
   );
 };
 
