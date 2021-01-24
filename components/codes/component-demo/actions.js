@@ -26,7 +26,7 @@ export default function CodeActions(props) {
       bg={useColorModeValue("gray.200", "gray.700")}
       borderBottomRadius="lg"
       px={5}
-      py={3}
+      py={1 }
     >
       <ActionButton icon={<IoMdCode />} label="Toggle Component Code" />
       <ActionButton icon={<IoIosCopy />} label="Copy Component Code" />

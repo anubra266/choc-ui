@@ -20,33 +20,30 @@ import {
 } from "@chakra-ui/react";
 import { CodeBlock } from "~/components/docs/codeblock";
 
-import { ImDisplay } from "react-icons/im";
+import * as ioIcons from "react-icons/io";
 
-import CodeActions from "./actions"
+import CodeActions from "./actions";
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 
+import * as ChakraComps from "@chakra-ui/react";
+import { cleanCode } from "./clean-code";
+const bsIcons = require("react-icons/bs");
 const ComponentDemo = (props) => {
+  const preCode = require(`!!raw-loader!~/pages/preview/${props.path}/${props.file}`)
+    .default;
+  const postCode = cleanCode(preCode);
+
+  const scope = { ...ChakraComps, ...ioIcons, ...bsIcons };
   return (
-    <Box>
-      <Tabs variant="enclosed">
-        <TabList>
-          <Tab>Preview</Tab>
-          <Tab>Code</Tab>
-        </TabList>
-        <TabPanels>
-          <TabPanel>
-            <Box pos="relative" h={props.height || "400px"}>
-              The Demo Here
-            </Box>
-          </TabPanel>
-          <TabPanel height="500px" overflowY="auto">
-            <Box pos="relative" bg="brand.900" p={2}>
-              Code Here
-            </Box>
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
+    <LiveProvider scope={scope} code={postCode}>
+      <Box pos="relative" h="auto" py={3}>
+        <LivePreview />
+      </Box>
       <CodeActions />
-    </Box>
+      <Box _empty={{display:"none"}} bg="red.600" borderBottomRadius="lg" py={2} px={5} fontSize="xs">
+        <LiveError />
+      </Box>
+    </LiveProvider>
   );
 };
 
