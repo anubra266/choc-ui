@@ -16,6 +16,7 @@ const ComponentDemo = (props) => {
   const resetDemo = () => setDemoKey(Math.random());
 
   const editorProps = { codeEditor, code: postCode, resetDemo };
+  // TODO add demo display slider
   return (
     <React.Fragment>
       <LiveProvider key={demoKey} scope={demoScope} code={postCode}>

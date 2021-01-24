@@ -10,9 +10,6 @@ const faIcons = require("react-icons/fa");
 const hiIcons = require("react-icons/hi");
 const biIcons = require("react-icons/bi");
 const fiIcons = require("react-icons/fi");
-const mobileComps = require("~/components/codes/headers/mobile-nav");
-import SponsorButton from "~/components/codes/headers/sponsor-button";
-import Features from "@/headers/slce/features";
 
 export const demoScope = {
   ...ChakraComps,
@@ -27,7 +24,4 @@ export const demoScope = {
   ...hiIcons,
   ...biIcons,
   ...fiIcons,
-  ...mobileComps,
-  SponsorButton,
-  Features,
 };
