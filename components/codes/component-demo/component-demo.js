@@ -40,7 +40,14 @@ const ComponentDemo = (props) => {
         <LivePreview />
       </Box>
       <CodeActions />
-      <Box _empty={{display:"none"}} bg="red.600" borderBottomRadius="lg" py={2} px={5} fontSize="xs">
+      <Box
+        _empty={{ display: "none" }}
+        bg="red.600"
+        borderBottomRadius="lg"
+        py={2}
+        px={5}
+        fontSize="xs"
+      >
         <LiveError />
       </Box>
     </LiveProvider>

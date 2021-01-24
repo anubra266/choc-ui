@@ -12,8 +12,13 @@ import { BsLightningFill } from "react-icons/bs";
 
 const Ma = () => {
   return (
-    <Container w="full" bg="gray.600" p={50} width="3xl" centerContent>
-
+    <Flex
+      w="full"
+      bg="gray.600"
+      p={50}
+      alignItems="center"
+      justifyContent="center"
+    >
       <Flex
         maxW="sm"
         width="100%"
