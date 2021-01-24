@@ -3,6 +3,7 @@ const ChakraIcons = require("@chakra-ui/icons");
 const fMotion = require("framer-motion");
 const bsIcons = require("react-icons/bs");
 const ioIcons = require("react-icons/io");
+const io5Icons = require("react-icons/io5");
 const aiIcons = require("react-icons/ai");
 const mdIcons = require("react-icons/md");
 const faIcons = require("react-icons/fa");
@@ -18,6 +19,7 @@ export const demoScope = {
   ...ChakraIcons,
   ...fMotion,
   ...ioIcons,
+  ...io5Icons,
   ...bsIcons,
   ...aiIcons,
   ...mdIcons,
