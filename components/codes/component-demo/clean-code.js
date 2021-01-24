@@ -1,8 +1,9 @@
 import transformImports from "transform-imports";
 
-const transformConstants = (code) => {
+const transformConstants = (code, path) => {
+  const componentSection = path.split("/")[0];
   const format = /const\s\w+\s=\s\(\)\s=>\s/;
-  return code.replace(format, "function App()");
+  return code.replace(format, `function Demo${componentSection}()`);
 };
 const removeExports = (code) => {
   const formats = [/\s?export\sdefault\s\w+;/g, /\s?export\sdefault\s/g];
@@ -17,6 +18,7 @@ const removeImports = (code) => {
     });
   });
 };
-export const cleanCode = (code) => {
-  return transformConstants(removeExports(removeImports(code)));
+
+export const cleanCode = (code, path) => {
+  return transformConstants(removeExports(removeImports(code)), path);
 };
