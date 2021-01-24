@@ -2,7 +2,7 @@ import React from "react";
 import { PageHeader, Section } from "~/components/docs";
 import PageHead from "~/components/head";
 import DocsLayout from "~/components/layouts/docs/index";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 
 const Headers = () => {
   return (
