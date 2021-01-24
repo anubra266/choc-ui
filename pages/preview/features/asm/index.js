@@ -14,9 +14,10 @@ export default function Asm() {
     <Flex
       bg="gray.600"
       p={20}
-      width="auto"
+      width="full"
       justifyContent="center"
       alignItems="center"
+      pos="absolute"
     >
       <Box
         boxShadow="xl"

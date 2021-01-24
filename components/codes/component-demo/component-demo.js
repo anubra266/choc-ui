@@ -30,10 +30,10 @@ const ComponentDemo = (props) => {
     .default;
 
   const postCode = cleanCode(preCode);
-  // TODO Remove multiple={[]}
+
   return (
     <LiveProvider scope={demoScope} code={postCode}>
-      <Box pos="relative" h={props.height || "400px"} py={3}>
+      <Box pos="relative" minH={props.height || "500px"} py={3} overflow="auto">
         <LivePreview />
       </Box>
       <CodeActions />

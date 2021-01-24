@@ -49,9 +49,9 @@ const ChakraUIHeader = () => {
         shadow={y > height ? "sm" : undefined}
         transition="box-shadow 0.2s"
         top="0"
-        position="absolute"
         zIndex="1"
         bg={bg}
+        position="absolute"
         left="0"
         right="0"
         borderTop="6px solid"

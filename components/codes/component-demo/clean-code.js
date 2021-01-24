@@ -1,7 +1,7 @@
 import transformImports from "transform-imports";
 
 const transformConstants = (code) => {
-  const format = /const\s\w+\s=\s\((\w+)?\)\s=>\s/;
+  const format = /const\s\w+\s=\s\(\)\s=>\s/;
   return code.replace(format, "function App()");
 };
 const removeExports = (code) => {
