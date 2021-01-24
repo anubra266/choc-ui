@@ -1,27 +1,52 @@
 const ChakraComps = require("@chakra-ui/react");
 const ChakraIcons = require("@chakra-ui/icons");
 const fMotion = require("framer-motion");
-const bsIcons = require("react-icons/bs");
-const ioIcons = require("react-icons/io");
-const io5Icons = require("react-icons/io5");
-const aiIcons = require("react-icons/ai");
-const mdIcons = require("react-icons/md");
-const faIcons = require("react-icons/fa");
-const hiIcons = require("react-icons/hi");
-const biIcons = require("react-icons/bi");
-const fiIcons = require("react-icons/fi");
+
+const ai = require("react-icons/ai");
+const bi = require("react-icons/bi");
+const bs = require("react-icons/bs");
+const cg = require("react-icons/cg");
+const di = require("react-icons/di");
+const fa = require("react-icons/fa");
+const fc = require("react-icons/fc");
+const fi = require("react-icons/fi");
+const gi = require("react-icons/gi");
+const go = require("react-icons/go");
+const gr = require("react-icons/gr");
+const hi = require("react-icons/hi");
+const im = require("react-icons/im");
+const io = require("react-icons/io");
+const io5 = require("react-icons/io5");
+const md = require("react-icons/md");
+const ri = require("react-icons/ri");
+const si = require("react-icons/si");
+const ti = require("react-icons/ti");
+const vsc = require("react-icons/vsc");
+const wi = require("react-icons/wi");
 
 export const demoScope = {
   ...ChakraComps,
   ...ChakraIcons,
   ...fMotion,
-  ...ioIcons,
-  ...io5Icons,
-  ...bsIcons,
-  ...aiIcons,
-  ...mdIcons,
-  ...faIcons,
-  ...hiIcons,
-  ...biIcons,
-  ...fiIcons,
+  ...ai,
+  ...bi,
+  ...bs,
+  ...cg,
+  ...di,
+  ...fa,
+  ...fc,
+  ...fi,
+  ...gi,
+  ...go,
+  ...gr,
+  ...hi,
+  ...im,
+  ...io,
+  ...io5,
+  ...md,
+  ...ri,
+  ...si,
+  ...ti,
+  ...vsc,
+  ...wi,
 };
