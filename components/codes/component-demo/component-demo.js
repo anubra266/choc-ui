@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Box, Collapse, useDisclosure } from "@chakra-ui/react";
+import {
+  Box,
+  Collapse,
+  useDisclosure,
+  Slider,
+  SliderTrack,
+  SliderFilledTrack,
+  SliderThumb,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 import CodeActions from "./actions";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
@@ -16,10 +25,10 @@ const ComponentDemo = (props) => {
   const resetDemo = () => setDemoKey(Math.random());
 
   const editorProps = { codeEditor, code: preCode, resetDemo };
-  // TODO add demo display slider
   return (
     <React.Fragment>
       <LiveProvider key={demoKey} scope={demoScope} code={postCode}>
+        
         <Box
           pos="relative"
           minH={props.height || "500px"}

@@ -32,7 +32,11 @@
         },
         {
           "title": "headers",
-          "route": "{prefix}headers"
+          "route": "{prefix}headers",
+          "alert": {
+            "variant": "red",
+            "message": "Need Help!"
+          }
         },
         {
           "title": "pagination",
@@ -58,7 +62,11 @@
         },
         {
           "title": "pricing",
-          "route": "{prefix}pricing"
+          "route": "{prefix}pricing",
+          "alert": {
+            "variant": "blue",
+            "message": "In Progress"
+          }
         }
       ]
     },
