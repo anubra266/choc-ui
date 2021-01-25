@@ -18,16 +18,16 @@ const routesParsed = jVar(routes, {
   heads: "{",
   tails: "}",
 });
-const RouteLink = ({ children, section, href }) => {
-  return section ? children : <Link href={href}>{children}</Link>;
+const RouteLink = ({ children, section, href, active }) => {
+  return section || active ? children : <Link href={href}>{children}</Link>;
 };
 const MenuLink = ({ children, active, section, href, link }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
-    bg: useColorModeValue("brand.100", "gray.700"),
+    bg: useColorModeValue("brand.100", "brand.700"),
     color: useColorModeValue("brand.600", "brand.100"),
-    boxShadow: "lg",
-    borderRight: "3px solid",
+    shadow: "lg",
+    rounded: "lg",
   };
   const sectionStyle = {
     textTransform: "uppercase",
@@ -35,16 +35,21 @@ const MenuLink = ({ children, active, section, href, link }) => {
     fontSize: "xs",
   };
   const baseStyle = {
+    mx: 2,
     borderColor: borderColor,
-    _hover: activeStyle,
-    cursor: "pointer",
+    _hover: {
+      ...activeStyle,
+      bg: !active && useColorModeValue("gray.100", "gray.700"),
+    },
+    cursor: !active && "pointer",
     textTransform: "capitalize",
     fontSize: "sm",
     fontWeight: "bold",
     border: "solid transparent",
+    my: 1,
   };
   return (
-    <RouteLink href={href} section={section}>
+    <RouteLink active={active} href={href} section={section}>
       <Flex
         p={2}
         pl={8}
@@ -54,7 +59,7 @@ const MenuLink = ({ children, active, section, href, link }) => {
         {children} <Spacer />
         {!section && link.alert && (
           <Badge rounded="lg" px={2} colorScheme={link.alert.variant}>
-            {link.alert.message}
+            <span>{link.alert.message} </span>
           </Badge>
         )}
       </Flex>

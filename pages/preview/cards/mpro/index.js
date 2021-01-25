@@ -16,7 +16,6 @@ const Ma = () => {
         bg={useColorModeValue("white", "gray.800")}
         boxShadow="lg"
         borderRadius="lg"
-        class="max-w-xs mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
       >
         <Box px={4} py={2}>
           <chakra.h1

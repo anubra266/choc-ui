@@ -53,7 +53,7 @@
           "route": "{prefix}cta"
         },
         {
-          "title": "features sections",
+          "title": "features",
           "route": "{prefix}features"
         },
         {

@@ -21,7 +21,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/chuihe" />
+            <ComponentDemo path="headers/chuihe" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -37,7 +37,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/cwbb" />
+            <ComponentDemo path="headers/cwbb" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -53,7 +53,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/slce" />
+            <ComponentDemo path="headers/slce" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -69,7 +69,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/slol" />
+            <ComponentDemo path="headers/slol" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -85,7 +85,7 @@ const Headers = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/wfwf" />
+            <ComponentDemo path="headers/wfwf" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
