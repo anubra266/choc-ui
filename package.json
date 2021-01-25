@@ -13,6 +13,7 @@
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "@loadable/component": "^5.14.1",
+    "codesandbox": "^2.2.1",
     "framer-motion": "^3.2.1",
     "json-variables": "^9.0.3",
     "next": "10.0.5",
@@ -21,7 +22,9 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-icons": "^4.1.0",
+    "react-live": "^2.2.3",
     "react-remove-scroll": "^2.4.1",
-    "react-syntax-highlighter": "^15.4.3"
-  }
+    "transform-imports": "^2.1.1"
+  },
+  "devDependencies": {}
 }

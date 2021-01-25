@@ -1,26 +1,16 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Icon,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { chakra, Box, Icon, Flex, useColorModeValue } from "@chakra-ui/react";
 
 import { IoMdCheckmarkCircle } from "react-icons/io";
 
 const Ma = () => {
   return (
-    <Container
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
+      w="full"
       bg="gray.600"
       p={50}
-      width="3xl"
-      centerContent
+      alignItems="center"
+      justifyContent="center"
     >
       <Flex
         maxW="sm"
@@ -52,7 +42,7 @@ const Ma = () => {
           </Box>
         </Box>
       </Flex>
-    </Container>
+    </Flex>
   );
 };
 

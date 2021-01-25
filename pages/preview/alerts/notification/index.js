@@ -1,25 +1,16 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Flex,
-  useColorModeValue,
-  Avatar,
-} from "@chakra-ui/react";
+import { chakra, Box, Flex, useColorModeValue, Avatar } from "@chakra-ui/react";
 
 const Ma = () => {
   return (
-    <Container
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
+      w="full"
       bg="gray.600"
       p={50}
-      width="3xl"
-      centerContent
+      alignItems="center"
+      justifyContent="center"
     >
+      {" "}
       <Flex
         maxW="sm"
         width="100%"
@@ -51,7 +42,7 @@ const Ma = () => {
           </Box>
         </Flex>
       </Flex>
-    </Container>
+    </Flex>
   );
 };
 

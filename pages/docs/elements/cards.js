@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const Cards = () => {
@@ -21,7 +21,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/ma" file="index" />
+            <ComponentDemo path="cards/ma" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -38,7 +38,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/awsi" file="index" />
+            <ComponentDemo path="cards/awsi" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -55,7 +55,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/awi" file="index" height="600px" />
+            <ComponentDemo path="cards/awi" height="600px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -72,7 +72,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/pwi" file="index" height="600px" />
+            <ComponentDemo path="cards/pwi" height="600px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -89,7 +89,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/mpro" file="index" />
+            <ComponentDemo path="cards/mpro" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -106,7 +106,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/pwe" file="index" />
+            <ComponentDemo path="cards/pwe" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -123,7 +123,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/cpwe" file="index" height="500px" />
+            <ComponentDemo path="cards/cpwe" height="500px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -140,7 +140,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/msp" file="index" />
+            <ComponentDemo path="cards/msp" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -157,7 +157,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/mtes" file="index" />
+            <ComponentDemo path="cards/mtes" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -174,7 +174,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/muser" file="index" />
+            <ComponentDemo path="cards/muser" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -191,7 +191,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/muwd" file="index" height="600px" />
+            <ComponentDemo path="cards/muwd" height="600px" />
           </Section.p>
         </Section.Content>
       </Section>

@@ -14,20 +14,20 @@ import {
   Image,
 } from "@chakra-ui/react";
 
-const backgroundOpacity = (bg, opacity) => ({
-  _after: {
-    bg: bg,
-    opacity: opacity,
-    pos: "absolute",
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
-    zIndex: -1,
-    content: '" "',
-  },
-});
 const KuttyHero = () => {
+  const backgroundOpacity = (bg, opacity) => ({
+    _after: {
+      bg: bg,
+      opacity: opacity,
+      pos: "absolute",
+      top: 0,
+      left: 0,
+      bottom: 0,
+      right: 0,
+      zIndex: -1,
+      content: '" "',
+    },
+  });
   return (
     <SimpleGrid
       columns={{ base: 1, md: 2 }}

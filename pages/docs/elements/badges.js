@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const Badges = () => {
@@ -14,14 +14,14 @@ const Badges = () => {
           <Section.a
             target="_blank"
             rel="noopener"
-            href="https://chakra-ui.com"
+            href="https://material-ui.com/components/badges/"
           >
             Icon with badge{" "}
           </Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="badges/bwi" file="index" multiple={[]}  height="100px" />
+            <ComponentDemo path="badges/bwi" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>

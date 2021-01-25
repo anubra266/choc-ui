@@ -1,26 +1,15 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Image,
-  Flex,
-  useColorModeValue,
-  HStack,
-} from "@chakra-ui/react";
+import { chakra, Box, Flex, useColorModeValue, HStack } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
 const Ma = () => {
   return (
-    <Container
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
       bg="gray.600"
       p={50}
-      width="3xl"
-      centerContent
+      w="full"
+      alignItems="center"
+      justifyContent="center"
     >
       <Flex
         maxW="md"
@@ -89,7 +78,7 @@ const Ma = () => {
           </Flex>
         </Box>
       </Flex>
-    </Container>
+    </Flex>
   );
 };
 

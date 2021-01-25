@@ -19,7 +19,7 @@ const CustomTheme = () => {
           merges the default theme with your customizations.
         </Section.p>
         <Section.p>
-          <CodeBlock language="jsx">{customTheme}</CodeBlock>
+          <CodeBlock lang="jsx">{customTheme}</CodeBlock>
         </Section.p>
       </Section.Content>
     </Section>

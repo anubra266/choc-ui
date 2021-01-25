@@ -1,23 +1,14 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Image,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
 
 const Ma = () => {
   return (
-    <Box
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
       bg="gray.600"
       p={50}
-      width="6xl"
+      w="full"
+      alignItems="center"
+      justifyContent="center"
     >
       <Box
         bg={useColorModeValue("white", "gray.800")}
@@ -73,7 +64,7 @@ const Ma = () => {
           </Box>
         </Box>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 

@@ -3,14 +3,12 @@ import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
 
 const Ma = () => {
   return (
-    <Box
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
       bg="gray.600"
       p={50}
-      width="3xl"
+      w="full"
+      alignItems="center"
+      justifyContent="center"
     >
       <Box
         mx="auto"
@@ -93,7 +91,7 @@ const Ma = () => {
           </Flex>
         </Flex>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 

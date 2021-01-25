@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const Pricing = () => {
@@ -21,7 +21,7 @@ const Pricing = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="pricing/twet" file="index" multiple={[]}  height="500px" />
+            <ComponentDemo path="pricing/twet" height="700px" />
           </Section.p>
         </Section.Content>
       </Section>

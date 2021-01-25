@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const Pagination = () => {
@@ -13,12 +13,7 @@ const Pagination = () => {
         <Section.Header>Basic Pagination</Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="pagination/bp"
-              file="index"
-              multiple={[]}
-              height="100px"
-            />
+            <ComponentDemo path="pagination/bp" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -26,12 +21,7 @@ const Pagination = () => {
         <Section.Header>Basic Pagination with Icon</Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="pagination/bpi"
-              file="index"
-              multiple={[]}
-              height="100px"
-            />
+            <ComponentDemo path="pagination/bpi" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -40,12 +30,7 @@ const Pagination = () => {
         <Section.Header>More Pages</Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="pagination/mp"
-              file="index"
-              multiple={[]}
-              height="100px"
-            />
+            <ComponentDemo path="pagination/mp" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -54,29 +39,19 @@ const Pagination = () => {
         <Section.Header>Size Changer</Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo
-              path="pagination/scp"
-              file="index"
-              multiple={[]}
-              height="400px"
-            />
+            <ComponentDemo path="pagination/scp" height="400px" />
           </Section.p>
         </Section.Content>
       </Section>
 
       <Section>
-      <Section.Header>Page Jumper</Section.Header>
-      <Section.Content>
-        <Section.p>
-          <ComponentDemo
-            path="pagination/pg"
-            file="index"
-            multiple={[]}
-            height="400px"
-          />
-        </Section.p>
-      </Section.Content>
-    </Section>
+        <Section.Header>Page Jumper</Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="pagination/pg" height="400px" />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };

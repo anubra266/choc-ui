@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const CTA = () => {
@@ -21,7 +21,7 @@ const CTA = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cta/sj" file="index" multiple={[]} />
+            <ComponentDemo path="cta/sj" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -38,7 +38,7 @@ const CTA = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cta/sst" file="index" multiple={[]} />
+            <ComponentDemo path="cta/sst" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -55,7 +55,7 @@ const CTA = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cta/sc" file="index" multiple={[]} />
+            <ComponentDemo path="cta/sc" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -72,27 +72,27 @@ const CTA = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cta/swi" file="index" multiple={[]} />
+            <ComponentDemo path="cta/swi" height="600px" />
           </Section.p>
         </Section.Content>
       </Section>
 
       <Section>
-      <Section.Header>
-        <Section.a
-          target="_blank"
-          rel="noopener"
-          href="https://tailwindui.com/components/marketing/sections/cta-sections#component-b731164a9948a780a5a346d9e637b053"
-        >
-         Brand Panel with App Screenshot
-        </Section.a>
-      </Section.Header>
-      <Section.Content>
-        <Section.p>
-          <ComponentDemo path="cta/was" file="index" multiple={[]} />
-        </Section.p>
-      </Section.Content>
-    </Section>
+        <Section.Header>
+          <Section.a
+            target="_blank"
+            rel="noopener"
+            href="https://tailwindui.com/components/marketing/sections/cta-sections#component-b731164a9948a780a5a346d9e637b053"
+          >
+            Brand Panel with App Screenshot
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo path="cta/was" height="600px" />
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };

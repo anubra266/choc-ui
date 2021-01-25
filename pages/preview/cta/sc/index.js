@@ -1,25 +1,14 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Stack,
-  Flex,
-  useColorModeValue,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { chakra, Box, Stack, Flex, useColorModeValue } from "@chakra-ui/react";
 
 export default function Sj() {
   return (
     <Flex
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
       bg="gray.600"
-      p={20}
-      width="100%"
-      justifyContent="center"
+      p={50}
+      w="full"
       alignItems="center"
+      justifyContent="center"
     >
       <Box bg={useColorModeValue("white", "gray.800")} w="100%">
         <Box

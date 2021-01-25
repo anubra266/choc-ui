@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const Navbars = () => {
@@ -21,7 +21,7 @@ const Navbars = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="navbars/gslr" file="index" multiple={[]} />
+            <ComponentDemo path="navbars/gslr" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -38,7 +38,7 @@ const Navbars = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="navbars/dsll" file="index" multiple={[]} />
+            <ComponentDemo path="navbars/dsll" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -55,7 +55,7 @@ const Navbars = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="navbars/dsnl" file="index" multiple={[]} />
+            <ComponentDemo path="navbars/dsnl" />
           </Section.p>
         </Section.Content>
       </Section>

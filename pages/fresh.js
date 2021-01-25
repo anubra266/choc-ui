@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const Fresh = () => {
@@ -21,7 +21,7 @@ const Fresh = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="headers/chuihe" file="index" multiple={[]} />
+            <ComponentDemo path="headers/chuihe" />
           </Section.p>
         </Section.Content>
       </Section>

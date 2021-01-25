@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Image,
-  Badge,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Flex, Image, Badge, useColorModeValue } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 const Cpwe = () => {
   const property = {
@@ -20,15 +14,12 @@ const Cpwe = () => {
   };
 
   return (
-    <Container
-      pos="fixed"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
+    <Flex
       bg="gray.600"
       p={50}
-      width="3xl"
-      centerContent
+      w="full"
+      alignItems="center"
+      justifyContent="center"
     >
       <Box
         bg={useColorModeValue("white", "gray.800")}
@@ -92,7 +83,7 @@ const Cpwe = () => {
           </Box>
         </Box>
       </Box>
-    </Container>
+    </Flex>
   );
 };
 

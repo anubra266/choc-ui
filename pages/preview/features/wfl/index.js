@@ -10,33 +10,33 @@ import {
   Button,
   VStack,
 } from "@chakra-ui/react";
-
-const Feature = (props) => {
-  return (
-    <Flex >
-      <Icon
-        boxSize={5}
-        mt={1}
-        mr={2}
-        color={useColorModeValue("brand.500","brand.300")}
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-          clip-rule="evenodd"
-        ></path>
-      </Icon>
-      <chakra.p
-        fontSize="lg"
-        color={useColorModeValue("gray.700","gray.400")}
-        {...props}
-      />
-    </Flex>
-  );
-};
 export default function Wfl() {
+  const Feature = (props) => {
+    return (
+      <Flex>
+        <Icon
+          boxSize={5}
+          mt={1}
+          mr={2}
+          color={useColorModeValue("brand.500", "brand.300")}
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </Icon>
+        <chakra.p
+          fontSize="lg"
+          color={useColorModeValue("gray.700", "gray.400")}
+          {...props}
+        />
+      </Flex>
+    );
+  };
+
   return (
     <Flex
       bg="gray.600"
@@ -74,7 +74,7 @@ export default function Wfl() {
               mb={6}
               fontSize={{ base: "lg", md: "xl" }}
               textAlign={{ base: "center", sm: "left" }}
-              color={useColorModeValue("gray.600","gray.500")}
+              color={useColorModeValue("gray.600", "gray.500")}
             >
               Let's put our heads together to build a successful partnership to
               benefit both your customers and your business.
@@ -90,7 +90,12 @@ export default function Wfl() {
               Become a Partner
             </Button>
           </Box>
-          <VStack direction="column" flexGrow={1} spacing={5} alignItems="start">
+          <VStack
+            direction="column"
+            flexGrow={1}
+            spacing={5}
+            alignItems="start"
+          >
             <Feature>Email APIs, SMTP Relay, and Webhooks</Feature>
             <Feature>Suppression Management</Feature>
             <Feature>Email Tracking and Analytics</Feature>

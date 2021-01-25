@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "~/components/head";
 import { PageHeader, Section } from "~/components/docs";
-import ComponentDemo from "@/component-demo";
+import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 
 const Features = () => {
@@ -21,7 +21,7 @@ const Features = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="features/s3c" file="index" multiple={[]} />
+            <ComponentDemo path="features/s3c" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -38,7 +38,7 @@ const Features = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="features/c2g" file="index" multiple={[]} />
+            <ComponentDemo path="features/c2g" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -55,7 +55,7 @@ const Features = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="features/fgl" file="index" multiple={[]} />
+            <ComponentDemo path="features/fgl" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -72,7 +72,7 @@ const Features = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="features/wfl" file="index" multiple={[]} />
+            <ComponentDemo path="features/wfl" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -89,7 +89,7 @@ const Features = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="features/o2g" file="index" multiple={[]} />
+            <ComponentDemo path="features/o2g" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -106,7 +106,7 @@ const Features = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="features/asm" file="index" multiple={[]} />
+            <ComponentDemo path="features/asm" />
           </Section.p>
         </Section.Content>
       </Section>

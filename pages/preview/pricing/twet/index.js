@@ -9,28 +9,28 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { IoCheckmark } from "react-icons/io5";
-const Feature = (props) => {
-  return (
-    <Flex alignSelf="start" w="100%">
-      <Icon
-        boxSize={5}
-        mt={1}
-        mr={2}
-        color={useColorModeValue("green.500")}
-        viewBox="0 0 20 20"
-        fillRule="currentColor"
-        as={IoCheckmark}
-      />
-      <chakra.p
-        fontSize="lg"
-        color={useColorModeValue("gray.600", "gray.400")}
-        {...props}
-      />
-    </Flex>
-  );
-};
 
 export default function Pricing() {
+  const Feature = (props) => {
+    return (
+      <Flex alignSelf="start" w="100%">
+        <Icon
+          boxSize={5}
+          mt={1}
+          mr={2}
+          color={useColorModeValue("green.500")}
+          viewBox="0 0 20 20"
+          fillRule="currentColor"
+          as={IoCheckmark}
+        />
+        <chakra.p
+          fontSize="lg"
+          color={useColorModeValue("gray.600", "gray.400")}
+          {...props}
+        />
+      </Flex>
+    );
+  };
   return (
     <Flex
       pos="absolute"
