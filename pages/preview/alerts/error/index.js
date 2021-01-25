@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Icon,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { chakra, Box, Icon, Flex, useColorModeValue } from "@chakra-ui/react";
 
 import { BsLightningFill } from "react-icons/bs";
 

@@ -9,11 +9,11 @@ import {
 } from "@chakra-ui/react";
 import { MdRefresh } from "react-icons/md";
 import { BiLinkExternal } from "react-icons/bi";
-import { AiOutlineCodeSandbox, AiOutlineCodepen } from "react-icons/ai";
+import { AiOutlineCodeSandbox } from "react-icons/ai";
 import { IoIosCopy, IoMdCode } from "react-icons/io";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 
-import { editOnlineCdp, editOnlineCds } from "./edit-online";
+import { editOnlineCds } from "./edit-online";
 
 const ActionButton = (props) => {
   return (
@@ -59,16 +59,12 @@ export default function CodeActions(props) {
       <Link isExternal href={`/preview/${props.path}`}>
         <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />{" "}
       </Link>
-      <ActionButton
-        onClick={() => editOnlineCds(code, props.path)}
-        icon={<AiOutlineCodeSandbox />}
-        label="Open Code in Codesandbox"
-      />
-      <ActionButton
-        onClick={() => editOnlineCdp(code, props.path)}
-        icon={<AiOutlineCodepen />}
-        label="Open code in codepen"
-      />{" "}
+      <Link isExternal href={editOnlineCds(props.code, props.path)}>
+        <ActionButton
+          icon={<AiOutlineCodeSandbox />}
+          label="Open Code in Codesandbox"
+        />
+      </Link>
       <ActionButton
         icon={<MdRefresh />}
         onClick={props.resetDemo}

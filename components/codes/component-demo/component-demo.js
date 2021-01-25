@@ -15,7 +15,7 @@ const ComponentDemo = (props) => {
   const [demoKey, setDemoKey] = useState("demo");
   const resetDemo = () => setDemoKey(Math.random());
 
-  const editorProps = { codeEditor, code: postCode, resetDemo };
+  const editorProps = { codeEditor, code: preCode, resetDemo };
   // TODO add demo display slider
   return (
     <React.Fragment>

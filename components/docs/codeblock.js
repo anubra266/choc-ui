@@ -18,10 +18,9 @@ export const CodeBlock = (props) => {
       rounded="lg"
       p={2}
       my={6}
-      resize="vertical"
     >
       <LiveProvider code={props.children}>
-        <LiveEditor language="bash" />
+        <LiveEditor style={{resize:"vertical",overflow:'auto'}} language={props.lang} />
         <Box
           _empty={{ display: "none" }}
           bg="red.600"

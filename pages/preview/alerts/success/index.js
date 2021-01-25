@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Container,
-  Icon,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { chakra, Box, Icon, Flex, useColorModeValue } from "@chakra-ui/react";
 
 import { IoMdCheckmarkCircle } from "react-icons/io";
 
@@ -19,7 +12,6 @@ const Ma = () => {
       alignItems="center"
       justifyContent="center"
     >
-
       <Flex
         maxW="sm"
         width="100%"
