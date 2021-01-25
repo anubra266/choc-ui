@@ -44,6 +44,7 @@
 - [ ] Headings - TailwindUI
   - [ ] Card Headings
   - [ ] Section Headings
+  - [ ] Page Headings
 - [ ] Example Pages - Meraki UI, Kutty
   - [ ] Login Pages
   - [ ] Registration Pages
