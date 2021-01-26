@@ -35,7 +35,7 @@ export default function Component() {
       <Stack
         direction={{ base: "column" }}
         w="full"
-        bg={{ sm: useColorModeValue("white", "gray.800") }} 
+        bg={{ sm: useColorModeValue("white", "gray.800") }}
         shadow="lg"
       >
         {data.map((person, pid) => {
@@ -45,7 +45,8 @@ export default function Component() {
               bg={useColorModeValue("white", "gray.800")}
             >
               {useBreakpointValue({ base: true, sm: pid === 0 }) && (
-                <SimpleGrid spacingY={3}
+                <SimpleGrid
+                  spacingY={3}
                   columns={{ base: 1, sm: 3 }}
                   w={{ base: 100, sm: "full" }}
                   textTransform="uppercase"
@@ -61,7 +62,8 @@ export default function Component() {
                   <span>Actions</span>
                 </SimpleGrid>
               )}
-              <SimpleGrid spacingY={3}
+              <SimpleGrid
+                spacingY={3}
                 columns={{ base: 1, sm: 3 }}
                 w="full"
                 py={2}
@@ -77,10 +79,9 @@ export default function Component() {
                   {person.email}
                 </chakra.span>
                 <span>
-                  {" "}
                   <Button variant="solid" colorScheme="red" size="sm">
                     Delete
-                  </Button>{" "}
+                  </Button>
                 </span>
               </SimpleGrid>
             </Flex>
