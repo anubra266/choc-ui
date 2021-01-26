@@ -79,6 +79,20 @@
           "route": "{prefix}navbars"
         }
       ]
+    },
+    {
+      "title": "lists",
+      "prefix": "/docs/lists/",
+      "routes": [
+        {
+          "title": "tables",
+          "route": "{prefix}tables",
+          "alert": {
+            "variant": "blue",
+            "message": "In Progress"
+          }
+        }
+      ]
     }
   ]
 }

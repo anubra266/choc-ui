@@ -7,7 +7,6 @@ import {
   Button,
   chakra,
   Stack,
-  Container,
   useColorModeValue,
   Link,
   Icon,
@@ -22,10 +21,10 @@ export default function Home() {
       <Box mb={20}>
         <Box
           as="section"
-          pt={{ base: "6rem", md: "6rem" }}
+          pt={{ base: "6rem", md: "10rem" }}
           pb={{ base: "0", md: "0rem" }}
         >
-          <Container>
+          <Box>
             <Box textAlign="center">
               <chakra.h1
                 maxW="680px"
@@ -98,7 +97,7 @@ export default function Home() {
               </Stack>
              <Credits />
             </Box>
-          </Container>
+          </Box>
         </Box>
       </Box>
     </SiteLayout>

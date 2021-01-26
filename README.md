@@ -29,6 +29,7 @@
   - [x] Feature Sections
   - [x] CTA Sections
   - [ ] Pricing Sections
+  - [ ] Content Sections
   - [ ] FAQs
   - [ ] Newsletter Sections
   - [ ] Stats
@@ -46,9 +47,21 @@
   - [ ] Section Headings
   - [ ] Page Headings
 - [ ] Example Pages - Meraki UI, Kutty
-  - [ ] Login Pages
-  - [ ] Registration Pages
+  - [ ] Landing Pages
+  - [ ] Contact Pages
   - [ ] Error Pages
+  - [ ] Home Screens
+  - [ ] Detail Screens
+  - [ ] Settings Screens
+- [ ] Forms Tailwind
+  - [ ] Form Layouts - Tailwind
+  - [ ] Sign in and Registration
+  - [ ] Action Panels
+- [ ] Lists Tailwind
+  - [ ] Tables
+  - [ ] Stacked Lists
+  - [ ] Grid Lists
+  - [ ] Feeds
 - [ ] Application Shells
   - [ ] Sidebar Layouts - Kutty
   - [ ] Page Layouts - Antd
@@ -58,7 +71,6 @@
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated. See [Contributing.md](./CONTRIBUTING.md)
-
 
 ## License
 

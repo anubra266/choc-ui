@@ -7,15 +7,18 @@ const Installation = () => {
     <Section>
       <Section.Header>Installation</Section.Header>
       <Section.Content>
+        <Section.p>This is quite straightforward.</Section.p>
         <Section.p>
-          This is quite straightforward.
           <CodeBlock lang="bash">
-            {`npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
-
-# or
-
-yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion`}
+            {`npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion`}
           </CodeBlock>
+        </Section.p>
+        <Section.p>
+          <CodeBlock lang="bash">
+            {`yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion`}
+          </CodeBlock>
+        </Section.p>
+        <Section.p>
           If you meet any complexities, just head along to{" "}
           <Section.a
             target="_blank"

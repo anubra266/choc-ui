@@ -1,0 +1,17 @@
+<Slider
+          step={0.01}
+          cursor="move"
+          min={25}
+          value={width}
+          onChange={(val) => setWidth(val)}
+        >
+          <SliderTrack bg="brand.100">
+            <SliderFilledTrack bg={"brand.100"} />
+          </SliderTrack>
+          <SliderThumb bg={"brand.500"}>
+            <Box color="white" />
+          </SliderThumb>
+        </Slider>
+
+
+  const [width, setWidth] = useState(100);
