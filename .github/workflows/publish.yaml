@@ -34,7 +34,7 @@ jobs:
       - name: Building App
         run: yarn build
 
-        - name: Exporting App
+      - name: Exporting App
         run: yarn export
 
       - name: Deploy
