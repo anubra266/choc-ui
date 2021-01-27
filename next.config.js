@@ -1,5 +1,7 @@
 var path = require("path");
 module.exports = {
+  basePath: "/choc-ui",
+  assetPrefix: "/choc-ui/",
   webpack: (config, options) => {
     const custom_alias = {
       "~": path.resolve("./"),
