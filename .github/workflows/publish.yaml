@@ -35,7 +35,7 @@ jobs:
         run: yarn build
 
       - name: Exporting App
-        run: yarn export
+        run: next export -o docs/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

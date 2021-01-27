@@ -21,7 +21,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/ma" />
+            <ComponentDemo path="cards/ma" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
