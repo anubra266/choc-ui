@@ -21,7 +21,7 @@ const Tables = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="tables/mrt" />
+            <ComponentDemo path="tables/mrt" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>

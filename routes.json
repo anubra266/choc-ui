@@ -32,11 +32,7 @@
         },
         {
           "title": "headers",
-          "route": "{prefix}headers",
-          "alert": {
-            "variant": "red",
-            "message": "Need Help!"
-          }
+          "route": "{prefix}headers"
         },
         {
           "title": "pagination",
