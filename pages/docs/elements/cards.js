@@ -38,7 +38,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/awsi" />
+            <ComponentDemo path="cards/awsi" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -72,7 +72,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/pwi" height="600px" />
+            <ComponentDemo path="cards/pwi" height="470px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -106,7 +106,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/pwe" />
+            <ComponentDemo path="cards/pwe" height="300px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -140,7 +140,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/msp" />
+            <ComponentDemo path="cards/msp" height="470px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -157,7 +157,7 @@ const Cards = () => {
         </Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="cards/mtes" />
+            <ComponentDemo path="cards/mtes" height="400px" />
           </Section.p>
         </Section.Content>
       </Section>
