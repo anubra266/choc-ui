@@ -89,6 +89,20 @@
           }
         }
       ]
+    },
+    {
+      "title": "packages",
+      "prefix": "/docs/packages/",
+      "routes": [
+        {
+          "title": "Pagination",
+          "route": "{prefix}pagination",
+          "alert": {
+            "variant": "green",
+            "message": "New"
+          }
+        }
+      ]
     }
   ]
 }

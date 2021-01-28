@@ -27,8 +27,11 @@ const ComponentDemo = (props) => {
   const editorProps = { codeEditor, code: preCode, resetDemo };
   return (
     <React.Fragment>
-      <LiveProvider key={demoKey} scope={demoScope} code={postCode}>
-        
+      <LiveProvider
+        key={demoKey}
+        scope={{ ...demoScope, ...(props.scope && props.scope) }}
+        code={postCode}
+      >
         <Box
           pos="relative"
           minH={props.height || "500px"}

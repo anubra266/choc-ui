@@ -39,7 +39,7 @@ const Pagination = () => {
         <Section.Header>Size Changer</Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="pagination/scp" height="400px" />
+            <ComponentDemo path="pagination/scp" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
@@ -48,7 +48,7 @@ const Pagination = () => {
         <Section.Header>Page Jumper</Section.Header>
         <Section.Content>
           <Section.p>
-            <ComponentDemo path="pagination/pg" height="400px" />
+            <ComponentDemo path="pagination/pg" height="100px" />
           </Section.p>
         </Section.Content>
       </Section>
