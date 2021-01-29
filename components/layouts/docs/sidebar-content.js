@@ -4,7 +4,7 @@ import {
   chakra,
   Flex,
   Spacer,
-  Badge,
+  Tag,
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
@@ -58,9 +58,9 @@ const MenuLink = ({ children, active, section, href, link }) => {
       >
         {children} <Spacer />
         {!section && link.alert && (
-          <Badge rounded="lg" px={2} colorScheme={link.alert.variant}>
+          <Tag rounded="md" variant="subtle" colorScheme={link.alert.variant}>
             <span>{link.alert.message} </span>
-          </Badge>
+          </Tag>
         )}
       </Flex>
     </RouteLink>
