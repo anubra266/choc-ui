@@ -21,9 +21,7 @@
   - [x] Pagination
   - [x] Badges
   - [ ] Empty - Antd
-  - [ ] Result - Antd
-  - [ ] Message - Antd
-  - [ ] Notification - Antd
+  - [ ] Result - Antd 
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections
