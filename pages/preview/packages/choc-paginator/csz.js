@@ -12,38 +12,16 @@ export default function Component() {
       justifyContent="center"
       direction="column"
     >
-      <Pagination
-        defaultCurrent={9}
-        total={500}
-        paginationProps={{ display: "flex", mb: 4 }}
-        pageNeighbours={1}
-        size="xs"
-      />
-
-      <Pagination
-        defaultCurrent={9}
-        total={500}
-        paginationProps={{ display: "flex", mb: 4 }}
-        pageNeighbours={1}
-        size="sm"
-      />
-
-
-      <Pagination
-        defaultCurrent={9}
-        total={500}
-        paginationProps={{ display: "flex", mb: 4 }}
-        pageNeighbours={1}
-        size="md"
-      />
-
-      <Pagination
-        defaultCurrent={9}
-        total={500}
-        paginationProps={{ display: "flex", mb: 4 }}
-        pageNeighbours={1}
-        size="lg"
-      />
+      {["xs", "sm", "md", "lg"].map((size, key) => (
+        <Pagination
+          key={key}
+          defaultCurrent={9}
+          total={500}
+          paginationProps={{ display: "flex", mb: 4 }}
+          pageNeighbours={1}
+          size={size}
+        />
+      ))}
     </Flex>
   );
 }
