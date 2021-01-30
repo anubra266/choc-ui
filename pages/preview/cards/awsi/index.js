@@ -1,7 +1,7 @@
 import React from "react";
 import { chakra, Box, Flex, useColorModeValue } from "@chakra-ui/react";
 
-import { AiOutlineTwitter, AiOutlineLink } from "react-icons/ai";
+import { AiOutlineTwitter, AiOutlineLink, } from "react-icons/ai";
 const Ma = () => {
   return (
     <Flex
@@ -82,6 +82,7 @@ const Ma = () => {
               cursor="pointer"
               textDecor="underline"
               color={useColorModeValue("brand.600", "brand.400")}
+              wordBreak="break-word"
             >
               classcentral.com
             </chakra.a>
