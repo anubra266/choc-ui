@@ -298,7 +298,6 @@ export default function Header(props) {
         transition="box-shadow 0.2s"
         top="0"
         position="absolute"
-        zIndex="1"
         bg={bg}
         left="0"
         right="0"

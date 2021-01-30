@@ -25,7 +25,7 @@ import { BsFillCameraVideoFill } from "react-icons/bs";
 
 export default function Header(props) {
   const bg = useColorModeValue("white", "gray.800");
-  const bor = useColorModeValue("gray.100", "brand.600");
+  const bor = useColorModeValue("gray.200", "gray.900");
   const cl = useColorModeValue("gray.800", "white");
   const mobileNav = useDisclosure();
 
