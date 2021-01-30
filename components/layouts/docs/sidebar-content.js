@@ -25,7 +25,7 @@ const MenuLink = ({ children, active, section, href, link }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
     bg: useColorModeValue("brand.100", "brand.700"),
-    color: useColorModeValue("brand.600", "brand.100"),
+    color: useColorModeValue("brand.600", "brand.300"),
     shadow: "lg",
     rounded: "lg",
   };
@@ -40,6 +40,7 @@ const MenuLink = ({ children, active, section, href, link }) => {
     _hover: {
       ...activeStyle,
       bg: !active && useColorModeValue("gray.100", "gray.700"),
+      transition: "all 0.3s ease-in-out",
     },
     cursor: !active && "pointer",
     textTransform: "capitalize",

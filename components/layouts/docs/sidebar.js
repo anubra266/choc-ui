@@ -31,7 +31,7 @@ const Sidebar = () => {
           className="sidebar-content"
           flexShrink={0}
           display={{ base: "none", md: "block" }}
-          boxShadow="lg"
+          boxShadow="sm"
         >
           <IconButton
             position="sticky"
