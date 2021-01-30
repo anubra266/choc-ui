@@ -38,8 +38,7 @@ const PaginationPackage = () => {
         <Section.Content>
           <Section.p>
             <CodeBlock lang="bash">{`npm i @choc-ui/paginator`}</CodeBlock>
-          </Section.p>
-          <Section.p>
+
             <CodeBlock lang="bash">{`yarn add @choc-ui/paginator`}</CodeBlock>
           </Section.p>
         </Section.Content>
