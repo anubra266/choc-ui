@@ -12,8 +12,6 @@ const Installation = () => {
           <CodeBlock lang="bash">
             {`npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion`}
           </CodeBlock>
-        </Section.p>
-        <Section.p>
           <CodeBlock lang="bash">
             {`yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion`}
           </CodeBlock>

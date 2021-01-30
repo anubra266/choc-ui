@@ -162,7 +162,7 @@ const ChakraUIHeader = () => {
                 <Link
                   isExternal
                   aria-label="Go to Chakra UI GitHub page"
-                  href={"https://github.com/anubra266/choc-ui"}
+                  href={process.env.githubUrl}
                 >
                   <Icon
                     as={AiFillGithub}

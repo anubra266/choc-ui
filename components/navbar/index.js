@@ -80,7 +80,7 @@ const HeaderContent = () => {
             />
             <IconButton
               as="a"
-              href={"https://github.com/anubra266/choc-ui"}
+              href={process.env.githubUrl}
               target="_blank"
               size="md"
               fontSize="lg"

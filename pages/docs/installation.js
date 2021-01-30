@@ -10,7 +10,6 @@ const InstallationView = () => {
     <DocsLayout>
       <PageHead title="Installation" />
       <PageHeader>Installation</PageHeader>
-      <Introduction />
       <Installation />
     </DocsLayout>
   );

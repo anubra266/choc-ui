@@ -30,7 +30,7 @@ const Static = () => {
       <meta property="twitter:creator" content="@anubra266" />
       <meta name="twitter:site" content="@anubra266"></meta>
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="choc-ui.vercel.app" />
+      <meta property="og:url" content={process.env.siteUrl} />
       <meta property="og:site_name" content="Choc UI" />
       <meta property="og:image" content="/logo.png" />
       <link
