@@ -3,9 +3,7 @@ import {
   chakra,
   Flex,
   HStack,
-  Icon,
   IconButton,
-  Link as CLink,
   useColorMode,
   useColorModeValue,
   useDisclosure,
@@ -13,19 +11,10 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaMoon, FaSun, FaDiscord, FaGithub } from "react-icons/fa";
 import SponsorButton from "./sponsor-button";
 import { MobileNavButton, MobileNavContent } from "./mobile-nav";
 import Link from "next/link";
-
-const GithubIcon = (props) => (
-  <svg viewBox="0 0 20 20" {...props}>
-    <path
-      fill="currentColor"
-      d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"
-    />
-  </svg>
-);
 
 const HeaderContent = () => {
   const mobileNav = useDisclosure();
@@ -41,7 +30,7 @@ const HeaderContent = () => {
   return (
     <React.Fragment>
       <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
-        <Flex align="center">
+        <Flex align="center" w="full">
           <Link href="/">
             <React.Fragment>
               <Image
@@ -51,14 +40,20 @@ const HeaderContent = () => {
                 mr={2}
               />
               <chakra.h1
-                mx="auto"
-                fontSize="2rem"
-                display={{ base: "none", md: "block" }}
+                fontSize="1.3rem"
                 fontFamily="heading"
                 fontWeight="bold"
                 style={{ float: "right" }}
               >
-                choc-ui
+                <chakra.span
+                  color="brand.400"
+                  textShadow="2px 0 currentColor"
+                  letterSpacing="widest"
+                >
+                  {" "}
+                  Choc
+                </chakra.span>{" "}
+                UI
               </chakra.h1>
             </React.Fragment>
           </Link>
@@ -71,31 +66,39 @@ const HeaderContent = () => {
           align="center"
           color="gray.400"
         >
-          <HStack spacing="5" display={{ base: "none", md: "flex" }}>
-            <CLink
-              isExternal
-              aria-label="Go to Chakra UI GitHub page"
+          <HStack display="flex">
+            <IconButton
+              as="a"
+              href={"https://discord.gg/XcD8bNv7Ne"}
+              target="_blank"
+              size="md"
+              fontSize="lg"
+              aria-label="Choc UI Discord server"
+              variant="ghost"
+              color="current"
+              icon={<FaDiscord />}
+            />
+            <IconButton
+              as="a"
               href={"https://github.com/anubra266/choc-ui"}
-            >
-              <Icon
-                as={GithubIcon}
-                display="block"
-                transition="color 0.2s"
-                boxSize={5}
-                _hover={{ color: "gray.600" }}
-              />
-            </CLink>
+              target="_blank"
+              size="md"
+              fontSize="lg"
+              aria-label="Choc UI's Github Repo"
+              variant="ghost"
+              color="current"
+              icon={<FaGithub />}
+            />
+            <IconButton
+              size="md"
+              fontSize="lg"
+              aria-label={`Switch to ${text} mode`}
+              variant="ghost"
+              color="current"
+              onClick={toggleMode}
+              icon={<SwitchIcon />}
+            />
           </HStack>
-          <IconButton
-            size="md"
-            fontSize="lg"
-            aria-label={`Switch to ${text} mode`}
-            variant="ghost"
-            color="current"
-            ml={{ base: "0", md: "3" }}
-            onClick={toggleMode}
-            icon={<SwitchIcon />}
-          />
           <SponsorButton ml="5" />
           <MobileNavButton
             ref={mobileNavBtnRef}
@@ -123,8 +126,8 @@ const Header = (props) => {
   return (
     <chakra.header
       ref={ref}
-      shadow={y > height ? "sm" : undefined}
-      transition="box-shadow 0.2s"
+      shadow={y > height ? "lg" : undefined}
+      transition="box-shadow 0.5s ease-in-out"
       pos="fixed"
       top="0"
       zIndex="1"
@@ -133,6 +136,8 @@ const Header = (props) => {
       right="0"
       borderTop="6px solid"
       borderTopColor="brand.400"
+      borderBottom="1px solid"
+      borderBottomColor={useColorModeValue("gray.200", "gray.900")}
       width="full"
       {...props}
     >
