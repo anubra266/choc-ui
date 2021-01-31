@@ -58,7 +58,7 @@ If not, lay some ground rules down up front.
 
 Include Short Links to Important Resources:
 
-- docs: [Choc Site](https://choc-ui.vercel.app)
+- docs: [Choc Site](https://choc-ui.tech)
 - bugs: [issue tracker](https://github.com/anubra266/choc-ui/issues/new)
 
 ## Questions

@@ -1,7 +1,7 @@
 var path = require("path");
 module.exports = {
   env: {
-    siteUrl: "https://choc-ui.vercel.app",
+    siteUrl: "https://choc-ui.tech",
     githubUrl: "https://github.com/anubra266/choc-ui",
   },
   webpack: (config, options) => {
