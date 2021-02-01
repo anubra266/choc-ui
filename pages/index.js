@@ -8,11 +8,12 @@ import {
   chakra,
   Stack,
   useColorModeValue,
-  Icon,
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import { DiGithubBadge } from "react-icons/di";
 import Link from "next/link";
+import Feature1 from "~/components/landing/feature1";
+import Feature2 from "~/components/landing/feature2";
 
 export default function Home() {
   return (
@@ -23,9 +24,10 @@ export default function Home() {
           as="section"
           pt={{ base: "6rem", md: "10rem" }}
           pb={{ base: "0", md: "0rem" }}
+          px={{ base: "2rem", sm: "5rem" }}
         >
           <Box>
-            <Box textAlign="center">
+            <Box textAlign={{ lg: "center" }}>
               <chakra.h1
                 maxW="680px"
                 mx="auto"
@@ -88,7 +90,7 @@ export default function Home() {
                     px="40px"
                     fontSize="1.2rem"
                     size="lg"
-                    colorScheme="brand"
+                    colorScheme="gray"
                     leftIcon={<DiGithubBadge fontSize="1.5em" />}
                     cursor="pointer"
                   >
@@ -96,10 +98,12 @@ export default function Home() {
                   </Button>
                 </Link>
               </Stack>
-              <Credits />
             </Box>
           </Box>
         </Box>
+        <Feature1 />
+        <Feature2 />
+        <Credits />
       </Box>
     </SiteLayout>
   );
