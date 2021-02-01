@@ -27,9 +27,11 @@ const Static = () => {
       )}
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta name="theme-color" content="blue" />
+
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:creator" content="@anubra266" />
       <meta name="twitter:site" content="@anubra266"></meta>
+      
       <meta property="og:type" content="website" />
       <meta property="og:url" content={process.env.siteUrl} />
       <meta property="og:site_name" content="Choc UI" />

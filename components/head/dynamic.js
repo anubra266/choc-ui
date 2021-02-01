@@ -10,8 +10,11 @@ const Dynamic = (props) => {
       <meta name="description" content={`${props.title}`} />
 
       <meta property="og:title" content={`Choc UI - ${props.title}`} />
+      <meta property="twitter:title" content={`Choc UI - ${props.title}`} />
       <meta property="og:description" content={`${props.title}`} />
+      <meta property="twitter:description" content={`${props.title}`} />
       <meta property="og:image" content={props.image || "/logo.png"} />
+      <meta property="twitter:image" content={props.image || "/logo.png"} />
     </Head>
   );
 };
