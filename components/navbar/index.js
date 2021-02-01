@@ -134,7 +134,7 @@ const Header = (props) => {
       bg={bg}
       left="0"
       right="0"
-      borderTop="6px solid"
+      borderTop="0px solid"
       borderTopColor="brand.400"
       borderBottom="1px solid"
       borderBottomColor={useColorModeValue("gray.200", "gray.900")}

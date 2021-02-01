@@ -31,6 +31,14 @@
           "route": "{prefix}cards"
         },
         {
+          "title": "gradient icons",
+          "route": "{prefix}gicons",
+          "alert": {
+            "variant": "green",
+            "message": "New"
+          }
+        },
+        {
           "title": "headers",
           "route": "{prefix}headers"
         },
@@ -96,11 +104,7 @@
       "routes": [
         {
           "title": "Pagination",
-          "route": "{prefix}pagination",
-          "alert": {
-            "variant": "green",
-            "message": "New"
-          }
+          "route": "{prefix}pagination"
         }
       ]
     }

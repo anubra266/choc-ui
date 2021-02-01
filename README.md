@@ -20,6 +20,7 @@
   - [x] Alerts
   - [x] Pagination
   - [x] Badges
+  - [x] Gradient Icons
   - [ ] Empty - Antd
   - [ ] Result - Antd 
 - [ ] Page Sections
