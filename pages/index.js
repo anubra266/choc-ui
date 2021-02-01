@@ -1,6 +1,6 @@
 import PageHead from "~/components/head";
 import SiteLayout from "~/components/layouts/site";
-import Credits from "~/components/credits"
+import Credits from "~/components/credits";
 import {
   Box,
   Text,
@@ -8,11 +8,11 @@ import {
   chakra,
   Stack,
   useColorModeValue,
-  Link,
   Icon,
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import { DiGithubBadge } from "react-icons/di";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -82,20 +82,21 @@ export default function Home() {
                     Get Started
                   </Button>
                 </Link>
-                <Button
-                  as="a"
-                  size="lg"
-                  h="4rem"
-                  px="40px"
-                  fontSize="1.2rem"
-                  href={process.env.githubUrl}
-                  target="__blank"
-                  leftIcon={<DiGithubBadge size="1.5em" />}
-                >
-                  GitHub
-                </Button>
+                <Link href={process.env.githubUrl} target="_blank">
+                  <Button
+                    h="4rem"
+                    px="40px"
+                    fontSize="1.2rem"
+                    size="lg"
+                    colorScheme="brand"
+                    leftIcon={<DiGithubBadge fontSize="1.5em" />}
+                    cursor="pointer"
+                  >
+                    GitHub
+                  </Button>
+                </Link>
               </Stack>
-             <Credits />
+              <Credits />
             </Box>
           </Box>
         </Box>
