@@ -22,6 +22,7 @@ const Static = () => {
             property="og:description"
             content="Preview beautiful components from Choc UI"
           />
+          <meta property="og:image" content="/logo.png" />
         </>
       )}
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -32,7 +33,6 @@ const Static = () => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content={process.env.siteUrl} />
       <meta property="og:site_name" content="Choc UI" />
-      <meta property="og:image" content="/logo.png" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
