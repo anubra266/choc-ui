@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, Box, Link, useColorModeValue } from "@chakra-ui/react";
 
-
 export const linkStyle = {
   textDecoration: "underline",
 };
@@ -27,8 +26,11 @@ Section.Header = (props) => {
       fontSize="xl"
       fontWeight="700"
       w="full"
+      textTransform="capitalize"
       bg={useColorModeValue("brand.100", "gray.700")}
-      borderTopRadius="lg" px={5} py={3}
+      borderTopRadius="lg"
+      px={5}
+      py={3}
       {...props}
     />
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  chakra,
+  Box,
   Flex,
   Spacer,
   Tag,
@@ -9,19 +9,13 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import routes from "~/routes.json";
-import jVar from "json-variables";
+import { useRoutes } from "~/categories/parse-categories.js";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-const routesParsed = jVar(routes, {
-  heads: "{",
-  tails: "}",
-});
-const RouteLink = ({ children, section, href, active }) => {
-  return section || active ? children : <Link href={href}>{children}</Link>;
+const RouteLink = ({ children, isSection, href, active }) => {
+  return isSection || active ? children : <Link href={href}>{children}</Link>;
 };
-const MenuLink = ({ children, active, section, href, link }) => {
+const MenuLink = ({ children, active, isSection, section, href }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
     bg: useColorModeValue("brand.100", "brand.700"),
@@ -50,17 +44,21 @@ const MenuLink = ({ children, active, section, href, link }) => {
     my: 1,
   };
   return (
-    <RouteLink active={active} href={href} section={section}>
+    <RouteLink active={active} href={href} isSection={isSection}>
       <Flex
         p={2}
         pl={8}
-        {...(section ? sectionStyle : baseStyle)}
+        {...(isSection ? sectionStyle : baseStyle)}
         {...(active && activeStyle)}
       >
         {children} <Spacer />
-        {!section && link.alert && (
-          <Tag rounded="md" variant="subtle" colorScheme={link.alert.variant}>
-            <span>{link.alert.message} </span>
+        {!isSection && section.alert && (
+          <Tag
+            rounded="md"
+            variant="subtle"
+            colorScheme={section.alert.variant}
+          >
+            <span>{section.alert.message} </span>
           </Tag>
         )}
       </Flex>
@@ -69,23 +67,24 @@ const MenuLink = ({ children, active, section, href, link }) => {
 };
 
 const SidebarContent = () => {
-  const router = useRouter();
+  const routes = useRoutes();
+
   return (
     <Stack spacing={0}>
-      {routesParsed.sections.map((section, sid) => (
-        <chakra.div pt={sid !== 0 && 5} key={sid}>
-          <MenuLink section>{section.title}</MenuLink>
-          {section.routes.map((link, lid) => (
+      {routes.map((category, cid) => (
+        <Box pt={cid !== 0 && 5} key={cid}>
+          <MenuLink isSection>{category.title}</MenuLink>
+          {category.sections.map((section, sid) => (
             <MenuLink
-              key={lid}
-              active={router.pathname === link.route}
-              href={link.route}
-              link={link}
+              key={sid}
+              active={section.active}
+              href={section.url}
+              section={section}
             >
-              {link.title}
+              {section.title}
             </MenuLink>
           ))}
-        </chakra.div>
+        </Box>
       ))}
     </Stack>
   );
