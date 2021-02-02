@@ -49,13 +49,13 @@ const Ma = () => {
         </chakra.p>
 
         <Flex justifyContent="end" mt={4}>
-          <chakra.a
+          <Link
             href="#"
             fontSize="xl"
             color={useColorModeValue("brand.500", "brand.300")}
           >
             John Doe
-          </chakra.a>
+          </Link>
         </Flex>
       </Box>
     </Flex>
