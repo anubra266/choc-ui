@@ -6,7 +6,7 @@
   "files": [
     "README.md"
   ],
-  "imageSize": 100,
+  "imageSize": 50,
   "commit": true,
   "commitConvention": "none",
   "contributors": [
@@ -16,15 +16,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/30869823?v=4",
       "profile": "https://ab.anubra.tech/",
       "contributions": [
-        "design"
-      ]
-    },
-    {
-      "login": "GabrielFemi",
-      "name": "Akinyosoye Gabriel",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39733548?v=4",
-      "profile": "https://github.com/GabrielFemi",
-      "contributions": [
+        "code",
         "design"
       ]
     }

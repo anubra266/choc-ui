@@ -1,5 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -25,7 +28,7 @@
   - [x] Badges
   - [x] Gradient Icons
   - [ ] Empty - Antd
-  - [ ] Result - Antd 
+  - [ ] Result - Antd
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections
@@ -87,8 +90,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://ab.anubra.tech/"><img src="https://avatars.githubusercontent.com/u/30869823?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abraham</b></sub></a><br /><a href="#design-anubra266" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/GabrielFemi"><img src="https://avatars.githubusercontent.com/u/39733548?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Akinyosoye Gabriel</b></sub></a><br /><a href="#design-GabrielFemi" title="Design">🎨</a></td>
+    <td align="center"><a href="https://ab.anubra.tech/"><img src="https://avatars.githubusercontent.com/u/30869823?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abraham</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=anubra266" title="Code">💻</a> <a href="#design-anubra266" title="Design">🎨</a></td>
   </tr>
 </table>
 
