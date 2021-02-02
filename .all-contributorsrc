@@ -9,7 +9,8 @@
   "imageSize": 50,
   "commit": true,
   "commitConvention": "none",
-  "contributors": [{
+  "contributors": [
+    {
       "login": "anubra266",
       "name": "Abraham",
       "avatar_url": "https://avatars.githubusercontent.com/u/30869823?v=4",
@@ -28,6 +29,18 @@
       "contributions": [
         "maintenance"
       ]
-    }],
-  "contributorsPerLine": 7
+    },
+    {
+      "login": "MichaelGrigoryan25",
+      "name": "Michael Grigoryan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56165400?v=4",
+      "profile": "https://michaelgrigoryan.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
