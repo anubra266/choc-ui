@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Image,
+  Flex,
+  useColorModeValue,
+  Link,
+} from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -35,7 +42,7 @@ const Ma = () => {
             >
               Product
             </chakra.span>
-            <chakra.a
+            <Link
               display="block"
               color={useColorModeValue("gray.800", "white")}
               fontWeight="bold"
@@ -45,7 +52,7 @@ const Ma = () => {
               href="#"
             >
               I Built A Successful Blog In One Year
-            </chakra.a>
+            </Link>
             <chakra.p
               mt={2}
               fontSize="sm"
@@ -68,14 +75,14 @@ const Ma = () => {
                   src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60"
                   alt="Avatar"
                 />
-                <chakra.a
+                <Link
                   mx={2}
                   fontWeight="bold"
                   color={useColorModeValue("gray.700", "gray.200")}
                   href="#"
                 >
                   Jone Doe
-                </chakra.a>
+                </Link>
               </Flex>
               <chakra.span
                 mx={1}

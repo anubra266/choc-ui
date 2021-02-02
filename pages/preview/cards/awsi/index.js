@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 
 import { AiOutlineTwitter, AiOutlineLink, } from "react-icons/ai";
 const Ma = () => {
@@ -68,16 +68,16 @@ const Ma = () => {
             color={useColorModeValue("gray.700", "gray.200")}
           >
             <span>Visit on:</span>
-            <chakra.a
+            <Link
               mx={2}
               cursor="pointer"
               textDecor="underline"
               color={useColorModeValue("brand.600", "brand.400")}
             >
               edx.org
-            </chakra.a>
+            </Link>
             <span>or</span>
-            <chakra.a
+            <Link
               mx={2}
               cursor="pointer"
               textDecor="underline"
@@ -85,27 +85,27 @@ const Ma = () => {
               wordBreak="break-word"
             >
               classcentral.com
-            </chakra.a>
+            </Link>
           </Flex>
 
           <Flex alignItems="center" justifyContent="center" mt={4}>
-            <chakra.a
+            <Link
               mr={2}
               color={useColorModeValue("gray.800", "gray.400")}
               _hover={{ color: useColorModeValue("gray.700", "gray.300") }}
               cursor="pointer"
             >
               <AiOutlineTwitter />
-            </chakra.a>
+            </Link>
 
-            <chakra.a
+            <Link
               mr={2}
               color={useColorModeValue("gray.800", "gray.400")}
               _hover={{ color: useColorModeValue("gray.700", "gray.300") }}
               cursor="pointer"
             >
               <AiOutlineLink />
-            </chakra.a>
+            </Link>
           </Flex>
         </Box>
       </Box>

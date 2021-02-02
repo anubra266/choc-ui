@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Image,
+  Flex,
+  useColorModeValue,
+  Link,
+} from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -27,7 +34,7 @@ const Ma = () => {
         />
 
         <Box py={5} textAlign="center">
-          <chakra.a
+          <Link
             href="#"
             display="block"
             fontSize="2xl"
@@ -35,7 +42,7 @@ const Ma = () => {
             fontWeight="bold"
           >
             John Doe
-          </chakra.a>
+          </Link>
           <chakra.span
             fontSize="sm"
             color={useColorModeValue("gray.700", "gray.200")}

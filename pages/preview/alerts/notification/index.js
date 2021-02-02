@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Avatar } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Flex,
+  useColorModeValue,
+  Avatar,
+  Link,
+} from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -31,12 +38,12 @@ const Ma = () => {
           <Box mx={3}>
             <chakra.p color={useColorModeValue("gray.600", "gray.200")}>
               Dan has replied on the{" "}
-              <chakra.a
+              <Link
                 color={useColorModeValue("blue.500", "blue.300")}
                 _hover={{ color: "blue.400", textDecor: "underline" }}
               >
                 uploaded image
-              </chakra.a>
+              </Link>
               .
             </chakra.p>
           </Box>

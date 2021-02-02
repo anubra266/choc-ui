@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Image,
+  Flex,
+  useColorModeValue,
+  Link,
+} from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -49,13 +56,13 @@ const Ma = () => {
         </chakra.p>
 
         <Flex justifyContent="end" mt={4}>
-          <chakra.a
+          <Link
             href="#"
             fontSize="xl"
             color={useColorModeValue("brand.500", "brand.300")}
           >
             John Doe
-          </chakra.a>
+          </Link>
         </Flex>
       </Box>
     </Flex>
