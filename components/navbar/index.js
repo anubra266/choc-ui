@@ -10,12 +10,14 @@ import {
   useUpdateEffect,
   Image,
   Icon,
+  Box,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
 import SponsorButton from "./sponsor-button";
+import DocSearch from "./search";
 import { MobileNavButton, MobileNavContent } from "./mobile-nav";
-import Link from "next/link";
+import NextLink from "next/link";
 
 const HeaderContent = () => {
   const mobileNav = useDisclosure();
@@ -43,8 +45,8 @@ const HeaderContent = () => {
     <React.Fragment>
       <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
         <Flex align="center" w="full">
-          <Link href="/">
-            <React.Fragment>
+          <NextLink href="/" passHref>
+            <Box cursor="pointer">
               <Image
                 alt="logo"
                 src="/logo.png"
@@ -62,18 +64,18 @@ const HeaderContent = () => {
                   textShadow="2px 0 currentColor"
                   letterSpacing="widest"
                 >
-                  {" "}
                   Choc
                 </chakra.span>{" "}
                 UI
               </chakra.h1>
-            </React.Fragment>
-          </Link>
+            </Box>
+          </NextLink>
         </Flex>
 
+        <DocSearch />
         <Flex
           justify="flex-end"
-          w="100%"
+          w="full"
           maxW="824px"
           align="center"
           color="gray.400"

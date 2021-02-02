@@ -1,4 +1,3 @@
-import React from "react";
 import { useRouter } from "next/router";
 
 import GStartObj from "~/categories/getting-started.json";
@@ -8,7 +7,7 @@ import NavigationObj from "~/categories/navigation.json";
 import ListsObj from "~/categories/lists.json";
 import PackagesObj from "~/categories/packages.json";
 
-const categoriesObj = {
+export const categoriesObj = {
   ...GStartObj,
   ...ElementObj,
   ...PSectionsObj,
