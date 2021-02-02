@@ -14,7 +14,7 @@ import * as React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RemoveScroll } from "react-remove-scroll";
 import SponsorButton from "./sponsor-button";
-import DocSearch from "./search";
+import DocSearch from "../doc-search";
 import SidebarContent from "~/components/layouts/docs/sidebar-content";
 
 export function MobileNavContent(props) {

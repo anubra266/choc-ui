@@ -11,11 +11,13 @@ import {
   useEventListener,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
+import SearchModal from "./modal";
 
 const ACTION_KEY_DEFAULT = ["Ctrl", "Control"];
 const ACTION_KEY_APPLE = ["⌘", "Command"];
 
 export default function SearchBar() {
+  const searchModal = React.useRef();
   const [actionKey, setActionKey] = React.useState(ACTION_KEY_APPLE);
   React.useEffect(() => {
     if (typeof navigator === "undefined") return;
@@ -34,10 +36,11 @@ export default function SearchBar() {
   });
 
   const openSearchModal = () => {
-    alert("we");
+    searchModal.current.onOpen();
   };
   return (
     <Flex w="full">
+      <SearchModal ref={searchModal} />
       <chakra.button
         flex="1"
         type="button"
@@ -55,6 +58,7 @@ export default function SearchBar() {
         _focus={{ shadow: "outline" }}
         shadow="base"
         rounded="md"
+        onClick={openSearchModal}
       >
         <SearchIcon />
         <HStack w="full" ml="3" spacing="4px">

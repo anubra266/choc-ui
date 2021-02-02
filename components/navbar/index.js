@@ -15,7 +15,7 @@ import {
 import { useViewportScroll } from "framer-motion";
 import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
 import SponsorButton from "./sponsor-button";
-import DocSearch from "./search";
+import DocSearch from "../doc-search";
 import { MobileNavButton, MobileNavContent } from "./mobile-nav";
 import NextLink from "next/link";
 
