@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Box, Image, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -26,7 +26,7 @@ const Ma = () => {
           >
             Mar 10, 2019
           </chakra.span>
-          <chakra.a
+          <Link
             px={3}
             py={1}
             bg="gray.600"
@@ -37,11 +37,11 @@ const Ma = () => {
             _hover={{ bg: "gray.500" }}
           >
             Design
-          </chakra.a>
+          </Link>
         </Flex>
 
         <Box mt={2}>
-          <chakra.a
+          <Link
             href="#"
             fontSize="2xl"
             color={useColorModeValue("gray.700", "white")}
@@ -52,7 +52,7 @@ const Ma = () => {
             }}
           >
             Accessibility tools for designers and developers
-          </chakra.a>
+          </ Link>>
           <chakra.p mt={2} color={useColorModeValue("gray.600", "gray.300")}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos
@@ -62,12 +62,12 @@ const Ma = () => {
         </Box>
 
         <Flex justifyContent="space-between" alignItems="center" mt={4}>
-          <chakra.a
+          <Link
             color={useColorModeValue("brand.600", "brand.400")}
             _hover={{ textDecor: "underline" }}
           >
             Read more
-          </chakra.a>
+          </ Link>
 
           <Flex alignItems="center">
             <Image
@@ -81,13 +81,13 @@ const Ma = () => {
               src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=40&q=80"
               alt="avatar"
             />
-            <chakra.a
+            <Link
               color={useColorModeValue("gray.700", "gray.200")}
               fontWeight="700"
               cursor="pointer"
             >
               Khatab wedaa
-            </chakra.a>
+            </ Link>
           </Flex>
         </Flex>
       </Box>

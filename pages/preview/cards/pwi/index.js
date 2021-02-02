@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Image,
+  Flex,
+  useColorModeValue,
+  Link,
+} from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -49,7 +56,7 @@ const Ma = () => {
           </chakra.p>
 
           <Box mt={8}>
-            <chakra.a
+            <Link
               href="#"
               bg="gray.900"
               color="gray.100"
@@ -60,7 +67,7 @@ const Ma = () => {
               _hover={{ bg: "gray.800" }}
             >
               Start Now
-            </chakra.a>
+            </Link>
           </Box>
         </Box>
       </Box>

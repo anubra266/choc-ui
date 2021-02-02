@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Stack } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Flex,
+  useColorModeValue,
+  Stack,
+  Link,
+} from "@chakra-ui/react";
 
 export default function Sj() {
   return (
@@ -43,7 +50,7 @@ export default function Sj() {
             shrink={{ lg: 0 }}
           >
             <Box display="inline-flex" borderRadius="md" boxShadow="md">
-              <chakra.a
+              <Link
                 href="#"
                 w="100%"
                 display="inline-flex"
@@ -61,10 +68,10 @@ export default function Sj() {
                 }}
               >
                 Get started
-              </chakra.a>
+              </Link>
             </Box>
             <Box ml={3} display="inline-flex" borderRadius="md" boxShadow="md">
-              <chakra.a
+              <Link
                 href="#"
                 w="100%"
                 display="inline-flex"
@@ -82,7 +89,7 @@ export default function Sj() {
                 }}
               >
                 Learn more
-              </chakra.a>
+              </Link>
             </Box>
           </Stack>
         </Box>
