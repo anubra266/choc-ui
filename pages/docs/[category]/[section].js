@@ -13,9 +13,9 @@ import PSectionsObj from "~/categories/page-sections.json";
 import NavigationObj from "~/categories/navigation.json";
 import ListsObj from "~/categories/lists.json";
 
-const Element = () => {
-  const router = useRouter();
-  const { category, section } = router.query;
+const Element = ({ category, section }) => {
+  // const router = useRouter();
+  // const { category, section } = router.query;
 
   const Components = {
     ...ElementObj,
@@ -62,6 +62,10 @@ const Element = () => {
       </React.Fragment>
     </DocsLayout>
   );
+};
+
+Element.getInitialProps = async (ctx) => {
+  return { category: ctx.query.category, section: ctx.query.section };
 };
 
 export default Element;
