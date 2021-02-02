@@ -5,7 +5,6 @@ import {
   useColorModeValue,
   HStack,
   Kbd,
-  Portal,
   Text,
   VisuallyHidden,
   useEventListener,
@@ -16,7 +15,7 @@ import SearchModal from "./modal";
 const ACTION_KEY_DEFAULT = ["Ctrl", "Control"];
 const ACTION_KEY_APPLE = ["⌘", "Command"];
 
-export default function SearchBar() {
+export default function SearchBar(props) {
   const searchModal = React.useRef();
   const [actionKey, setActionKey] = React.useState(ACTION_KEY_APPLE);
   React.useEffect(() => {
@@ -39,7 +38,7 @@ export default function SearchBar() {
     searchModal.current.onOpen();
   };
   return (
-    <Flex w="full">
+    <Flex w="full" {...props}>
       <SearchModal ref={searchModal} />
       <chakra.button
         flex="1"
@@ -63,7 +62,7 @@ export default function SearchBar() {
         <SearchIcon />
         <HStack w="full" ml="3" spacing="4px">
           <Text textAlign="left" flex="1">
-            Search the docs
+            Search the collection...
           </Text>
           <HStack spacing="4px">
             <VisuallyHidden>Press </VisuallyHidden>

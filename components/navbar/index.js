@@ -10,8 +10,7 @@ import {
   useUpdateEffect,
   Image,
   Icon,
-  Link as ChakraLink,
-  Text,
+  Box,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
@@ -46,8 +45,8 @@ const HeaderContent = () => {
     <React.Fragment>
       <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
         <Flex align="center" w="full">
-          <Link href="/">
-            <ChakraLink textDecor="none">
+          <NextLink href="/" passHref>
+            <Box cursor="pointer">
               <Image
                 alt="logo"
                 src="/logo.png"
@@ -69,11 +68,12 @@ const HeaderContent = () => {
                 </chakra.span>{" "}
                 UI
               </chakra.span>
-            </ChakraLink>
-          </Link>
+            </Box>
+          </NextLink>
         </Flex>
 
-        <DocSearch />
+        <DocSearch display={{ base: "none", md: "flex" }} />
+
         <Flex
           justify="flex-end"
           w="full"
