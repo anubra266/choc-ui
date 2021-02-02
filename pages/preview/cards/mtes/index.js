@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue, Link } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Image,
+  Flex,
+  useColorModeValue,
+  Link,
+} from "@chakra-ui/react";
 
 const Ma = () => {
   return (
