@@ -1,6 +1,6 @@
 ---
-name: "💻 Website Idea"
-about: Suggest an idea for the website
+name: "💻 Website Idea or Correction"
+about: Correct or Suggest an idea for the website
 ---
 
 <!--
