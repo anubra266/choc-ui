@@ -1,11 +1,5 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
+ 
 <div align="center">
 
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
@@ -80,7 +74,7 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See [LICENSE](./LICENSE.md) for more information.
-
+ 
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
