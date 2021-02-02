@@ -1,0 +1,16 @@
+{
+  "getting-started": {
+    "title": "getting started",
+    "prefix": "/docs/",
+    "sections": {
+      "installation": {
+        "title": "installation",
+        "route": "installation"
+      },
+      "configuration": {
+        "title": "configuration",
+        "route": "configuration"
+      }
+    }
+  }
+}

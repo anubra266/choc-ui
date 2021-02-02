@@ -1,0 +1,13 @@
+{
+  "packages": {
+    "title": "packages",
+    "prefix": "/docs/packages/",
+    "sections": {
+      "pagination": {
+        "title": "pagination",
+        "route": "pagination",
+        "display": "@choc-ui/paginator"
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
-
+ 
 <div align="center">
 
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
@@ -22,7 +22,7 @@
   - [x] Badges
   - [x] Gradient Icons
   - [ ] Empty - Antd
-  - [ ] Result - Antd 
+  - [ ] Result - Antd
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections
@@ -74,3 +74,24 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See [LICENSE](./LICENSE.md) for more information.
+ 
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/anubra266"><img src="https://avatars.githubusercontent.com/u/30869823?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abraham</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=anubra266" title="Code">💻</a> <a href="#design-anubra266" title="Design">🎨</a> <a href="#maintenance-anubra266" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/GabrielFemi"><img src="https://avatars.githubusercontent.com/u/39733548?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Akinyosoye Gabriel</b></sub></a><br /><a href="#maintenance-GabrielFemi" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

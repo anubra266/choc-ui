@@ -1,0 +1,33 @@
+{
+  "projectName": "choc-ui",
+  "projectOwner": "anubra266",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 50,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [{
+      "login": "anubra266",
+      "name": "Abraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30869823?v=4",
+      "profile": "https://github.com/anubra266",
+      "contributions": [
+        "code",
+        "design",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "GabrielFemi",
+      "name": "Akinyosoye Gabriel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39733548?v=4",
+      "profile": "https://github.com/GabrielFemi",
+      "contributions": [
+        "maintenance"
+      ]
+    }],
+  "contributorsPerLine": 7
+}

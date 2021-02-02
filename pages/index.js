@@ -1,3 +1,5 @@
+import path from "path";
+import * as fs from "fs";
 import PageHead from "~/components/head";
 import SiteLayout from "~/components/layouts/site";
 import Credits from "~/components/credits";
@@ -14,8 +16,9 @@ import { DiGithubBadge } from "react-icons/di";
 import Link from "next/link";
 import Feature1 from "~/components/landing/feature1";
 import Feature2 from "~/components/landing/feature2";
+import OpenSource from "~/components/landing/open-source";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <SiteLayout>
       <PageHead title="Chakra UI Prebuilt Components" />
@@ -103,8 +106,19 @@ export default function Home() {
         </Box>
         <Feature1 />
         <Feature2 />
+        <OpenSource contributors={props.contributors} />
         <Credits />
       </Box>
     </SiteLayout>
   );
+}
+export async function getStaticProps() {
+  // Get contributors from .all-contributorsrc
+  const contributorsRaw = path.resolve(".all-contributorsrc");
+  const { contributors } = JSON.parse(
+    fs.readFileSync(contributorsRaw, "utf-8")
+  );
+  return {
+    props: { contributors },
+  };
 }

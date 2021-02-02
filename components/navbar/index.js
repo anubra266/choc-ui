@@ -93,7 +93,7 @@ const HeaderContent = () => {
             />
             <IconButton
               as="a"
-              href={process.env.githubUrl}
+              href={process.env.githubChoc}
               target="_blank"
               size="md"
               fontSize="lg"

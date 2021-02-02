@@ -17,16 +17,18 @@
     "@loadable/component": "^5.14.1",
     "codesandbox": "^2.2.1",
     "framer-motion": "^3.2.1",
-    "json-variables": "^9.0.3",
     "next": "10.0.5",
     "nextjs-progressbar": "^0.0.7",
     "raw-loader": "^4.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-html-parser": "^2.0.2",
     "react-icons": "^4.1.0",
     "react-live": "^2.2.3",
     "react-remove-scroll": "^2.4.1",
     "transform-imports": "^2.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "all-contributors-cli": "^6.19.0"
+  }
 }

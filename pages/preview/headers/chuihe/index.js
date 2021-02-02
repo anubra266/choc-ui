@@ -161,8 +161,8 @@ const ChakraUIHeader = () => {
               <HStack spacing="5" display={{ base: "none", md: "flex" }}>
                 <Link
                   isExternal
-                  aria-label="Go to Chakra UI GitHub page"
-                  href={process.env.githubUrl}
+                  aria-label="Go to Choc UI GitHub page"
+                  href="https://github.com/anubra266/choc-ui"
                 >
                   <Icon
                     as={AiFillGithub}

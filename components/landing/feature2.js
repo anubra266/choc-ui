@@ -46,13 +46,7 @@ const Feature = (props) => {
 };
 const Features = () => {
   return (
-    <Box
-      as="section"
-      mt={{ base: "6rem", md: "6" }}
-      pt={{ base: "6rem", md: "10rem" }}
-      pb={{ base: "0", md: "0rem" }}
-      my={12}
-    >
+    <Box as="section" mt="6rem" pt={{ base: "6rem", md: "10rem" }} my={12}>
       <Box bg={useColorModeValue("white", "gray.800")} borderRadius="xl">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
@@ -90,7 +84,8 @@ const Features = () => {
             mx="2rem"
           >
             <Feature color="red" title="Live Editor" icon={FaEdit}>
-              Live code editor, so you can play around with code, before extracting into your work.
+              Live code editor, so you can play around with code, before
+              extracting into your work.
             </Feature>
 
             <Feature color="pink" title="Light and Dark UI" icon={FaSun}>
