@@ -34,16 +34,16 @@ export default function Credits() {
       </Text>
       <HStack spacing={4}>
         <Link isExternal href={process.env.githubUrl}>
-          <FaGithub boxSize={4} />
+          <Icon as={FaGithub} boxSize={4} />
         </Link>
         <Link isExternal href={process.env.twitterUrl}>
-          <FaTwitter boxSize={4} />
+          <Icon as={FaTwitter} boxSize={4} />
         </Link>
         <Link isExternal href={process.env.linkedinUrl}>
-          <FaLinkedin boxSize={4} />
+          <Icon as={FaLinkedin} boxSize={4} />
         </Link>
         <Link isExternal href={`mailto:${process.env.emailAddress}`}>
-          <FaEnvelope boxSize={4} />
+          <Icon as={FaEnvelope} boxSize={4} />
         </Link>
       </HStack>
     </VStack>
