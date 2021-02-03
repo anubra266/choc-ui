@@ -9,7 +9,7 @@ import {
   Button,
   chakra,
   Stack,
-  useColorModeValue,
+  useColorModeValue
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import { DiGithubBadge } from "react-icons/di";
@@ -37,7 +37,7 @@ export default function Home(props) {
                 fontSize={{
                   base: "2rem",
                   sm: "3rem",
-                  lg: "4rem",
+                  lg: "4rem"
                 }}
                 fontFamily="heading"
                 letterSpacing="tight"
@@ -119,6 +119,6 @@ export async function getStaticProps() {
     fs.readFileSync(contributorsRaw, "utf-8")
   );
   return {
-    props: { contributors },
+    props: { contributors }
   };
 }
