@@ -9,15 +9,15 @@ const Static = () => {
     <Head>
       {isPreview && (
         <>
-          <title>Choc UI - Component Preview</title>
+          <title>Component Preview | Choc UI</title>
 
-          <meta name="title" content="Choc UI - Component Preview" />
+          <meta name="title" content="Component Preview | Choc UI" />
           <meta
             name="description"
             content="Preview beautiful components from Choc UI"
           />
 
-          <meta property="og:title" content="Choc UI - Component Preview" />
+          <meta property="og:title" content="Component Preview | Choc UI" />
           <meta
             property="og:description"
             content="Preview beautiful components from Choc UI"

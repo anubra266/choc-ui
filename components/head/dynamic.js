@@ -6,13 +6,13 @@ const Dynamic = (props) => {
     "Choc UI is a set of accessible and reusable components that are commonly used in web applications.";
   return (
     <Head>
-      <title>Choc UI - {props.title}</title>
+      <title>{props.title} | Choc UI</title>
 
-      <meta name="title" content={`Choc UI - ${props.title}`} />
-      <meta name="description" content={`${props.title}`} />
+      <meta name="title" content={`${props.title} | Choc UI`} />
+      <meta name="description" content={props.description || description} />
 
-      <meta property="og:title" content={`Choc UI - ${props.title}`} />
-      <meta property="twitter:title" content={`Choc UI - ${props.title}`} />
+      <meta property="og:title" content={`${props.title} | Choc UI`} />
+      <meta property="twitter:title" content={`${props.title} | Choc UI`} />
       <meta
         property="og:description"
         content={props.description || description}
