@@ -19,18 +19,24 @@ import { handleSearch } from "./handleSearch";
 
 function SearchModal(_, ref) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
   useImperativeHandle(ref, () => ({
     isOpen,
     onOpen,
     onClose,
   }));
+
   const [search, setsearch] = React.useState("");
+  const [searchResults, setsearchResults] = React.useState();
+
   React.useEffect(() => {
     !isOpen && setsearch("");
   }, [isOpen]);
+
   React.useEffect(() => {
-    isOpen && handleSearch(search);
+    isOpen && setsearchResults(handleSearch(search));
   }, [isOpen, search]);
+
   return (
     <Modal
       isOpen={isOpen}
@@ -70,7 +76,7 @@ function SearchModal(_, ref) {
               </Kbd>
             </InputRightElement>
           </InputGroup>
-          <SearchResults />
+          <SearchResults results={searchResults} close={onClose} />
         </ModalBody>
       </ModalContent>
     </Modal>

@@ -17,6 +17,7 @@
     "@loadable/component": "^5.14.1",
     "codesandbox": "^2.2.1",
     "framer-motion": "^3.2.1",
+    "fuse.js": "^6.4.6",
     "next": "^10.0.6",
     "nextjs-progressbar": "^0.0.7",
     "raw-loader": "^4.0.2",
