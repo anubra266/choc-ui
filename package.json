@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--max_old_space_size=8192' next dev ",
     "build": "next build",
     "start": "next start",
     "export": "next export"
@@ -17,7 +17,8 @@
     "@loadable/component": "^5.14.1",
     "codesandbox": "^2.2.1",
     "framer-motion": "^3.2.1",
-    "next": "10.0.5",
+    "fuse.js": "^6.4.6",
+    "next": "^10.0.6",
     "nextjs-progressbar": "^0.0.7",
     "raw-loader": "^4.0.2",
     "react": "17.0.1",

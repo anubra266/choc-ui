@@ -14,34 +14,8 @@ import * as React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RemoveScroll } from "react-remove-scroll";
 import SponsorButton from "./sponsor-button";
+import DocSearch from "../doc-search";
 import SidebarContent from "~/components/layouts/docs/sidebar-content";
-
-function NavLink({ href, children }) {
-  const isActive = href === route().current();
-
-  return (
-    <a href={href}>
-      <Center
-        flex="1"
-        minH="40px"
-        as="button"
-        rounded="md"
-        transition="0.2s all"
-        fontWeight={isActive ? "semibold" : "medium"}
-        bg={isActive ? "teal.400" : undefined}
-        borderWidth={isActive ? undefined : "1px"}
-        color={isActive ? "white" : undefined}
-        _hover={{
-          bg: isActive
-            ? "teal.500"
-            : useColorModeValue("gray.100", "whiteAlpha.100"),
-        }}
-      >
-        {children}
-      </Center>
-    </a>
-  );
-}
 
 export function MobileNavContent(props) {
   const { isOpen, onClose } = props;
@@ -91,6 +65,7 @@ export function MobileNavContent(props) {
                     mr={2}
                   />
                   <HStack spacing="5">
+                    <DocSearch />
                     <SponsorButton display="flex" />
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>

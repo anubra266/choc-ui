@@ -5,7 +5,6 @@ import ComponentDemo from "~/components/codes/component-demo/component-demo";
 import DocsLayout from "~/components/layouts/docs/index";
 import { Alert, Stack } from "@chakra-ui/react";
 
-import { useRouter } from "next/router";
 import ReactHtmlParser from "react-html-parser";
 
 import ElementObj from "~/categories/elements.json";
@@ -14,9 +13,6 @@ import NavigationObj from "~/categories/navigation.json";
 import ListsObj from "~/categories/lists.json";
 
 const Element = ({ category, section }) => {
-  // const router = useRouter();
-  // const { category, section } = router.query;
-
   const Components = {
     ...ElementObj,
     ...PSectionsObj,
@@ -27,10 +23,10 @@ const Element = ({ category, section }) => {
   return (
     <DocsLayout>
       <React.Fragment>
-        <PageHead title={ComponentObj?.title} />
+        <PageHead title={ComponentObj?.title} image={ComponentObj?.image} />
         <PageHeader>{ComponentObj?.title}</PageHeader>
         {ComponentObj?.components.map((comp, cid) => (
-          <Section key={cid}>
+          <Section key={cid} id={comp.preview}>
             <Section.Header>
               <Section.a target="_blank" rel="noopener" href={comp.url}>
                 {comp.name}

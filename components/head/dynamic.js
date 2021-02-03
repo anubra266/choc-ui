@@ -2,24 +2,36 @@ import React from "react";
 import Head from "next/head";
 
 const Dynamic = (props) => {
+  const description =
+    "Choc UI is a set of accessible and reusable components that are commonly used in web applications.";
   return (
     <Head>
-      <title>Choc UI - {props.title}</title>
+      <title>{props.title} | Choc UI</title>
 
-      <meta name="title" content={`Choc UI - ${props.title}`} />
-      <meta name="description" content={`${props.title}`} />
+      <meta name="title" content={`${props.title} | Choc UI`} />
+      <meta name="description" content={props.description || description} />
 
-      <meta property="og:title" content={`Choc UI - ${props.title}`} />
-      <meta property="twitter:title" content={`Choc UI - ${props.title}`} />
-      <meta property="og:description" content={`${props.title}`} />
-      <meta property="twitter:description" content={`${props.title}`} />
+      <meta property="og:title" content={`${props.title} | Choc UI`} />
+      <meta property="twitter:title" content={`${props.title} | Choc UI`} />
+      <meta
+        property="og:description"
+        content={props.description || description}
+      />
+      <meta
+        property="twitter:description"
+        content={props.description || description}
+      />
       <meta
         property="og:image"
-        content={`${process.env.siteUrl}/props.image` || "/logo.png"}
+        content={
+          `${process.env.siteUrl}/thumbnails/` + (props.image || "landing.png")
+        }
       />
       <meta
         property="twitter:image"
-        content={`${process.env.siteUrl}/props.image` || "/logo.png"}
+        content={
+          `${process.env.siteUrl}/thumbnails/` + (props.image || "landing.png")
+        }
       />
     </Head>
   );

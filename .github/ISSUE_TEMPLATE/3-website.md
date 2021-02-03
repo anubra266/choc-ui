@@ -1,11 +1,10 @@
 ---
-name: "\U0001F680 Feature request"
-about: Suggest an idea for this project
-
+name: "💻 Website Idea or Correction"
+about: Correct or Suggest an idea for the website
 ---
 
 <!--
-Thank you for suggesting an idea to make Choc UI better.
+Thank you for suggesting an idea to make Node.js better.
 
 Please fill in as much of the template below as you're able.
 -->
