@@ -125,6 +125,7 @@
       "gicons": {
         "title": "Gradient Icons",
         "route": "gicons",
+        "image": "gicons.png",
         "alert": {
           "variant": "green",
           "message": "New"

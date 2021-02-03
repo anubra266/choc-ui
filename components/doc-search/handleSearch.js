@@ -17,7 +17,6 @@ export const handleSearch = (keyword) => {
 
   const searchRes = fuse.search(keyword);
   const result = catGroup(searchRes);
-  //   console.log('result', result)
   return result;
 };
 

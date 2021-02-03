@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="./logo.png" width="200"></a></p>
+<p align="center"><a href="https://choc-ui.tech" target="_blank"><img src="./public/logo.png" width="200"></a></p>
  
 <div align="center">
 
@@ -74,7 +74,7 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See [LICENSE](./LICENSE.md) for more information.
- 
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

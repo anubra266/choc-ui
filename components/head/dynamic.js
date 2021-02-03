@@ -16,13 +16,13 @@ const Dynamic = (props) => {
       <meta
         property="og:image"
         content={
-          `${process.env.siteUrl}/thumbnails/` + (props.image || "/logo.png")
+          `${process.env.siteUrl}/thumbnails/` + (props.image || "logo.png")
         }
       />
       <meta
         property="twitter:image"
         content={
-          `${process.env.siteUrl}/thumbnails/` + (props.image || "/logo.png")
+          `${process.env.siteUrl}/thumbnails/` + (props.image || "logo.png")
         }
       />
     </Head>
