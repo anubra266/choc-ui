@@ -4,20 +4,12 @@ import { ThemeToggle } from "~/components/theme-toggle";
 import { useColorModeValue, Stack } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
-function inIframe() {
-  try {
-    return window.self !== window.top;
-  } catch (e) {
-    return true;
-  }
-}
-
 export default function Ss() {
   const router = useRouter();
   const isPreview = router.pathname.includes("preview");
+  const bg = useColorModeValue("white", "gray.700");
   return (
-    isPreview &&
-    !inIframe() && (
+    isPreview && (
       <Stack
         direction="column"
         pos="fixed"
@@ -28,7 +20,7 @@ export default function Ss() {
         border="solid transparent"
         boxShadow="lg"
         borderLeftRadius="lg"
-        bg={useColorModeValue("white", "gray.700")}
+        bg={bg}
       >
         <CopyCode />
         <HomeLink />
