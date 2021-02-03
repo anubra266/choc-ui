@@ -2,6 +2,8 @@ import React from "react";
 import Head from "next/head";
 
 const Dynamic = (props) => {
+  const description =
+    "Choc UI is a set of accessible and reusable components that are commonly used in web applications.";
   return (
     <Head>
       <title>Choc UI - {props.title}</title>
@@ -11,8 +13,14 @@ const Dynamic = (props) => {
 
       <meta property="og:title" content={`Choc UI - ${props.title}`} />
       <meta property="twitter:title" content={`Choc UI - ${props.title}`} />
-      <meta property="og:description" content={`${props.title}`} />
-      <meta property="twitter:description" content={`${props.title}`} />
+      <meta
+        property="og:description"
+        content={props.description || description}
+      />
+      <meta
+        property="twitter:description"
+        content={props.description || description}
+      />
       <meta
         property="og:image"
         content={
