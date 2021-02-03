@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import NextNprogress from "nextjs-progressbar";
 import PageHead from "~/components/head/static";
@@ -11,13 +11,20 @@ const config = {
   useSystemColorMode: false
 };
 function MyApp({ Component, pageProps }) {
-  const [brand, setBrand] = useState("default");
+  const [brand, setBrand] = useState("teal");
 
   const theme = extendTheme({ colors: { brand: presets(brand) }, config });
-
+  const themeProps = useMemo(
+    () => ({
+      brand,
+      setBrand,
+      presets
+    }),
+    [brand]
+  );
   return (
     <ChakraProvider theme={theme}>
-      <ThemeProvider value={{ brand, setBrand, presets }}>
+      <ThemeProvider value={themeProps}>
         <NextNprogress
           color={brand[500]}
           startPosition={0.3}

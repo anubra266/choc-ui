@@ -31,5 +31,7 @@
   },
   "devDependencies": {
     "all-contributors-cli": "^6.19.0"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
