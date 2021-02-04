@@ -10,7 +10,9 @@
 
 ## About Choc UI
 
-**CHOC** is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
+[**CHOC**](https://choc-ui.tech) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
+
+See it in action at https://choc-ui.tech
 
 ## Components
 
