@@ -38,7 +38,7 @@ export default function SearchBar(props) {
 		searchModal.current.onOpen();
 	};
 	return (
-		<Flex w="full" {...props}>
+		<Flex {...props}>
 			<SearchModal ref={searchModal} />
 			<chakra.button
 				flex="1"
@@ -48,7 +48,7 @@ export default function SearchBar(props) {
 				w="100%"
 				bg={useColorModeValue("white", "gray.700")}
 				whiteSpace="nowrap"
-				display={{ base: "none", sm: "flex" }}
+				display="flex"
 				alignItems="center"
 				color="gray.400"
 				py="3"
@@ -60,7 +60,7 @@ export default function SearchBar(props) {
 				onClick={openSearchModal}
 			>
 				<SearchIcon />
-				<HStack w="full" ml="3" spacing="4px">
+				<HStack  display={{ base: "none", md: "flex" }} w="full" ml="3" spacing="4px">
 					<Text textAlign="left" flex="1">
 						Search the collection...
 					</Text>

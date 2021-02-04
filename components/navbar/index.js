@@ -80,7 +80,7 @@ const HeaderContent = () => {
           </NextLink>
         </Flex>
 
-        <DocSearch display={{ base: "none", md: "flex" }} />
+        <DocSearch w="full" display={{ base: "none", md: "flex" }} />
 
         <Flex
           justify="flex-end"
