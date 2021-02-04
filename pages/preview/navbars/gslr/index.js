@@ -30,21 +30,23 @@ export default function Gslr() {
         boxShadow="md"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
-          <chakra.a
-            href="/"
-            title="Choc Home Page"
-            display="flex"
-            alignItems="center"
-          >
-            <Image
-              alt="logo"
-              src="/logo.png"
-              style={{ height: "50px", float: "left" }}
-              mr={2}
-            />
-            <VisuallyHidden>Choc</VisuallyHidden>
-          </chakra.a>
-          <chakra.h1 fontSize="4xl">Choc</chakra.h1>
+          <Flex>
+            <chakra.a
+              href="/"
+              title="Choc Home Page"
+              display="flex"
+              alignItems="center"
+            >
+              <Image
+                alt="logo"
+                src="/logo.png"
+                style={{ height: "30px", float: "left" }}
+                mr={2}
+              />
+              <VisuallyHidden>Choc</VisuallyHidden>
+            </chakra.a>
+            <chakra.h1 fontSize="2xl" fontWeight="bold">Choc</chakra.h1>
+          </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
               spacing={1}

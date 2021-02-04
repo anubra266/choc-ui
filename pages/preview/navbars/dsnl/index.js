@@ -113,7 +113,7 @@ export default function Dsnl() {
               <Image
                 alt="logo"
                 src="/logo.png"
-                style={{ height: "50px", float: "left" }}
+                style={{ height: "30px", float: "left" }}
                 mr={2}
               />
               <VisuallyHidden>Choc</VisuallyHidden>
