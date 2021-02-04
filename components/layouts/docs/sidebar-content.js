@@ -19,7 +19,7 @@ const MenuLink = ({ children, active, isSection, section, href }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
     bg: useColorModeValue("brand.100", "brand.700"),
-    color: useColorModeValue("brand.600", "brand.300"),
+    color: useColorModeValue("brand.600", "brand.100"),
     shadow: "lg",
     rounded: "lg",
   };

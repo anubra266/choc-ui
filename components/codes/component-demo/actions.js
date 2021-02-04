@@ -37,7 +37,7 @@ export default function CodeActions(props) {
     <Flex
       justifyContent="end"
       w="full"
-      bg={useColorModeValue("gray.200", "gray.700")}
+      bg={useColorModeValue("brand.100", "gray.700")}
       borderBottomRadius="lg"
       px={5}
       py={1}
