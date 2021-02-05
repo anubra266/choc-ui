@@ -48,6 +48,12 @@
             "url": "https://material-ui.com/components/badges/",
             "preview": "badges/bwi",
             "height": "100px"
+          },
+          {
+            "name": "Button with badge",
+            "url": null,
+            "preview": "badges/bwb",
+            "height": "100px"
           }
         ]
       },
