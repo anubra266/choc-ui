@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Box, Icon, Flex, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Icon, Flex } from "@chakra-ui/react";
 
 export default function Component() {
   return (
@@ -14,9 +14,9 @@ export default function Component() {
         <Icon
           boxSize={6}
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           strokeLinejoin="round"
-          stroke-width="2"
+          strokeWidth="2"
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
@@ -47,15 +47,15 @@ export default function Component() {
         <Icon
           boxSize={6}
           fill="none"
-          stroke-linecap="round"
+          strokeLinecap="round"
           strokeLinejoin="round"
-          stroke-width="2"
+          strokeWidth="2"
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
           <path
             d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
-            clip-rule="evenodd"
+            clipRule="evenodd"
             fillRule="evenodd"
           ></path>
         </Icon>
