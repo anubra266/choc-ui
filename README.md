@@ -10,7 +10,9 @@
 
 ## About Choc UI
 
-**CHOC** is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
+[**CHOC**](https://choc-ui.tech) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
+
+See it in action at https://choc-ui.tech
 
 ## Components
 
@@ -87,6 +89,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/anubra266"><img src="https://avatars.githubusercontent.com/u/30869823?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abraham</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=anubra266" title="Code">💻</a> <a href="#design-anubra266" title="Design">🎨</a> <a href="#maintenance-anubra266" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/GabrielFemi"><img src="https://avatars.githubusercontent.com/u/39733548?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Akinyosoye Gabriel</b></sub></a><br /><a href="#maintenance-GabrielFemi" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://michaelgrigoryan.com"><img src="https://avatars.githubusercontent.com/u/56165400?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Michael Grigoryan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=MichaelGrigoryan25" title="Code">💻</a> <a href="#design-MichaelGrigoryan25" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/abraham266"><img src="https://avatars.githubusercontent.com/u/73303261?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Anu</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=abraham266" title="Code">💻</a></td>
   </tr>
 </table>
 

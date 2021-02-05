@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "~/theme/theme-context";
 import {
   chakra,
   Flex,
@@ -8,18 +9,25 @@ import {
   useColorModeValue,
   useDisclosure,
   useUpdateEffect,
-  Image,
   Icon,
   Box,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuOptionGroup,
+  MenuItemOption,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
+import { IoColorPalette } from "react-icons/io5";
 import SponsorButton from "./sponsor-button";
 import DocSearch from "../doc-search";
 import { MobileNavButton, MobileNavContent } from "./mobile-nav";
+import Logo from "./logo";
 import NextLink from "next/link";
 
 const HeaderContent = () => {
+  const { brand, setBrand, presets } = useContext(ThemeContext);
   const mobileNav = useDisclosure();
 
   const { toggleColorMode: toggleMode } = useColorMode();
@@ -47,12 +55,7 @@ const HeaderContent = () => {
         <Flex align="center" w="full">
           <NextLink href="/" passHref>
             <Box cursor="pointer">
-              <Image
-                alt="logo"
-                src="/logo.png"
-                style={{ height: "30px", float: "left" }}
-                mr={2}
-              />
+              <Logo />
               <chakra.span
                 fontSize="1.3rem"
                 fontFamily="heading"
@@ -60,7 +63,7 @@ const HeaderContent = () => {
                 style={{ float: "right" }}
               >
                 <chakra.span
-                  color="brand.400"
+                  color={useColorModeValue("brand.600", "brand.400")}
                   textShadow="2px 0 currentColor"
                   letterSpacing="widest"
                 >
@@ -72,7 +75,7 @@ const HeaderContent = () => {
           </NextLink>
         </Flex>
 
-        <DocSearch display={{ base: "none", md: "flex" }} />
+        <DocSearch w="full" display={{ base: "none", md: "flex" }} />
 
         <Flex
           justify="flex-end"
@@ -113,6 +116,43 @@ const HeaderContent = () => {
               onClick={toggleMode}
               icon={<SwitchIcon />}
             />
+            <Menu closeOnSelect={false}>
+              <MenuButton
+                as={IconButton}
+                size="md"
+                fontSize="lg"
+                aria-label="Switch Brand Color"
+                variant="ghost"
+                color="current"
+                icon={<IoColorPalette />}
+              ></MenuButton>
+              <MenuList minWidth="240px">
+                <MenuOptionGroup
+                  defaultValue={brand}
+                  onChange={(b) => setBrand(b)}
+                >
+                  {Object.keys(presets()).map((col, cid) => (
+                    <MenuItemOption
+                      key={cid}
+                      value={col}
+                      textTransform="capitalize"
+                    >
+                      <Flex>
+                        <Box
+                          rounded="md"
+                          shadow="lg"
+                          my="auto"
+                          bg={presets(col)[500]}
+                          boxSize={5}
+                          mr={5}
+                        />
+                        {col}
+                      </Flex>
+                    </MenuItemOption>
+                  ))}
+                </MenuOptionGroup>
+              </MenuList>
+            </Menu>
           </HStack>
           <SponsorButton ml="5" />
           <MobileNavButton

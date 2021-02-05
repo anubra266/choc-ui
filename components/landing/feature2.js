@@ -18,8 +18,8 @@ const Feature = (props) => {
         boxSize={12}
         mb={4}
         rounded="full"
-        color={useColorModeValue(`${props.color}.600`, `${props.color}.100`)}
-        bg={useColorModeValue(`${props.color}.100`, `${props.color}.600`)}
+        color={useColorModeValue("brand.600", "brand.100")}
+        bg={useColorModeValue("brand.100", "brand.600")}
       >
         <Icon
           boxSize={5}
@@ -83,16 +83,16 @@ const Features = () => {
             mt={12}
             mx="2rem"
           >
-            <Feature color="red" title="Live Editor" icon={FaEdit}>
+            <Feature title="Live Editor" icon={FaEdit}>
               Live code editor, so you can play around with code, before
               extracting into your work.
             </Feature>
 
-            <Feature color="pink" title="Light and Dark UI" icon={FaSun}>
+            <Feature title="Light and Dark UI" icon={FaSun}>
               Optimized for multiple color modes. Use light or dark, your
               choice.
             </Feature>
-            <Feature color="brand" title="Developer Experience" icon={FaCode}>
+            <Feature title="Developer Experience" icon={FaCode}>
               Guaranteed to boost your productivity when building your app or
               website.
             </Feature>

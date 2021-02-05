@@ -39,6 +39,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "abraham266",
+      "name": "Anu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73303261?v=4",
+      "profile": "https://github.com/abraham266",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

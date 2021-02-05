@@ -65,7 +65,7 @@ export function MobileNavContent(props) {
                     mr={2}
                   />
                   <HStack spacing="5">
-                    <DocSearch />
+                    <DocSearch w="full" />
                     <SponsorButton display="flex" />
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>
