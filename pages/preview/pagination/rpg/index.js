@@ -1,5 +1,6 @@
 import React from "react";
-import { chakra, Container, Flex, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Flex, useColorModeValue } from "@chakra-ui/react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Ma = () => {
   const PagButton = (props) => {
@@ -20,6 +21,7 @@ const Ma = () => {
         _hover={!props.disabled && activeStyle}
         cursor={props.disabled && "not-allowed"}
         {...(props.active && activeStyle)}
+        display={props.p && !props.active && { base: "none", sm: "block" }}
       >
         {props.children}
       </chakra.a>
@@ -34,13 +36,27 @@ const Ma = () => {
       justifyContent="center"
     >
       <Flex>
-        <PagButton disabled>previous</PagButton>
-        <PagButton active>1</PagButton>
-        <PagButton>2</PagButton>
-        <PagButton>3</PagButton>
-        <PagButton>4</PagButton>
-        <PagButton>5</PagButton>
-        <PagButton>Next</PagButton>
+        <PagButton>
+          <Icon
+            as={IoIosArrowBack}
+            color={useColorModeValue("gray.700", "gray.200")}
+            boxSize={4}
+          />
+        </PagButton>
+        <PagButton p>1</PagButton>
+        <PagButton p active>
+          2
+        </PagButton>
+        <PagButton p>3</PagButton>
+        <PagButton p>4</PagButton>
+        <PagButton p>5</PagButton>
+        <PagButton>
+          <Icon
+            as={IoIosArrowForward}
+            color={useColorModeValue("gray.700", "gray.200")}
+            boxSize={4}
+          />
+        </PagButton>
       </Flex>
     </Flex>
   );

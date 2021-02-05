@@ -228,6 +228,12 @@
             "url": "#",
             "preview": "pagination/pg",
             "height": "100px"
+          },
+          {
+            "name": "Responsive Pagination",
+            "url": "#",
+            "preview": "pagination/rpg",
+            "height": "100px"
           }
         ]
       }

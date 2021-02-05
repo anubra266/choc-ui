@@ -42,7 +42,7 @@ const Ma = () => {
       justifyContent="center"
     >
       <Flex>
-        <PagButton disabled>
+        <PagButton>
           <Icon
             as={IoIosArrowBack}
             color={useColorModeValue("gray.700", "gray.200")}
