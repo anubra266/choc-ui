@@ -23,7 +23,7 @@ import { IoColorPalette } from "react-icons/io5";
 import SponsorButton from "./sponsor-button";
 import DocSearch from "../doc-search";
 import { MobileNavButton, MobileNavContent } from "./mobile-nav";
-import Logo from "./logo";
+import Logo from "~/components/navbar/logo";
 import NextLink from "next/link";
 
 const HeaderContent = () => {

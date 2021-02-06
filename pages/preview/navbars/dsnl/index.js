@@ -21,7 +21,7 @@ import {
   Tab,
   Spacer,
 } from "@chakra-ui/react";
-import Logo from "./logo";
+import Logo from "~/components/navbar/logo";
 import {
   AiOutlineMenu,
   AiFillHome,

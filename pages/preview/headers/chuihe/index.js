@@ -23,7 +23,7 @@ import {
   AiOutlineInbox,
 } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
-import Logo from "./logo";
+import Logo from "~/components/navbar/logo";
 
 const ChakraUIHeader = () => {
   const mobileNav = useDisclosure();

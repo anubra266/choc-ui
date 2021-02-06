@@ -21,7 +21,7 @@ import {
 import { IoIosArrowDown } from "react-icons/io";
 import { AiOutlineMenu, AiFillHome, AiOutlineInbox } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
-import Logo from "./logo";
+import Logo from "~/components/navbar/logo";
 
 export default function Header(props) {
   const bg = useColorModeValue("white", "gray.800");
