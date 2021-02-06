@@ -319,7 +319,7 @@ const PaginationPackage = () => {
           <Section.p>
             <Alert
               status="warning"
-              variant="left-accent"
+              variant="left-accent" 
               borderRadius="md"
               mt={4}
             >
@@ -435,6 +435,46 @@ const PaginationPackage = () => {
                   The <code>hoverStyles prop</code> accepts styleProps for hover
                   State. If not available, <code>activeStyles</code> works for
                   hover
+                </p>
+              </Stack>
+            </Alert>
+          </Section.p>
+        </Section.Content>
+      </Section>
+
+      <Section>
+        <Section.Header>Responsive Pagination</Section.Header>
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo
+              path="packages/choc-paginator/rpg"
+              scope={{ Pagination }}
+              height="100px"
+            />
+          </Section.p>
+          <Section.p>
+            <Alert
+              status="warning"
+              variant="left-accent"
+              borderRadius="md"
+              mt={4}
+            >
+              <Stack>
+                <p>
+                  Pass the <code>responsive prop</code> to reduce the pagination
+                  elements on smaller screens.
+                </p>
+                <p>
+                  You can display some elements by passing an object in the{" "}
+                  <code>responsive prop</code> setting them to true.
+                </p>
+                <p>
+                  The possible keys for the <code>responsive object</code> are{" "}
+                  <code>
+                    {" "}
+                    activePage, totalRender,
+                    fastBackward,fastForward,pageSize,pageJumper
+                  </code>
                 </p>
               </Stack>
             </Alert>
