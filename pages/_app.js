@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import NextNprogress from "nextjs-progressbar";
 import PageHead from "~/components/head/static";
@@ -12,10 +12,10 @@ const config = {
 };
 function MyApp({ Component, pageProps }) {
   const [brand, setBrand] = useState(
-    window.localStorage.getItem("brand") || "default"
+    window?.localStorage.getItem("brand") || "default"
   );
-  React.useEffect(() => {
-    window.localStorage.setItem("brand", brand);
+  useEffect(() => {
+    window?.localStorage.setItem("brand", brand);
   }, [brand]);
   const theme = extendTheme({ colors: { brand: presets(brand) }, config });
   const themeProps = useMemo(
