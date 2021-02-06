@@ -5,11 +5,25 @@
     "sections": {
       "installation": {
         "title": "installation",
-        "route": "installation"
+        "route": "installation",
+        "components": [
+          {
+            "name": "Installation",
+            "url": "#",
+            "preview": ""
+          }
+        ]
       },
       "configuration": {
         "title": "configuration",
-        "route": "configuration"
+        "route": "configuration",
+        "components": [
+          {
+            "name": "configuration",
+            "url": "#",
+            "preview": ""
+          }
+        ]
       }
     }
   }

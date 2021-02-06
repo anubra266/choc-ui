@@ -3,7 +3,6 @@ import { categoriesObj } from "~/categories/parse-categories";
 
 export const handleSearch = (keyword) => {
   const data = parser();
-  console.log('data', data)
   const options = {
     includeScore: true,
     includeMatches: true,
@@ -36,14 +35,14 @@ const parser = () => {
     const { title: catTitle, prefix, sections } = categoriesObj[catKey];
 
     Object.keys(sections).forEach((secKey) => {
-      const { title: secTitle, route, components } = sections[secKey];
+      const { title: secTitle, route, display, components } = sections[secKey];
 
       const parsedComponents = components?.reduce((comps, comp) => {
         const { name, preview } = comp;
 
         comps.push({
           category: catTitle,
-          section: secTitle,
+          section: display || secTitle,
           name,
           preview,
           url: prefix + route + `#${preview}`,

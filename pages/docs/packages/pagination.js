@@ -29,7 +29,7 @@ const PaginationPackage = () => {
           </Stack>
         </Alert>
       </Section.p>
-      <Section>
+      <Section id="installation">
         <Section.Header>
           <Section.a target="_blank" rel="noopener" href="">
             Installation
@@ -43,7 +43,7 @@ const PaginationPackage = () => {
           </Section.p>
         </Section.Content>
       </Section>
-      <Section>
+      <Section id="bp">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Basic Pagination
@@ -83,7 +83,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="mp">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             More Pages
@@ -116,7 +116,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="cps">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Change Page Size
@@ -166,7 +166,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="jpd">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Jump to a page directly
@@ -198,7 +198,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="cs">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Change Size
@@ -230,7 +230,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="sm">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Simple Mode
@@ -266,7 +266,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="cpn">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Controlled page number.{" "}
@@ -302,7 +302,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="tn">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Total number{" "}
@@ -319,7 +319,7 @@ const PaginationPackage = () => {
           <Section.p>
             <Alert
               status="warning"
-              variant="left-accent" 
+              variant="left-accent"
               borderRadius="md"
               mt={4}
             >
@@ -334,7 +334,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="pan">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Prev and next
@@ -366,7 +366,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="ps">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Preset Styling
@@ -401,7 +401,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="cs">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
             Custom Styling
@@ -442,7 +442,7 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
-      <Section>
+      <Section id="rpag">
         <Section.Header>Responsive Pagination</Section.Header>
         <Section.Content>
           <Section.p>
