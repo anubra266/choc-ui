@@ -43,6 +43,7 @@
       "badges": {
         "title": "Badges",
         "route": "badges",
+        "image": "badges.png",
         "components": [
           {
             "name": "Icon with badge",
