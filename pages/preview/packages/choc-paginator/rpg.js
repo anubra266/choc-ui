@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, useColorModeValue, Icon } from "@chakra-ui/react";
+import { Flex, useColorModeValue } from "@chakra-ui/react";
 import Pagination from "@choc-ui/paginator";
 
 export default function Component() {
