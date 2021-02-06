@@ -11,8 +11,10 @@ const config = {
   useSystemColorMode: false,
 };
 function MyApp({ Component, pageProps }) {
-  const [brand, setBrand] = useState("default");
-
+  const [brand, setBrand] = useState(window.localStorage.getItem('brand')||"default");
+  React.useEffect(()=>{
+    window.localStorage.setItem('brand', brand);
+  }[brand])
   const theme = extendTheme({ colors: { brand: presets(brand) }, config });
   const themeProps = useMemo(
     () => ({
