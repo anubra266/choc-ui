@@ -12,93 +12,10 @@
 
 [**CHOC**](https://choc-ui.tech) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
 
-See it in action at https://choc-ui.tech
+## Official Documentation
+See it in action on [Choc-UI's Website.](https://choc-ui.tech)
 
 <br/>
-
-## Installation
-
-These instructions would get started on using the choc-ui on your project
-
-### > Prerequisites
-
-- Node.js
-- npm / yarn
-
-If you are using yarn you can install using the command below.
-
-```bash
-$ yarn add @chakra-ui/react framer-motion
-
-```
-
-If you are using npm you can install using the command below.
-
-```bash
-$ npm install @chakra-ui/react framer-motion
-```
-
-If you are having any challenge installing it, visit [Chakra UI](https://chakra-ui.com/docs/getting-started) and follow the instructions there.
-
-<br/>
-
-## Configuration.
-
-##
-
-### **Setup Provider:**
-
-For Chakra UI to work correctly, you need to setup the ChakraProvider at the root of your application.
-Go to the root of your application and do this:
-
-```jsx
-import * as React from "react";
-// 1. import 'ChakraProvider' component
-import { ChakraProvider } from "@chakra-ui/react";
-function App() {
-  // 2. Use at the root of your app
-  return (
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
-  );
-}
-```
-
-For Next.js, you need to set this up in pages/\_app.js or pages/\_app.tsx
-
-For Gatsby, install the @chakra-ui/gatsby-plugin . It does it automatically for you.
-
-For Create React App, you need to set this up in index.js or index.tsx
-
-<br/>
-
-### **Add Custom Theme (Optional):**
-
-```jsx
-// 1. Import the extendTheme function
-import { extendTheme } from "@chakra-ui/react";
-// 2. Extend the theme to include custom colors, fonts, etc
-const colors = {
-  brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
-  },
-};
-const theme = extendTheme({ colors });
-// 3. Pass the 'theme' prop to the 'ChakraProvider'
-function App() {
-  return (
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
-  );
-}
-```
-
-<br/>
-
 ## Components
 
 - [x] Elements
