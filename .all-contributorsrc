@@ -48,6 +48,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "JuliRash",
+      "name": "Julius Idowu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12122519?v=4",
+      "profile": "http://geniushub.com.ng/",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
