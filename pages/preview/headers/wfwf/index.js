@@ -9,7 +9,6 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  Image,
   Box,
   useDisclosure,
   Spacer,
@@ -25,6 +24,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { AiFillHome, AiOutlineInbox } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
+import Logo from "./logo";
 
 export default function WfWf(props) {
   const bg = useColorModeValue("white", "gray.800");
@@ -284,12 +284,7 @@ export default function WfWf(props) {
       <chakra.header h="100%" bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4}>
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Link display="flex" alignItems="center" href="/">
-            <Image
-              alt="logo"
-              src="/logo.png"
-              style={{ height: "50px", float: "left" }}
-              mr={2}
-            />
+            <Logo />
           </Link>
           <Box display={{ base: "none", md: "inline-flex" }}>
             <HStack spacing={1}>

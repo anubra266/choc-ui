@@ -6,6 +6,7 @@
       "alerts": {
         "title": "Alerts",
         "route": "alerts",
+        "image": "alerts.png",
         "components": [
           {
             "name": "success",

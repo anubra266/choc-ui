@@ -6,7 +6,6 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  Image,
   Box,
   Flex,
   IconButton,
@@ -25,6 +24,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { AiFillHome, AiOutlineInbox } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
+import Logo from "./logo";
 
 export default function Header(props) {
   const { toggleColorMode: toggleMode } = useColorMode();
@@ -304,6 +304,7 @@ export default function Header(props) {
         borderTop="6px solid"
         borderTopColor="brand.400"
         width="full"
+        overflowY="hidden"
       >
         <chakra.div height="4.5rem" mx="auto" maxW="1200px">
           <Flex
@@ -316,12 +317,7 @@ export default function Header(props) {
             <Flex align="flex-start">
               <Link href="/">
                 <HStack>
-                  <Image
-                    alt="logo"
-                    src="/logo.png"
-                    style={{ height: "50px", float: "left" }}
-                    mr={2}
-                  />
+                  <Logo />
                 </HStack>
               </Link>
             </Flex>

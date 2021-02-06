@@ -10,7 +10,6 @@ import {
   Button,
   useDisclosure,
   VStack,
-  Image,
   IconButton,
   CloseButton,
   InputGroup,
@@ -22,6 +21,7 @@ import {
   Tab,
   Spacer,
 } from "@chakra-ui/react";
+import Logo from "./logo";
 import {
   AiOutlineMenu,
   AiFillHome,
@@ -110,12 +110,7 @@ export default function Dsnl() {
               display="flex"
               alignItems="center"
             >
-              <Image
-                alt="logo"
-                src="/logo.png"
-                style={{ height: "30px", float: "left" }}
-                mr={2}
-              />
+              <Logo />
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
             <chakra.h1 fontSize="2xl">Settings</chakra.h1>

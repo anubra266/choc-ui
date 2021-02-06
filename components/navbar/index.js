@@ -63,8 +63,7 @@ const HeaderContent = () => {
                 style={{ float: "right" }}
               >
                 <chakra.span
-                  color={useColorModeValue("brand.600", "brand.400")}
-                  textShadow="2px 0 currentColor"
+                  color={useColorModeValue("brand.500", "brand.400")}
                   letterSpacing="widest"
                 >
                   Choc

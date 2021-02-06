@@ -8,7 +8,7 @@ import { presets } from "~/theme/colors";
 import { ThemeProvider } from "~/theme/theme-context";
 const config = {
   initialColorMode: "dark",
-  useSystemColorMode: false
+  useSystemColorMode: false,
 };
 function MyApp({ Component, pageProps }) {
   const [brand, setBrand] = useState("default");
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
     () => ({
       brand,
       setBrand,
-      presets
+      presets,
     }),
     [brand]
   );
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider theme={theme}>
       <ThemeProvider value={themeProps}>
         <NextNprogress
-          color={brand[500]}
+          color={presets(brand)[500]}
           startPosition={0.3}
           stopDelayMs={200}
           height="2"

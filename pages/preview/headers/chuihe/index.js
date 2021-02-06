@@ -10,7 +10,6 @@ import {
   useColorModeValue,
   useDisclosure,
   CloseButton,
-  Image,
   Box,
   VStack,
   Button,
@@ -24,6 +23,7 @@ import {
   AiOutlineInbox,
 } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
+import Logo from "./logo";
 
 const ChakraUIHeader = () => {
   const mobileNav = useDisclosure();
@@ -135,18 +135,14 @@ const ChakraUIHeader = () => {
         borderTop="6px solid"
         borderTopColor="brand.400"
         width="full"
+        overflowY="hidden"
       >
         <chakra.div height="4.5rem" mx="auto" maxW="1200px">
           <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
             <Flex align="center">
               <Link href="/">
                 <HStack>
-                  <Image
-                    alt="logo"
-                    src="/logo.png"
-                    style={{ height: "50px", float: "left" }}
-                    mr={2}
-                  />
+                  <Logo />
                 </HStack>
               </Link>
             </Flex>

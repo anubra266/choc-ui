@@ -10,7 +10,6 @@ import {
   Button,
   useDisclosure,
   VStack,
-  Image,
   IconButton,
   CloseButton,
   InputGroup,
@@ -18,6 +17,7 @@ import {
   Input,
   Avatar,
 } from "@chakra-ui/react";
+import Logo from "./logo";
 import {
   AiOutlineMenu,
   AiFillHome,
@@ -105,12 +105,7 @@ export default function Dsll() {
               display="flex"
               alignItems="center"
             >
-              <Image
-                alt="logo"
-                src="/logo.png"
-                style={{ height: "30px", float: "left" }}
-                mr={2}
-              />
+              <Logo />
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
 
@@ -144,7 +139,7 @@ export default function Dsll() {
           </HStack>
           <HStack
             spacing={3}
-            display={mobileNav.isOpen ? "none":"flex"}
+            display={mobileNav.isOpen ? "none" : "flex"}
             alignItems="center"
           >
             <InputGroup>

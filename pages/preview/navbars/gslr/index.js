@@ -10,11 +10,11 @@ import {
   Button,
   useDisclosure,
   VStack,
-  Image,
   IconButton,
   CloseButton,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
+import Logo from "./logo";
 
 export default function Gslr() {
   const bg = useColorModeValue("white", "gray.800");
@@ -37,15 +37,12 @@ export default function Gslr() {
               display="flex"
               alignItems="center"
             >
-              <Image
-                alt="logo"
-                src="/logo.png"
-                style={{ height: "30px", float: "left" }}
-                mr={2}
-              />
+              <Logo />
               <VisuallyHidden>Choc</VisuallyHidden>
             </chakra.a>
-            <chakra.h1 fontSize="2xl" fontWeight="bold">Choc</chakra.h1>
+            <chakra.h1 fontSize="2xl" fontWeight="bold">
+              Choc
+            </chakra.h1>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack

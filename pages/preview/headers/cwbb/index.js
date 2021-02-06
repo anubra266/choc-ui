@@ -6,7 +6,6 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  Image,
   Box,
   Flex,
   IconButton,
@@ -22,6 +21,7 @@ import {
 import { IoIosArrowDown } from "react-icons/io";
 import { AiOutlineMenu, AiFillHome, AiOutlineInbox } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
+import Logo from "./logo";
 
 export default function Header(props) {
   const bg = useColorModeValue("white", "gray.800");
@@ -286,15 +286,11 @@ export default function Header(props) {
         w="100%"
         px={{ base: 2, sm: 4 }}
         py={4}
+        overflowY="hidden"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Link display="flex" alignItems="center" href="/">
-            <Image
-              alt="logo"
-              src="/logo.png"
-              style={{ height: "50px", float: "left" }}
-              mr={2}
-            />
+            <Logo />
           </Link>
           <Box pos="relative" display={{ base: "none", md: "inline-flex" }}>
             <HStack spacing={1}>
