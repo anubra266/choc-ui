@@ -3,6 +3,7 @@ import { categoriesObj } from "~/categories/parse-categories";
 
 export const handleSearch = (keyword) => {
   const data = parser();
+  console.log('data', data)
   const options = {
     includeScore: true,
     includeMatches: true,
