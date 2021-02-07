@@ -296,14 +296,10 @@ export default function Header(props) {
         ref={ref}
         shadow={y > height ? "sm" : undefined}
         transition="box-shadow 0.2s"
-        top="0"
-        position="absolute"
         bg={bg}
-        left="0"
-        right="0"
         borderTop="6px solid"
         borderTopColor="brand.400"
-        width="full"
+        w="full"
         overflowY="hidden"
       >
         <chakra.div height="4.5rem" mx="auto" maxW="1200px">

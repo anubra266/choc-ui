@@ -14,18 +14,31 @@ import {
   CloseButton,
   VStack,
   Button,
+  useColorMode,
   SimpleGrid,
   Stack,
 } from "@chakra-ui/react";
+import { useViewportScroll } from "framer-motion";
 
 import { IoIosArrowDown } from "react-icons/io";
-import { AiOutlineMenu, AiFillHome, AiOutlineInbox } from "react-icons/ai";
+import { AiFillHome, AiOutlineInbox } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
+import { FaMoon, FaSun } from "react-icons/fa";
 import Logo from "~/components/navbar/logo";
 
 export default function Header(props) {
+  const { toggleColorMode: toggleMode } = useColorMode();
+  const text = useColorModeValue("dark", "light");
+  const SwitchIcon = useColorModeValue(FaMoon, FaSun);
   const bg = useColorModeValue("white", "gray.800");
-  const bor = useColorModeValue("gray.200", "gray.900");
+  const ref = React.useRef();
+  const [y, setY] = React.useState(0);
+  const { height = 0 } = ref.current ? ref.current.getBoundingClientRect() : {};
+
+  const { scrollY } = useViewportScroll();
+  React.useEffect(() => {
+    return scrollY.onChange(() => setY(scrollY.get()));
+  }, [scrollY]);
   const cl = useColorModeValue("gray.800", "white");
   const mobileNav = useDisclosure();
 
@@ -280,89 +293,104 @@ export default function Header(props) {
   return (
     <React.Fragment>
       <chakra.header
-        borderBottomWidth={2}
-        borderBottomColor={bor}
+        ref={ref}
+        shadow={y > height ? "sm" : undefined}
+        transition="box-shadow 0.2s"
         bg={bg}
-        w="100%"
-        px={{ base: 2, sm: 4 }}
-        py={4}
+        borderTop="6px solid"
+        borderTopColor="brand.400"
+        w="full"
         overflowY="hidden"
+        borderBottomWidth={2}
+        borderBottomColor={useColorModeValue("gray.200", "gray.900")}
       >
-        <Flex alignItems="center" justifyContent="space-between" mx="auto">
-          <Link display="flex" alignItems="center" href="/">
-            <Logo />
-          </Link>
-          <Box pos="relative" display={{ base: "none", md: "inline-flex" }}>
-            <HStack spacing={1}>
-              <Popover>
-                <PopoverTrigger>
-                  <Button
-                    bg={bg}
-                    color="gray.500"
-                    display="inline-flex"
-                    alignItems="center"
-                    fontSize="md"
-                    _hover={{ color: cl }}
-                    _focus={{ boxShadow: "none" }}
-                    rightIcon={<IoIosArrowDown />}
+        <chakra.div height="4.5rem" mx="auto" maxW="1200px">
+          <Flex
+            w="100%"
+            h="100%"
+            px="6"
+            alignItems="center"
+            justifyContent="space-between"
+          >
+            <Flex align="flex-start">
+              <Link href="/">
+                <HStack>
+                  <Logo />
+                </HStack>
+              </Link>
+            </Flex>
+            <Flex>
+              <HStack spacing="5" display={{ base: "none", md: "flex" }}>
+                <Popover>
+                  <PopoverTrigger>
+                    <Button
+                      bg={bg}
+                      color="gray.500"
+                      display="inline-flex"
+                      alignItems="center"
+                      fontSize="md"
+                      _hover={{ color: cl }}
+                      _focus={{ boxShadow: "none" }}
+                      rightIcon={<IoIosArrowDown />}
+                    >
+                      Features
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent
+                    w="100vw"
+                    maxW="md"
+                    _focus={{ boxShadow: "md" }}
                   >
-                    Features
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent
+                    <Features />
+                  </PopoverContent>
+                </Popover>
+                <Button
                   bg={bg}
-                  w="100vw"
-                  maxW="md"
-                  _focus={{ boxShadow: "md" }}
+                  color="gray.500"
+                  display="inline-flex"
+                  alignItems="center"
+                  fontSize="md"
+                  _hover={{ color: cl }}
+                  _focus={{ boxShadow: "none" }}
                 >
-                  <Features />
-                </PopoverContent>
-              </Popover>
-              <Button
-                bg={bg}
-                color="gray.500"
-                display="inline-flex"
-                alignItems="center"
-                fontSize="md"
-                _hover={{ color: cl }}
-                _focus={{ boxShadow: "none" }}
-              >
-                Blog
-              </Button>
-              <Button
-                bg={bg}
-                color="gray.500"
-                display="inline-flex"
-                alignItems="center"
-                fontSize="md"
-                _hover={{ color: cl }}
-                _focus={{ boxShadow: "none" }}
-              >
-                Pricing
-              </Button>
-            </HStack>
-          </Box>
-          <Box display="flex" alignItems="center">
-            <HStack spacing={1}>
-              <Button colorScheme="brand" variant="ghost" size="sm">
-                Sign in
-              </Button>
-              <Button colorScheme="brand" variant="solid" size="sm">
-                Sign up
-              </Button>
-            </HStack>
-            <IconButton
-              display={{ base: "flex", md: "none" }}
-              aria-label="Open menu"
-              fontSize="20px"
-              color={useColorModeValue("gray.800", "inherit")}
-              variant="ghost"
-              icon={<AiOutlineMenu />}
-              onClick={mobileNav.onOpen}
-            />
-          </Box>
-        </Flex>
-        {MobileNavContent}
+                  Blog
+                </Button>
+                <Button
+                  bg={bg}
+                  color="gray.500"
+                  display="inline-flex"
+                  alignItems="center"
+                  fontSize="md"
+                  _hover={{ color: cl }}
+                  _focus={{ boxShadow: "none" }}
+                >
+                  Pricing
+                </Button>
+              </HStack>
+            </Flex>
+            <Flex justify="flex-end" align="center" color="gray.400">
+              <HStack spacing="5" display={{ base: "none", md: "flex" }}>
+                <Button colorScheme="brand" variant="ghost" size="sm">
+                  Sign in
+                </Button>
+                <Button colorScheme="brand" variant="solid" size="sm">
+                  Sign up
+                </Button>
+              </HStack>
+              <IconButton
+                size="md"
+                fontSize="lg"
+                aria-label={`Switch to ${text} mode`}
+                variant="ghost"
+                color="current"
+                ml={{ base: "0", md: "3" }}
+                onClick={toggleMode}
+                icon={<SwitchIcon />}
+              />
+            </Flex>
+          </Flex>
+          {MobileNavContent}
+        </chakra.div>
       </chakra.header>
     </React.Fragment>
   );
