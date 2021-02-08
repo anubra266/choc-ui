@@ -184,7 +184,7 @@ const Header = (props) => {
       transition="box-shadow 0.5s ease-in-out"
       pos="fixed"
       top="0"
-      zIndex="1"
+      zIndex="tooltip"
       bg={bg}
       left="0"
       right="0"
