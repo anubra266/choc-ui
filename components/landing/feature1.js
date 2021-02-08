@@ -13,7 +13,7 @@ const Feature = () => {
       borderTopColor={useColorModeValue("gray.200", "gray.900")}
       my={12}
     >
-      <Box bg={useColorModeValue("white", "gray.800")} borderRadius="xl">
+      <Box bg={useColorModeValue("white", "gray.800")} rounded="xl">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h1
@@ -49,7 +49,7 @@ const Feature = () => {
               mx={{ lg: "auto" }}
               color={useColorModeValue("gray.500", "gray.400")}
             >
-              <ComponentDemo path="cards/msp" height="100px" />
+              <ComponentDemo path="cards/msp" h="100px" />
             </chakra.p>
           </Box>
         </Box>

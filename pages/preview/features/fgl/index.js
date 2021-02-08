@@ -17,7 +17,7 @@ export default function Fgl() {
           w={8}
           h={8}
           mb={4}
-          borderRadius="full"
+          rounded="full"
           color={useColorModeValue(`${props.color}.600`, `${props.color}.100`)}
           bg={useColorModeValue(`${props.color}.100`, `${props.color}.600`)}
         >
@@ -51,7 +51,7 @@ export default function Fgl() {
     <Flex
       bg="gray.600"
       p={20}
-      width="auto"
+      w="auto"
       justifyContent="center"
       alignItems="center"
     >
@@ -60,7 +60,7 @@ export default function Fgl() {
         py={20}
         mx="auto"
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="xl"
+        shadow="xl"
       >
         <Box textAlign={{ lg: "center" }}>
           <chakra.p

@@ -35,7 +35,7 @@ const KuttyHero = () => {
   return (
     <Box px={4} py={32} mx="auto">
       <Box
-        width={{ base: "100%", md: 11 / 12, xl: 8 / 12 }}
+        w={{ base: "full", md: 11 / 12, xl: 8 / 12 }}
         textAlign={{ base: "left", md: "center" }}
         mx="auto"
       >
@@ -60,7 +60,7 @@ const KuttyHero = () => {
         </chakra.p>
         <SimpleGrid
           as="form"
-          w={{ base: "100%", md: 7 / 12 }}
+          w={{ base: "full", md: 7 / 12 }}
           columns={{ base: 1, lg: 6 }}
           spacing={3}
           pt={1}
@@ -79,7 +79,7 @@ const KuttyHero = () => {
           </GridItem>
           <Button
             as={GridItem}
-            w="100%"
+            w="full"
             variant="solid"
             colSpan={{ base: "auto", lg: 2 }}
             size="lg"

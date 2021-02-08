@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
           color={presets(brand)[500]}
           startPosition={0.3}
           stopDelayMs={200}
-          height="2"
+          h="2"
         />
         <PageHead />
         <Component {...pageProps} />

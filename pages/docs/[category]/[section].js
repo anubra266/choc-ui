@@ -34,14 +34,14 @@ const Element = ({ category, section }) => {
             </Section.Header>
             <Section.Content>
               <Section.p>
-                <ComponentDemo path={comp.preview} height={comp.height} />
+                <ComponentDemo path={comp.preview} h={comp.height} />
               </Section.p>
               {comp.alerts && (
                 <Section.p>
                   <Alert
                     status={comp.alerts.status}
                     variant="left-accent"
-                    borderRadius="md"
+                    rounded="md"
                     mt={4}
                   >
                     <Stack>

@@ -11,16 +11,16 @@ export default function Component() {
   const [red500, brand600] = useToken("colors", ["red.500", "brand.600"]);
   const gradient = (
     <chakra.svg
-      width={0}
-      height={0}
-      position="absolute"
+      w={0}
+      h={0}
+      pos="absolute"
       aria-hidden="true"
       focusable="false"
     >
       <linearGradient id="gradient" x2="1" y2="1">
         <stop offset="0%" stop-color="#447799" />
         <stop offset="50%" stop-color={red500} />
-        <stop offset="100%" stop-color={brand600} />
+        <stop offset="full" stop-color={brand600} />
       </linearGradient>
     </chakra.svg>
   );

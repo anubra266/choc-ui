@@ -49,10 +49,10 @@ export default function Sj() {
             mt={{ base: 8, lg: 0 }}
             shrink={{ lg: 0 }}
           >
-            <Box display="inline-flex" borderRadius="md" boxShadow="md">
+            <Box display="inline-flex" rounded="md" shadow="md">
               <Link
                 href="#"
-                w="100%"
+                w="full"
                 display="inline-flex"
                 alignItems="center"
                 justifyContent="center"
@@ -60,7 +60,7 @@ export default function Sj() {
                 py={3}
                 border="solid transparent"
                 fontWeight="bold"
-                borderRadius="md"
+                rounded="md"
                 color={useColorModeValue("white")}
                 bg={useColorModeValue("brand.600", "brand.500")}
                 _hover={{
@@ -70,10 +70,10 @@ export default function Sj() {
                 Get started
               </Link>
             </Box>
-            <Box ml={3} display="inline-flex" borderRadius="md" boxShadow="md">
+            <Box ml={3} display="inline-flex" rounded="md" shadow="md">
               <Link
                 href="#"
-                w="100%"
+                w="full"
                 display="inline-flex"
                 alignItems="center"
                 justifyContent="center"
@@ -81,7 +81,7 @@ export default function Sj() {
                 py={3}
                 border="solid transparent"
                 fontWeight="bold"
-                borderRadius="md"
+                rounded="md"
                 color="brand.600"
                 bg="white"
                 _hover={{

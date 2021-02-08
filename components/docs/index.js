@@ -14,8 +14,8 @@ export const Section = (props) => {
     <Box
       mt={8}
       border="solid transparent"
-      boxShadow="md"
-      borderRadius="lg"
+      shadow="md"
+      rounded="lg"
       {...props}
     />
   );
@@ -28,7 +28,7 @@ Section.Header = (props) => {
       w="full"
       textTransform="capitalize"
       bg={useColorModeValue("brand.100", "gray.700")}
-      borderTopRadius="lg"
+      roundedTop="lg"
       px={5}
       py={3}
       {...props}

@@ -25,18 +25,18 @@ const Cpwe = () => {
         bg={useColorModeValue("white", "gray.800")}
         maxW="sm"
         borderWidth="1px"
-        borderRadius="lg"
-        boxShadow="lg"
+        rounded="lg"
+        shadow="lg"
       >
         <Image
           src={property.imageUrl}
           alt={property.imageAlt}
-          borderTopRadius="lg"
+          roundedTop="lg"
         />
 
         <Box p="6">
           <Box d="flex" alignItems="baseline">
-            <Badge borderRadius="full" px="2" colorScheme="teal">
+            <Badge rounded="full" px="2" colorScheme="teal">
               New
             </Badge>
             <Box

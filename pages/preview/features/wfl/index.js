@@ -41,12 +41,12 @@ export default function Wfl() {
     <Flex
       bg="gray.600"
       p={20}
-      width="auto"
+      w="auto"
       justifyContent="center"
       alignItems="center"
     >
       <Box
-        boxShadow="xl"
+        shadow="xl"
         bg={useColorModeValue("white", "gray.800")}
         px={8}
         py={20}
@@ -83,7 +83,7 @@ export default function Wfl() {
               as="a"
               href="#"
               variant="solid"
-              w={{ base: "100%", sm: "auto" }}
+              w={{ base: "full", sm: "auto" }}
               colorScheme="brand"
               size="lg"
             >

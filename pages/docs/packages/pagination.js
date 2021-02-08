@@ -21,7 +21,7 @@ const PaginationPackage = () => {
         </Section.a>
       </PageHeader>
       <Section.p>
-        <Alert status="success" variant="left-accent" borderRadius="md" mt={4}>
+        <Alert status="success" variant="left-accent" rounded="md" mt={4}>
           <Stack>
             <p>
               Our <b>Code Editor</b> is editable, and the preview is live.
@@ -54,14 +54,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -94,14 +94,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/more"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -127,14 +127,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/cpz"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -177,14 +177,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/spj"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -209,14 +209,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/csz"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -241,14 +241,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/sm"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -277,14 +277,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/cpn"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -313,14 +313,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/sht"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -345,14 +345,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/itr"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -377,14 +377,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/prs"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -412,14 +412,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/css"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -449,14 +449,14 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/rpg"
               scope={{ Pagination }}
-              height="100px"
+              h="100px"
             />
           </Section.p>
           <Section.p>
             <Alert
               status="warning"
               variant="left-accent"
-              borderRadius="md"
+              rounded="md"
               mt={4}
             >
               <Stack>
@@ -483,7 +483,7 @@ const PaginationPackage = () => {
       </Section>
 
       <Section.p>
-        <Alert status="info" variant="left-accent" borderRadius="md" mt={4}>
+        <Alert status="info" variant="left-accent" rounded="md" mt={4}>
           <Stack>
             <p>
               Set the <code> boolean hideOnSinglePage prop</code> to false, to

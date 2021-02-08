@@ -11,7 +11,7 @@ import {
 const KuttyHero = () => {
   return (
     <Flex px={4} py={32} mx="auto">
-      <Box w="100%" mx="auto" w={{ lg: 8 / 12, xl: 5 / 12 }}>
+      <Box w="full" mx="auto" w={{ lg: 8 / 12, xl: 5 / 12 }}>
         <chakra.p
           mb={2}
           fontSize="xs"
@@ -39,7 +39,7 @@ const KuttyHero = () => {
         <HStack>
           <Button
             as="a"
-            width={{ base: "100%", sm: "auto" }}
+            w={{ base: "full", sm: "auto" }}
             variant="solid"
             colorScheme="brand"
             size="lg"
@@ -50,7 +50,7 @@ const KuttyHero = () => {
           </Button>
           <Button
             as="a"
-            width={{ base: "100%", sm: "auto" }}
+            w={{ base: "full", sm: "auto" }}
             href="#"
             mb={{ base: 2, sm: 0 }}
             size="lg"

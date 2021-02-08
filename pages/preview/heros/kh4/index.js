@@ -14,7 +14,7 @@ const KuttyHero = () => {
   return (
     <Box px={8} py={24} mx="auto">
       <Box
-        w={{ base: "100%", md: 11 / 12, xl: 9 / 12 }}
+        w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
         mx="auto"
         textAlign={{ base: "left", md: "center" }}
       >
@@ -29,7 +29,7 @@ const KuttyHero = () => {
           All your{" "}
           <Text
             display={{ base: "block", lg: "inline" }}
-            w="100%"
+            w="full"
             bgClip="text"
             bgGradient="linear(to-r, green.400,purple.500)"
             fontWeight="extrabold"
@@ -61,7 +61,7 @@ const KuttyHero = () => {
             display="inline-flex"
             alignItems="center"
             justifyContent="center"
-            w={{ base: "100%", sm: "auto" }}
+            w={{ base: "full", sm: "auto" }}
             mb={{ base: 2, sm: 0 }}
             href="#"
             size="lg"
@@ -81,7 +81,7 @@ const KuttyHero = () => {
             display="inline-flex"
             alignItems="center"
             justifyContent="center"
-            w={{ base: "100%", sm: "auto" }}
+            w={{ base: "full", sm: "auto" }}
             mb={{ base: 2, sm: 0 }}
             href="#"
             size="lg"
@@ -98,15 +98,15 @@ const KuttyHero = () => {
         </Stack>
       </Box>
       <Box
-        w={{ base: "100%", md: 10 / 12 }}
+        w={{ base: "full", md: 10 / 12 }}
         mx="auto"
         mt={20}
         textAlign="center"
       >
         <Image
-          w="100%"
-          borderRadius="lg"
-          boxShadow="2xl"
+          w="full"
+          rounded="lg"
+          shadow="2xl"
           src="https://kutty.netlify.app/hero.jpg"
           alt="Hellonext feedback boards software screenshot"
         />

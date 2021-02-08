@@ -21,7 +21,7 @@ const Provider = () => {
           <Alert
             status="warning"
             variant="left-accent"
-            borderRadius="md"
+            rounded="md"
             mt={4}
           >
             <Stack>

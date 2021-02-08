@@ -14,8 +14,8 @@ const Ma = () => {
         maxW="xs"
         mx="auto"
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="lg"
-        borderRadius="lg"
+        shadow="lg"
+        rounded="lg"
       >
         <Box px={4} py={2}>
           <chakra.h1
@@ -38,7 +38,7 @@ const Ma = () => {
 
         <Image
           h={48}
-          w="100%"
+          w="full"
           objectFit="cover"
           mt={2}
           src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
@@ -51,7 +51,7 @@ const Ma = () => {
           px={4}
           py={2}
           bg="gray.900"
-          borderBottomRadius="lg"
+          roundedBottom="lg"
         >
           <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
             $129
@@ -63,7 +63,7 @@ const Ma = () => {
             fontSize="xs"
             color="gray.900"
             fontWeight="bold"
-            borderRadius="lg"
+            rounded="lg"
             textTransform="uppercase"
             _hover={{
               bg: "gray.200",

@@ -53,7 +53,7 @@ export default function Header(props) {
         p={3}
         display="flex"
         alignItems="start"
-        borderRadius="lg"
+        rounded="lg"
         _hover={{ bg: hbg }}
         href="#"
       >
@@ -175,7 +175,7 @@ export default function Header(props) {
                 p={3}
                 display="flex"
                 alignItems="center"
-                borderRadius="md"
+                rounded="md"
                 fontSize="md"
                 color={tcl}
                 _hover={{ bg: hbgh }}
@@ -215,7 +215,7 @@ export default function Header(props) {
                 p={3}
                 display="flex"
                 alignItems="center"
-                borderRadius="md"
+                rounded="md"
                 fontSize="md"
                 color={tcl}
                 _hover={{ bg: hbgh }}
@@ -260,19 +260,19 @@ export default function Header(props) {
       m={2}
       bg={bg}
       spacing={3}
-      borderRadius="sm"
-      boxShadow="sm"
+      rounded="sm"
+      shadow="sm"
     >
       <CloseButton
         aria-label="Close menu"
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="100%" variant="ghost" href="#" leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost" href="#" leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
-        w="100%"
+        w="full"
         variant="solid"
         colorScheme="brand"
         href="#"
@@ -281,7 +281,7 @@ export default function Header(props) {
         Inbox
       </Button>
       <Button
-        w="100%"
+        w="full"
         variant="ghost"
         href="#"
         leftIcon={<BsFillCameraVideoFill />}
@@ -304,10 +304,10 @@ export default function Header(props) {
         borderBottomWidth={2}
         borderBottomColor={useColorModeValue("gray.200", "gray.900")}
       >
-        <chakra.div height="4.5rem" mx="auto" maxW="1200px">
+        <chakra.div h="4.5rem" mx="auto" maxW="1200px">
           <Flex
-            w="100%"
-            h="100%"
+            w="full"
+            h="full"
             px="6"
             alignItems="center"
             justifyContent="space-between"

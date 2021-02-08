@@ -27,8 +27,8 @@ const OpenSource = ({ contributors }) => {
             src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8Z2l0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             alt="Open Source"
             objectFit="cover"
-            w="100%"
-            h={{ base: 64, md: "100%" }}
+            w="full"
+            h={{ base: 64, md: "full" }}
             bg="gray.100"
             loading="lazy"
             opacity={0.9}
@@ -74,7 +74,7 @@ const OpenSource = ({ contributors }) => {
               So <b>join us now.</b>{" "}
             </Box>
           </Box>
-          <Box display="inline-flex" borderRadius="md" boxShadow="md">
+          <Box display="inline-flex" rounded="md" shadow="md">
             <Link
               href={process.env.githubChoc}
               mt={2}
@@ -86,8 +86,8 @@ const OpenSource = ({ contributors }) => {
               py={3}
               border="solid transparent"
               fontWeight="bold"
-              w="100%"
-              borderRadius="md"
+              w="full"
+              rounded="md"
               color={useColorModeValue("white")}
               bg={useColorModeValue("brand.600", "brand.500")}
               _hover={{

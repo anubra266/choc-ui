@@ -23,15 +23,15 @@ const Ma = () => {
         py={4}
         px={8}
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="lg"
-        borderRadius="lg"
+        shadow="lg"
+        rounded="lg"
       >
         <Flex justifyContent={{ base: "center", md: "end" }} mt={-16}>
           <Image
             w={20}
             h={20}
             objectFit="cover"
-            borderRadius="full"
+            rounded="full"
             borderStyle="solid"
             borderWidth={2}
             borderColor={useColorModeValue("brand.500", "brand.400")}

@@ -13,7 +13,7 @@ import { IoCheckmark } from "react-icons/io5";
 export default function Pricing() {
   const Feature = (props) => {
     return (
-      <Flex alignSelf="start" w="100%">
+      <Flex alignSelf="start" w="full">
         <Icon
           boxSize={5}
           mt={1}
@@ -40,11 +40,11 @@ export default function Pricing() {
       transform="translate(-50%,-50%)"
       bg="gray.600"
       p={10}
-      width="100%"
+      w="full"
       justifyContent="center"
       alignItems="center"
     >
-      <Box w="100%" bg="blue" pt={8}>
+      <Box w="full" bg="blue" pt={8}>
         <Flex
           direction={{ base: "column", md: "row" }}
           justifyContent="center"
@@ -53,7 +53,7 @@ export default function Pricing() {
           <Flex
             flex={{ sm: 1, lg: "initial" }}
             w={{ lg: 2.3 / 7 }}
-            borderRadius="lg"
+            rounded="lg"
             borderTopRightRadius={0}
             borderBottomLeftRadius="lg"
             bg={useColorModeValue("white", "gray.700")}
@@ -65,8 +65,8 @@ export default function Pricing() {
               justifyContent="center"
               p={8}
               textAlign="center"
-              w="100%"
-              boxShadow="xl"
+              w="full"
+              shadow="xl"
             >
               <chakra.span fontSize="3xl" fontWeight="bold">
                 Hobby
@@ -91,14 +91,14 @@ export default function Pricing() {
             <VStack
               fontSize="sm"
               spacing={8}
-              h="100%"
+              h="full"
               bg={useColorModeValue("gray.100", "gray.800")}
               borderBottomLeftRadius="lg"
               p={12}
             >
               <VStack
                 spacing={4}
-                w="100%"
+                w="full"
                 direction="column"
                 alignItems="start"
               >
@@ -107,15 +107,15 @@ export default function Pricing() {
                 <Feature>99.99% Guaranteed Uptime SLA</Feature>
               </VStack>
               <Box
-                width="100%"
+                w="full"
                 ml={3}
                 display="inline-flex"
-                borderRadius="md"
-                boxShadow="md"
+                rounded="md"
+                shadow="md"
               >
                 <chakra.a
                   href="#"
-                  w="100%"
+                  w="full"
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"
@@ -123,7 +123,7 @@ export default function Pricing() {
                   py={3}
                   border="solid transparent"
                   fontWeight="bold"
-                  borderRadius="md"
+                  rounded="md"
                   color={useColorModeValue("brand.600", "gray.100")}
                   bg={useColorModeValue("white", "gray.600")}
                   _hover={{
@@ -139,10 +139,10 @@ export default function Pricing() {
           <Flex
             flex={{ base: 1, lg: "initial" }}
             w={{ lg: 2.4 / 7 }}
-            borderRadius="lg"
+            rounded="lg"
             bg={useColorModeValue("white", "gray.700")}
             mt={{ base: 4, sm: -4 }}
-            boxShadow="xl"
+            shadow="xl"
             zIndex={30}
             direction="column"
           >
@@ -151,8 +151,8 @@ export default function Pricing() {
               justifyContent="center"
               p={8}
               textAlign="center"
-              w="100%"
-              boxShadow="xl"
+              w="full"
+              shadow="xl"
             >
               <chakra.span fontSize="3xl" fontWeight="bold">
                 Growth
@@ -176,15 +176,15 @@ export default function Pricing() {
             </VStack>
             <VStack
               fontSize="sm"
-              h="100%"
-              borderBottomRadius="lg"
+              h="full"
+              roundedBottom="lg"
               spacing={8}
               bg={useColorModeValue("gray.100", "gray.800")}
               p={12}
             >
               <VStack
                 spacing={4}
-                w="100%"
+                w="full"
                 direction="column"
                 alignItems="start"
               >
@@ -196,13 +196,13 @@ export default function Pricing() {
               </VStack>
               <Box
                 display="inline-flex"
-                borderRadius="md"
-                boxShadow="md"
-                w="100%"
+                rounded="md"
+                shadow="md"
+                w="full"
               >
                 <chakra.a
                   href="#"
-                  w="100%"
+                  w="full"
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"
@@ -210,7 +210,7 @@ export default function Pricing() {
                   py={3}
                   border="solid transparent"
                   fontWeight="bold"
-                  borderRadius="md"
+                  rounded="md"
                   color={useColorModeValue("white")}
                   bg={useColorModeValue("brand.600", "brand.500")}
                   _hover={{
@@ -226,7 +226,7 @@ export default function Pricing() {
           <Flex
             flex={{ sm: 1, lg: "initial" }}
             w={{ lg: 2.3 / 7 }}
-            borderTopRadius="lg"
+            roundedTop="lg"
             borderBottomRightRadius="lg"
             borderTopLeftRadius={0}
             bg={useColorModeValue("white", "gray.700")}
@@ -238,8 +238,8 @@ export default function Pricing() {
               justifyContent="center"
               p={8}
               textAlign="center"
-              w="100%"
-              boxShadow="xl"
+              w="full"
+              shadow="xl"
             >
               <chakra.span fontSize="3xl" fontWeight="bold">
                 Scale
@@ -264,14 +264,14 @@ export default function Pricing() {
             <VStack
               fontSize="sm"
               spacing={8}
-              h="100%"
+              h="full"
               bg={useColorModeValue("gray.100", "gray.800")}
               borderBottomRightRadius="lg"
               p={12}
             >
               <VStack
                 spacing={4}
-                w="100%"
+                w="full"
                 direction="column"
                 alignItems="start"
               >
@@ -280,15 +280,15 @@ export default function Pricing() {
                 <Feature>99.99% Guaranteed Uptime SLA</Feature>
               </VStack>
               <Box
-                width="100%"
+                w="full"
                 ml={3}
                 display="inline-flex"
-                borderRadius="md"
-                boxShadow="md"
+                rounded="md"
+                shadow="md"
               >
                 <chakra.a
                   href="#"
-                  w="100%"
+                  w="full"
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"
@@ -296,7 +296,7 @@ export default function Pricing() {
                   py={3}
                   border="solid transparent"
                   fontWeight="bold"
-                  borderRadius="md"
+                  rounded="md"
                   color={useColorModeValue("brand.600", "gray.100")}
                   bg={useColorModeValue("white", "gray.600")}
                   _hover={{

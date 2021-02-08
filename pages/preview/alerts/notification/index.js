@@ -20,11 +20,11 @@ const Ma = () => {
       {" "}
       <Flex
         maxW="sm"
-        width="100%"
+        w="full"
         mx="auto"
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="md"
-        borderRadius="lg"
+        shadow="md"
+        rounded="lg"
         overflow="hidden"
       >
         <Flex w={2} bg={useColorModeValue("gray.800", "gray.900")}></Flex>

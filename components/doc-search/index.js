@@ -45,7 +45,7 @@ export default function SearchBar(props) {
 				type="button"
 				role="search"
 				lineHeight="1.2"
-				w="100%"
+				w="full"
 				bg={useColorModeValue("white", "gray.700")}
 				whiteSpace="nowrap"
 				display="flex"

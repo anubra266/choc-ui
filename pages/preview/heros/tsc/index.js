@@ -16,7 +16,7 @@ const KuttyHero = () => {
         <Box
           pos="relative"
           pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
-          w="100%"
+          w="full"
           border="solid 1px transparent"
         >
           <Box
@@ -28,7 +28,7 @@ const KuttyHero = () => {
           >
             <Box
               textAlign="center"
-              width={{ base: "100%", md: 11 / 12, xl: 8 / 12 }}
+              w={{ base: "full", md: 11 / 12, xl: 8 / 12 }}
               mx="auto"
             >
               <chakra.h1
@@ -66,16 +66,16 @@ const KuttyHero = () => {
                 spacing={{ base: 4, md: 2 }}
                 justifyContent="center"
               >
-                <Box borderRadius="full" boxShadow="md">
+                <Box rounded="full" shadow="md">
                   <chakra.a
                     href="#"
-                    w="100%"
+                    w="full"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    borderRadius="md"
+                    rounded="md"
                     color="white"
                     bg="brand.600"
                     _hover={{ bg: "brand.700" }}
@@ -88,7 +88,7 @@ const KuttyHero = () => {
                 <Box mt={[3, 0]} ml={[null, 3]}>
                   <chakra.a
                     href="#"
-                    w="100%"
+                    w="full"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
@@ -96,7 +96,7 @@ const KuttyHero = () => {
                     py={{ base: 3, md: 4 }}
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    borderRadius="md"
+                    rounded="md"
                     color="brand.700"
                     bg="brand.100"
                     _hover={{ bg: "brand.200" }}

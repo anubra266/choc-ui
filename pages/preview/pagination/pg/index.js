@@ -35,7 +35,7 @@ const Ma = () => {
         mx={1}
         px={4}
         py={2}
-        borderRadius="md"
+        rounded="md"
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.700", "gray.200")}
         opacity={props.disabled && 0.6}
@@ -121,7 +121,7 @@ const Ma = () => {
         </Menu>
         <HStack>
           <Text wordBreak="unset">Go to:</Text>
-          <Input width="50px" />
+          <Input w="50px" />
         </HStack>
       </HStack>
     </Flex>

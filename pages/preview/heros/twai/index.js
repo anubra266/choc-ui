@@ -10,14 +10,14 @@ const KuttyHero = () => {
           pos="relative"
           pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
           maxW={{ lg: "2xl" }}
-          w={{ lg: "100%" }}
+          w={{ lg: "full" }}
           zIndex={1}
           bg={bg}
           border="solid 1px transparent"
         >
           <Icon
             display={{ base: "none", lg: "block" }}
-            position="absolute"
+            pos="absolute"
             right={0}
             top={0}
             bottom={0}
@@ -41,7 +41,7 @@ const KuttyHero = () => {
             mt={{ base: 10, sm: 12, md: 16, lg: 20, xl: 28 }}
           >
             <Box
-              w="100%"
+              w="full"
               textAlign={{ sm: "center", lg: "left" }}
               justifyContent="center"
               alignItems="center"
@@ -79,16 +79,16 @@ const KuttyHero = () => {
                 display={{ sm: "flex" }}
                 justifyContent={{ sm: "center", lg: "start" }}
               >
-                <Box borderRadius="full" boxShadow="md">
+                <Box rounded="full" shadow="md">
                   <chakra.a
                     href="#"
-                    w="100%"
+                    w="full"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    borderRadius="md"
+                    rounded="md"
                     color="white"
                     bg="brand.600"
                     _hover={{ bg: "brand.700" }}
@@ -101,7 +101,7 @@ const KuttyHero = () => {
                 <Box mt={[3, 0]} ml={[null, 3]}>
                   <chakra.a
                     href="#"
-                    w="100%"
+                    w="full"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
@@ -109,7 +109,7 @@ const KuttyHero = () => {
                     py={{ base: 3, md: 4 }}
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    borderRadius="md"
+                    rounded="md"
                     color="brand.700"
                     bg="brand.100"
                     _hover={{ bg: "brand.200" }}
@@ -123,7 +123,7 @@ const KuttyHero = () => {
         </Box>
       </Box>
       <Box
-        position={{ lg: "absolute" }}
+        pos={{ lg: "absolute" }}
         top={{ lg: 0 }}
         bottom={{ lg: 0 }}
         right={{ lg: 0 }}

@@ -15,8 +15,8 @@ const Ma = () => {
         maxW="md"
         mx="auto"
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="lg"
-        borderRadius="lg"
+        shadow="lg"
+        rounded="lg"
         overflow="hidden"
       >
         <Box
@@ -64,7 +64,7 @@ const Ma = () => {
               fontSize="xs"
               color="gray.900"
               fontWeight="bold"
-              borderRadius="lg"
+              rounded="lg"
               textTransform="uppercase"
               _hover={{
                 bg: "gray.200",

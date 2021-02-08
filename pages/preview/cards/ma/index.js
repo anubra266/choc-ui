@@ -14,8 +14,8 @@ const Ma = () => {
         mx="auto"
         px={8}
         py={4}
-        borderRadius="lg"
-        boxShadow="lg"
+        rounded="lg"
+        shadow="lg"
         bg={useColorModeValue("white", "gray.800")}
         maxW="2xl"
       >
@@ -33,7 +33,7 @@ const Ma = () => {
             color="gray.100"
             fontSize="sm"
             fontWeight="700"
-            borderRadius="md"
+            rounded="md"
             _hover={{ bg: "gray.500" }}
           >
             Design
@@ -74,9 +74,9 @@ const Ma = () => {
               mx={4}
               w={10}
               h={10}
-              borderRadius="full"
+              rounded="full"
               objectFit="cover"
-              borderRadius="full"
+              rounded="full"
               display={{ base: "none", sm: "block" }}
               src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=40&q=80"
               alt="avatar"

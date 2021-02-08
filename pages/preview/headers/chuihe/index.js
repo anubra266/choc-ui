@@ -55,7 +55,7 @@ const ChakraUIHeader = () => {
       borderColor="gray.200"
       px="1em"
       minH="36px"
-      borderRadius="md"
+      rounded="md"
       fontSize="sm"
       color="gray.800"
       outline="0"
@@ -91,19 +91,19 @@ const ChakraUIHeader = () => {
       m={2}
       bg={bg}
       spacing={3}
-      borderRadius="sm"
-      boxShadow="sm"
+      rounded="sm"
+      shadow="sm"
     >
       <CloseButton
         aria-label="Close menu"
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="100%" variant="ghost" href="#" leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost" href="#" leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
-        w="100%"
+        w="full"
         variant="solid"
         colorScheme="brand"
         href="#"
@@ -112,7 +112,7 @@ const ChakraUIHeader = () => {
         Inbox
       </Button>
       <Button
-        w="100%"
+        w="full"
         variant="ghost"
         href="#"
         leftIcon={<BsFillCameraVideoFill />}
@@ -129,16 +129,16 @@ const ChakraUIHeader = () => {
         transition="box-shadow 0.2s"
         top="0"
         bg={bg}
-        position="absolute"
+        pos="absolute"
         left="0"
         right="0"
         borderTop="6px solid"
         borderTopColor="brand.400"
-        width="full"
+        w="full"
         overflowY="hidden"
       >
-        <chakra.div height="4.5rem" mx="auto" maxW="1200px">
-          <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
+        <chakra.div h="4.5rem" mx="auto" maxW="1200px">
+          <Flex w="full" h="full" px="6" align="center" justify="space-between">
             <Flex align="center">
               <Link href="/">
                 <HStack>
@@ -149,7 +149,7 @@ const ChakraUIHeader = () => {
 
             <Flex
               justify="flex-end"
-              w="100%"
+              w="full"
               maxW="824px"
               align="center"
               color="gray.400"

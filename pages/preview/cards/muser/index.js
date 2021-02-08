@@ -20,13 +20,13 @@ const Ma = () => {
       <Box
         w="xs"
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="lg"
-        borderRadius="lg"
+        shadow="lg"
+        rounded="lg"
         overflow="hidden"
         mx="auto"
       >
         <Image
-          w="100%"
+          w="full"
           h={56}
           objectFit="cover"
           src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"

@@ -19,14 +19,14 @@ const Ma = () => {
     >
       <Box
         mx="auto"
-        borderRadius="lg"
-        boxShadow="md"
+        rounded="lg"
+        shadow="md"
         bg={useColorModeValue("white", "gray.800")}
         maxW="2xl"
       >
         <Image
-          borderTopRadius="lg"
-          w="100%"
+          roundedTop="lg"
+          w="full"
           h={64}
           objectFit="cover"
           src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -71,7 +71,7 @@ const Ma = () => {
                 <Image
                   h={10}
                   objectFit="cover"
-                  borderRadius="full"
+                  rounded="full"
                   src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60"
                   alt="Avatar"
                 />

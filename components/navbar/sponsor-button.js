@@ -16,7 +16,7 @@ const SponsorButton = props => (
     borderColor="gray.200"
     px="1em"
     minH="36px"
-    borderRadius="md"
+    rounded="md"
     fontSize="sm"
     color="gray.800"
     outline="0"

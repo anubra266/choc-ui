@@ -20,9 +20,9 @@ const Ma = () => {
         <Box
           bg="gray.300"
           h={64}
-          w="100%"
-          borderRadius="lg"
-          boxShadow="md"
+          w="full"
+          rounded="lg"
+          shadow="md"
           bgSize="cover"
           bgPos="center"
           style={{
@@ -35,8 +35,8 @@ const Ma = () => {
           w={{ base: 56, md: 64 }}
           bg={useColorModeValue("white", "gray.800")}
           mt={-10}
-          boxShadow="lg"
-          borderRadius="lg"
+          shadow="lg"
+          rounded="lg"
           overflow="hidden"
         >
           <chakra.h3
@@ -70,7 +70,7 @@ const Ma = () => {
               color="white"
               px={2}
               py={1}
-              borderRadius="lg"
+              rounded="lg"
               textTransform="uppercase"
               _hover={{
                 bg: useColorModeValue("gray.700", "gray.600"),

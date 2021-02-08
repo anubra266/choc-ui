@@ -52,7 +52,7 @@ export default function Sj() {
               </chakra.span>
             </chakra.h2>
             <Stack direction={{ base: "column", sm: "row" }} spacing={2}>
-              <Box display="inline-flex" borderRadius="md" boxShadow="md">
+              <Box display="inline-flex" rounded="md" shadow="md">
                 <chakra.a
                   href="#"
                   display="inline-flex"
@@ -62,8 +62,8 @@ export default function Sj() {
                   py={3}
                   border="solid transparent"
                   fontWeight="bold"
-                  w="100%"
-                  borderRadius="md"
+                  w="full"
+                  rounded="md"
                   color={useColorModeValue("white")}
                   bg={useColorModeValue("brand.600", "brand.500")}
                   _hover={{
@@ -76,11 +76,11 @@ export default function Sj() {
               <Box
                 ml={3}
                 display="inline-flex"
-                borderRadius="md"
-                boxShadow="md"
+                rounded="md"
+                shadow="md"
               >
                 <chakra.a
-                  w="100%"
+                  w="full"
                   href="#"
                   display="inline-flex"
                   alignItems="center"
@@ -89,7 +89,7 @@ export default function Sj() {
                   py={3}
                   border="solid transparent"
                   fontWeight="bold"
-                  borderRadius="md"
+                  rounded="md"
                   color="brand.600"
                   bg="white"
                   _hover={{

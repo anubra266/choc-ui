@@ -36,12 +36,12 @@ export default function Dsnl() {
   const mobileNav = useDisclosure();
 
   return (
-    <Box boxShadow="md">
+    <Box shadow="md">
       <chakra.header
         bg={bg}
         borderColor="gray.600"
         borderBottomWidth={1}
-        w="100%"
+        w="full"
         px={{ base: 2, sm: 4 }}
         py={4}
       >
@@ -69,8 +69,8 @@ export default function Dsnl() {
                 m={2}
                 bg={bg}
                 spacing={3}
-                borderRadius="sm"
-                boxShadow="sm"
+                rounded="sm"
+                shadow="sm"
               >
                 <CloseButton
                   aria-label="Close menu"
@@ -78,7 +78,7 @@ export default function Dsnl() {
                   onClick={mobileNav.onClose}
                 />
                 <Button
-                  w="100%"
+                  w="full"
                   variant="ghost"
                   href="#"
                   leftIcon={<AiFillHome />}
@@ -86,7 +86,7 @@ export default function Dsnl() {
                   Dashboard
                 </Button>
                 <Button
-                  w="100%"
+                  w="full"
                   variant="solid"
                   colorScheme="brand"
                   href="#"
@@ -95,7 +95,7 @@ export default function Dsnl() {
                   Inbox
                 </Button>
                 <Button
-                  w="100%"
+                  w="full"
                   variant="ghost"
                   href="#"
                   leftIcon={<BsFillCameraVideoFill />}
@@ -146,7 +146,7 @@ export default function Dsnl() {
             <chakra.a
               p={3}
               color={useColorModeValue("gray.800", "inherit")}
-              borderRadius="sm"
+              rounded="sm"
               href="#"
               _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
             >

@@ -43,7 +43,7 @@ export function MobileNavContent(props) {
           >
             <Flex
               direction="column"
-              w="100%"
+              w="full"
               bg={useColorModeValue("white", "gray.800")}
               h="100vh"
               overflow="auto"

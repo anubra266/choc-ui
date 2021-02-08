@@ -19,7 +19,7 @@ const KuttyHero = () => {
     <Box px={8} py={24} mx="auto">
       <SimpleGrid
         alignItems="center"
-        w={{ base: "100%", xl: 11 / 12 }}
+        w={{ base: "full", xl: 11 / 12 }}
         columns={{ base: 1, lg: 11 }}
         gap={{ base: 0, lg: 24 }}
         mx="auto"
@@ -51,7 +51,7 @@ const KuttyHero = () => {
           </chakra.p>
         </GridItem>
         <GridItem colSpan={{ base: "auto", md: 4 }}>
-          <Box as="form" mb={6} borderRadius="lg" boxShadow="xl">
+          <Box as="form" mb={6} rounded="lg" shadow="xl">
             <Center pb={0} color={useColorModeValue("gray.700","gray.600")}>
               <p pt={2}>Start talking now</p>
             </Center>
@@ -90,14 +90,14 @@ const KuttyHero = () => {
                   required="true"
                 />
               </Flex>
-              <Button colorScheme="brand" w="100%" py={2} type="submit">
+              <Button colorScheme="brand" w="full" py={2} type="submit">
                 Sign up for free
               </Button>
             </SimpleGrid>
             <Flex px={6} py={4}>
               <Button
                 py={2}
-                w="100%"
+                w="full"
                 colorScheme="blue"
                 leftIcon={
                   <Icon

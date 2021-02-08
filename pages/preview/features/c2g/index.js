@@ -18,7 +18,7 @@ export default function C2g() {
             justifyContent="center"
             h={12}
             w={12}
-            borderRadius="md"
+            rounded="md"
             bg={useColorModeValue("brand.500")}
             color="white"
           >
@@ -53,14 +53,14 @@ export default function C2g() {
     <Flex
       bg="gray.600"
       p={20}
-      width="auto"
+      w="auto"
       justifyContent="center"
       alignItems="center"
     >
       <Box
         py={12}
         bg={useColorModeValue("white", "gray.800")}
-        borderRadius="xl"
+        rounded="xl"
       >
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>

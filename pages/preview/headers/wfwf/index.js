@@ -249,18 +249,18 @@ export default function WfWf(props) {
       bg={bg}
       spacing={3}
       rounded="sm"
-      boxShadow="sm"
+      shadow="sm"
     >
       <CloseButton
         aria-label="Close menu"
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="100%" variant="ghost" href="#" leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost" href="#" leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
-        w="100%"
+        w="full"
         variant="solid"
         colorScheme="brand"
         href="#"
@@ -269,7 +269,7 @@ export default function WfWf(props) {
         Inbox
       </Button>
       <Button
-        w="100%"
+        w="full"
         variant="ghost"
         href="#"
         leftIcon={<BsFillCameraVideoFill />}
@@ -281,7 +281,7 @@ export default function WfWf(props) {
 
   return (
     <React.Fragment>
-      <chakra.header h="100%" bg={bg} w="100%" px={{ base: 2, sm: 4 }} py={4}>
+      <chakra.header h="full" bg={bg} w="full" px={{ base: 2, sm: 4 }} py={4}>
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Link display="flex" alignItems="center" href="/">
             <Logo />

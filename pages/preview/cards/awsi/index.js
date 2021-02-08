@@ -12,14 +12,14 @@ const Ma = () => {
       justifyContent="center"
     >
       <Box
-        w="100%"
+        w="full"
         maxW="sm"
         mx="auto"
         px={4}
         py={3}
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="md"
-        borderRadius="md"
+        shadow="md"
+        rounded="md"
       >
         <Flex justifyContent="space-between" alignItems="center">
           <chakra.span
@@ -33,7 +33,7 @@ const Ma = () => {
             color={useColorModeValue("brand.800", "brand.900")}
             px={3}
             py={1}
-            borderRadius="full"
+            rounded="full"
             textTransform="uppercase"
             fontSize="xs"
           >

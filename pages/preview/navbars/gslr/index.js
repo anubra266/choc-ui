@@ -24,10 +24,10 @@ export default function Gslr() {
     <React.Fragment>
       <chakra.header
         bg={bg}
-        w="100%"
+        w="full"
         px={{ base: 2, sm: 4 }}
         py={4}
-        boxShadow="md"
+        shadow="md"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
@@ -83,27 +83,27 @@ export default function Gslr() {
                 m={2}
                 bg={bg}
                 spacing={3}
-                borderRadius="sm"
-                boxShadow="sm"
+                rounded="sm"
+                shadow="sm"
               >
                 <CloseButton
                   aria-label="Close menu"
                   onClick={mobileNav.onClose}
                 />
 
-                <Button w="100%" variant="ghost">
+                <Button w="full" variant="ghost">
                   Features
                 </Button>
-                <Button w="100%" variant="ghost">
+                <Button w="full" variant="ghost">
                   Pricing
                 </Button>
-                <Button w="100%" variant="ghost">
+                <Button w="full" variant="ghost">
                   Blog
                 </Button>
-                <Button w="100%" variant="ghost">
+                <Button w="full" variant="ghost">
                   Company
                 </Button>
-                <Button w="100%" variant="ghost">
+                <Button w="full" variant="ghost">
                   Sign in
                 </Button>
               </VStack>

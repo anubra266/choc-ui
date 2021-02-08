@@ -24,10 +24,10 @@ export default function Ss() {
         zIndex={1000}
         right={0}
         bottom={70}
-        width={10}
+        w={10}
         border="solid transparent"
-        boxShadow="lg"
-        borderLeftRadius="lg"
+        shadow="lg"
+        roundedLeft="lg"
         bg={useColorModeValue("white", "gray.700")}
       >
         <CopyCode />

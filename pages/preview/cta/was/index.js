@@ -21,7 +21,7 @@ const CTA = () => {
       mx="auto"
     >
       <Box
-        w={{ base: "100%", md: 11 / 12, xl: 9 / 12 }}
+        w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
         mx="auto"
         pr={{ md: 20 }}
       >
@@ -56,7 +56,7 @@ const CTA = () => {
           mb={{ base: 4, md: 8 }}
           spacing={2}
         >
-          <Box display="inline-flex" borderRadius="md" boxShadow="md">
+          <Box display="inline-flex" rounded="md" shadow="md">
             <chakra.a
               href="#"
               display="inline-flex"
@@ -66,8 +66,8 @@ const CTA = () => {
               py={3}
               border="solid transparent"
               fontWeight="bold"
-              w="100%"
-              borderRadius="md"
+              w="full"
+              rounded="md"
               color={useColorModeValue("white")}
               bg={useColorModeValue("brand.600", "brand.500")}
               _hover={{
@@ -79,11 +79,11 @@ const CTA = () => {
           </Box>
         </Stack>
       </Box>
-      <Box w={{ base: "100%", md: 10 / 12 }} mx="auto" textAlign="center">
+      <Box w={{ base: "full", md: 10 / 12 }} mx="auto" textAlign="center">
         <Image
-          w="100%"
-          borderRadius="lg"
-          boxShadow="2xl"
+          w="full"
+          rounded="lg"
+          shadow="2xl"
           src="https://kutty.netlify.app/hero.jpg"
           alt="Hellonext feedback boards software screenshot"
         />

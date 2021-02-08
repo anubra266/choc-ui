@@ -24,7 +24,7 @@ const ActionButton = (props) => {
         icon={props.icon}
         aria-label={props.value}
         variant="ghost"
-        borderRadius="full"
+        rounded="full"
         onClick={props.onClick}
         _focus={{ boxShadow: "none" }}
       />
@@ -38,7 +38,7 @@ export default function CodeActions(props) {
       justifyContent="end"
       w="full"
       bg={useColorModeValue("brand.100", "gray.700")}
-      borderBottomRadius="lg"
+      roundedBottom="lg"
       px={5}
       py={1}
     >

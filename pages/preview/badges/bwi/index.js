@@ -6,7 +6,7 @@ export default function Component() {
     <Flex
       bg="gray.600"
       p={20}
-      width="100%"
+      w="full"
       justifyContent="center"
       alignItems="center"
     >
@@ -37,7 +37,7 @@ export default function Component() {
           color="red.100"
           transform="translate(50%,-50%)"
           bg="red.600"
-          borderRadius="full"
+          rounded="full"
         >
           99
         </chakra.span>
@@ -74,7 +74,7 @@ export default function Component() {
           color="red.100"
           transform="translate(50%,-50%)"
           bg="red.600"
-          borderRadius="full"
+          rounded="full"
         >
           6
         </chakra.span>

@@ -24,12 +24,12 @@ const Ma = () => {
         w="sm"
         mx="auto"
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="lg"
-        borderRadius="lg"
+        shadow="lg"
+        rounded="lg"
         overflow="hidden"
       >
         <Image
-          w="100%"
+          w="full"
           h={56}
           objectFit="cover"
           objectPosition="center"

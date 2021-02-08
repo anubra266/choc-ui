@@ -51,7 +51,7 @@ const HeaderContent = () => {
 
   return (
     <React.Fragment>
-      <Flex w="100%" h="100%" px="6" align="center" justify="space-between">
+      <Flex w="full" h="full" px="6" align="center" justify="space-between">
         <Flex align="center" w="full">
           <NextLink href="/" passHref>
             <Box cursor="pointer">
@@ -192,10 +192,10 @@ const Header = (props) => {
       borderTopColor="brand.400"
       borderBottom="1px solid"
       borderBottomColor={useColorModeValue("gray.200", "gray.900")}
-      width="full"
+      w="full"
       {...props}
     >
-      <chakra.div height="4.5rem" mx="auto">
+      <chakra.div h="4.5rem" mx="auto">
         <HeaderContent />
       </chakra.div>
     </chakra.header>

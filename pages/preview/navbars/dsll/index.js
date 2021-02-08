@@ -35,10 +35,10 @@ export default function Dsll() {
     <React.Fragment>
       <chakra.header
         bg={bg}
-        w="100%"
+        w="full"
         px={{ base: 2, sm: 4 }}
         py={4}
-        boxShadow="md"
+        shadow="md"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <HStack display="flex" spacing={3} alignItems="center">
@@ -64,8 +64,8 @@ export default function Dsll() {
                 m={2}
                 bg={bg}
                 spacing={3}
-                borderRadius="sm"
-                boxShadow="sm"
+                rounded="sm"
+                shadow="sm"
               >
                 <CloseButton
                   aria-label="Close menu"
@@ -73,7 +73,7 @@ export default function Dsll() {
                   onClick={mobileNav.onClose}
                 />
                 <Button
-                  w="100%"
+                  w="full"
                   variant="ghost"
                   href="#"
                   leftIcon={<AiFillHome />}
@@ -81,7 +81,7 @@ export default function Dsll() {
                   Dashboard
                 </Button>
                 <Button
-                  w="100%"
+                  w="full"
                   variant="solid"
                   colorScheme="brand"
                   href="#"
@@ -90,7 +90,7 @@ export default function Dsll() {
                   Inbox
                 </Button>
                 <Button
-                  w="100%"
+                  w="full"
                   variant="ghost"
                   href="#"
                   leftIcon={<BsFillCameraVideoFill />}
@@ -153,7 +153,7 @@ export default function Dsll() {
             <chakra.a
               p={3}
               color={useColorModeValue("gray.800", "inherit")}
-              borderRadius="sm"
+              rounded="sm"
               href="#"
               _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
             >

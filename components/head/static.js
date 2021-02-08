@@ -25,7 +25,7 @@ const Static = () => {
           <meta property="og:image" content="/logo.png" />
         </>
       )}
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="viewport" content="initial-scale=1.0, w=device-width" />
       <meta name="theme-color" content="blue" />
 
       <meta property="twitter:card" content="summary_large_image" />

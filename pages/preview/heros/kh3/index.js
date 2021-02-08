@@ -48,7 +48,7 @@ const KuttyHero = () => {
           mb={3}
           variant="solid"
           colorScheme="brand"
-          borderRadius="full"
+          rounded="full"
         >
           Pre Beta
         </Badge>
@@ -61,7 +61,7 @@ const KuttyHero = () => {
         >
           Great customer relationships start here.
         </chakra.h1>
-        <chakra.form w="100%" mb={6}>
+        <chakra.form w="full" mb={6}>
           <VisuallyHidden>Your Email</VisuallyHidden>
           <Box display={{ base: "block", lg: "none" }}>
             <Input
@@ -73,7 +73,7 @@ const KuttyHero = () => {
               required="true"
             />
             <Button
-              w="100%"
+              w="full"
               mt={2}
               color="white"
               variant="solid"
@@ -84,7 +84,7 @@ const KuttyHero = () => {
               Get Started
             </Button>
           </Box>
-          <InputGroup size="lg" w="100%" display={{ base: "none", lg: "flex" }}>
+          <InputGroup size="lg" w="full" display={{ base: "none", lg: "flex" }}>
             <Input
               size="lg"
               color="brand.900"
@@ -93,14 +93,14 @@ const KuttyHero = () => {
               bg="white"
               required="true"
             />
-            <InputRightElement width="auto">
+            <InputRightElement w="auto">
               <Button
                 color="white"
                 variant="solid"
                 colorScheme="brand"
                 size="lg"
                 type="submit"
-                borderLeftRadius={0}
+                roundedLeft={0}
               >
                 Get Started
               </Button>
@@ -123,8 +123,8 @@ const KuttyHero = () => {
           src="https://images.unsplash.com/photo-1531548731165-c6ae86ff6491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
           alt="3 women looking at a laptop"
           objectFit="cover"
-          w="100%"
-          h={{ base: 64, md: "100%" }}
+          w="full"
+          h={{ base: 64, md: "full" }}
           bg="gray.100"
           loading="lazy"
         />

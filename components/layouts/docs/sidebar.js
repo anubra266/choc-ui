@@ -31,15 +31,15 @@ const Sidebar = () => {
           className="sidebar-content"
           flexShrink={0}
           display={{ base: "none", md: "block" }}
-          boxShadow="sm"
+          shadow="sm"
         >
           <IconButton
-            position="sticky"
+            pos="sticky"
             mt={1}
             right={0}
             top={0}
             zIndex={10}
-            borderLeftRadius={0}
+            roundedLeft={0}
             size="md"
             fontSize="lg"
             aria-label={`Toggle Sidebar`}
@@ -56,7 +56,7 @@ const Sidebar = () => {
           top={20}
           zIndex={10}
           left={0}
-          borderLeftRadius={0}
+          roundedLeft={0}
           size="md"
           fontSize="lg"
           aria-label={`Toggle Sidebar`}

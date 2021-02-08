@@ -14,13 +14,13 @@ export default function Asm() {
     <Flex
       bg="gray.600"
       p={20}
-      width="full"
+      w="full"
       justifyContent="center"
       alignItems="center"
       pos="absolute"
     >
       <Box
-        boxShadow="xl"
+        shadow="xl"
         bg={useColorModeValue("white", "gray.800")}
         px={8}
         py={20}
@@ -57,7 +57,7 @@ export default function Asm() {
               allow you to quickly find any data you’re looking for.
             </chakra.p>
             <Button
-              w={{ base: "100%", sm: "auto" }}
+              w={{ base: "full", sm: "auto" }}
               size="lg"
               bg={useColorModeValue("gray.900", "gray.700")}
               _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
@@ -69,8 +69,8 @@ export default function Asm() {
             </Button>
           </Box>
           <Box
-            w="100%"
-            h="100%"
+            w="full"
+            h="full"
             py={48}
             bg={useColorModeValue("gray.200", "gray.700")}
           ></Box>
@@ -106,7 +106,7 @@ export default function Asm() {
               and build advanced and reliable products yourself from scratch.
             </chakra.p>
             <Button
-              w={{ base: "100%", sm: "auto" }}
+              w={{ base: "full", sm: "auto" }}
               size="lg"
               bg={useColorModeValue("gray.900", "gray.700")}
               _hover={{ bg: useColorModeValue("gray.700", "gray.600") }}
@@ -118,8 +118,8 @@ export default function Asm() {
             </Button>
           </Box>
           <Box
-            w="100%"
-            h="100%"
+            w="full"
+            h="full"
             py={48}
             bg={useColorModeValue("gray.200", "gray.700")}
           ></Box>

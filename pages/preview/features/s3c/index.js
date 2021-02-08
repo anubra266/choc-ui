@@ -47,7 +47,7 @@ export default function S3c() {
     <Flex
       bg="gray.600"
       p={20}
-      width="auto"
+      w="auto"
       justifyContent="center"
       alignItems="center"
     >
@@ -58,7 +58,7 @@ export default function S3c() {
         py={20}
         mx="auto"
         bg={useColorModeValue("white", "gray.800")}
-        boxShadow="xl"
+        shadow="xl"
       >
         <Feature
           title="Unify your payments stack"

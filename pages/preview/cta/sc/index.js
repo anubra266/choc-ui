@@ -17,9 +17,9 @@ export default function Sj() {
       alignItems="center"
       justifyContent="center"
     >
-      <Box bg={useColorModeValue("white", "gray.800")} w="100%">
+      <Box bg={useColorModeValue("white", "gray.800")} w="full">
         <Box
-          w={{ base: "100%", md: 3 / 4, lg: 2 / 4 }}
+          w={{ base: "full", md: 3 / 4, lg: 2 / 4 }}
           px={4}
           py={20}
           mx="auto"
@@ -47,10 +47,10 @@ export default function Sj() {
             direction={{ base: "column", sm: "row" }}
             spacing={2}
           >
-            <Box display="inline-flex" borderRadius="md" boxShadow="md">
+            <Box display="inline-flex" rounded="md" shadow="md">
               <Link
                 href="#"
-                w="100%"
+                w="full"
                 display="inline-flex"
                 alignItems="center"
                 justifyContent="center"
@@ -58,7 +58,7 @@ export default function Sj() {
                 py={3}
                 border="solid transparent"
                 fontWeight="bold"
-                borderRadius="md"
+                rounded="md"
                 color={useColorModeValue("white")}
                 bg={useColorModeValue("brand.600", "brand.500")}
                 _hover={{
@@ -68,10 +68,10 @@ export default function Sj() {
                 Get started
               </Link>
             </Box>
-            <Box ml={3} display="inline-flex" borderRadius="md" boxShadow="md">
+            <Box ml={3} display="inline-flex" rounded="md" shadow="md">
               <Link
                 href="#"
-                w="100%"
+                w="full"
                 display="inline-flex"
                 alignItems="center"
                 justifyContent="center"
@@ -79,7 +79,7 @@ export default function Sj() {
                 py={3}
                 border="solid transparent"
                 fontWeight="bold"
-                borderRadius="md"
+                rounded="md"
                 color="brand.600"
                 bg="white"
                 _hover={{

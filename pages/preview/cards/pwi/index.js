@@ -22,13 +22,13 @@ const Ma = () => {
         mx={{ lg: 8 }}
         display={{ lg: "flex" }}
         maxW={{ lg: "5xl" }}
-        boxShadow={{ lg: "lg" }}
-        borderRadius={{ lg: "lg" }}
+        shadow={{ lg: "lg" }}
+        rounded={{ lg: "lg" }}
       >
         <Box w={{ lg: 1 / 2 }}>
           <Box
-            h={{ base: 64, lg: "100%" }}
-            borderRadius={{ lg: "lg" }}
+            h={{ base: 64, lg: "full" }}
+            rounded={{ lg: "lg" }}
             bgSize="cover"
             style={{
               backgroundImage:
@@ -63,7 +63,7 @@ const Ma = () => {
               px={5}
               py={3}
               fontWeight="semibold"
-              borderRadius="lg"
+              rounded="lg"
               _hover={{ bg: "gray.800" }}
             >
               Start Now
