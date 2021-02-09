@@ -4,27 +4,26 @@ import { chakra, Box, useColorModeValue, Icon, Image } from "@chakra-ui/react";
 const KuttyHero = () => {
   const bg = useColorModeValue("white", "gray.800");
   return (
-    <Box pos="relative" overflow="hidden" bg={bg}>
-      <Box maxW="7xl" mx="auto" >
+    <Box pos="relative" overflow="hidden" bg={bg} mt={10}>
+      <Box maxW="7xl" mx="auto">
         <Box
           pos="relative"
           pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
           maxW={{ lg: "2xl" }}
-          w={{ lg: "full" }}
+          w={{ lg: "100%" }}
           zIndex={1}
           bg={bg}
           border="solid 1px transparent"
         >
           <Icon
             display={{ base: "none", lg: "block" }}
-            pos="absolute"
+            position="absolute"
             right={0}
             top={0}
             bottom={0}
             h="full"
             w={48}
             color={bg}
-            mt={-2}
             transform="translateX(50%)"
             fill="currentColor"
             viewBox="0 0 100 100"
@@ -34,14 +33,13 @@ const KuttyHero = () => {
             <polygon points="50,0 100,0 50,100 0,100" />
           </Icon>
           <Box
-            
             mx="auto"
             maxW={{ base: "7xl" }}
             px={{ base: 4, sm: 6, lg: 8 }}
             mt={{ base: 10, sm: 12, md: 16, lg: 20, xl: 28 }}
           >
             <Box
-              w="full"
+              w="100%"
               textAlign={{ sm: "center", lg: "left" }}
               justifyContent="center"
               alignItems="center"
@@ -79,16 +77,16 @@ const KuttyHero = () => {
                 display={{ sm: "flex" }}
                 justifyContent={{ sm: "center", lg: "start" }}
               >
-                <Box rounded="full" shadow="md">
+                <Box borderRadius="full" boxShadow="md">
                   <chakra.a
                     href="#"
-                    w="full"
+                    w="100%"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    rounded="md"
+                    borderRadius="md"
                     color="white"
                     bg="brand.600"
                     _hover={{ bg: "brand.700" }}
@@ -101,7 +99,7 @@ const KuttyHero = () => {
                 <Box mt={[3, 0]} ml={[null, 3]}>
                   <chakra.a
                     href="#"
-                    w="full"
+                    w="100%"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
@@ -109,7 +107,7 @@ const KuttyHero = () => {
                     py={{ base: 3, md: 4 }}
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    rounded="md"
+                    borderRadius="md"
                     color="brand.700"
                     bg="brand.100"
                     _hover={{ bg: "brand.200" }}
@@ -123,7 +121,7 @@ const KuttyHero = () => {
         </Box>
       </Box>
       <Box
-        pos={{ lg: "absolute" }}
+        position={{ lg: "absolute" }}
         top={{ lg: 0 }}
         bottom={{ lg: 0 }}
         right={{ lg: 0 }}

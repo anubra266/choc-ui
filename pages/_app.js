@@ -13,7 +13,7 @@ const config = {
 function MyApp({ Component, pageProps }) {
   const [brand, setBrand] = useState("default");
   useEffect(() => {
-    setBrand(window.localStorage.getItem("brand"));
+    setBrand(window.localStorage.getItem("brand")||'default');
   }, []);
   useEffect(() => {
     window.localStorage.setItem("brand", brand);
