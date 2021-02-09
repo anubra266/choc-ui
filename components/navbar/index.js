@@ -18,7 +18,7 @@ import {
   MenuItemOption,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
-import { FaMoon, FaSun, FaGithub } from "react-icons/fa";
+import { FaMoon, FaSun, FaGithub, FaTwitter } from "react-icons/fa";
 import { IoColorPalette } from "react-icons/io5";
 import SponsorButton from "./sponsor-button";
 import DocSearch from "../doc-search";
@@ -86,7 +86,18 @@ const HeaderContent = () => {
           <HStack display="flex">
             <IconButton
               as="a"
-              href={"https://discord.gg/XcD8bNv7Ne"}
+              href={process.env.twitterChoc}
+              target="_blank"
+              size="md"
+              fontSize="lg"
+              aria-label="Choc UI on twitter"
+              variant="ghost"
+              color="current"
+              icon={<FaTwitter />}
+            />
+            <IconButton
+              as="a"
+              href={process.env.discordUrl}
               target="_blank"
               size="md"
               fontSize="lg"

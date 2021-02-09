@@ -8,6 +8,8 @@ module.exports = {
     twitterUrl: "https://twitter.com/anubra266",
     linkedinUrl: "https://linkedin.com/in/anubra266",
     emailAddress: "anubra266@gmail.com",
+    discordUrl: "https://discord.gg/XcD8bNv7Ne",
+    twitterChoc: "https://twitter.com/choc_ui",
   },
   webpack: (config, options) => {
     const custom_alias = {
