@@ -6,6 +6,8 @@ import "../styles/globals.css";
 import SiteSettings from "~/components/site-settings";
 import { presets } from "~/theme/colors";
 import { ThemeProvider } from "~/theme/theme-context";
+import splitbee from '@splitbee/web';
+splitbee.init()
 const config = {
   initialColorMode: "dark",
   useSystemColorMode: false,

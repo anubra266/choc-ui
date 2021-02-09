@@ -999,6 +999,11 @@
   dependencies:
     tslib "^2.0.0"
 
+"@splitbee/web@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@splitbee/web/-/web-0.2.4.tgz#173ffab42a9c4d22874d82cd580d2c114480b93f"
+  integrity sha512-LMXnN5X/jen4ssBZ8ULXckQgJVvv8Ox2brcK7g2aLrok8ISzO76+DC0b6Cierk8oIXcx/+aflbVuBaKKFqyBCg==
+
 "@types/json-schema@^7.0.6":
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
