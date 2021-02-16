@@ -23,8 +23,13 @@ const Component = () => {
   const slider = React.useRef();
   const slides = 5;
 
-  const movePrev = () => {
-    slider.current.scrollBy(-slider.current.clientWidth, 0);
+  const movePrev = (l) => {
+    const isFirstSlide = l === 0;
+    if (isFirstSlide) {
+      slider.current.scrollBy(slider.current.clientWidth * slides, 0);
+    }else{  
+      slider.current.scrollBy(-slider.current.clientWidth, 0);
+    }
   };
 
   const moveNext = (l) => {
@@ -82,7 +87,7 @@ const Component = () => {
             >
               Section {sid + 1}
             </Text>
-            <Text {...arrowStyles} left={0} onClick={movePrev}>
+            <Text {...arrowStyles} left={0} onClick={() => movePrev(sid)}>
               &#10094;
             </Text>
             <Text

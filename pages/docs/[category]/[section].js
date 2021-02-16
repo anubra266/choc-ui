@@ -28,9 +28,7 @@ const Element = ({ category, section }) => {
         {ComponentObj?.components.map((comp, cid) => (
           <Section key={cid} id={comp.preview}>
             <Section.Header>
-              <Section.a target="_blank" rel="noopener" href={comp.url}>
-                {comp.name}
-              </Section.a>
+              <Section.a href={`#${comp.preview}`}>{comp.name}</Section.a>
             </Section.Header>
             <Section.Content>
               <Section.p>
