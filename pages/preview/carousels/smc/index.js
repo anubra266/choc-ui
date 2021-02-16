@@ -23,21 +23,24 @@ const Component = () => {
   const slider = React.useRef();
   const slides = 5;
 
+  const moveSlider = (x) => {
+    slider.current.scrollBy(x, 0);
+  };
   const movePrev = (l) => {
     const isFirstSlide = l === 0;
     if (isFirstSlide) {
-      slider.current.scrollBy(slider.current.clientWidth * slides, 0);
-    }else{  
-      slider.current.scrollBy(-slider.current.clientWidth, 0);
+      moveSlider(slider.current.clientWidth * slides);
+    } else {
+      moveSlider(-slider.current.clientWidth * slides);
     }
   };
 
   const moveNext = (l) => {
     const isLastSlide = slides === l + 1;
     if (isLastSlide) {
-      slider.current.scrollBy(-slider.current.clientWidth * l, 0);
+      moveSlider(-slider.current.clientWidth * l);
     } else {
-      slider.current.scrollBy(slider.current.clientWidth, 0);
+      moveSlider(slider.current.clientWidth);
     }
   };
 
