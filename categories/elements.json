@@ -133,6 +133,10 @@
         "title": "Carousels",
         "route": "carousels",
         "image": "carousels.png",
+        "alert": {
+          "variant": "green",
+          "message": "New"
+        },
         "components": [
           {
             "name": "Simple Carousel",
@@ -146,10 +150,7 @@
         "title": "Gradient Icons",
         "route": "gicons",
         "image": "gicons.png",
-        "alert": {
-          "variant": "green",
-          "message": "New"
-        },
+
         "components": [
           {
             "name": "Data URL Method",
