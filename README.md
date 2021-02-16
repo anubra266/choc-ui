@@ -16,6 +16,7 @@
 See it in action on [Choc-UI's Website.](https://choc-ui.tech)
 
 <br/>
+
 ## Components
 
 - [x] Elements
@@ -25,6 +26,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [x] Pagination
   - [x] Badges
   - [x] Gradient Icons
+  - [ ] Carousels
   - [ ] Empty - Antd
   - [ ] Result - Antd
 - [ ] Page Sections

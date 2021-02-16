@@ -34,7 +34,7 @@ const Element = ({ category, section }) => {
             </Section.Header>
             <Section.Content>
               <Section.p>
-                <ComponentDemo path={comp.preview} h={comp.height} />
+                <ComponentDemo path={comp.preview} height={comp.height} />
               </Section.p>
               {comp.alerts && (
                 <Section.p>

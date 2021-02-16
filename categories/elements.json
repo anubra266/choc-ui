@@ -129,7 +129,19 @@
           }
         ]
       },
-
+      "carousels": {
+        "title": "Carousels",
+        "route": "carousels",
+        "image": "carousels.png",
+        "components": [
+          {
+            "name": "Simple Carousel",
+            "url": "#",
+            "preview": "carousels/smc",
+            "height": "300px"
+          }
+        ]
+      },
       "gicons": {
         "title": "Gradient Icons",
         "route": "gicons",
