@@ -122,7 +122,7 @@ const KuttyHero = () => {
         <Image
           src="https://images.unsplash.com/photo-1531548731165-c6ae86ff6491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
           alt="3 women looking at a laptop"
-          objectFit="cover"
+          fit="cover"
           w="full"
           h={{ base: 64, md: "full" }}
           bg="gray.100"

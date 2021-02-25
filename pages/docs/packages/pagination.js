@@ -43,6 +43,18 @@ const PaginationPackage = () => {
           </Section.p>
         </Section.Content>
       </Section>
+      <Section id="import">
+        <Section.Header>
+          <Section.a target="_blank" rel="noopener" href="">
+            Import
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <CodeBlock lang="js">{`import Pagination from "@choc-ui/paginator";`}</CodeBlock>
+          </Section.p>
+        </Section.Content>
+      </Section>
       <Section id="bp">
         <Section.Header>
           <Section.a target="_blank" rel="noopener">
@@ -54,16 +66,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The optional <code> integer `defaultCurrent` prop</code> is
@@ -94,16 +101,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/more"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The optional <code> integer `pageNeighbours` prop</code>{" "}
@@ -127,16 +129,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/cpz"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The optional <code> boolean `defaultPageSize` prop</code> sets
@@ -177,16 +174,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/spj"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The optional <code> boolean `showQuickJumper` prop</code>{" "}
@@ -209,16 +201,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/csz"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The optional <code> string `size` prop</code> changes the
@@ -241,16 +228,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/sm"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The optional <code> boolean `simple` prop</code> toggles the
@@ -277,16 +259,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/cpn"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The optional <code> integer `current` prop</code> controls the
@@ -313,16 +290,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/sht"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   You can show the total number of data by setting{" "}
@@ -345,16 +317,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/itr"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The <code>itemRender prop</code> lets you modify the
@@ -377,16 +344,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/prs"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The <code>colorScheme prop</code> modifies the color Theme
@@ -412,16 +374,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/css"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   The <code>baseStyles prop</code> accepts styleProps for normal
@@ -449,16 +406,11 @@ const PaginationPackage = () => {
             <ComponentDemo
               path="packages/choc-paginator/rpg"
               scope={{ Pagination }}
-              h="100px"
+              height="100px"
             />
           </Section.p>
           <Section.p>
-            <Alert
-              status="warning"
-              variant="left-accent"
-              rounded="md"
-              mt={4}
-            >
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
                   Pass the <code>responsive prop</code> to reduce the pagination
@@ -492,6 +444,31 @@ const PaginationPackage = () => {
           </Stack>
         </Alert>
       </Section.p>
+
+      <Section id="wld">
+        <Section.Header>
+          <Section.a target="_blank" rel="noopener">
+            With Live Data
+          </Section.a>
+        </Section.Header>
+        <Section.Content>
+          <Section.p>
+            <iframe
+              src="https://codesandbox.io/embed/choc-ui-pagination-example-wvtfs?autoresize=1&fontsize=14&hidenavigation=1&theme=dark"
+              style={{
+                width: "100%",
+                height: "500px",
+                border: 0,
+                borderRadius: "4px",
+                overflow: "hidden",
+              }}
+              title="Choc UI Pagination Example"
+              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+            ></iframe>
+          </Section.p>
+        </Section.Content>
+      </Section>
     </DocsLayout>
   );
 };

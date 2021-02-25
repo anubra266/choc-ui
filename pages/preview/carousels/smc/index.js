@@ -52,58 +52,58 @@ const Component = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Flex
-        overflowX="scroll"
-        overflowY="hidden"
-        sx={{
-          scrollSnapType: "x mandatory",
-          WebkitOverflowScrolling: "touch",
-          scrollbarWidth: "none",
-          scrollBehavior: "smooth",
-        }}
-        h={400}
-        w="full"
-        ref={slider}
-      >
-        {Array.from({ length: slides }, (_, sid) => (
-          <Box
-            key={sid}
-            p="1rem"
-            minW="full"
-            w="full"
-            h="full"
-            sx={{
-              scrollSnapAlign: "start",
-            }}
-            textAlign="center"
-            pos="relative"
-            bg={`#${Math.floor(Math.random() * 16777215).toString(16)}`}
-          >
-            <Text
-              pos="absolute"
-              top="50%"
-              left="50%"
-              transform="translate(-50%,-50%)"
-              fontSize="3xl"
-              fontWeight="bold"
-              fontFamily="fantasy"
+        <Flex
+          overflowX="scroll"
+          overflowY="hidden"
+          sx={{
+            scrollSnapType: "x mandatory",
+            WebkitOverflowScrolling: "touch",
+            scrollbarWidth: "none",
+            scrollBehavior: "smooth",
+          }}
+          h={400}
+          w="full"
+          ref={slider}
+        >
+          {Array.from({ length: slides }, (_, sid) => (
+            <Box
+              key={sid}
+              p="1rem"
+              minW="full"
+              w="full"
+              h="full"
+              sx={{
+                scrollSnapAlign: "start",
+              }}
+              textAlign="center"
+              pos="relative"
+              bg={`#${Math.floor(Math.random() * 16777215).toString(16)}`}
             >
-              Section {sid + 1}
-            </Text>
-            <Text {...arrowStyles} left={0} onClick={() => movePrev(sid)}>
-              &#10094;
-            </Text>
-            <Text
-              {...arrowStyles}
-              right={0}
-              borderRadius="3px 0 0 3px"
-              onClick={() => moveNext(sid)}
-            >
-              &#10095;
-            </Text>
-          </Box>
-        ))}
-      </Flex>
+              <Text
+                pos="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%,-50%)"
+                fontSize="3xl"
+                fontWeight="bold"
+                fontFamily="fantasy"
+              >
+                Section {sid + 1}
+              </Text>
+              <Text {...arrowStyles} left={0} onClick={() => movePrev(sid)}>
+                &#10094;
+              </Text>
+              <Text
+                {...arrowStyles}
+                right={0}
+                borderRadius="3px 0 0 3px"
+                onClick={() => moveNext(sid)}
+              >
+                &#10095;
+              </Text>
+            </Box>
+          ))}
+        </Flex>
     </Flex>
   );
 };

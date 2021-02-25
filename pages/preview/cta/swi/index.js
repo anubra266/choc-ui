@@ -18,7 +18,7 @@ const CTA = () => {
         <Image
           src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80"
           alt="3 women looking at a laptop"
-          objectFit="cover"
+          fit="cover"
           w="full"
           h={{ base: 64, md: "full" }}
           bg="gray.100"

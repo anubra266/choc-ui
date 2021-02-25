@@ -14,6 +14,11 @@
             "preview": "installation"
           },
           {
+            "name": "Import",
+            "url": "#",
+            "preview": "import"
+          },
+          {
             "name": "Basic Pagination",
             "url": "#",
             "preview": "bp"
@@ -72,6 +77,11 @@
             "name": "Responsive Pagination",
             "url": "#",
             "preview": "rpag"
+          },
+          {
+            "name": "With Live Data",
+            "url": "#",
+            "preview": "wld"
           }
         ]
       }

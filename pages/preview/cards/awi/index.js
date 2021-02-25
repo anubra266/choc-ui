@@ -28,7 +28,7 @@ const Ma = () => {
           roundedTop="lg"
           w="full"
           h={64}
-          objectFit="cover"
+          fit="cover"
           src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
           alt="Article"
         />
@@ -70,7 +70,7 @@ const Ma = () => {
               <Flex alignItems="center">
                 <Image
                   h={10}
-                  objectFit="cover"
+                  fit="cover"
                   rounded="full"
                   src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=48&q=60"
                   alt="Avatar"

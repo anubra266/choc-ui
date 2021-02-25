@@ -26,7 +26,7 @@ const OpenSource = ({ contributors }) => {
           <Image
             src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8Z2l0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             alt="Open Source"
-            objectFit="cover"
+            fit="cover"
             w="full"
             h={{ base: 64, md: "full" }}
             bg="gray.100"

@@ -30,7 +30,7 @@ const Ma = () => {
           <Image
             w={20}
             h={20}
-            objectFit="cover"
+            fit="cover"
             rounded="full"
             borderStyle="solid"
             borderWidth={2}
