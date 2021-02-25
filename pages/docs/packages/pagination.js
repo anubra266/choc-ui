@@ -10,7 +10,7 @@ import { Alert, Stack } from "@chakra-ui/react";
 const PaginationPackage = () => {
   return (
     <DocsLayout>
-      <PageHead title="Pagination - @choc-ui/paginator" />
+      <PageHead title="Pagination Package - @choc-ui/paginator" image="paginator.png" />
       <PageHeader>
         <Section.a
           target="_blank"
