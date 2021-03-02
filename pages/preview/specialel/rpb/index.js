@@ -3,6 +3,10 @@ import { Button, Stack, useColorModeValue } from "@chakra-ui/react";
 
 export default function Component() {
   const scheme = "brand";
+  const step1 = useColorModeValue("600", "300");
+  const step2 = useColorModeValue("500", "400");
+  const step3 = useColorModeValue("300", "500");
+
   const sizes = ["lg", "md", "sm", "xs"];
   return (
     <Stack
@@ -14,7 +18,7 @@ export default function Component() {
     >
       {sizes.map((size, k) => (
         <Button
-          bgColor={`${scheme}.${useColorModeValue("600", "300")}`}
+          bgColor={`${scheme}.${step1}`}
           color="white"
           fontWeight="medium"
           rounded="md"
@@ -27,16 +31,13 @@ export default function Component() {
           transition="background 0.8s"
           backgroundPosition="center"
           _hover={{
-            bgColor: `${scheme}.${useColorModeValue("500", "400")}`,
-            bgGradient: `radial(circle, transparent 1%, ${scheme}.${useColorModeValue(
-              "500",
-              "400"
-            )} 1%)`,
+            bgColor: `${scheme}.${step2}`,
+            bgGradient: `radial(circle, transparent 1%, ${scheme}.${step2} 1%)`,
             bgPos: "center",
             backgroundSize: "15000%",
           }}
           _active={{
-            bgColor: `${scheme}.${useColorModeValue("300", "500")}`,
+            bgColor: `${scheme}.${step3}`,
             backgroundSize: "100%",
             transition: "background 0s",
           }}
