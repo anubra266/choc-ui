@@ -6,7 +6,15 @@ export const linkStyle = {
 };
 
 export const PageHeader = (props) => {
-  return <Text fontSize="2xl" mb={2} fontWeight="700" {...props} />;
+  return (
+    <Text
+      fontSize="2xl"
+      mb={2}
+      textTransform="capitalize"
+      fontWeight="700"
+      {...props}
+    />
+  );
 };
 
 export const Section = (props) => {

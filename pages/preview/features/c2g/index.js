@@ -57,11 +57,7 @@ export default function C2g() {
       justifyContent="center"
       alignItems="center"
     >
-      <Box
-        py={12}
-        bg={useColorModeValue("white", "gray.800")}
-        rounded="xl"
-      >
+      <Box py={12} bg={useColorModeValue("white", "gray.800")} rounded="xl">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h2

@@ -10,7 +10,7 @@ const KuttyHero = () => {
           pos="relative"
           pb={{ base: 8, sm: 16, md: 20, lg: 28, xl: 32 }}
           maxW={{ lg: "2xl" }}
-          w={{ lg: "100%" }}
+          w={{ lg: "full" }}
           zIndex={1}
           bg={bg}
           border="solid 1px transparent"
@@ -39,7 +39,7 @@ const KuttyHero = () => {
             mt={{ base: 10, sm: 12, md: 16, lg: 20, xl: 28 }}
           >
             <Box
-              w="100%"
+              w="full"
               textAlign={{ sm: "center", lg: "left" }}
               justifyContent="center"
               alignItems="center"
@@ -76,17 +76,19 @@ const KuttyHero = () => {
                 mt={{ base: 5, sm: 8 }}
                 display={{ sm: "flex" }}
                 justifyContent={{ sm: "center", lg: "start" }}
+                fontWeight="extrabold"
+                fontFamily="fantasy"
               >
-                <Box borderRadius="full" boxShadow="md">
+                <Box rounded="full" shadow="md">
                   <chakra.a
                     href="#"
-                    w="100%"
+                    w="full"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    borderRadius="md"
+                    rounded="md"
                     color="white"
                     bg="brand.600"
                     _hover={{ bg: "brand.700" }}
@@ -99,7 +101,7 @@ const KuttyHero = () => {
                 <Box mt={[3, 0]} ml={[null, 3]}>
                   <chakra.a
                     href="#"
-                    w="100%"
+                    w="full"
                     display="flex"
                     alignItems="center"
                     justifyContent="center"
@@ -107,7 +109,7 @@ const KuttyHero = () => {
                     py={{ base: 3, md: 4 }}
                     border="solid 1px transparent"
                     fontSize={{ base: "md", md: "lg" }}
-                    borderRadius="md"
+                    rounded="md"
                     color="brand.700"
                     bg="brand.100"
                     _hover={{ bg: "brand.200" }}
@@ -125,7 +127,7 @@ const KuttyHero = () => {
         top={{ lg: 0 }}
         bottom={{ lg: 0 }}
         right={{ lg: 0 }}
-        w={{ lg: 1 / 2 }}
+        w={{ lg: "50%" }}
       >
         <Image
           h={[56, 72, 96, "full"]}

@@ -133,10 +133,7 @@
         "title": "Carousels",
         "route": "carousels",
         "image": "carousels.png",
-        "alert": {
-          "variant": "green",
-          "message": "New"
-        },
+
         "components": [
           {
             "name": "Simple Carousel",
@@ -248,6 +245,23 @@
             "name": "Responsive Pagination",
             "url": "#",
             "preview": "pagination/rpg",
+            "height": "100px"
+          }
+        ]
+      },
+
+      "special": {
+        "title": "Special Elements",
+        "route": "special",
+        "alert": {
+          "variant": "green",
+          "message": "New"
+        },
+        "components": [
+          {
+            "name": "Rippled Buttons",
+            "url": "#",
+            "preview": "specialel/rpb",
             "height": "100px"
           }
         ]

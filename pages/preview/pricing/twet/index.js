@@ -33,18 +33,13 @@ export default function Pricing() {
   };
   return (
     <Flex
-      pos="absolute"
-      overflow="auto"
-      top="50%"
-      left="50%"
-      transform="translate(-50%,-50%)"
       bg="gray.600"
       p={10}
       w="full"
       justifyContent="center"
       alignItems="center"
     >
-      <Box w="full" bg="blue" pt={8}>
+      <Box w="full" pt={8}>
         <Flex
           direction={{ base: "column", md: "row" }}
           justifyContent="center"

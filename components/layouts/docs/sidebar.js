@@ -5,6 +5,8 @@ import {
   useDisclosure,
   IconButton,
   Flex,
+  SlideFade,
+  Slide,
 } from "@chakra-ui/react";
 import SidebarContent from "./sidebar-content";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -14,7 +16,7 @@ const Sidebar = () => {
   const SidebarIcon = isOpen ? MdClose : MdMenu;
   return (
     <React.Fragment>
-      {isOpen ? (
+      <SlideFade in={isOpen} offsetX="120px">
         <Box
           as="nav"
           aria-label="Main Navigation"
@@ -23,7 +25,7 @@ const Sidebar = () => {
             overscrollBehavior: "contain",
           }}
           top="6.5rem"
-          w="280px"
+          w={isOpen ? "280px" : 0}
           h="calc(((100vh - 1.5rem) - 64px) - 42px);"
           pb="8"
           mt="20"
@@ -50,7 +52,8 @@ const Sidebar = () => {
           />
           <SidebarContent />
         </Box>
-      ) : (
+      </SlideFade>
+      {!isOpen && (
         <IconButton
           pos="fixed"
           top={20}

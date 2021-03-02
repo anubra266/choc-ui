@@ -11,19 +11,19 @@ import {
 export default function Sj() {
   return (
     <Flex
-    bg="gray.600"
-    p={50}
-    w="full"
-    alignItems="center"
-    justifyContent="center"
-  >
+      bg="gray.600"
+      p={50}
+      w="full"
+      alignItems="center"
+      justifyContent="center"
+    >
       <Box
         bgGradient="linear(to-r, white, purple.300)"
         bg={useColorModeValue(null, "gray.800")}
       >
         <SimpleGrid
           maxW="7xl"
-          w={{md:"3xl", lg: "4xl" }}
+          w={{ md: "3xl", lg: "4xl" }}
           alignItems="center"
           columns={{ base: 1, lg: 2, xl: 3 }}
           spacing={4}
@@ -40,7 +40,7 @@ export default function Sj() {
               letterSpacing="tight"
               lineHeight="shorter"
               color={useColorModeValue("gray.900", "gray.100")}
-              textShadow="2px 0 currentcolor"
+              fontFamily="fantasy"
               mb={6}
             >
               <chakra.span display="block">Ready to dive in?</chakra.span>
@@ -73,12 +73,7 @@ export default function Sj() {
                   Get started
                 </chakra.a>
               </Box>
-              <Box
-                ml={3}
-                display="inline-flex"
-                rounded="md"
-                shadow="md"
-              >
+              <Box ml={3} display="inline-flex" rounded="md" shadow="md">
                 <chakra.a
                   w="full"
                   href="#"

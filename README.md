@@ -34,6 +34,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [x] Feature Sections
   - [x] CTA Sections
   - [ ] Pricing Sections
+  - [ ] Client Sections - WickedBlocks
   - [ ] Content Sections
   - [ ] FAQs
   - [ ] Newsletter Sections
@@ -60,7 +61,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [ ] Settings Screens
 - [ ] Forms Tailwind
   - [ ] Form Layouts - Tailwind
-  - [ ] Sign in and Registration
+  - [ ] Sign in and Registration - WickedBlocks
   - [ ] Action Panels
 - [ ] Lists Tailwind
   - [ ] Tables

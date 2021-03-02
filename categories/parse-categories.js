@@ -29,7 +29,8 @@ export const useRoutes = () => {
       const { title: secTitle, route, alert } = fullSection;
       const url = prefix + route;
       const active =
-        router.pathname === url || (category === catTitle && section === route);
+        router.pathname === url ||
+        (category === prefix.replace(/docs|[/]/g, "") && section === route);
       racc.push({ title: secTitle, route, alert, url, active });
       return racc;
     }, []);
