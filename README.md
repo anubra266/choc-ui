@@ -13,6 +13,7 @@
 [**CHOC**](https://choc-ui.tech) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
 
 ## Official Documentation
+
 See it in action on [Choc-UI's Website.](https://choc-ui.tech)
 
 <br/>
@@ -29,6 +30,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [ ] Carousels
   - [ ] Empty - Antd
   - [ ] Result - Antd
+  - [.] Special Elements
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections
