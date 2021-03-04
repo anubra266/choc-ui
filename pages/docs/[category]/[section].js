@@ -7,19 +7,10 @@ import { Alert, Stack } from "@chakra-ui/react";
 
 import ReactHtmlParser from "react-html-parser";
 
-import ElementObj from "~/categories/elements.json";
-import PSectionsObj from "~/categories/page-sections.json";
-import NavigationObj from "~/categories/navigation.json";
-import ListsObj from "~/categories/lists.json";
+import { componentsObj } from "~/categories/parse-categories";
 
 const Element = ({ category, section }) => {
-  const Components = {
-    ...ElementObj,
-    ...PSectionsObj,
-    ...NavigationObj,
-    ...ListsObj,
-  };
-  const ComponentObj = Components[category]?.sections[section];
+  const ComponentObj = componentsObj[category]?.sections[section];
   return (
     <DocsLayout>
       <React.Fragment>

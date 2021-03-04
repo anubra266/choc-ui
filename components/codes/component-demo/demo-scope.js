@@ -1,6 +1,8 @@
 const ChakraComps = require("@chakra-ui/react");
 const ChakraIcons = require("@chakra-ui/icons");
 const fMotion = require("framer-motion");
+const REmotion = require("@emotion/react");
+
 const Logo = require("~/components/navbar/logo").default;
 
 const ai = require("react-icons/ai");
@@ -29,6 +31,7 @@ export const demoScope = {
   ...ChakraComps,
   ...ChakraIcons,
   ...fMotion,
+  ...REmotion,
   Logo,
   ...ai,
   ...bi,

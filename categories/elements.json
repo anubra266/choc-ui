@@ -253,10 +253,6 @@
       "special": {
         "title": "Special Elements",
         "route": "special",
-        "alert": {
-          "variant": "green",
-          "message": "New"
-        },
         "components": [
           {
             "name": "Rippled Buttons",

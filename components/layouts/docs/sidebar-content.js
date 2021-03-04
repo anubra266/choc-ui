@@ -18,14 +18,14 @@ const RouteLink = ({ children, isSection, href, active }) => {
 const MenuLink = ({ children, active, isSection, section, href }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
-    bg: useColorModeValue("brand.100", "brand.700"),
-    color: useColorModeValue("brand.600", "brand.100"),
-    shadow: "lg",
-    rounded: "lg",
+    bg: useColorModeValue("brand.200", "brand.600"),
+    color: useColorModeValue("brand.800", "brand.100"),
+    shadow: "base",
+    rounded: "sm",
   };
   const sectionStyle = {
     textTransform: "uppercase",
-    fontWeight: 800,
+    fontWeight: "bold",
     fontSize: "xs",
   };
   const baseStyle = {
@@ -39,7 +39,7 @@ const MenuLink = ({ children, active, isSection, section, href }) => {
     cursor: !active && "pointer",
     textTransform: "capitalize",
     fontSize: "sm",
-    fontWeight: "bold",
+    fontWeight: "semibold",
     border: "solid transparent",
     my: 1,
   };

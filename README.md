@@ -30,7 +30,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [ ] Carousels
   - [ ] Empty - Antd
   - [ ] Result - Antd
-  - [.] Special Elements
+  - [ ] Special Elements
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections
@@ -64,7 +64,6 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
 - [ ] Forms Tailwind
   - [ ] Form Layouts - Tailwind
   - [ ] Sign in and Registration - WickedBlocks
-  - [ ] Action Panels
 - [ ] Lists Tailwind
   - [ ] Tables
   - [ ] Stacked Lists

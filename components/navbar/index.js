@@ -137,10 +137,7 @@ const HeaderContent = () => {
                 icon={<IoColorPalette />}
               ></MenuButton>
               <MenuList minWidth="240px">
-                <MenuOptionGroup
-                  defaultValue={brand}
-                  onChange={(b) => setBrand(b)}
-                >
+                <MenuOptionGroup value={brand} onChange={(b) => setBrand(b)}>
                   {Object.keys(presets()).map((col, cid) => (
                     <MenuItemOption
                       key={cid}

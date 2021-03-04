@@ -5,14 +5,19 @@ import ElementObj from "~/categories/elements.json";
 import PSectionsObj from "~/categories/page-sections.json";
 import NavigationObj from "~/categories/navigation.json";
 import ListsObj from "~/categories/lists.json";
+import FormsObj from "~/categories/forms.json";
 import PackagesObj from "~/categories/packages.json";
 
-export const categoriesObj = {
-  ...GStartObj,
+export const componentsObj = {
   ...ElementObj,
   ...PSectionsObj,
   ...NavigationObj,
   ...ListsObj,
+  ...FormsObj,
+};
+export const categoriesObj = {
+  ...GStartObj,
+  ...componentsObj,
   ...PackagesObj,
 };
 

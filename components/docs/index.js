@@ -32,7 +32,7 @@ Section.Header = (props) => {
   return (
     <Box
       fontSize="xl"
-      fontWeight="700"
+      fontWeight="semibold"
       w="full"
       textTransform="capitalize"
       bg={useColorModeValue("brand.100", "gray.700")}
