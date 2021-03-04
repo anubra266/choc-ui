@@ -84,7 +84,7 @@ export default function Component() {
                       />
                       <Input
                         type="tel"
-                        placeholder="phone number"
+                        placeholder="www.example.com"
                         focusBorderColor="brand.400"
                         rounded="md"
                       />
