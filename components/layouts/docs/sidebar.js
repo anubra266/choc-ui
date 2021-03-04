@@ -46,7 +46,7 @@ const Sidebar = () => {
             fontSize="lg"
             aria-label={`Toggle Sidebar`}
             variant="solid"
-            colorScheme="brand"
+            colorScheme="gray"
             onClick={onClose}
             icon={<SidebarIcon />}
           />
@@ -64,7 +64,7 @@ const Sidebar = () => {
           fontSize="lg"
           aria-label={`Toggle Sidebar`}
           variant="solid"
-          colorScheme="brand"
+          colorScheme="gray"
           onClick={onOpen}
           icon={<SidebarIcon />}
         />

@@ -18,7 +18,7 @@ const RouteLink = ({ children, isSection, href, active }) => {
 const MenuLink = ({ children, active, isSection, section, href }) => {
   const borderColor = useColorModeValue("brand.500", "gray.100");
   const activeStyle = {
-    bg: useColorModeValue("brand.200", "brand.600"),
+    bg: useColorModeValue("brand.50", "gray.700"),
     color: useColorModeValue("brand.800", "brand.100"),
     shadow: "base",
     rounded: "sm",
@@ -33,7 +33,6 @@ const MenuLink = ({ children, active, isSection, section, href }) => {
     borderColor: borderColor,
     _hover: {
       ...activeStyle,
-      bg: !active && useColorModeValue("gray.100", "gray.700"),
       transition: "all 0.3s ease-in-out",
     },
     cursor: !active && "pointer",

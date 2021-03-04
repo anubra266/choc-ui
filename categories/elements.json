@@ -62,6 +62,7 @@
       "cards": {
         "title": "Cards",
         "route": "cards",
+        "image": "cards.png",
         "components": [
           {
             "name": "Article",
@@ -173,6 +174,7 @@
       "headers": {
         "title": "Headers",
         "route": "headers",
+        "image": "headers.png",
         "components": [
           {
             "name": "Chakra UI Site Header",
@@ -210,6 +212,7 @@
       "pagination": {
         "title": "Pagination",
         "route": "pagination",
+        "image": "pagination.png",
         "components": [
           {
             "name": "Basic Pagination",
