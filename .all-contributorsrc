@@ -57,6 +57,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "jmcelreavey",
+      "name": "John McElreavey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6317960?v=4",
+      "profile": "https://github.com/jmcelreavey",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
