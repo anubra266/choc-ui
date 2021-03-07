@@ -61,6 +61,7 @@ const HeaderContent = () => {
                 fontFamily="heading"
                 fontWeight="bold"
                 style={{ float: "right" }}
+                display={["none", "block"]}
               >
                 <chakra.span
                   color={useColorModeValue("brand.500", "brand.400")}
