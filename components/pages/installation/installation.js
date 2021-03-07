@@ -10,10 +10,10 @@ const Installation = () => {
         <Section.p>This is quite straightforward.</Section.p>
         <Section.p>
           <CodeBlock lang="bash">
-            {`npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion`}
+            {`npm i @chakra-ui/react @chakra-ui/icons @emotion/react @emotion/styled framer-motion react-icons`}
           </CodeBlock>
           <CodeBlock lang="bash">
-            {`yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion`}
+            {`yarn add @chakra-ui/react @chakra-ui/icons @emotion/react @emotion/styled framer-motion react-icons`}
           </CodeBlock>
         </Section.p>
         <Section.p>
