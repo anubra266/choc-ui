@@ -10,7 +10,8 @@
           {
             "name": "Simple Justified",
             "url": "https://tailwindui.com/components/marketing/sections/cta-sections#component-90c79fbd0596cc4e601da985ca825994",
-            "preview": "cta/sj"
+            "preview": "cta/sj",
+            "height": "320px"
           },
           {
             "name": "Simple Stacked",

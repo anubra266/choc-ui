@@ -14,6 +14,7 @@ import { IoIosCopy, IoMdCode } from "react-icons/io";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 
 import { editOnlineCds } from "./edit-online";
+import { VscWindow } from "react-icons/vsc";
 
 const ActionButton = (props) => {
   return (
@@ -33,6 +34,7 @@ const ActionButton = (props) => {
 };
 export default function CodeActions(props) {
   const { hasCopied, onCopy } = useClipboard(props.code);
+  const { hasCopiedOriginal, onCopyOriginal } = useClipboard(props.preCode);
   return (
     <Flex
       justifyContent="end"
@@ -49,11 +51,20 @@ export default function CodeActions(props) {
         } Editable Component Code`}
         onClick={() => props.codeEditor.onToggle()}
       />
-      <Box color={hasCopied && "green.500"}>
+      {props.isDirty && (
+        <Box color={hasCopied && "green.500"}>
+          <ActionButton
+            icon={hasCopied ? <IoCheckmarkDoneSharp /> : <VscWindow />}
+            onClick={onCopy}
+            label={hasCopied ? "Copied!" : "Copy Editor Code"}
+          />
+        </Box>
+      )}
+      <Box color={hasCopiedOriginal && "green.500"}>
         <ActionButton
-          icon={hasCopied ? <IoCheckmarkDoneSharp /> : <IoIosCopy />}
-          onClick={onCopy}
-          label={hasCopied ? "Copied!" : "Copy Original Component Code"}
+          icon={hasCopiedOriginal ? <IoCheckmarkDoneSharp /> : <IoIosCopy />}
+          onClick={onCopyOriginal}
+          label={hasCopiedOriginal ? "Copied!" : "Copy Original Code"}
         />
       </Box>
       <Link isExternal href={`/preview/${props.path}`}>

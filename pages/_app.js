@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <ThemeProvider value={themeProps}>
-      <Fonts />
+        <Fonts />
         <NextNprogress
           color={presets(brand)[500]}
           startPosition={0.3}
