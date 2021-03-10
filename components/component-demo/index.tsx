@@ -7,7 +7,6 @@ import {
   SliderTrack,
   SliderFilledTrack,
   SliderThumb,
-  useColorModeValue,
 } from "@chakra-ui/react";
 
 import CodeActions from "./actions";
@@ -29,22 +28,17 @@ const ComponentDemo = (props) => {
 
   const resetDemo = () => setCode(postCode);
 
-  useEffect(() => {
-    resetDemo();
-    setSize(100);
-  }, [postCode]);
-
   const [isDirty, setIsDirty] = useState(false);
 
   useEffect(() => {
     setIsDirty(postCode !== code);
-  }, [code]);
+  }, [props.path]);
 
   const editorProps = { codeEditor, preCode, code, resetDemo, isDirty };
   const frameProps = { ...props, size };
 
   return (
-    <React.Fragment>
+    <React.Fragment key={props.path}>
       <LiveProvider
         scope={{ ...demoScope, ...(props.scope && props.scope) }}
         code={code}
