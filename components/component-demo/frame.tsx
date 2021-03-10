@@ -20,33 +20,31 @@ const memoizedCreateCacheWithContainer = weakMemoize(
 const Frame = (props) => {
   const theme = useTheme();
 
-  const [iframeHead, setIframeHead] = useState(null);
-  const [iframeBody, setIframeBody] = useState(null);
+  const [contentRef, setContentRef] = useState(null);
+  const doc = contentRef?.contentWindow?.document;
+  const mountNode = doc?.body;
+  const insertionPoint = doc?.head;
 
-  const handleLoad = (e) => {
-    if (!e.defaultPrevented) {
-      setIframeHead(e.target.contentDocument?.head);
-      setIframeBody(e.target.contentDocument?.body);
-    }
-  };
   return (
     <iframe
       srcDoc={`<!DOCTYPE html>`}
       width={`${props.size}%`}
       height={props.height || "500px"}
       title={`Preview-${props.path}`}
-      onLoad={handleLoad}
+      ref={setContentRef}
     >
-      {iframeBody &&
-        iframeHead &&
+      {insertionPoint &&
+        mountNode &&
         createPortal(
-          <CacheProvider value={memoizedCreateCacheWithContainer(iframeHead)}>
+          <CacheProvider
+            value={memoizedCreateCacheWithContainer(insertionPoint)}
+          >
             <ChakraProvider theme={theme}>
               <Fonts />
               {props.children}
             </ChakraProvider>
           </CacheProvider>,
-          iframeBody
+          mountNode
         )}
     </iframe>
   );
