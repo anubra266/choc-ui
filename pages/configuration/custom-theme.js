@@ -1,7 +1,7 @@
 import React from "react";
 import { CodeBlock } from "components/docs/codeblock";
 import { Section } from "components/docs";
-import customTheme from "!!raw-loader!@/configuration/custom-theme";
+import customTheme from "!!raw-loader!components/codes/configuration/custom-theme";
 
 const CustomTheme = () => {
   return (

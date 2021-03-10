@@ -2,7 +2,7 @@ import React from "react";
 import { CodeBlock } from "components/docs/codeblock";
 import { Section } from "components/docs";
 import { Alert, Stack } from "@chakra-ui/react";
-import provider from "!!raw-loader!@/configuration/provider";
+import provider from "!!raw-loader!components/codes/configuration/provider";
 
 const Provider = () => {
   return (
