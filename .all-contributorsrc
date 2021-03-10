@@ -1,0 +1,73 @@
+{
+  "projectName": "choc-ui",
+  "projectOwner": "anubra266",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 50,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "anubra266",
+      "name": "Abraham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30869823?v=4",
+      "profile": "https://github.com/anubra266",
+      "contributions": [
+        "code",
+        "design",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "GabrielFemi",
+      "name": "Akinyosoye Gabriel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39733548?v=4",
+      "profile": "https://github.com/GabrielFemi",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "MichaelGrigoryan25",
+      "name": "Michael Grigoryan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56165400?v=4",
+      "profile": "https://michaelgrigoryan.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "abraham266",
+      "name": "Anu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73303261?v=4",
+      "profile": "https://github.com/abraham266",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "JuliRash",
+      "name": "Julius Idowu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12122519?v=4",
+      "profile": "http://geniushub.com.ng/",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "jmcelreavey",
+      "name": "John McElreavey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6317960?v=4",
+      "profile": "https://github.com/jmcelreavey",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

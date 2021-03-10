@@ -1,34 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center"><a href="https://choc-ui.tech" target="_blank"><img src="./public/logo.png" width="200"></a></p>
+ 
+<div align="center">
 
-## Getting Started
+[![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
+[![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
 
-First, run the development server:
+</div>
+<br />
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## About Choc UI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[**CHOC**](https://choc-ui.tech) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Official Documentation
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+See it in action on [Choc-UI's Website.](https://choc-ui.tech)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br/>
 
-## Learn More
+## Components
 
-To learn more about Next.js, take a look at the following resources:
+- [x] Elements
+  - [x] Headers
+  - [x] Cards
+  - [x] Alerts
+  - [x] Pagination
+  - [x] Badges
+  - [x] Gradient Icons
+  - [ ] Carousels
+  - [ ] Empty - Antd
+  - [ ] Result - Antd
+  - [ ] Special Elements
+- [ ] Page Sections
+  - [x] Heros
+  - [x] Feature Sections
+  - [x] CTA Sections
+  - [ ] Pricing Sections
+  - [ ] Client Sections - WickedBlocks
+  - [ ] Content Sections
+  - [ ] FAQs
+  - [ ] Newsletter Sections
+  - [ ] Stats
+  - [ ] Testimonials
+  - [ ] Blog Sections -
+  - [ ] Contact Sections
+  - [ ] Footers - Meraki UI
+  - [ ] Logo Clouds
+- [ ] Navigation - TailwindUI
+  - [x] Navbars
+  - [ ] Vertical Navigation (Menus)
+  - [ ] Sidebar Navigation
+- [ ] Headings - TailwindUI
+  - [ ] Card Headings
+  - [ ] Section Headings
+  - [ ] Page Headings
+- [ ] Example Pages - Meraki UI, Kutty
+  - [ ] Landing Pages
+  - [ ] Contact Pages
+  - [ ] Error Pages
+  - [ ] Home Screens
+  - [ ] Detail Screens
+  - [ ] Settings Screens
+- [ ] Forms Tailwind
+  - [ ] Form Layouts - Tailwind
+  - [ ] Sign in and Registration - WickedBlocks
+- [ ] Lists Tailwind
+  - [ ] Tables
+  - [ ] Stacked Lists
+  - [ ] Grid Lists
+  - [ ] Feeds
+- [ ] Application Shells
+  - [ ] Sidebar Layouts - Kutty
+  - [ ] Page Layouts - Antd
+  - [ ] Stacked Layouts - TailwindUI
+  - [ ] Multi Column Layouts - TailwindUI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated. See [Contributing.md](./CONTRIBUTING.md)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Distributed under the MIT License. See [LICENSE](./LICENSE.md) for more information.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/anubra266"><img src="https://avatars.githubusercontent.com/u/30869823?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abraham</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=anubra266" title="Code">💻</a> <a href="#design-anubra266" title="Design">🎨</a> <a href="#maintenance-anubra266" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/GabrielFemi"><img src="https://avatars.githubusercontent.com/u/39733548?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Akinyosoye Gabriel</b></sub></a><br /><a href="#maintenance-GabrielFemi" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://michaelgrigoryan.com"><img src="https://avatars.githubusercontent.com/u/56165400?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Michael Grigoryan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=MichaelGrigoryan25" title="Code">💻</a> <a href="#design-MichaelGrigoryan25" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/abraham266"><img src="https://avatars.githubusercontent.com/u/73303261?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Anu</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=abraham266" title="Code">💻</a></td>
+    <td align="center"><a href="http://geniushub.com.ng/"><img src="https://avatars.githubusercontent.com/u/12122519?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Julius Idowu</b></sub></a><br /><a href="#maintenance-JuliRash" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/jmcelreavey"><img src="https://avatars.githubusercontent.com/u/6317960?v=4?s=50" width="50px;" alt=""/><br /><sub><b>John McElreavey</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jmcelreavey" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

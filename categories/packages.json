@@ -1,0 +1,90 @@
+{
+  "packages": {
+    "title": "packages",
+    "prefix": "/docs/packages/",
+    "sections": {
+      "pagination": {
+        "title": "pagination",
+        "route": "pagination",
+        "display": "@choc-ui/paginator",
+        "components": [
+          {
+            "name": "Installation",
+            "url": "#",
+            "preview": "installation"
+          },
+          {
+            "name": "Import",
+            "url": "#",
+            "preview": "import"
+          },
+          {
+            "name": "Basic Pagination",
+            "url": "#",
+            "preview": "bp"
+          },
+          {
+            "name": "More Pages",
+            "url": "#",
+            "preview": "mp"
+          },
+          {
+            "name": "Change Page Size",
+            "url": "#",
+            "preview": "cps"
+          },
+          {
+            "name": "Jump to a page directly",
+            "url": "#",
+            "preview": "jpd"
+          },
+          {
+            "name": "Change Size",
+            "url": "#",
+            "preview": "cs"
+          },
+          {
+            "name": "Simple Mode",
+            "url": "#",
+            "preview": "sm"
+          },
+          {
+            "name": "Controlled page number",
+            "url": "#",
+            "preview": "cpn"
+          },
+          {
+            "name": "Total number",
+            "url": "#",
+            "preview": "tn"
+          },
+          {
+            "name": "Prev and next",
+            "url": "#",
+            "preview": "pan"
+          },
+          {
+            "name": "Preset Styling",
+            "url": "#",
+            "preview": "ps"
+          },
+          {
+            "name": "Custom Styling",
+            "url": "#",
+            "preview": "cs"
+          },
+          {
+            "name": "Responsive Pagination",
+            "url": "#",
+            "preview": "rpag"
+          },
+          {
+            "name": "With Live Data",
+            "url": "#",
+            "preview": "wld"
+          }
+        ]
+      }
+    }
+  }
+}

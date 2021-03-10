@@ -1,0 +1,24 @@
+{
+  "lists": {
+    "title": "lists",
+    "prefix": "/docs/lists/",
+    "sections": {
+      "tables": {
+        "title": "tables",
+        "route": "tables",
+        "alert": {
+          "variant": "blue",
+          "message": "In Progress"
+        },
+        "components": [
+          {
+            "name": "Mobile Responsive Table",
+            "url": "#",
+            "preview": "tables/mrt",
+            "height": "300px"
+          }
+        ]
+      }
+    }
+  }
+}
