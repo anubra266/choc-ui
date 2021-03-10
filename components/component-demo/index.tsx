@@ -35,7 +35,7 @@ const ComponentDemo = (props) => {
   }, [props.path]);
 
   const editorProps = { codeEditor, preCode, code, resetDemo, isDirty };
-  const frameProps = { ...props, size };
+  const frameProps = { ...props, size, setSize, code };
 
   return (
     <React.Fragment key={props.path}>
@@ -50,6 +50,7 @@ const ComponentDemo = (props) => {
           overflow="auto"
         >
           <Slider
+            display={["none", null, "block"]}
             aria-label="Responsive slider"
             colorScheme="brand"
             defaultValue={size}
@@ -58,12 +59,16 @@ const ComponentDemo = (props) => {
             min={30}
             onChange={(v) => setSize(v)}
           >
-            <SliderTrack>
-              <SliderFilledTrack />
+            <SliderTrack bg="brand.100">
+              <SliderFilledTrack bg="brand.100" />
             </SliderTrack>
-            <SliderThumb />
+            <SliderThumb bg="brand.500" roundedLeft={0}>
+              <Box color="white" />
+            </SliderThumb>
           </Slider>
-          <LivePreview />
+          <Frame {...frameProps}>
+            <LivePreview />
+          </Frame>
         </Box>
         <CodeActions {...props} {...editorProps} />
         <Collapse in={codeEditor.isOpen} animateOpacity>

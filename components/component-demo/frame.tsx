@@ -1,5 +1,5 @@
 import { ChakraProvider, useTheme } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import { createPortal } from "react-dom";
 
 import Fonts from "theme/fonts";
@@ -24,6 +24,11 @@ const Frame = (props) => {
   const doc = contentRef?.contentWindow?.document;
   const mountNode = doc?.body;
   const insertionPoint = doc?.head;
+
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+  useEffect(() => {
+    forceUpdate();
+  });
 
   return (
     <iframe
