@@ -15,6 +15,19 @@ import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { VscWindow } from "react-icons/vsc";
 
 import { editOnlineCds } from "./edit-online";
+import Confetti from "react-dom-confetti";
+const config = {
+  angle: 180,
+  spread: 180,
+  startVelocity: 40,
+  elementCount: 100,
+  dragFriction: 0.12,
+  duration: 5000,
+  stagger: 4,
+  width: "10px",
+  height: "10px",
+  colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+};
 
 const ActionButton = (props) => {
   return (
@@ -47,6 +60,12 @@ export default function CodeActions(props: any) {
       px={5}
       py={1}
     >
+      <Box
+        as={Confetti}
+        active={hasCopied || hasCopiedOriginal}
+        config={config}
+        zIndex="tooltip"
+      />
       <ActionButton
         icon={<IoMdCode />}
         label={`${
@@ -74,7 +93,7 @@ export default function CodeActions(props: any) {
       <Link isExternal href={`/preview/${props.path}`}>
         <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />{" "}
       </Link>
-      <Link isExternal href={editOnlineCds(props.code, props.path)}>
+      <Link isExternal href={editOnlineCds(props.preCode, props.path)}>
         <ActionButton
           icon={<AiOutlineCodeSandbox />}
           label="Open Code in Codesandbox"

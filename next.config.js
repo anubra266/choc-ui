@@ -1,4 +1,3 @@
-var path = require("path");
 module.exports = {
   env: {
     siteUrl: "https://choc-ui.tech",
@@ -10,16 +9,5 @@ module.exports = {
     emailAddress: "anubra266@gmail.com",
     discordUrl: "https://discord.gg/XcD8bNv7Ne",
     twitterChoc: "https://twitter.com/anubra266",
-  },
-  webpack: (config, options) => {
-    const custom_alias = {
-      "~": path.resolve("./"),
-      "@": path.resolve("./components/codes"),
-    };
-    var aliases = config.resolve.alias;
-
-    aliases = { ...aliases, custom_alias };
-
-    return config;
   },
 };
