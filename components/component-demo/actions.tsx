@@ -32,9 +32,11 @@ const ActionButton = (props) => {
     </Tooltip>
   );
 };
-export default function CodeActions(props) {
+export default function CodeActions(props: any) {
   const { hasCopied, onCopy } = useClipboard(props.code);
-  const { hasCopiedOriginal, onCopyOriginal } = useClipboard(props.preCode);
+  const { hasCopied: hasCopiedOriginal, onCopy: onCopyOriginal } = useClipboard(
+    props.preCode
+  );
 
   return (
     <Flex
