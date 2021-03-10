@@ -33,7 +33,7 @@ const Feature = (props) => {
         mb={2}
         fontWeight="semibold"
         lineHeight="shorter"
-        color={useColorModeValue("gray.900")}
+        color={useColorModeValue("gray.900", "inherit")}
         fontSize="xl"
       >
         {props.title}

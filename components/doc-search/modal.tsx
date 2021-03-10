@@ -41,7 +41,7 @@ function SearchModal(_, ref) {
     <Modal
       isOpen={isOpen}
       onClose={onClose}
-      motionPreset="slideInTop"
+      motionPreset="slideInBottom"
       size="xl"
     >
       <ModalOverlay />

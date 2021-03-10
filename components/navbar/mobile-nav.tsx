@@ -1,6 +1,5 @@
 import {
   Box,
-  Center,
   CloseButton,
   Flex,
   HStack,
@@ -8,6 +7,7 @@ import {
   useColorModeValue,
   useUpdateEffect,
   Image,
+  IconButtonProps,
 } from "@chakra-ui/react";
 import { AnimatePresence, motion, useElementScroll } from "framer-motion";
 import * as React from "react";
@@ -16,7 +16,6 @@ import { RemoveScroll } from "react-remove-scroll";
 import SponsorButton from "./sponsor-button";
 import DocSearch from "../doc-search";
 import SidebarContent from "components/layouts/docs/sidebar-content";
-import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 
 export function MobileNavContent(props) {
   const { isOpen, onClose } = props;
@@ -53,7 +52,7 @@ export function MobileNavContent(props) {
               left="0"
               zIndex={20}
               pb="8"
-              shadow="shadow"
+              shadow={shadow}
             >
               <Box>
                 <Flex justify="space-between" px="6" pt="5" pb="4">
@@ -115,12 +114,11 @@ const ScrollView = (props) => {
   );
 };
 
-export const MobileNavButton = React.forwardRef<HTMLButtonElement>(
-  (props, ref) => (
+export const MobileNavButton: any = React.forwardRef<HTMLButtonElement>(
+  (props: IconButtonProps & { onClick: () => void }, ref) => (
     <IconButton
       ref={ref}
       display={{ base: "flex", md: "none" }}
-      aria-label="Open menu"
       fontSize="20px"
       color={useColorModeValue("gray.800", "inherit")}
       variant="ghost"

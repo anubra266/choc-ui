@@ -77,7 +77,6 @@ const OpenSource = ({ contributors }) => {
             <Link
               href={process.env.githubChoc}
               mt={2}
-              py={8}
               display="inline-flex"
               alignItems="center"
               justifyContent="center"
@@ -87,7 +86,7 @@ const OpenSource = ({ contributors }) => {
               fontWeight="bold"
               w="full"
               rounded="md"
-              color={useColorModeValue("white")}
+              color={useColorModeValue("white", "inherit")}
               bg={useColorModeValue("brand.600", "brand.500")}
               _hover={{
                 bg: useColorModeValue("brand.700", "brand.600"),
