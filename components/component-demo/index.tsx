@@ -20,7 +20,7 @@ import Frame from "./frame";
 
 const ComponentDemo = (props) => {
   const [size, setSize] = useState(100);
-  const preCode = require(`!!raw-loader!~/pages/preview/${props.path}`).default;
+  const preCode = require(`!!raw-loader!pages/preview/${props.path}`).default;
   const postCode = cleanCode(preCode, props.path);
 
   const codeEditor = useDisclosure();

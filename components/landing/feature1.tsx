@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, chakra, useColorModeValue } from "@chakra-ui/react";
-// import ComponentDemo from "components/codes/component-demo/component-demo";
+import ComponentDemo from "components/component-demo";
 
 const Feature = () => {
   return (
@@ -49,7 +49,7 @@ const Feature = () => {
               mx={{ lg: "auto" }}
               color={useColorModeValue("gray.500", "gray.400")}
             >
-              {/* <ComponentDemo path="cards/msp" h="100px" /> */}
+              <ComponentDemo path="cards/msp" h="100px" />
             </chakra.p>
           </Box>
         </Box>
