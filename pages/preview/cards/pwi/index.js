@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Image,
-  Flex,
-  useColorModeValue,
-  Link,
-} from "@chakra-ui/react";
+import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -25,7 +18,7 @@ const Ma = () => {
         shadow={{ lg: "lg" }}
         rounded={{ lg: "lg" }}
       >
-        <Box w={{ lg: 1 / 2 }}>
+        <Box w={{ lg: "50%" }}>
           <Box
             h={{ base: 64, lg: "full" }}
             rounded={{ lg: "lg" }}
@@ -37,7 +30,7 @@ const Ma = () => {
           ></Box>
         </Box>
 
-        <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: 1 / 2 }}>
+        <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
           <chakra.h2
             fontSize={{ base: "2xl", md: "3xl" }}
             color={useColorModeValue("gray.800", "white")}

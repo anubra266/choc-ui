@@ -1,5 +1,12 @@
 import React from "react";
-import { chakra, Box, Image, Flex, useColorModeValue, Link } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Image,
+  Flex,
+  useColorModeValue,
+  Link,
+} from "@chakra-ui/react";
 
 const Ma = () => {
   return (
@@ -52,7 +59,7 @@ const Ma = () => {
             }}
           >
             Accessibility tools for designers and developers
-          </ Link>>
+          </Link>
           <chakra.p mt={2} color={useColorModeValue("gray.600", "gray.300")}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
             expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos
@@ -67,7 +74,7 @@ const Ma = () => {
             _hover={{ textDecor: "underline" }}
           >
             Read more
-          </ Link>
+          </Link>
 
           <Flex alignItems="center">
             <Image
@@ -86,7 +93,7 @@ const Ma = () => {
               cursor="pointer"
             >
               Khatab wedaa
-            </ Link>
+            </Link>
           </Flex>
         </Flex>
       </Box>

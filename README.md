@@ -46,10 +46,10 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [ ] Contact Sections
   - [ ] Footers - Meraki UI
   - [ ] Logo Clouds
-- [ ] Navigation - TailwindUI
+- [ ] Navigation - TailwindUI, Meraki UI
   - [x] Navbars
   - [ ] Vertical Navigation (Menus)
-  - [ ] Sidebar Navigation
+  - [ ] Sidebar Navigation 
 - [ ] Headings - TailwindUI
   - [ ] Card Headings
   - [ ] Section Headings
