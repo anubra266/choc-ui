@@ -1,5 +1,5 @@
 import { ChakraProvider, useTheme } from "@chakra-ui/react";
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useReducer, useState } from "react";
 import { createPortal } from "react-dom";
 
 import Fonts from "theme/fonts";
@@ -25,10 +25,7 @@ const Frame = (props) => {
   const mountNode = doc?.body;
   const insertionPoint = doc?.head;
 
-  const [, forceUpdate] = useReducer((x) => x + 1, 0);
-  useEffect(() => {
-    forceUpdate();
-  });
+  const [, updateFrame] = useReducer((x) => x + 1, 0);
 
   return (
     <iframe
@@ -37,6 +34,8 @@ const Frame = (props) => {
       height={props.height || "500px"}
       title={`Preview-${props.path}`}
       ref={setContentRef}
+      loading="lazy"
+      onLoad={updateFrame}
     >
       {insertionPoint &&
         mountNode &&

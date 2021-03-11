@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Box,
   Collapse,
@@ -30,12 +30,8 @@ const ComponentDemo = (props) => {
 
   const [isDirty, setIsDirty] = useState(false);
 
-  useEffect(() => {
-    setIsDirty(postCode !== code);
-  }, [props.path]);
-
   const editorProps = { codeEditor, preCode, code, resetDemo, isDirty };
-  const frameProps = { ...props, size, setSize, code };
+  const frameProps = { ...props, size, setSize };
 
   return (
     <React.Fragment key={props.path}>
