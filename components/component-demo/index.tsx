@@ -39,12 +39,7 @@ const ComponentDemo = (props) => {
         scope={{ ...demoScope, ...(props.scope && props.scope) }}
         code={code}
       >
-        <Box
-          pos="relative"
-          minH={props.height || "500px"}
-          py={3}
-          overflow="auto"
-        >
+        <Box pos="relative" py={3} overflow="auto">
           <Slider
             display={["none", null, "block"]}
             aria-label="Responsive slider"

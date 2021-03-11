@@ -11,32 +11,27 @@
           {
             "name": "success",
             "url": "https://merakiui.com/",
-            "preview": "alerts/success",
-            "height": "170px"
+            "preview": "alerts/success"
           },
           {
             "name": "info",
             "url": "https://merakiui.com/",
-            "preview": "alerts/info",
-            "height": "170px"
+            "preview": "alerts/info"
           },
           {
             "name": "warning",
             "url": "https://merakiui.com/",
-            "preview": "alerts/warning",
-            "height": "170px"
+            "preview": "alerts/warning"
           },
           {
             "name": "error",
             "url": "https://merakiui.com/",
-            "preview": "alerts/error",
-            "height": "170px"
+            "preview": "alerts/error"
           },
           {
             "name": "notification",
             "url": "https://merakiui.com/",
-            "preview": "alerts/notification",
-            "height": "170px"
+            "preview": "alerts/notification"
           }
         ]
       },
@@ -48,14 +43,12 @@
           {
             "name": "Icon with badge",
             "url": "https://material-ui.com/components/badges/",
-            "preview": "badges/bwi",
-            "height": "200px"
+            "preview": "badges/bwi"
           },
           {
             "name": "Button with badge",
             "url": null,
-            "preview": "badges/bwb",
-            "height": "200px"
+            "preview": "badges/bwb"
           }
         ]
       },
@@ -67,26 +60,22 @@
           {
             "name": "Article",
             "url": "https://merakiui.com/",
-            "preview": "cards/ma",
-            "height": "370px"
+            "preview": "cards/ma"
           },
           {
             "name": "Article With SM icons",
             "url": "https://merakiui.com/",
-            "preview": "cards/awsi",
-            "height": "370px"
+            "preview": "cards/awsi"
           },
           {
             "name": "Article With Image",
             "url": "https://merakiui.com/",
-            "preview": "cards/awi",
-            "height": "600px"
+            "preview": "cards/awi"
           },
           {
             "name": "Paragraph With Image",
             "url": "https://merakiui.com/",
-            "preview": "cards/pwi",
-            "height": "470px"
+            "preview": "cards/pwi"
           },
           {
             "name": "Product",
@@ -96,26 +85,22 @@
           {
             "name": "Product With Evaluation",
             "url": "https://merakiui.com/",
-            "preview": "cards/pwe",
-            "height": "300px"
+            "preview": "cards/pwe"
           },
           {
             "name": "Product with Evaluation 2",
             "url": "https://merakiui.com/",
-            "preview": "cards/cpwe",
-            "height": "510px"
+            "preview": "cards/cpwe"
           },
           {
             "name": "Simple Product",
             "url": "https://merakiui.com/",
-            "preview": "cards/msp",
-            "height": "470px"
+            "preview": "cards/msp"
           },
           {
             "name": "Testimonial",
             "url": "https://merakiui.com/",
-            "preview": "cards/mtes",
-            "height": "400px"
+            "preview": "cards/mtes"
           },
           {
             "name": "User",
@@ -125,8 +110,7 @@
           {
             "name": "User with Details",
             "url": "https://merakiui.com/",
-            "preview": "cards/muwd",
-            "height": "630px"
+            "preview": "cards/muwd"
           }
         ]
       },
@@ -139,8 +123,7 @@
           {
             "name": "Simple Carousel",
             "url": "#",
-            "preview": "carousels/smc",
-            "height": "500px"
+            "preview": "carousels/smc"
           }
         ]
       },
@@ -154,7 +137,7 @@
             "name": "Data URL Method",
             "url": "#",
             "preview": "gicons/dum",
-            "height": "170px",
+
             "alerts": {
               "status": "warning",
               "content": [
@@ -165,8 +148,7 @@
           {
             "name": "Component Method",
             "url": "#",
-            "preview": "gicons/cm",
-            "height": "170px"
+            "preview": "gicons/cm"
           }
         ]
       },
@@ -179,26 +161,22 @@
           {
             "name": "Chakra UI Site Header",
             "url": "https://chakra-ui.com",
-            "preview": "headers/chuihe",
-            "height": "300px"
+            "preview": "headers/chuihe"
           },
           {
             "name": "Centered with bottom border",
             "url": "https://tailwindui.com/components/marketing/elements/headers#component-1c0390a81b16cf5028aeff08be955766",
-            "preview": "headers/cwbb",
-            "height": "300px"
+            "preview": "headers/cwbb"
           },
           {
             "name": "Simple links centered",
             "url": "https://tailwindui.com/components/marketing/elements/headers#component-a2aed5adfe85cafed1898b5def5eb40a",
-            "preview": "headers/slce",
-            "height": "300px"
+            "preview": "headers/slce"
           },
           {
             "name": "Simple links on left",
             "url": "https://tailwindui.com/components/marketing/elements/headers#component-c2e98654c961b126b887a7909c121d4b",
-            "preview": "headers/slol",
-            "height": "300px"
+            "preview": "headers/slol"
           },
           {
             "name": "With full-width flyouts",
@@ -217,38 +195,32 @@
           {
             "name": "Basic Pagination",
             "url": "#",
-            "preview": "pagination/bp",
-            "height": "130px"
+            "preview": "pagination/bp"
           },
           {
             "name": "Basic Pagination with Icon",
             "url": "#",
-            "preview": "pagination/bpi",
-            "height": "130px"
+            "preview": "pagination/bpi"
           },
           {
             "name": "More Pages",
             "url": "#",
-            "preview": "pagination/mp",
-            "height": "130px"
+            "preview": "pagination/mp"
           },
           {
             "name": "Size Changer",
             "url": "#",
-            "preview": "pagination/scp",
-            "height": "130px"
+            "preview": "pagination/scp"
           },
           {
             "name": "Page Jumper",
             "url": "#",
-            "preview": "pagination/pg",
-            "height": "130px"
+            "preview": "pagination/pg"
           },
           {
             "name": "Responsive Pagination",
             "url": "#",
-            "preview": "pagination/rpg",
-            "height": "130px"
+            "preview": "pagination/rpg"
           }
         ]
       },
@@ -260,8 +232,7 @@
           {
             "name": "Rippled Buttons",
             "url": "#",
-            "preview": "specialel/rpb",
-            "height": "270px"
+            "preview": "specialel/rpb"
           }
         ]
       }

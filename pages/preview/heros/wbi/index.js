@@ -3,8 +3,6 @@ import {
   chakra,
   Box,
   useColorModeValue,
-  Icon,
-  Image,
   Flex,
   IconButton,
   Heading,
