@@ -119,6 +119,11 @@
             "name": "Simple Centered 2",
             "url": "https://kutty.netlify.app/components/heroes/",
             "preview": "heros/tsc"
+          },
+          {
+            "name": "With Background Image",
+            "url": "https://merakiui.com/",
+            "preview": "heros/wbi"
           }
         ]
       },

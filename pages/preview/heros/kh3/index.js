@@ -15,24 +15,21 @@ import {
 } from "@chakra-ui/react";
 
 const KuttyHero = () => {
-  const backgroundOpacity = (bg, opacity) => ({
-    _after: {
-      bg: bg,
-      opacity: opacity,
-      pos: "absolute",
-      top: 0,
-      left: 0,
-      bottom: 0,
-      right: 0,
-      zIndex: -1,
-      content: '" "',
-    },
-  });
   return (
     <SimpleGrid
       columns={{ base: 1, md: 2 }}
       spacing={0}
-      {...backgroundOpacity("brand.500", 0.25)}
+      _after={{
+        bg: "brand.500",
+        opacity: 0.25,
+        pos: "absolute",
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        zIndex: -1,
+        content: '" "',
+      }}
     >
       <Flex
         direction="column"

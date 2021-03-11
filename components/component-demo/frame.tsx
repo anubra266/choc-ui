@@ -1,11 +1,10 @@
-import { ChakraProvider, useTheme } from "@chakra-ui/react";
 import React, { useReducer, useState } from "react";
 import { createPortal } from "react-dom";
 
-import Fonts from "theme/fonts";
 import createCache from "@emotion/cache";
 import weakMemoize from "@emotion/weak-memoize";
 import { CacheProvider } from "@emotion/react";
+import Theme from "theme";
 
 const memoizedCreateCacheWithContainer = weakMemoize(
   (container: HTMLElement) => {
@@ -18,7 +17,6 @@ const memoizedCreateCacheWithContainer = weakMemoize(
 );
 
 const Frame = (props) => {
-  const theme = useTheme();
 
   const [contentRef, setContentRef] = useState(null);
   const doc = contentRef?.contentWindow?.document;
@@ -43,10 +41,9 @@ const Frame = (props) => {
           <CacheProvider
             value={memoizedCreateCacheWithContainer(insertionPoint)}
           >
-            <ChakraProvider theme={theme}>
-              <Fonts />
+            <Theme>
               {props.children}
-            </ChakraProvider>
+            </Theme>
           </CacheProvider>,
           mountNode
         )}
