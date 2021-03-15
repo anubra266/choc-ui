@@ -7,16 +7,6 @@ const Static = () => {
   const isPreview = router.pathname.includes("preview");
   return (
     <Head>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: ` (function(d, t) {
-                        var g = d.createElement(t),
-                        s = d.getElementsByTagName(t)[0];
-                        g.src = "https://cdn.pushalert.co/integrate_72bf733ad82ef4269037f6f2d589be88.js";
-                        s.parentNode.insertBefore(g, s);
-                }(document, "script"));`,
-        }}
-      />
 
       {isPreview && (
         <>
@@ -33,7 +23,7 @@ const Static = () => {
             property="og:description"
             content="Preview beautiful components from Choc UI"
           />
-          <meta property="og:image" content="/logo.png" />
+          <meta property="og:image" content="/thumbnails/landing.png" />
         </>
       )}
       <meta name="viewport" content="initial-scale=1.0, w=device-width" />

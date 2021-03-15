@@ -44,7 +44,7 @@ const config = {
 const theme = extendTheme({ colors, config });
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(
+ReactDOM.render( 
   <StrictMode>
     <ChakraProvider theme={theme}>
       <App />
