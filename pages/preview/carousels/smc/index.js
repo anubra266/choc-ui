@@ -76,7 +76,7 @@ const Component = () => {
             bg={randomColor}
           >
             <Text
-              bgGradient="linear(to-l, gray.300,blue.500)"
+              bgGradient={`linear(to-l, ${randomColor()},${randomColor()}, ${randomColor()})`}
               bgClip="text"
               fontSize="6xl"
               fontWeight="extrabold"
@@ -85,6 +85,10 @@ const Component = () => {
               transform="translateY(-50%)"
               textAlign="center"
               w="full"
+              sx={{
+                WebkitTextStrokeColor: randomColor(),
+                WebkitTextStrokeWidth: "1px",
+              }}
             >
               Slide {sid + 1}
             </Text>
