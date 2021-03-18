@@ -68,43 +68,46 @@ const Component = () => {
       justifyContent="center"
     >
       <Stack w="full" spacing={[4, , 8]}>
-        {slides.map((slide, sid) => (
-          <Box
-            key={`slide-${sid}`}
-            display={currentSlide === sid ? "block" : "none"}
-            pos="relative"
-            animation={slideAnimation}
-            shadow="md"
-          >
-            <Text
-              color="white"
-              fontSize="xs"
-              p="8px 12px"
-              pos="absolute"
-              top="0"
+        
+        <Box>
+          {slides.map((slide, sid) => (
+            <Box
+              key={`slide-${sid}`}
+              display={currentSlide === sid ? "block" : "none"}
+              pos="relative"
+              animation={slideAnimation}
+              shadow="md"
             >
-              {sid + 1} / {slidesCount}
-            </Text>
-            <Image src={slide.img} boxSize="full" backgroundSize="cover" />
-            <Text
-              color="white"
-              p="8px 12px"
-              pos="absolute"
-              bottom="8px"
-              w="full"
-              textAlign="center"
-              fontSize="2xl"
-            >
-              Slide {sid + 1}
-            </Text>
-            <Text {...arrowStyles} left="0" onClick={prevSlide}>
-              &#10094;
-            </Text>
-            <Text {...arrowStyles} right="0" onClick={nextSlide}>
-              &#10095;
-            </Text>
-          </Box>
-        ))}
+              <Text
+                color="white"
+                fontSize="xs"
+                p="8px 12px"
+                pos="absolute"
+                top="0"
+              >
+                {sid + 1} / {slidesCount}
+              </Text>
+              <Image src={slide.img} boxSize="full" backgroundSize="cover" />
+              <Text
+                color="white"
+                p="8px 12px"
+                pos="absolute"
+                bottom="8px"
+                w="full"
+                textAlign="center"
+                fontSize="2xl"
+              >
+                Slide {sid + 1}
+              </Text>
+              <Text {...arrowStyles} left="0" onClick={prevSlide}>
+                &#10094;
+              </Text>
+              <Text {...arrowStyles} right="0" onClick={nextSlide}>
+                &#10095;
+              </Text>
+            </Box>
+          ))}
+        </Box>
         <HStack justify="center">
           {Array.from({ length: slidesCount }).map((_, slide) => (
             <Box
