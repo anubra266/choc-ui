@@ -1,5 +1,12 @@
-import React from "react";
-import { Text, Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import React, { useState } from "react";
+import {
+  Text,
+  Box,
+  Flex,
+  useColorModeValue,
+  usePrefersReducedMotion,
+  keyframes,
+} from "@chakra-ui/react";
 
 const Component = () => {
   const arrowStyles = {
@@ -20,30 +27,37 @@ const Component = () => {
       bg: "black",
     },
   };
-  const slider = React.useRef();
-  const slides = 5;
+  const randomColor = () =>
+    `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
-  const moveSlider = (x) => {
-    slider.current.scrollBy(x, 0);
-  };
-  const movePrev = (l) => {
-    const isFirstSlide = l === 0;
-    if (isFirstSlide) {
-      moveSlider(slider.current.clientWidth * slides);
-    } else {
-      moveSlider(-slider.current.clientWidth * slides);
-    }
-  };
+  const slides = [
+    {
+      img: "https://www.w3schools.com/howto/img_nature_wide.jpg",
+    },
+    {
+      img: "https://www.w3schools.com/howto/img_snow_wide.jpg",
+    },
+    {
+      img: "https://www.w3schools.com/howto/img_mountains_wide.jpg",
+    },
+  ];
 
-  const moveNext = (l) => {
-    const isLastSlide = slides === l + 1;
-    if (isLastSlide) {
-      moveSlider(-slider.current.clientWidth * l);
-    } else {
-      moveSlider(slider.current.clientWidth);
-    }
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slidesCount = slides.length;
+  const isFirstSlide = currentSlide === 0;
+  const isLastSlide = currentSlide === slidesCount - 1;
+  const prevSlide = () => {
+    setCurrentSlide((s) => (isFirstSlide ? slidesCount - 1 : s - 1));
   };
-
+  const nextSlide = () => {
+    setCurrentSlide((s) => (isLastSlide ? 0 : s + 1));
+  };
+  const fade = keyframes`
+    from { opacity: .4 } 
+    to { opacity: 1 }
+  `;
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const slideAnimation = prefersReducedMotion ? undefined : `${fade} 1.5s`;
   return (
     <Flex
       w="full"
@@ -52,58 +66,37 @@ const Component = () => {
       alignItems="center"
       justifyContent="center"
     >
-        <Flex
-          overflowX="scroll"
-          overflowY="hidden"
-          sx={{
-            scrollSnapType: "x mandatory",
-            WebkitOverflowScrolling: "touch",
-            scrollbarWidth: "none",
-            scrollBehavior: "smooth",
-          }}
-          h={400}
-          w="full"
-          ref={slider}
-        >
-          {Array.from({ length: slides }, (_, sid) => (
-            <Box
-              key={sid}
-              p="1rem"
-              minW="full"
-              w="full"
-              h="full"
-              sx={{
-                scrollSnapAlign: "start",
-              }}
+      <Box w="full" h="fit-content">
+        {slides.map((_, sid) => (
+          <Flex
+            display={currentSlide === sid ? "block" : "none"}
+            pos="relative"
+            animation={slideAnimation}
+            h="400px"
+            bg={randomColor}
+          >
+            <Text
+              bgGradient="linear(to-l, gray.300,blue.500)"
+              bgClip="text"
+              fontSize="6xl"
+              fontWeight="extrabold"
+              pos="absolute"
+              top="50%"
+              transform="translateY(-50%)"
               textAlign="center"
-              pos="relative"
-              bg={`#${Math.floor(Math.random() * 16777215).toString(16)}`}
+              w="full"
             >
-              <Text
-                pos="absolute"
-                top="50%"
-                left="50%"
-                transform="translate(-50%,-50%)"
-                fontSize="3xl"
-                fontWeight="bold"
-                fontFamily="fantasy"
-              >
-                Section {sid + 1}
-              </Text>
-              <Text {...arrowStyles} left={0} onClick={() => movePrev(sid)}>
-                &#10094;
-              </Text>
-              <Text
-                {...arrowStyles}
-                right={0}
-                borderRadius="3px 0 0 3px"
-                onClick={() => moveNext(sid)}
-              >
-                &#10095;
-              </Text>
-            </Box>
-          ))}
-        </Flex>
+              Slide {sid + 1}
+            </Text>
+            <Text {...arrowStyles} left="0" onClick={prevSlide}>
+              &#10094;
+            </Text>
+            <Text {...arrowStyles} right="0" onClick={nextSlide}>
+              &#10095;
+            </Text>
+          </Flex>
+        ))}
+      </Box>
     </Flex>
   );
 };
