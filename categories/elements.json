@@ -126,9 +126,19 @@
             "preview": "carousels/smc"
           },
           {
-            "name": "With Bottom Navigation",
+            "name": "With Controls",
             "url": "#",
-            "preview": "carousels/wbn"
+            "preview": "carousels/wcn"
+          },
+          {
+            "name": "With Indicators",
+            "url": "#",
+            "preview": "carousels/win"
+          },
+          {
+            "name": "With Captions",
+            "url": "#",
+            "preview": "carousels/wcp"
           }
         ]
       },
@@ -231,13 +241,13 @@
       },
 
       "special": {
-        "title": "Special Elements",
-        "route": "special",
+        "title": "Extra Elements",
+        "route": "extra",
         "components": [
           {
             "name": "Rippled Buttons",
             "url": "#",
-            "preview": "specialel/rpb"
+            "preview": "extrael/rpb"
           }
         ]
       }
