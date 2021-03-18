@@ -124,6 +124,11 @@
             "name": "Simple Carousel",
             "url": "#",
             "preview": "carousels/smc"
+          },
+          {
+            "name": "With Bottom Navigation",
+            "url": "#",
+            "preview": "carousels/wbn"
           }
         ]
       },

@@ -1,32 +1,32 @@
-const React = require("react");
-const ChakraComps = require("@chakra-ui/react");
-const ChakraIcons = require("@chakra-ui/icons");
-const fMotion = require("framer-motion");
-const REmotion = require("@emotion/react");
+import React from "react";
+import * as ChakraComps from "@chakra-ui/react";
+import * as ChakraIcons from "@chakra-ui/icons";
+import * as fMotion from "framer-motion";
+import * as REmotion from "@emotion/react";
 
-const Logo = require("components/navbar/logo").default;
+import * as ai from "react-icons/ai";
+import * as bi from "react-icons/bi";
+import * as bs from "react-icons/bs";
+import * as cg from "react-icons/cg";
+import * as di from "react-icons/di";
+import * as fa from "react-icons/fa";
+import * as fc from "react-icons/fc";
+import * as fi from "react-icons/fi";
+import * as gi from "react-icons/gi";
+import * as go from "react-icons/go";
+import * as gr from "react-icons/gr";
+import * as hi from "react-icons/hi";
+import * as im from "react-icons/im";
+import * as io from "react-icons/io";
+import * as io5 from "react-icons/io5";
+import * as md from "react-icons/md";
+import * as ri from "react-icons/ri";
+import * as si from "react-icons/si";
+import * as ti from "react-icons/ti";
+import * as vsc from "react-icons/vsc";
+import * as wi from "react-icons/wi";
 
-const ai = require("react-icons/ai");
-const bi = require("react-icons/bi");
-const bs = require("react-icons/bs");
-const cg = require("react-icons/cg");
-const di = require("react-icons/di");
-const fa = require("react-icons/fa");
-const fc = require("react-icons/fc");
-const fi = require("react-icons/fi");
-const gi = require("react-icons/gi");
-const go = require("react-icons/go");
-const gr = require("react-icons/gr");
-const hi = require("react-icons/hi");
-const im = require("react-icons/im");
-const io = require("react-icons/io");
-const io5 = require("react-icons/io5");
-const md = require("react-icons/md");
-const ri = require("react-icons/ri");
-const si = require("react-icons/si");
-const ti = require("react-icons/ti");
-const vsc = require("react-icons/vsc");
-const wi = require("react-icons/wi");
+import Logo from "components/navbar/logo";
 
 export const demoScope = {
   ...React,

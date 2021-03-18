@@ -30,7 +30,8 @@ const Frame = (props) => {
   };
 
   function resizeIframe(iframe: HTMLIFrameElement) {
-    iframe.height = iframe.contentWindow?.document?.body?.scrollHeight + "px";
+    iframe.height =
+      iframe.contentWindow?.document?.body?.scrollHeight + 20 + "px";
     window.requestAnimationFrame(() => resizeIframe(iframe));
   }
   useEffect(() => {
@@ -38,7 +39,7 @@ const Frame = (props) => {
     contentRef && resizeIframe(contentRef);
   }, [contentRef]);
   //*update Frame when colorMode changes
-  
+
   const { colorMode } = useColorMode();
   useEffect(() => {
     contentRef?.contentWindow?.location.reload();

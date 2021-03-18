@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import {
   Text,
   Box,
+  Flex,
   useColorModeValue,
+  Image,
   usePrefersReducedMotion,
   keyframes,
+  HStack,
+  Stack,
 } from "@chakra-ui/react";
 
 const Component = () => {
@@ -26,18 +30,16 @@ const Component = () => {
       bg: "black",
     },
   };
-  const randomColor = () =>
-    `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
   const slides = [
     {
-      caption: "First Slide",
+      img: "https://www.w3schools.com/howto/img_nature_wide.jpg",
     },
     {
-      caption: "Second Slide",
+      img: "https://www.w3schools.com/howto/img_snow_wide.jpg",
     },
     {
-      caption: "Third Slide",
+      img: "https://www.w3schools.com/howto/img_mountains_wide.jpg",
     },
   ];
 
@@ -65,30 +67,33 @@ const Component = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Box w="full" h="fit-content">
-        {slides.map((_, sid) => (
+      <Stack w="full" spacing={[4, , 8]}>
+        {slides.map((slide, sid) => (
           <Box
+            key={`slide-${sid}`}
             display={currentSlide === sid ? "block" : "none"}
             pos="relative"
             animation={slideAnimation}
-            h="400px"
-            bg={randomColor}
-            shadow="base"
+            shadow="md"
           >
             <Text
-              bgGradient={`linear(to-l, ${randomColor()},${randomColor()}, ${randomColor()})`}
-              bgClip="text"
-              fontSize="6xl"
-              fontWeight="extrabold"
+              color="white"
+              fontSize="xs"
+              p="8px 12px"
               pos="absolute"
-              top="50%"
-              transform="translateY(-50%)"
-              textAlign="center"
+              top="0"
+            >
+              {sid + 1} / {slidesCount}
+            </Text>
+            <Image src={slide.img} boxSize="full" backgroundSize="cover" />
+            <Text
+              color="white"
+              p="8px 12px"
+              pos="absolute"
+              bottom="8px"
               w="full"
-              sx={{
-                WebkitTextStrokeColor: randomColor(),
-                WebkitTextStrokeWidth: "1px",
-              }}
+              textAlign="center"
+              fontSize="2xl"
             >
               Slide {sid + 1}
             </Text>
@@ -100,7 +105,23 @@ const Component = () => {
             </Text>
           </Box>
         ))}
-      </Box>
+        <HStack justify="center">
+          {Array.from({ length: slidesCount }).map((_, slide) => (
+            <Box
+              key={`dots-${slide}`}
+              cursor="pointer"
+              boxSize={["7px", , "15px"]}
+              m="0 2px"
+              bg={currentSlide === slide ? "blackAlpha.800" : "blackAlpha.500"}
+              rounded="50%"
+              display="inline-block"
+              transition="background-color 0.6s ease"
+              _hover={{ bg: "blackAlpha.800" }}
+              onClick={() => setCurrentSlide(slide)}
+            ></Box>
+          ))}
+        </HStack>
+      </Stack>
     </Flex>
   );
 };
