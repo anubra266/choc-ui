@@ -46,7 +46,7 @@ const Component = () => {
     },
     {
       img:
-        "https://images.pexels.com/photos/5409751/pexels-photo-5409751.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     },
     {
       img:
