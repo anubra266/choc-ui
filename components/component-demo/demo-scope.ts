@@ -1,3 +1,4 @@
+const React = require("react");
 const ChakraComps = require("@chakra-ui/react");
 const ChakraIcons = require("@chakra-ui/icons");
 const fMotion = require("framer-motion");
@@ -28,6 +29,7 @@ const vsc = require("react-icons/vsc");
 const wi = require("react-icons/wi");
 
 export const demoScope = {
+  ...React,
   ...ChakraComps,
   ...ChakraIcons,
   ...fMotion,
