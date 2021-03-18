@@ -3,6 +3,7 @@ import {
   Text,
   Box,
   useColorModeValue,
+  Flex,
   usePrefersReducedMotion,
   keyframes,
 } from "@chakra-ui/react";
