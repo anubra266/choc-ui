@@ -65,26 +65,45 @@ const Component = () => {
     },
   ];
 
+  const [prevSlideId, setPrevSlideId] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
+
   const slidesCount = slides.length;
   const isFirstSlide = currentSlide === 0;
   const isLastSlide = currentSlide === slidesCount - 1;
+
   const prevSlide = () => {
+    setPrevSlideId(currentSlide);
     setCurrentSlide((s) => (isFirstSlide ? slidesCount - 1 : s - 1));
   };
   const nextSlide = () => {
+    setPrevSlideId(currentSlide);
     setCurrentSlide((s) => (isLastSlide ? 0 : s + 1));
   };
-  const fade = keyframes`
+
+  const toLeft = prevSlideId > currentSlide;
+
+  const slideRight = keyframes`
   from {
-    transform: translateX(400px);
+    transform: translateX(600px);
   }
   to {
     transform: translateX(0);
   } 
   `;
+  const slideLeft = keyframes`
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(0);
+  } 
+  `;
+
+  const slide = toLeft ? slideLeft : slideRight;
   const prefersReducedMotion = usePrefersReducedMotion();
-  const slideAnimation = prefersReducedMotion ? undefined : `${fade} 0.7s`;
+  const slideAnimation = prefersReducedMotion ? undefined : `${slide} 0.7s`;
+
   return (
     <Flex
       w="full"
