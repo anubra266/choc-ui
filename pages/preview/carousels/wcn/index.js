@@ -59,9 +59,11 @@ const Component = () => {
   const slidesCount = slides.length;
 
   const prevSlide = () => {
+    setPrevSlideId(currentSlide);
     setCurrentSlide((s) => (s === 0 ? slidesCount - 1 : s - 1));
   };
   const nextSlide = () => {
+    setPrevSlideId(currentSlide);
     setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
   };
 
