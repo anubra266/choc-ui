@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
+  Text,
   Box,
   Flex,
-  Image,
-  keyframes,
   useColorModeValue,
+  Image,
   usePrefersReducedMotion,
+  keyframes,
+  Stack,
 } from "@chakra-ui/react";
 
 const Component = () => {
@@ -32,54 +34,84 @@ const Component = () => {
     },
   ];
 
-  const display = keyframes`
-  0% {
-    transform: translateX(200px);
-    opacity: 0;
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const slidesCount = slides.length;
+
+  const prevSlide = () => {
+    setCurrentSlide((s) => (s === 0 ? slidesCount - 1 : s - 1));
+  };
+  const nextSlide = () => {
+    setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
+  };
+
+  const slideRight = keyframes`
+  from {
+    transform: translateX(600px);
   }
-  10% {
+  to {
     transform: translateX(0);
-    opacity: 1;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  30% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
+  } 
   `;
-  const SLIDES_INTERVAL_TIME = 3;
+  const slideLeft = keyframes`
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(0);
+  } 
+  `;
+
+  const SLIDES_INTERVAL_TIME = 3000;
+  const ANIMATION_DIRECTION = "left";
+
+  const toLeft = ANIMATION_DIRECTION.toLowerCase() === "left";
+
+  const slide = toLeft ? slideLeft : slideRight;
   const prefersReducedMotion = usePrefersReducedMotion();
-  const slideAnimation = prefersReducedMotion
-    ? undefined
-    : `${display} ${SLIDES_INTERVAL_TIME * slides.length}s infinite`;
+  const slideAnimation = prefersReducedMotion ? undefined : `${slide} 0.7s`;
+
+  useEffect(() => {
+    const automatedSlide = setInterval(() => {
+      ANIMATION_DIRECTION.toLowerCase() === "left" ? prevSlide() : nextSlide();
+    }, SLIDES_INTERVAL_TIME);
+    return () => clearInterval(automatedSlide);
+  }, []);
 
   return (
-    <Flex w="full" bg={useColorModeValue("gray.200", "gray.600")} p={10}>
-      <Box w="full" h="400px" pos="relative" overflowX="hidden">
-        {slides.map((slide, sid) => (
-          <Box
-            key={sid}
-            animation={slideAnimation}
-            opacity={0}
-            shadow="md"
-            sx={{
-              animationDelay: sid !== 0 && `${sid * SLIDES_INTERVAL_TIME}s`,
-            }}
-            pos="absolute"
-            top={0}
-            boxSize="full"
-          >
-            <Image src={slide.img} boxSize="full" />
-          </Box>
-        ))}
-      </Box>
+    <Flex
+      w="full"
+      bg={useColorModeValue("gray.200", "gray.600")}
+      p={10}
+      alignItems="center"
+      justifyContent="center"
+    >
+      <Stack w="full" spacing={[4, , 8]}>
+        <Box pos="relative" h="400px" overflowX="hidden">
+          {slides.map((slide, sid) => (
+            <Box
+              key={`slide-${sid}`}
+              pos="absolute"
+              display={currentSlide === sid ? "block" : "none"}
+              top={0}
+              boxSize="full"
+              animation={slideAnimation}
+              shadow="md"
+            >
+              <Text
+                color="white"
+                fontSize="xs"
+                p="8px 12px"
+                pos="absolute"
+                top="0"
+              >
+                {sid + 1} / {slidesCount}
+              </Text>
+              <Image src={slide.img} boxSize="full" backgroundSize="cover" />
+            </Box>
+          ))}
+        </Box>
+      </Stack>
     </Flex>
   );
 };
