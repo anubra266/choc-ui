@@ -21,8 +21,7 @@ export default function Component() {
               pos="absolute"
               top="-1px"
               right="-1px"
-              px={2}
-              py={1}
+              p="4px"
               fontSize="xs"
               fontWeight="bold"
               lineHeight="none"
@@ -30,9 +29,7 @@ export default function Component() {
               transform="translate(50%,-50%)"
               bg="red.600"
               rounded="full"
-            >
-              99
-            </chakra.span>
+            />
           </>
         }
       />
@@ -40,6 +37,7 @@ export default function Component() {
       <IconButton
         size="md"
         isRound
+        variant="ghost"
         ml={8}
         icon={
           <>
@@ -48,8 +46,7 @@ export default function Component() {
               pos="absolute"
               top="-1px"
               right="-1px"
-              px={2}
-              py={1}
+              p="4px"
               fontSize="xs"
               fontWeight="bold"
               lineHeight="none"
@@ -57,9 +54,7 @@ export default function Component() {
               transform="translate(50%,-50%)"
               bg="red.600"
               rounded="full"
-            >
-              99
-            </chakra.span>
+            />
           </>
         }
       />

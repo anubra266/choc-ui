@@ -24,11 +24,8 @@ export default function Component() {
         </Icon>
         <chakra.span
           pos="absolute"
-          top={0}
-          right={0}
-          display="inline-flex"
-          alignItems="center"
-          justifyContent="center"
+          top="-1px"
+          right="-1px"
           px={2}
           py={1}
           fontSize="xs"
@@ -61,11 +58,8 @@ export default function Component() {
         </Icon>
         <chakra.span
           pos="absolute"
-          top={0}
-          right={0}
-          display="inline-flex"
-          alignItems="center"
-          justifyContent="center"
+          top="-1px"
+          right="-1px"
           px={2}
           py={1}
           fontSize="xs"
@@ -76,7 +70,7 @@ export default function Component() {
           bg="red.600"
           rounded="full"
         >
-          6
+          99
         </chakra.span>
       </chakra.span>
     </Flex>

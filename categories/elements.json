@@ -49,6 +49,11 @@
             "name": "Button with badge",
             "url": null,
             "preview": "badges/bwb"
+          },
+          {
+            "name": "Unread Notifications",
+            "url": null,
+            "preview": "badges/unt"
           }
         ]
       },
