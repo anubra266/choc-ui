@@ -8,7 +8,7 @@ import { ThemeProvider } from "theme/context";
 import { useEffect, useMemo, useState } from "react";
 import NextNprogress from "nextjs-progressbar";
 
-const config: ThemeConfig = {
+export const config: ThemeConfig = {
   useSystemColorMode: false,
   initialColorMode: "dark",
 };
