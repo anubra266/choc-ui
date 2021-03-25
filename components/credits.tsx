@@ -19,7 +19,7 @@ export default function Credits() {
           <rect x="2" width="2" height="4" fill="#FFF" />
         </Icon>{" "}
         by{" "}
-        <Link isExternal href="https://twitter.com/anubra266">
+        <Link isExternal href={process.env.twitterUrl}>
           Anuoluwapo Abraham
         </Link>
       </Text>
