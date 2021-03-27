@@ -1,6 +1,6 @@
 import Fuse from "fuse.js";
 import { categoriesObj } from "categories/parse-categories";
-import { Obj } from "types";
+import { Obj } from "utils";
 
 export const handleSearch = (keyword) => {
   const data = parser();

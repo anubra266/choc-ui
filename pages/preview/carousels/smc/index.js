@@ -1,14 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  Text,
-  Box,
-  Flex,
-  useColorModeValue,
-  Image,
-  usePrefersReducedMotion,
-  keyframes,
-  Stack,
-} from "@chakra-ui/react";
+import { Text, Box, Flex, useColorModeValue, Image } from "@chakra-ui/react";
 
 const Component = () => {
   const slides = [
@@ -33,7 +24,6 @@ const Component = () => {
         "https://images.pexels.com/photos/3124111/pexels-photo-3124111.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     },
   ];
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slidesCount = slides.length;
@@ -44,32 +34,13 @@ const Component = () => {
   const nextSlide = () => {
     setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
   };
-
-  const slideRight = keyframes`
-  from {
-    transform: translateX(600px);
-  }
-  to {
-    transform: translateX(0);
-  } 
-  `;
-  const slideLeft = keyframes`
-  from {
-    transform: translateX(-600px);
-  }
-  to {
-    transform: translateX(0);
-  } 
-  `;
+  const carouselStyle = {
+    transition: "all .5s",
+    ml: `-${currentSlide * 100}%`,
+  };
 
   const SLIDES_INTERVAL_TIME = 3000;
-  const ANIMATION_DIRECTION = "left";
-
-  const toLeft = ANIMATION_DIRECTION.toLowerCase() === "left";
-
-  const slide = toLeft ? slideLeft : slideRight;
-  const prefersReducedMotion = usePrefersReducedMotion();
-  const slideAnimation = prefersReducedMotion ? undefined : `${slide} 0.7s`;
+  const ANIMATION_DIRECTION = "right";
 
   useEffect(() => {
     const automatedSlide = setInterval(() => {
@@ -86,18 +57,10 @@ const Component = () => {
       alignItems="center"
       justifyContent="center"
     >
-      <Stack w="full" spacing={[4, , 8]}>
-        <Box pos="relative" h="400px" overflowX="hidden">
+      <Flex w="full" overflow="hidden">
+        <Flex pos="relative" h="400px" w="full" {...carouselStyle}>
           {slides.map((slide, sid) => (
-            <Box
-              key={`slide-${sid}`}
-              pos="absolute"
-              display={currentSlide === sid ? "block" : "none"}
-              top={0}
-              boxSize="full"
-              animation={slideAnimation}
-              shadow="md"
-            >
+            <Box key={`slide-${sid}`} flex="none" boxSize="full" shadow="md">
               <Text
                 color="white"
                 fontSize="xs"
@@ -110,8 +73,8 @@ const Component = () => {
               <Image src={slide.img} boxSize="full" backgroundSize="cover" />
             </Box>
           ))}
-        </Box>
-      </Stack>
+        </Flex>
+      </Flex>
     </Flex>
   );
 };

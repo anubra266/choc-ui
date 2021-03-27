@@ -7,7 +7,7 @@ import NavigationObj from "categories/navigation.json";
 import ListsObj from "categories/lists.json";
 import FormsObj from "categories/forms.json";
 import PackagesObj from "categories/packages.json";
-import { Obj } from "types";
+import { Obj } from "utils";
 
 export const componentsObj = {
   ...ElementObj,

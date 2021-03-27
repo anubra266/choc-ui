@@ -11,7 +11,7 @@ import {
 
 import { useRoutes } from "categories/parse-categories";
 import Link from "next/link";
-import { Obj } from "types";
+import { Obj } from "utils";
 
 const RouteLink = ({ children, isSection, href, active }) => {
   return isSection || active ? children : <Link href={href}>{children}</Link>;
