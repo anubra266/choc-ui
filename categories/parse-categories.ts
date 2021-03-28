@@ -27,7 +27,7 @@ export const useRoutes = () => {
 
   return Object.keys(categoriesObj).reduce((acc, nxt) => {
     const { title: catTitle, prefix, sections } = categoriesObj[nxt];
-    const routeCategory: Obj = { title: catTitle, prefix };
+    const routeCategory: any = { title: catTitle, prefix };
     const fullSections = sections;
     const routeSections = Object.keys(fullSections).reduce((racc, rnxt) => {
       const fullSection = fullSections[rnxt];
