@@ -11,7 +11,6 @@ import {
 
 import { useRoutes } from "categories/parse-categories";
 import Link from "next/link";
-import { Obj } from "utils";
 
 const RouteLink = ({ children, isSection, href, active }) => {
   return isSection || active ? children : <Link href={href}>{children}</Link>;
@@ -31,12 +30,12 @@ const MenuLink = ({ children, active, isSection, section, href }: MenuLink) => {
     shadow: "base",
     rounded: "sm",
   };
-  const sectionStyle: Obj = {
+  const sectionStyle: any = {
     textTransform: "uppercase",
     fontWeight: "bold",
     fontSize: "xs",
   };
-  const baseStyle: Obj = {
+  const baseStyle: any = {
     mx: 2,
     borderColor: borderColor,
     _hover: {

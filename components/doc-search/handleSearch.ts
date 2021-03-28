@@ -1,8 +1,7 @@
 import Fuse from "fuse.js";
 import { categoriesObj } from "categories/parse-categories";
-import { Obj } from "utils";
 
-export const handleSearch = (keyword) => {
+export const handleSearch = (keyword: any) => {
   const data = parser();
   const options: any = {
     includeScore: true,
@@ -22,7 +21,7 @@ export const handleSearch = (keyword) => {
 };
 
 const catGroup = (res: any) => {
-  return res.reduce((acc: Obj, nxt: any) => {
+  return res.reduce((acc: any, nxt: any) => {
     const result = nxt.item;
     const value = result.category;
     acc[value] = (acc[value] || []).concat(result);
