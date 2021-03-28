@@ -1,14 +1,5 @@
 import React, { useState } from "react";
-import {
-  Text,
-  Box,
-  Flex,
-  useColorModeValue,
-  Image,
-  usePrefersReducedMotion,
-  keyframes,
-  Stack,
-} from "@chakra-ui/react";
+import { Text, Box, Flex, useColorModeValue, Image } from "@chakra-ui/react";
 
 const Component = () => {
   const arrowStyles = {
