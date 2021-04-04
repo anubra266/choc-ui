@@ -9,6 +9,7 @@ import NextDocument, {
 import GAScript from "analytics/ga-script";
 import { ColorModeScript } from "@chakra-ui/react";
 import { config } from "theme";
+import GAdsense from "analytics/g-adsense";
 class Document extends NextDocument {
   static getInitialProps(ctx: DocumentContext) {
     return NextDocument.getInitialProps(ctx);
@@ -17,7 +18,9 @@ class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-        <Head></Head>
+        <Head>
+          <GAdsense />
+        </Head>
         <body>
           <ColorModeScript initialColorMode={config.initialColorMode} />
           <Main />
