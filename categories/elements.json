@@ -245,7 +245,7 @@
         ]
       },
 
-      "special": {
+      "extra": {
         "title": "Extra Elements",
         "route": "extra",
         "components": [
