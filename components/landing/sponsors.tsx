@@ -18,8 +18,7 @@ const Sponsors = ({ sponsors }) => {
         </Text>
         <Text fontSize={{ lg: "lg", xl: "xl" }} maxW="560px" opacity={0.7}>
           Your financial contributions help ensure Choc UI continues to be
-          developed and maintained! We have monthly sponsorship options starting
-          at $5/month.
+          developed and maintained! Sponsor Choc UI with any price of your choice..
         </Text>
         <div>
           <Box display="inline-flex" rounded="md" shadow="md">
