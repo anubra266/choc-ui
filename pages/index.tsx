@@ -19,6 +19,7 @@ import NextLink from "next/link";
 import Feature1 from "components/landing/feature1";
 import Feature2 from "components/landing/feature2";
 import OpenSource from "components/landing/open-source";
+import Sponsors from "components/landing/sponsors";
 
 const Home: NextPage = (props: any) => {
   return (
@@ -109,6 +110,7 @@ const Home: NextPage = (props: any) => {
         <Feature1 />
         <Feature2 />
         <OpenSource contributors={props.contributors} />
+        <Sponsors sponsors={props.sponsors} />
         <Credits />
       </Box>
     </SiteLayout>
@@ -121,8 +123,9 @@ export async function getStaticProps() {
   const { contributors } = JSON.parse(
     fs.readFileSync(contributorsRaw, "utf-8")
   );
+  const sponsors = require("sponsors.json");
   return {
-    props: { contributors },
+    props: { contributors, sponsors },
   };
 }
 export default Home;

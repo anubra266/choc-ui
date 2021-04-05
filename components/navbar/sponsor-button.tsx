@@ -1,14 +1,14 @@
-import React from 'react';
-import { Box, Icon } from '@chakra-ui/react';
-import { FaHeart } from 'react-icons/fa';
+import React from "react";
+import { Box, Icon } from "@chakra-ui/react";
+import { FaHeart } from "react-icons/fa";
 
-const SponsorButton = props => (
+const SponsorButton = (props) => (
   <Box
-    display={{ base: 'none', md: 'flex' }}
+    display={{ base: "none", md: "flex" }}
     alignItems="center"
     as="a"
     aria-label="Sponsor Choc UI on Open Collective"
-    href="https://patreon.com/anubra266"
+    href={process.env.sponsorLink}
     target="_blank"
     rel="noopener noreferrer"
     bg="gray.50"
@@ -22,14 +22,14 @@ const SponsorButton = props => (
     outline="0"
     transition="all 0.3s"
     _hover={{
-      bg: 'gray.100',
-      borderColor: 'gray.300',
+      bg: "gray.100",
+      borderColor: "gray.300",
     }}
     _active={{
-      borderColor: 'gray.200',
+      borderColor: "gray.200",
     }}
     _focus={{
-      boxShadow: 'outline',
+      boxShadow: "outline",
     }}
     {...props}
   >

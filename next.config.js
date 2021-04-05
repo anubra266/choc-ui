@@ -9,5 +9,6 @@ module.exports = {
     emailAddress: "anubra266@gmail.com",
     discordUrl: "https://discord.gg/XcD8bNv7Ne",
     twitterChoc: "https://twitter.com/choc_ui",
+    sponsorLink: "https://patreon.com/anubra266",
   },
 };
