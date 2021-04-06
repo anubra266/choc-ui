@@ -11,7 +11,7 @@ const Configuration = () => {
     <DocsLayout>
       <PageHead title="Configuration" />
       <PageHeader>Configuration</PageHeader>
-      <AdBox />
+      <AdBox id="configuration" />
       <Provider />
       <CustomTheme />
     </DocsLayout>

@@ -24,7 +24,7 @@ const PaginationPackage = () => {
           @choc-ui/paginator
         </Section.a>
       </PageHeader>
-      <AdBox />
+      <AdBox id="@choc-ui/paginator" />
       <Section.p>
         <Alert status="success" variant="left-accent" rounded="md" mt={4}>
           <Stack>
