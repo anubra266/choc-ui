@@ -8,6 +8,7 @@ import { Alert, Stack } from "@chakra-ui/react";
 import ReactHtmlParser from "react-html-parser";
 
 import { componentsObj } from "categories/parse-categories";
+import { AdBox } from "analytics/ethical-ads";
 
 const Element = ({ category, section }) => {
   const ComponentObj = componentsObj[category]?.sections[section];
@@ -16,6 +17,7 @@ const Element = ({ category, section }) => {
       <React.Fragment>
         <PageHead title={ComponentObj?.title} image={ComponentObj?.image} />
         <PageHeader>{ComponentObj?.title}</PageHeader>
+        <AdBox />
         {ComponentObj?.components.map((comp) => (
           <Section key={comp.preview} id={comp.preview}>
             <Section.Header>

@@ -6,6 +6,7 @@ import DocsLayout from "components/layouts/docs/index";
 import { CodeBlock } from "components/docs/codeblock";
 import Pagination from "@choc-ui/paginator";
 import { Alert, Stack } from "@chakra-ui/react";
+import { AdBox } from "analytics/ethical-ads";
 
 const PaginationPackage = () => {
   return (
@@ -23,6 +24,7 @@ const PaginationPackage = () => {
           @choc-ui/paginator
         </Section.a>
       </PageHeader>
+      <AdBox />
       <Section.p>
         <Alert status="success" variant="left-accent" rounded="md" mt={4}>
           <Stack>
