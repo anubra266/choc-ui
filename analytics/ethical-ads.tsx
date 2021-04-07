@@ -1,23 +1,25 @@
 import React, { useEffect } from "react";
+declare var window: any;
 
-const EthicalAds = () => (
-  <>
-    <script
-      async
-      src="https://media.ethicalads.io/media/client/ethicalads.min.js"
-    ></script>
-  </>
-);
+const EthicalAds = () => {
+  useEffect(() => {
+    window.ethicalads.wait.then((placements: any) => {
+      console.log("placements", placements);
+    });
+  }, []);
+  return (
+    <>
+      <script
+        async
+        src="https://media.ethicalads.io/media/client/ethicalads.min.js"
+      ></script>
+    </>
+  );
+};
 
 export default EthicalAds;
 
-declare var window: any;
 export const AdBox = (props: any) => {
-  useEffect(() => {
-    window.ethicalads.wait.then((_: any) => {
-      console.log("Ads are loaded");
-    });
-  }, []);
   return (
     <div
       className="horizontal dark"
