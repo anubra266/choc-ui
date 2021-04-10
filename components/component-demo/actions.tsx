@@ -84,7 +84,7 @@ export default function CodeActions(props: any) {
       </Box>
       <chakra.a
         target="_blank"
-        href={`/preview/${props.comp?.preview}`}
+        href={`/preview/${props.path}`}
         aria-label="Open Demo in New Tab"
       >
         <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />{" "}
@@ -92,7 +92,7 @@ export default function CodeActions(props: any) {
       <chakra.a
         target="_blank"
         rel="noreferrer"
-        href={editOnlineCds(props.preCode, props.comp?.preview)}
+        href={editOnlineCds(props.preCode, props.path)}
         aria-label="Open Code in Codesandbox"
       >
         <ActionButton

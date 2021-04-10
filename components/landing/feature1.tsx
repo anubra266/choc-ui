@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, chakra, useColorModeValue } from "@chakra-ui/react";
 import ComponentDemo from "components/component-demo";
-import elements from "categories/elements.json";
+
 const Feature = () => {
   return (
     <Box
@@ -49,9 +49,7 @@ const Feature = () => {
               mx={{ lg: "auto" }}
               color={useColorModeValue("gray.500", "gray.400")}
             >
-              <ComponentDemo
-                comp={elements.elements.sections.cards.components[7]}
-              />
+              <ComponentDemo path="cards/msp" />
             </chakra.p>
           </Box>
         </Box>

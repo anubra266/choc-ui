@@ -22,9 +22,9 @@ import Frame from "./frame";
 
 const ComponentDemo = (props: any) => {
   const [size, setSize] = useState(100);
-  const preCode = require(`!!raw-loader!pages/preview/${props.comp?.preview}`)
-    .default;
-  const postCode = cleanCode(preCode, props.comp?.preview);
+  const path = props.path || props.comp?.preview;
+  const preCode = require(`!!raw-loader!pages/preview/${path}`).default;
+  const postCode = cleanCode(preCode, path);
 
   const codeEditor = useDisclosure();
 
@@ -41,7 +41,7 @@ const ComponentDemo = (props: any) => {
     setIsDirty(c !== postCode);
   };
   return (
-    <React.Fragment key={props.comp?.preview}>
+    <React.Fragment key={path}>
       <LiveProvider
         scope={{ ...demoScope, ...(props.scope && props.scope) }}
         code={code}
@@ -60,7 +60,7 @@ const ComponentDemo = (props: any) => {
               {props.comp?.name}
             </Box>
             <Spacer />
-            <CodeActions {...props} {...editorProps} />
+            <CodeActions {...props} {...editorProps} path={path} />
           </Flex>
           <Slider
             display={["none", , "block"]}
