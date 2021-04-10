@@ -7,6 +7,9 @@ import {
   SliderTrack,
   SliderFilledTrack,
   SliderThumb,
+  Flex,
+  useColorModeValue,
+  Spacer,
 } from "@chakra-ui/react";
 
 import CodeActions from "./actions";
@@ -17,10 +20,11 @@ import { demoScope } from "./demo-scope";
 import { cleanCode } from "./clean-code";
 import Frame from "./frame";
 
-const ComponentDemo = (props) => {
+const ComponentDemo = (props: any) => {
   const [size, setSize] = useState(100);
-  const preCode = require(`!!raw-loader!pages/preview/${props.path}`).default;
-  const postCode = cleanCode(preCode, props.path);
+  const preCode = require(`!!raw-loader!pages/preview/${props.comp?.preview}`)
+    .default;
+  const postCode = cleanCode(preCode, props.comp?.preview);
 
   const codeEditor = useDisclosure();
 
@@ -32,16 +36,34 @@ const ComponentDemo = (props) => {
 
   const editorProps = { codeEditor, preCode, code, resetDemo, isDirty };
   const frameProps = { ...props, size, setSize };
-
+  const editorChange = (c: any) => {
+    setCode(c);
+    setIsDirty(c !== postCode);
+  };
   return (
-    <React.Fragment key={props.path}>
+    <React.Fragment key={props.comp?.preview}>
       <LiveProvider
         scope={{ ...demoScope, ...(props.scope && props.scope) }}
         code={code}
       >
-        <Box pos="relative" py={3} overflow="auto">
+        <Box
+          pos="relative"
+          overflow="clip"
+          roundedTop="lg"
+          roundedBottom={!codeEditor.isOpen && "lg"}
+          borderStyle="solid"
+          borderWidth="1px"
+          borderColor={useColorModeValue("gray.100", "gray.900")}
+        >
+          <Flex px={5} py={1} w="full" alignItems="center">
+            <Box fontSize="xl" fontWeight="semibold" textTransform="capitalize">
+              {props.comp?.name}
+            </Box>
+            <Spacer />
+            <CodeActions {...props} {...editorProps} />
+          </Flex>
           <Slider
-            display={["none", null, "block"]}
+            display={["none", , "block"]}
             aria-label="Responsive slider"
             colorScheme="brand"
             defaultValue={size}
@@ -53,7 +75,7 @@ const ComponentDemo = (props) => {
             <SliderTrack bg="brand.100">
               <SliderFilledTrack bg="brand.100" />
             </SliderTrack>
-            <SliderThumb bg="brand.500" roundedLeft={0}>
+            <SliderThumb bg="brand.200" roundedLeft={0}>
               <Box color="white" />
             </SliderThumb>
           </Slider>
@@ -61,21 +83,19 @@ const ComponentDemo = (props) => {
             <LivePreview />
           </Frame>
         </Box>
-        <CodeActions {...props} {...editorProps} />
         <Collapse in={codeEditor.isOpen} animateOpacity>
           <Box
             pos="relative"
             shadow="lg"
             bg="brand.900"
-            rounded="lg"
+            roundedBottom="lg"
             p={2}
-            mt={6}
             h={300}
             overflow="auto"
             fontSize="sm"
             resize="vertical"
           >
-            <LiveEditor onChange={(c) => setCode(c)} />
+            <LiveEditor onChange={editorChange} />
           </Box>
         </Collapse>
         <Box

@@ -4,9 +4,7 @@ import {
   useColorModeValue,
   useDisclosure,
   IconButton,
-  Flex,
   SlideFade,
-  Slide,
 } from "@chakra-ui/react";
 import SidebarContent from "./sidebar-content";
 import { MdMenu, MdClose } from "react-icons/md";

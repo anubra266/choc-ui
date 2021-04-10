@@ -18,15 +18,7 @@ export const PageHeader = (props) => {
 };
 
 export const Section = (props) => {
-  return (
-    <Box
-      mt={8}
-      border="solid transparent"
-      shadow="md"
-      rounded="lg"
-      {...props}
-    />
-  );
+  return <Box mt={8} rounded="lg" {...props} />;
 };
 Section.Header = (props) => {
   return (
@@ -35,7 +27,6 @@ Section.Header = (props) => {
       fontWeight="semibold"
       w="full"
       textTransform="capitalize"
-      bg={useColorModeValue("brand.100", "gray.700")}
       roundedTop="lg"
       px={5}
       py={3}
@@ -44,7 +35,7 @@ Section.Header = (props) => {
   );
 };
 Section.Content = (props) => {
-  return <Box fontSize="md" mt="3" {...props} />;
+  return <Box fontSize="md" {...props} />;
 };
 Section.p = (props) => <Box pt={2} {...props} />;
 Section.a = (props) => <Link {...props} />;

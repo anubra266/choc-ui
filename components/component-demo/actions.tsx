@@ -1,9 +1,7 @@
 import {
   Flex,
-  useColorModeValue,
   IconButton,
   Tooltip,
-  Link,
   Box,
   useClipboard,
   chakra,
@@ -19,7 +17,7 @@ import { editOnlineCds } from "./edit-online";
 import Confetti from "react-dom-confetti";
 const config = {
   angle: 180,
-  spread: 180,
+  spread: 100,
   startVelocity: 40,
   elementCount: 100,
   dragFriction: 0.12,
@@ -30,7 +28,7 @@ const config = {
   colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
 };
 
-const ActionButton = (props) => {
+const ActionButton = (props: any) => {
   return (
     <Tooltip hasArrow placement="top" label={props.label}>
       <IconButton
@@ -53,14 +51,7 @@ export default function CodeActions(props: any) {
   );
 
   return (
-    <Flex
-      justifyContent="end"
-      w="full"
-      bg={useColorModeValue("brand.100", "gray.700")}
-      roundedBottom="lg"
-      px={5}
-      py={1}
-    >
+    <Flex>
       <Box
         as={Confetti}
         active={hasCopied || hasCopiedOriginal}
@@ -93,7 +84,7 @@ export default function CodeActions(props: any) {
       </Box>
       <chakra.a
         target="_blank"
-        href={`/preview/${props.path}`}
+        href={`/preview/${props.comp?.preview}`}
         aria-label="Open Demo in New Tab"
       >
         <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />{" "}
@@ -101,7 +92,7 @@ export default function CodeActions(props: any) {
       <chakra.a
         target="_blank"
         rel="noreferrer"
-        href={editOnlineCds(props.preCode, props.path)}
+        href={editOnlineCds(props.preCode, props.comp?.preview)}
         aria-label="Open Code in Codesandbox"
       >
         <ActionButton

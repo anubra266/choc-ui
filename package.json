@@ -31,6 +31,7 @@
     "react-icons": "^4.1.0",
     "react-live": "^2.2.3",
     "react-remove-scroll": "^2.4.1",
+    "react-scroll": "^1.8.2",
     "transform-imports": "^2.1.1"
   },
   "devDependencies": {

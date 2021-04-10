@@ -31,7 +31,7 @@ const Frame = (props) => {
 
   function resizeIframe(iframe: HTMLIFrameElement) {
     iframe.height =
-      iframe.contentWindow?.document?.body?.scrollHeight + 20 + "px";
+      iframe.contentWindow?.document?.body?.scrollHeight + 0 + "px";
     window.requestAnimationFrame(() => resizeIframe(iframe));
   }
   useEffect(() => {

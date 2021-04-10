@@ -4,7 +4,7 @@ declare var window: any;
 const EthicalAds = () => {
   useEffect(() => {
     window.ethicalads.wait.then((placements: any) => {
-      console.log("placements", placements);
+      // console.log("placements", placements);
     });
   }, []);
   return (

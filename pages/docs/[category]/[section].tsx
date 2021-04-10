@@ -18,15 +18,10 @@ const Element = ({ category, section }) => {
         <PageHead title={ComponentObj?.title} image={ComponentObj?.image} />
         <PageHeader>{ComponentObj?.title}</PageHeader>
         <AdBox id={ComponentObj?.title} />
-        {ComponentObj?.components.map((comp) => (
+        {ComponentObj?.components.map((comp: any) => (
           <Section key={comp.preview} id={comp.preview}>
-            <Section.Header>
-              <Section.a href={`#${comp.preview}`}>{comp.name}</Section.a>
-            </Section.Header>
             <Section.Content>
-              <Section.p>
-                <ComponentDemo path={comp.preview} />
-              </Section.p>
+              <ComponentDemo comp={comp} />
               {comp.alerts && (
                 <Section.p>
                   <Alert
@@ -36,7 +31,7 @@ const Element = ({ category, section }) => {
                     mt={4}
                   >
                     <Stack>
-                      {comp.alerts.content.map((al, alid) => (
+                      {comp.alerts.content.map((al: any, alid: any) => (
                         <p key={alid}>{ReactHtmlParser(al)}</p>
                       ))}
                     </Stack>
