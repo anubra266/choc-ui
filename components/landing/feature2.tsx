@@ -29,7 +29,7 @@ const Feature = (props) => {
           as={props.icon}
         />
       </Flex>
-      <chakra.h3
+      <chakra.span
         mb={2}
         fontWeight="semibold"
         lineHeight="shorter"
@@ -37,7 +37,7 @@ const Feature = (props) => {
         fontSize="xl"
       >
         {props.title}
-      </chakra.h3>
+      </chakra.span>
       <chakra.p fontSize="xl" color={useColorModeValue("gray.500", "gray.400")}>
         {props.children}
       </chakra.p>

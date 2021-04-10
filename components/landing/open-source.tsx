@@ -114,6 +114,7 @@ const OpenSource = ({ contributors }) => {
                       name={contributor.name}
                       src={contributor.avatar_url}
                       loading="lazy"
+                      rel="noreferrer"
                       ml={-2}
                     />
                   </Tooltip>

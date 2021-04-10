@@ -6,6 +6,7 @@ import {
   Link,
   Box,
   useClipboard,
+  chakra,
 } from "@chakra-ui/react";
 import { MdRefresh } from "react-icons/md";
 import { BiLinkExternal } from "react-icons/bi";
@@ -36,7 +37,7 @@ const ActionButton = (props) => {
         fontSize="xl"
         color={props.color}
         icon={props.icon}
-        aria-label={props.value}
+        aria-label={props.label}
         variant="ghost"
         rounded="full"
         onClick={props.onClick}
@@ -90,15 +91,24 @@ export default function CodeActions(props: any) {
           label={hasCopiedOriginal ? "Copied!" : "Copy Original Code"}
         />
       </Box>
-      <Link isExternal href={`/preview/${props.path}`}>
+      <chakra.a
+        target="_blank"
+        href={`/preview/${props.path}`}
+        aria-label="Open Demo in New Tab"
+      >
         <ActionButton icon={<BiLinkExternal />} label="Open Demo in New Tab" />{" "}
-      </Link>
-      <Link isExternal href={editOnlineCds(props.preCode, props.path)}>
+      </chakra.a>
+      <chakra.a
+        target="_blank"
+        rel="noreferrer"
+        href={editOnlineCds(props.preCode, props.path)}
+        aria-label="Open Code in Codesandbox"
+      >
         <ActionButton
           icon={<AiOutlineCodeSandbox />}
           label="Open Code in Codesandbox"
         />
-      </Link>
+      </chakra.a>
       <ActionButton
         icon={<MdRefresh />}
         onClick={props.resetDemo}

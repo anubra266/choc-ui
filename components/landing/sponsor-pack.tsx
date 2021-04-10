@@ -59,6 +59,7 @@ export const SponsorPack = ({ sponsors }) => {
                             rounded="full"
                             shadow="lg"
                             pos="absolute"
+                            aria-label={circle.data.name}
                             bg={circle_bg}
                             className="spon-link"
                             left={circle.x}

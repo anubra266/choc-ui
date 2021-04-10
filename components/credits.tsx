@@ -19,21 +19,46 @@ export default function Credits() {
           <rect x="2" width="2" height="4" fill="#FFF" />
         </Icon>{" "}
         by{" "}
-        <Link isExternal href={process.env.twitterUrl}>
+        <Link
+          isExternal
+          rel="noreferrer"
+          href={process.env.twitterUrl}
+          aria-label="Anuoluwapo Abraham"
+        >
           Anuoluwapo Abraham
         </Link>
       </Text>
       <HStack spacing={4}>
-        <Link isExternal href={process.env.githubUrl}>
+        <Link
+          isExternal
+          rel="noreferrer"
+          href={process.env.githubUrl}
+          aria-label="Github Repo"
+        >
           <Icon as={FaGithub} boxSize={4} />
         </Link>
-        <Link isExternal href={process.env.twitterUrl}>
+        <Link
+          isExternal
+          rel="noreferrer"
+          href={process.env.twitterUrl}
+          aria-label="Twitter Profile"
+        >
           <Icon as={FaTwitter} boxSize={4} />
         </Link>
-        <Link isExternal href={process.env.linkedinUrl}>
+        <Link
+          isExternal
+          rel="noreferrer"
+          href={process.env.linkedinUrl}
+          aria-label="Linkedin Profile"
+        >
           <Icon as={FaLinkedin} boxSize={4} />
         </Link>
-        <Link isExternal href={`mailto:${process.env.emailAddress}`}>
+        <Link
+          isExternal
+          rel="noreferrer"
+          href={`mailto:${process.env.emailAddress}`}
+          aria-label="Email Address"
+        >
           <Icon as={FaEnvelope} boxSize={4} />
         </Link>
       </HStack>
