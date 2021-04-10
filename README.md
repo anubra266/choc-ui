@@ -98,6 +98,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/abraham266"><img src="https://avatars.githubusercontent.com/u/73303261?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Anu</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=abraham266" title="Code">💻</a></td>
     <td align="center"><a href="http://geniushub.com.ng/"><img src="https://avatars.githubusercontent.com/u/12122519?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Julius Idowu</b></sub></a><br /><a href="#maintenance-JuliRash" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/jmcelreavey"><img src="https://avatars.githubusercontent.com/u/6317960?v=4?s=50" width="50px;" alt=""/><br /><sub><b>John McElreavey</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jmcelreavey" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Daggy1234"><img src="https://avatars.githubusercontent.com/u/60603110?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Arnav Jindal</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Daggy1234" title="Code">💻</a></td>
   </tr>
 </table>
 
