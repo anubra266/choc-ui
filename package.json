@@ -21,6 +21,7 @@
     "framer-motion": "^3.10.0",
     "fuse.js": "^6.4.6",
     "next": "^10.0.6",
+    "next-pwa": "^5.2.9",
     "nextjs-progressbar": "^0.0.7",
     "raw-loader": "^4.0.2",
     "react": "17.0.1",

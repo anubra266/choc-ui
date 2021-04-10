@@ -61,7 +61,7 @@ const HeaderContent = () => {
                 fontFamily="heading"
                 fontWeight="bold"
                 style={{ float: "right" }}
-                display={["none", "block",'none','block']}
+                display={["none", "block", "none", "block"]}
               >
                 <chakra.span
                   color={useColorModeValue("brand.500", "brand.400")}
@@ -89,6 +89,7 @@ const HeaderContent = () => {
               as="a"
               href={process.env.twitterChoc}
               target="_blank"
+              rel="noreferrer"
               size="md"
               fontSize="lg"
               aria-label="Choc UI on twitter"
@@ -100,6 +101,7 @@ const HeaderContent = () => {
               as="a"
               href={process.env.discordUrl}
               target="_blank"
+              rel="noreferrer"
               size="md"
               fontSize="lg"
               aria-label="Choc UI Discord server"
@@ -111,6 +113,7 @@ const HeaderContent = () => {
               as="a"
               href={process.env.githubChoc}
               target="_blank"
+              rel="noreferrer"
               size="md"
               fontSize="lg"
               aria-label="Choc UI's Github Repo"

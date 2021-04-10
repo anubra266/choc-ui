@@ -1,14 +1,22 @@
 {
-    "name": "Choc-ui672 Push Notification",
-    "short_name": "choc-ui672",
-    "gcm_sender_id": "539876079581",
-    "start_url": "/",
-    "display": "standalone",
-    "icons": [
-        {
-            "src": "https://cdn.pushalert.co/img/pushalert-square-icon.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        }
-    ]
+  "name": "Choc UI",
+  "short_name": "choc-ui",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": " /android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#666db3",
+  "background_color": "#171c37",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
 }
