@@ -47,7 +47,14 @@ export const useRoutes = () => {
       const active =
         router.pathname === url ||
         (category === prefix.replace(/docs|[/]/g, "") && section === route);
-      racc.push({ ...secProps, title: secTitle, components, url, active });
+      racc.push({
+        ...secProps,
+        title: secTitle,
+        components,
+        url,
+        active,
+        route,
+      });
       return racc;
     }, []);
     routeCategory.sections = routeSections;
