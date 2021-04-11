@@ -61,14 +61,10 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
       <Section id="bp">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Basic Pagination
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Basic Pagination" }}
               path="packages/choc-paginator"
               scope={{ Pagination }}
               height="100px"
@@ -96,14 +92,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="mp">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            More Pages
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "More Pages" }}
               path="packages/choc-paginator/more"
               scope={{ Pagination }}
               height="100px"
@@ -125,13 +117,12 @@ const PaginationPackage = () => {
 
       <Section id="cps">
         <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Change Page Size
-          </Section.a>
+          <Section.a target="_blank" rel="noopener"></Section.a>
         </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Change Page Size" }}
               path="packages/choc-paginator/cpz"
               scope={{ Pagination }}
               height="100px"
@@ -169,14 +160,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="jpd">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Jump to a page directly
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Jump to a page directly" }}
               path="packages/choc-paginator/spj"
               scope={{ Pagination }}
               height="100px"
@@ -196,14 +183,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="cs">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Change Size
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Change Size" }}
               path="packages/choc-paginator/csz"
               scope={{ Pagination }}
               height="100px"
@@ -223,14 +206,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="sm">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Simple Mode
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Simple Mode" }}
               path="packages/choc-paginator/sm"
               scope={{ Pagination }}
               height="100px"
@@ -254,14 +233,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="cpn">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Controlled page number.{" "}
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Controlled page number" }}
               path="packages/choc-paginator/cpn"
               scope={{ Pagination }}
               height="100px"
@@ -285,14 +260,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="tn">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Total number{" "}
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Total number" }}
               path="packages/choc-paginator/sht"
               scope={{ Pagination }}
               height="100px"
@@ -312,14 +283,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="pan">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Prev and next
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Prev and next" }}
               path="packages/choc-paginator/itr"
               scope={{ Pagination }}
               height="100px"
@@ -339,14 +306,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="ps">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Preset Styling
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Preset Styling" }}
               path="packages/choc-paginator/prs"
               scope={{ Pagination }}
               height="100px"
@@ -369,14 +332,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="cs">
-        <Section.Header>
-          <Section.a target="_blank" rel="noopener">
-            Custom Styling
-          </Section.a>
-        </Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Custom Styling" }}
               path="packages/choc-paginator/css"
               scope={{ Pagination }}
               height="100px"
@@ -405,10 +364,10 @@ const PaginationPackage = () => {
       </Section>
 
       <Section id="rpag">
-        <Section.Header>Responsive Pagination</Section.Header>
         <Section.Content>
           <Section.p>
             <ComponentDemo
+              comp={{ name: "Responsive Pagination" }}
               path="packages/choc-paginator/rpg"
               scope={{ Pagination }}
               height="100px"

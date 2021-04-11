@@ -78,8 +78,11 @@ export const MenuLink = ({
       sx={{
         ".active .comp": {
           color: activeColor,
-          borderLeftColor: useColorModeValue("brand.300", "brand.200"),
           transition: "all 0.3s ease-in-out",
+        },
+        ".active .compb": {
+          borderLeftColor: useColorModeValue("brand.300", "brand.200"),
+          boxShadow:`0 0 50px #fff`
         },
       }}
     >
@@ -125,18 +128,23 @@ export const CompLink = (props: any) => {
       my={0}
       py={0}
     >
-      <Box
-        pl={2}
-        py={2}
-        borderLeftWidth="3px"
-        borderColor={useColorModeValue("blackAlpha.400", "whiteAlpha.400")}
-        _hover={{
-          borderColor: useColorModeValue("brand.300", "brand.200"),
-        }}
-        className="comp"
-      >
-        {component.name}
-      </Box>
+      <Flex alignItems="center" role="group">
+        <Box
+          py={2}
+          borderLeftWidth="4px"
+          borderColor={useColorModeValue("blackAlpha.400", "whiteAlpha.400")}
+          _groupHover={{
+            borderColor: useColorModeValue("brand.300", "brand.200"),
+          }}
+          h="full"
+          className="compb"
+        >
+          &nbsp;
+        </Box>
+        <Box pl={2} py={2} className="comp">
+          {component.name}
+        </Box>
+      </Flex>
     </MenuLink>
   );
 };
