@@ -3,10 +3,6 @@ import {
   Box,
   Collapse,
   useDisclosure,
-  Slider,
-  SliderTrack,
-  SliderFilledTrack,
-  SliderThumb,
   Flex,
   useColorModeValue,
   Spacer,
@@ -21,7 +17,6 @@ import { cleanCode } from "./clean-code";
 import Frame from "./frame";
 
 const ComponentDemo = (props: any) => {
-  const [size, setSize] = useState(100);
   const path = props.path || props.comp?.preview;
   const preCode = require(`!!raw-loader!pages/preview/${path}`).default;
   const postCode = cleanCode(preCode, path);
@@ -35,7 +30,6 @@ const ComponentDemo = (props: any) => {
   const [isDirty, setIsDirty] = useState(false);
 
   const editorProps = { codeEditor, preCode, code, resetDemo, isDirty };
-  const frameProps = { ...props, size, setSize };
   const editorChange = (c: any) => {
     setCode(c);
     setIsDirty(c !== postCode);
@@ -53,7 +47,7 @@ const ComponentDemo = (props: any) => {
           roundedBottom={!codeEditor.isOpen && "lg"}
           borderStyle="solid"
           borderWidth="1px"
-          borderColor={useColorModeValue("gray.100", "gray.900")}
+          borderColor={useColorModeValue("gray.100", "gray.900")} 
         >
           <Flex px={5} py={1} w="full" alignItems="center">
             <Box fontSize="xl" fontWeight="semibold" textTransform="capitalize">
@@ -62,24 +56,7 @@ const ComponentDemo = (props: any) => {
             <Spacer />
             <CodeActions {...props} {...editorProps} path={path} />
           </Flex>
-          <Slider
-            display={["none", , "block"]}
-            aria-label="Responsive slider"
-            colorScheme="brand"
-            defaultValue={size}
-            maxW="99%"
-            step={0.01}
-            min={30}
-            onChange={(v) => setSize(v)}
-          >
-            <SliderTrack bg="brand.100">
-              <SliderFilledTrack bg="brand.100" />
-            </SliderTrack>
-            <SliderThumb bg="brand.200" roundedLeft={0}>
-              <Box color="white" />
-            </SliderThumb>
-          </Slider>
-          <Frame {...frameProps}>
+          <Frame path={path}>
             <LivePreview />
           </Frame>
         </Box>

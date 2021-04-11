@@ -9,6 +9,7 @@ import {
   useColorModeValue,
   FlexProps,
   Text,
+  chakra,
 } from "@chakra-ui/react";
 
 import { useRoutes } from "categories/parse-categories";
@@ -64,7 +65,7 @@ export const MenuLink = ({
     fontSize: "sm",
     fontWeight: "md",
   };
-  const CLink = activeSection ? SLink : RouteLink;
+  const CLink = chakra(activeSection ? SLink : RouteLink, {});
   const hasAlert = !isSection && !isComp && section.alert;
   return (
     <Flex
@@ -82,8 +83,7 @@ export const MenuLink = ({
         },
       }}
     >
-      <Text
-        as={CLink}
+      <CLink
         active={active}
         href={href}
         isSection={isSection}
@@ -101,7 +101,7 @@ export const MenuLink = ({
         >
           {children}
         </Text>
-      </Text>
+      </CLink>
       {(subSection || hasAlert) && <Spacer />}
       {hasAlert && (
         <Tag rounded="md" variant="subtle" colorScheme={section.alert.variant}>

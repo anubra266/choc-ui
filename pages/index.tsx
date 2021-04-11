@@ -86,6 +86,7 @@ const Home: NextPage = (props: any) => {
                     colorScheme="brand"
                     rightIcon={<FaArrowRight fontSize="0.8em" />}
                     cursor="pointer"
+                    w={["full", , "auto"]}
                   >
                     Get Started
                   </Button>
@@ -99,6 +100,7 @@ const Home: NextPage = (props: any) => {
                     colorScheme="gray"
                     leftIcon={<DiGithubBadge fontSize="1.5em" />}
                     cursor="pointer"
+                    w={["full", , "auto"]}
                   >
                     GitHub
                   </Button>
