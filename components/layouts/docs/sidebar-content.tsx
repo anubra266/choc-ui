@@ -66,6 +66,20 @@ export const MenuLink = ({
     fontWeight: "md",
   };
   const CLink = chakra(activeSection ? SLink : RouteLink, {});
+  const SLinkProps = {
+    to: activeSection,
+    offset: -90,
+    smooth: true,
+    duration: 500,
+    spy: true,
+    hashSpy: true,
+    activeClass: "active",
+  };
+  const RLinkProps = {
+    active: active,
+    href: href,
+    isSection: isSection,
+  };
   const hasAlert = !isSection && !isComp && section.alert;
   return (
     <Flex
@@ -82,28 +96,17 @@ export const MenuLink = ({
         },
         ".active .compb": {
           borderLeftColor: useColorModeValue("brand.300", "brand.200"),
-          boxShadow:`0 0 50px #fff`
+          boxShadow: `0 0 50px #fff`,
         },
       }}
     >
-      <CLink
-        active={active}
-        href={href}
-        isSection={isSection}
-        to={activeSection}
-        offset={-90}
-        smooth={true}
-        duration={500}
-        spy={true}
-        hashSpy={true}
-        activeClass="active"
-      >
-        <Text
+      <CLink {...(activeSection ? SLinkProps : RLinkProps)}>
+        <Box
           {...(isSection ? sectionStyle : baseStyle)}
           {...(active && activeStyle)}
         >
           {children}
-        </Text>
+        </Box>
       </CLink>
       {(subSection || hasAlert) && <Spacer />}
       {hasAlert && (

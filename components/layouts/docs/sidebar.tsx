@@ -16,6 +16,7 @@ const Sidebar = () => {
     <React.Fragment>
       <SlideFade in={isOpen} offsetX="120px">
         <Box
+          id="sidebar"
           as="nav"
           aria-label="Main Navigation"
           pos="sticky"

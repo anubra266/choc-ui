@@ -15,7 +15,7 @@ export default EthicalAds;
 
 export const AdBox = (props: any) => {
   const loadAds = () => {
-    window.ethicalads.load();
+    window.ethicalads?.load();
   };
   useEffect(() => {
     loadAds();
