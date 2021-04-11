@@ -8,19 +8,13 @@ import {
   Stack,
   useColorModeValue,
   FlexProps,
-  BoxProps,
   Text,
-  Icon,
-  IconButton,
-  chakra,
-  useDisclosure,
-  Collapse,
 } from "@chakra-ui/react";
 
 import { useRoutes } from "categories/parse-categories";
 import Link from "next/link";
-import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { Link as SLink } from "react-scroll";
+import SidebarSection from "./SidebarSection";
 
 const RouteLink = ({ children, isSection, href, active }) => {
   return isSection || active ? children : <Link href={href}>{children}</Link>;
@@ -35,7 +29,7 @@ type MenuLink = {
   subSection?: any;
   href?: string;
 };
-const MenuLink = ({
+export const MenuLink = ({
   children,
   active,
   isSection,
@@ -119,7 +113,7 @@ const MenuLink = ({
   );
 };
 
-const CompLink = (props: any) => {
+export const CompLink = (props: any) => {
   const { component, activeSection } = props;
   return (
     <MenuLink
@@ -154,50 +148,7 @@ const SidebarContent = () => {
         <Box pt={cid !== 0 && 5} key={cid}>
           <MenuLink isSection>{category.title}</MenuLink>
           {category.sections.map((section: any, sid: any) => {
-            const subComps = useDisclosure({defaultIsOpen:section.active});
-            return (
-              <>
-                <MenuLink
-                  key={sid}
-                  active={section.active}
-                  href={section.url}
-                  section={section}
-                  subSection={
-                    section.components.length > 0 && (
-                      <IconButton
-                        size="xs"
-                        isRound
-                        variant="ghost"
-                        aria-label={`${section.title} Components`}
-                        icon={
-                          <Icon
-                            as={
-                              subComps.isOpen
-                                ? ChevronDownIcon
-                                : ChevronRightIcon
-                            }
-                          />
-                        }
-                        ml={2}
-                        onClick={subComps.onToggle}
-                        _focus={{ shadow: "none" }}
-                      />
-                    )
-                  }
-                >
-                  {section.title}
-                </MenuLink>
-                <Collapse in={subComps.isOpen}>
-                  {section.components?.map((component: any, cid: any) => (
-                    <CompLink
-                      key={`comp-${cid}`}
-                      component={component}
-                      activeSection={section.active}
-                    />
-                  ))}
-                </Collapse>
-              </>
-            );
+            return <SidebarSection section={section} key={`section-${sid}`} />;
           })}
         </Box>
       ))}
