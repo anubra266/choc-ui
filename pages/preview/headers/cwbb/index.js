@@ -21,7 +21,7 @@ import {
 import { useViewportScroll } from "framer-motion";
 
 import { IoIosArrowDown } from "react-icons/io";
-import { AiFillHome, AiOutlineInbox } from "react-icons/ai";
+import { AiFillHome, AiOutlineInbox, AiOutlineMenu } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
 import Logo from "components/navbar/logo";
@@ -307,7 +307,7 @@ export default function Header(props) {
         <chakra.div h="4.5rem" mx="auto" maxW="1200px">
           <Flex
             w="full"
-            h="full"  
+            h="full"
             px="6"
             alignItems="center"
             justifyContent="space-between"
@@ -386,6 +386,15 @@ export default function Header(props) {
                 ml={{ base: "0", md: "3" }}
                 onClick={toggleMode}
                 icon={<SwitchIcon />}
+              />
+              <IconButton
+                display={{ base: "flex", md: "none" }}
+                aria-label="Open menu"
+                fontSize="20px"
+                color={useColorModeValue("gray.800", "inherit")}
+                variant="ghost"
+                icon={<AiOutlineMenu />}
+                onClick={mobileNav.onOpen}
               />
             </Flex>
           </Flex>

@@ -21,7 +21,7 @@ import {
 } from "@chakra-ui/react";
 
 import { IoIosArrowDown } from "react-icons/io";
-import { AiFillHome, AiOutlineInbox } from "react-icons/ai";
+import { AiFillHome, AiOutlineInbox, AiOutlineMenu } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
 import Logo from "components/navbar/logo";
@@ -353,6 +353,15 @@ export default function WfWf(props) {
               ml={{ base: "0", md: "3" }}
               onClick={toggleMode}
               icon={<SwitchIcon />}
+            />
+            <IconButton
+              display={{ base: "flex", md: "none" }}
+              aria-label="Open menu"
+              fontSize="20px"
+              color={useColorModeValue("gray.800", "inherit")}
+              variant="ghost"
+              icon={<AiOutlineMenu />}
+              onClick={mobileNav.onOpen}
             />
           </Box>
         </Flex>

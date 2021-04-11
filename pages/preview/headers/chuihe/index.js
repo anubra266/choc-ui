@@ -122,16 +122,12 @@ const ChakraUIHeader = () => {
     </VStack>
   );
   return (
-    <React.Fragment>
+    <Box pos="relative">
       <chakra.header
         ref={ref}
         shadow={y > height ? "sm" : undefined}
         transition="box-shadow 0.2s"
-        top="0"
         bg={bg}
-        pos="absolute"
-        left="0"
-        right="0"
         borderTop="6px solid"
         borderTopColor="brand.400"
         w="full"
@@ -195,7 +191,7 @@ const ChakraUIHeader = () => {
           {MobileNavContent}
         </chakra.div>
       </chakra.header>
-    </React.Fragment>
+    </Box>
   );
 };
 
