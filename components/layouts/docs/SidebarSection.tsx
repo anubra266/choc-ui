@@ -19,6 +19,7 @@ const SidebarSection = (props: any) => {
       delay: 100,
       smooth: true,
       containerId: "sidebar",
+      hashSpy: false,
       offset: -10,
     });
   }, []);

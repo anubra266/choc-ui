@@ -8,8 +8,6 @@ import {
   Stack,
   useColorModeValue,
   FlexProps,
-  Text,
-  chakra,
 } from "@chakra-ui/react";
 
 import { useRoutes } from "categories/parse-categories";
@@ -30,19 +28,58 @@ type MenuLink = {
   subSection?: any;
   href?: string;
 };
-export const MenuLink = ({
-  children,
-  active,
-  isSection,
-  isComp,
-  activeSection,
-  section,
-  subSection,
-  href,
-  ...rest
-}: MenuLink & FlexProps) => {
-  const tColor = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
+export const MenuLink = (props: MenuLink & FlexProps) => {
+  const {
+    children,
+    active,
+    isSection,
+    isComp,
+    activeSection,
+    section,
+    subSection,
+    href,
+    ...rest
+  } = props;
 
+  const activeColor = useColorModeValue("brand.800", "brand.200");
+
+  const hasAlert = !isSection && !isComp && section.alert;
+  return (
+    <Flex
+      p={2}
+      pl={8}
+      mx={2}
+      my={1}
+      {...rest}
+      alignItems="center"
+      sx={{
+        ".active .comp": {
+          color: activeColor,
+          transition: "all 0.3s ease-in-out",
+        },
+        ".active .compb": {
+          borderLeftColor: useColorModeValue("brand.300", "brand.200"),
+          boxShadow: `0 0 50px #fff`,
+        },
+      }}
+    >
+      <CLink {...props} activeSection={activeSection}>
+        {children}
+      </CLink>
+      {(subSection || hasAlert) && <Spacer />}
+      {hasAlert && (
+        <Tag rounded="md" variant="subtle" colorScheme={section.alert.variant}>
+          <span>{section.alert.message} </span>
+        </Tag>
+      )}
+      {subSection}
+    </Flex>
+  );
+};
+const CLink = (props: any) => {
+  const { children, active, isSection, activeSection, href } = props;
+
+  const tColor = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
   const activeColor = useColorModeValue("brand.800", "brand.200");
   const activeStyle = {
     color: activeColor,
@@ -65,7 +102,6 @@ export const MenuLink = ({
     fontSize: "sm",
     fontWeight: "md",
   };
-  const CLink = chakra(activeSection ? SLink : RouteLink, {});
   const SLinkProps = {
     to: activeSection,
     offset: -90,
@@ -80,45 +116,20 @@ export const MenuLink = ({
     href: href,
     isSection: isSection,
   };
-  const hasAlert = !isSection && !isComp && section.alert;
+  const LinkProps = activeSection ? SLinkProps : RLinkProps; 
+  const LinkComp: any = activeSection ? SLink : RouteLink; 
+
   return (
-    <Flex
-      p={2}
-      pl={8}
-      mx={2}
-      my={1}
-      {...rest}
-      alignItems="center"
-      sx={{
-        ".active .comp": {
-          color: activeColor,
-          transition: "all 0.3s ease-in-out",
-        },
-        ".active .compb": {
-          borderLeftColor: useColorModeValue("brand.300", "brand.200"),
-          boxShadow: `0 0 50px #fff`,
-        },
-      }}
-    >
-      <CLink {...(activeSection ? SLinkProps : RLinkProps)}>
-        <Box
-          {...(isSection ? sectionStyle : baseStyle)}
-          {...(active && activeStyle)}
-        >
-          {children}
-        </Box>
-      </CLink>
-      {(subSection || hasAlert) && <Spacer />}
-      {hasAlert && (
-        <Tag rounded="md" variant="subtle" colorScheme={section.alert.variant}>
-          <span>{section.alert.message} </span>
-        </Tag>
-      )}
-      {subSection}
-    </Flex>
+    <LinkComp {...LinkProps}>
+      <Box
+        {...(isSection ? sectionStyle : baseStyle)}
+        {...(active && activeStyle)}
+      >
+        {children}
+      </Box>
+    </LinkComp>
   );
 };
-
 export const CompLink = (props: any) => {
   const { component, activeSection } = props;
   return (
