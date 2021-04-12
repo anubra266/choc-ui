@@ -106,9 +106,9 @@ const CLink = (props: any) => {
     to: activeSection,
     offset: -90,
     smooth: true,
+    isDynamic: true,
     duration: 500,
     spy: true,
-    hashSpy: true,
     activeClass: "active",
   };
   const RLinkProps = {
@@ -116,8 +116,8 @@ const CLink = (props: any) => {
     href: href,
     isSection: isSection,
   };
-  const LinkProps = activeSection ? SLinkProps : RLinkProps; 
-  const LinkComp: any = activeSection ? SLink : RouteLink; 
+  const LinkProps = activeSection ? SLinkProps : RLinkProps;
+  const LinkComp: any = activeSection ? SLink : RouteLink;
 
   return (
     <LinkComp {...LinkProps}>
