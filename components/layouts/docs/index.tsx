@@ -14,14 +14,14 @@ const Docs = ({ children }) => {
         <Box display={{ base: "block", md: "flex" }}>
           <Sidebar />
 
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1 }} id="page-content">
             <Box id="content" pt={3} px={5} mt="4.5rem" mx="auto" minH="76vh">
               <PageTransition>{children}</PageTransition>
               <Credits />
             </Box>
           </div>
         </Box>
-        </Container>
+      </Container>
     </SiteLayout>
   );
 };

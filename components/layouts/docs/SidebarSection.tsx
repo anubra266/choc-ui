@@ -49,7 +49,7 @@ const SidebarSection = (props: any) => {
           )
         }
       >
-        <Element name={`nav-${section.route}`}> {section.title} </Element>
+        <div id={`nav-${section.route}`}> {section.title} </div>
       </MenuLink>
       <Collapse in={subComps.isOpen}>
         {section.components?.map((component: any, cid: any) => (
