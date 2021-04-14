@@ -6,8 +6,9 @@ import {
   IconButton,
   useColorModeValue,
   useUpdateEffect,
-  Image,
   IconButtonProps,
+  Spacer,
+  VStack,
 } from "@chakra-ui/react";
 import { AnimatePresence, motion, useElementScroll } from "framer-motion";
 import * as React from "react";
@@ -16,10 +17,12 @@ import { RemoveScroll } from "react-remove-scroll";
 import SponsorButton from "./sponsor-button";
 import DocSearch from "../doc-search";
 import SidebarContent from "components/layouts/docs/sidebar-content";
+import Router from "next/router";
 
 export function MobileNavContent(props) {
   const { isOpen, onClose } = props;
   const closeBtnRef = React.useRef(null);
+  Router.events.on("routeChangeComplete", () => isOpen && onClose());
 
   useUpdateEffect(() => {
     if (isOpen) {
@@ -41,7 +44,8 @@ export function MobileNavContent(props) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <Flex
+            <Flex 
+            zIndex="  1"
               direction="column"
               w="full"
               bg={useColorModeValue("white", "gray.800")}
@@ -50,27 +54,18 @@ export function MobileNavContent(props) {
               pos="absolute"
               top="0"
               left="0"
-              zIndex={20}
               pb="8"
               shadow={shadow}
             >
               <Box>
-                <Flex justify="space-between" px="6" pt="5" pb="4">
-                  <Image
-                    alt="logo"
-                    src="/logo.png"
-                    style={{
-                      height: "50px",
-                      float: "left",
-                    }}
-                    mr={2}
-                  />
-                  <HStack spacing="5">
-                    <DocSearch w="full" />
+                <VStack px="6" pt="5" pb="4" spacing="5">
+                  <HStack spacing="5" w="full">
                     <SponsorButton display="flex" />
+                    <Spacer />
                     <CloseButton ref={closeBtnRef} onClick={onClose} />
                   </HStack>
-                </Flex>
+                  <DocSearch w="full" /> <Spacer />
+                </VStack>
               </Box>
 
               <ScrollView

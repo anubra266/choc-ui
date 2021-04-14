@@ -60,16 +60,11 @@ export default function SearchBar(props) {
         onClick={openSearchModal}
       >
         <SearchIcon />
-        <HStack
-          display={{ base: "none", md: "flex" }}
-          w="full"
-          ml="3"
-          spacing="4px"
-        >
+        <HStack w="full" ml="3" spacing="4px">
           <Text textAlign="left" flex="1">
             Search the collection...
           </Text>
-          <HStack spacing="4px">
+          <HStack spacing="4px" display={{ base: "none", md: "flex" }}>
             <VisuallyHidden>Press </VisuallyHidden>
             <Kbd color="gray.500" rounded="2px">
               <chakra.div

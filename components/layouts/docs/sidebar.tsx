@@ -1,27 +1,11 @@
 import React from "react";
-import {
-  Box,
-  useColorModeValue,
-  useDisclosure,
-  IconButton,
-  SlideFade,
-  useBreakpointValue,
-} from "@chakra-ui/react";
+import { Box, useDisclosure, IconButton, SlideFade } from "@chakra-ui/react";
 import SidebarContent from "./sidebar-content";
 import { MdMenu, MdClose } from "react-icons/md";
-import Router from "next/router";
 
 const Sidebar = () => {
   const { isOpen, onClose, onOpen } = useDisclosure({ defaultIsOpen: true });
   const SidebarIcon = isOpen ? MdClose : MdMenu;
-  const isMobile = useBreakpointValue({
-    base: true,
-    md: false,
-  });
-  Router.events.on(
-    "routeChangeComplete",
-    () => isOpen && isMobile && onClose()
-  );
 
   return (
     <React.Fragment>
