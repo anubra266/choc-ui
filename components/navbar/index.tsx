@@ -199,7 +199,7 @@ const Header = (props) => {
       transition="box-shadow 0.5s ease-in-out"
       pos="fixed"
       top="0"
-      zIndex="tooltip"
+      zIndex="modal"
       bg={bg}
       left="0"
       right="0"

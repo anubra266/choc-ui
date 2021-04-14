@@ -44,8 +44,7 @@ export function MobileNavContent(props) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <Flex 
-            zIndex="  1"
+            <Flex
               direction="column"
               w="full"
               bg={useColorModeValue("white", "gray.800")}
