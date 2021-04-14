@@ -51,7 +51,7 @@ export default function Sj() {
           >
             <Box display="inline-flex" rounded="md" shadow="md">
               <Link
-                href="#"
+                
                 w="full"
                 display="inline-flex"
                 alignItems="center"
@@ -72,7 +72,7 @@ export default function Sj() {
             </Box>
             <Box ml={3} display="inline-flex" rounded="md" shadow="md">
               <Link
-                href="#"
+                
                 w="full"
                 display="inline-flex"
                 alignItems="center"

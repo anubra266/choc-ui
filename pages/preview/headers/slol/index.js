@@ -56,7 +56,7 @@ export default function Header(props) {
         alignItems="start"
         rounded="lg"
         _hover={{ bg: hbg }}
-        href="#"
+        
       >
         <chakra.svg
           flexShrink={0}
@@ -171,7 +171,7 @@ export default function Header(props) {
           <Stack direction={{ base: "row" }} spacing={{ base: 6, sm: 10 }}>
             <Box display="flow-root">
               <Link
-                href="#"
+                
                 m={-3}
                 p={3}
                 display="flex"
@@ -211,7 +211,7 @@ export default function Header(props) {
 
             <Box display="flow-root">
               <Link
-                href="#"
+                
                 m={-3}
                 p={3}
                 display="flex"
@@ -269,14 +269,14 @@ export default function Header(props) {
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="full" variant="ghost" href="#" leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost"  leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
         w="full"
         variant="solid"
         colorScheme="brand"
-        href="#"
+        
         leftIcon={<AiOutlineInbox />}
       >
         Inbox
@@ -284,7 +284,7 @@ export default function Header(props) {
       <Button
         w="full"
         variant="ghost"
-        href="#"
+        
         leftIcon={<BsFillCameraVideoFill />}
       >
         Videos

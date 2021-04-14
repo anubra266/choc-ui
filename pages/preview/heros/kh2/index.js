@@ -44,14 +44,14 @@ const KuttyHero = () => {
             colorScheme="brand"
             size="lg"
             mb={{ base: 2, sm: 0 }}
-            href="#"
+            
           >
             Sign up for free
           </Button>
           <Button
             as="a"
             w={{ base: "full", sm: "auto" }}
-            href="#"
+            
             mb={{ base: 2, sm: 0 }}
             size="lg"
           >

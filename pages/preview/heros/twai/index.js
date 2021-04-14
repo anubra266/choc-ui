@@ -81,7 +81,7 @@ const KuttyHero = () => {
               >
                 <Box rounded="full" shadow="md">
                   <chakra.a
-                    href="#"
+                    
                     w="full"
                     display="flex"
                     alignItems="center"
@@ -100,7 +100,7 @@ const KuttyHero = () => {
                 </Box>
                 <Box mt={[3, 0]} ml={[null, 3]}>
                   <chakra.a
-                    href="#"
+                    
                     w="full"
                     display="flex"
                     alignItems="center"

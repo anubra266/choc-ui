@@ -63,7 +63,7 @@ const KuttyHero = () => {
             justifyContent="center"
             w={{ base: "full", sm: "auto" }}
             mb={{ base: 2, sm: 0 }}
-            href="#"
+            
             size="lg"
           >
             Get Started
@@ -83,7 +83,7 @@ const KuttyHero = () => {
             justifyContent="center"
             w={{ base: "full", sm: "auto" }}
             mb={{ base: 2, sm: 0 }}
-            href="#"
+            
             size="lg"
           >
             Book a Demo

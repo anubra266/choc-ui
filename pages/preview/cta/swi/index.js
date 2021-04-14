@@ -64,7 +64,7 @@ const CTA = () => {
         </chakra.p>
         <Box display="inline-flex" rounded="md" shadow="md">
           <chakra.a
-            href="#"
+            
             mt={2}
             py={8}
             display="inline-flex"

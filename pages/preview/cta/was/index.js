@@ -58,7 +58,7 @@ const CTA = () => {
         >
           <Box display="inline-flex" rounded="md" shadow="md">
             <chakra.a
-              href="#"
+              
               display="inline-flex"
               alignItems="center"
               justifyContent="center"

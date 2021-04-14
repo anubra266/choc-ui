@@ -35,7 +35,7 @@ const Ma = () => {
 
         <Box py={5} textAlign="center">
           <Link
-            href="#"
+            
             display="block"
             fontSize="2xl"
             color={useColorModeValue("gray.800", "white")}

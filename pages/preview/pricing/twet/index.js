@@ -109,7 +109,7 @@ export default function Pricing() {
                 shadow="md"
               >
                 <chakra.a
-                  href="#"
+                  
                   w="full"
                   display="inline-flex"
                   alignItems="center"
@@ -196,7 +196,7 @@ export default function Pricing() {
                 w="full"
               >
                 <chakra.a
-                  href="#"
+                  
                   w="full"
                   display="inline-flex"
                   alignItems="center"
@@ -282,7 +282,7 @@ export default function Pricing() {
                 shadow="md"
               >
                 <chakra.a
-                  href="#"
+                  
                   w="full"
                   display="inline-flex"
                   alignItems="center"

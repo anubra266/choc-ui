@@ -54,7 +54,7 @@ export default function Sj() {
             <Stack direction={{ base: "column", sm: "row" }} spacing={2}>
               <Box display="inline-flex" rounded="md" shadow="md">
                 <chakra.a
-                  href="#"
+                  
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"
@@ -76,7 +76,7 @@ export default function Sj() {
               <Box ml={3} display="inline-flex" rounded="md" shadow="md">
                 <chakra.a
                   w="full"
-                  href="#"
+                  
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"

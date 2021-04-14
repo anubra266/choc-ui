@@ -99,14 +99,14 @@ const ChakraUIHeader = () => {
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="full" variant="ghost" href="#" leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost"  leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
         w="full"
         variant="solid"
         colorScheme="brand"
-        href="#"
+        
         leftIcon={<AiOutlineInbox />}
       >
         Inbox
@@ -114,7 +114,7 @@ const ChakraUIHeader = () => {
       <Button
         w="full"
         variant="ghost"
-        href="#"
+        
         leftIcon={<BsFillCameraVideoFill />}
       >
         Videos

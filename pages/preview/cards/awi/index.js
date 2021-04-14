@@ -49,7 +49,7 @@ const Ma = () => {
               fontSize="2xl"
               mt={2}
               _hover={{ color: "gray.600", textDecor: "underline" }}
-              href="#"
+              
             >
               I Built A Successful Blog In One Year
             </Link>
@@ -79,7 +79,7 @@ const Ma = () => {
                   mx={2}
                   fontWeight="bold"
                   color={useColorModeValue("gray.700", "gray.200")}
-                  href="#"
+                  
                 >
                   Jone Doe
                 </Link>

@@ -75,7 +75,7 @@ export default function Dsll() {
                 <Button
                   w="full"
                   variant="ghost"
-                  href="#"
+                  
                   leftIcon={<AiFillHome />}
                 >
                   Dashboard
@@ -84,7 +84,7 @@ export default function Dsll() {
                   w="full"
                   variant="solid"
                   colorScheme="brand"
-                  href="#"
+                  
                   leftIcon={<AiOutlineInbox />}
                 >
                   Inbox
@@ -92,7 +92,7 @@ export default function Dsll() {
                 <Button
                   w="full"
                   variant="ghost"
-                  href="#"
+                  
                   leftIcon={<BsFillCameraVideoFill />}
                 >
                   Videos
@@ -112,7 +112,7 @@ export default function Dsll() {
             <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
               <Button
                 variant="ghost"
-                href="#"
+                
                 leftIcon={<AiFillHome />}
                 size="sm"
               >
@@ -121,7 +121,7 @@ export default function Dsll() {
               <Button
                 variant="solid"
                 colorScheme="brand"
-                href="#"
+                
                 leftIcon={<AiOutlineInbox />}
                 size="sm"
               >
@@ -129,7 +129,7 @@ export default function Dsll() {
               </Button>
               <Button
                 variant="ghost"
-                href="#"
+                
                 leftIcon={<BsFillCameraVideoFill />}
                 size="sm"
               >
@@ -154,7 +154,7 @@ export default function Dsll() {
               p={3}
               color={useColorModeValue("gray.800", "inherit")}
               rounded="sm"
-              href="#"
+              
               _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
             >
               <AiFillBell />

@@ -27,7 +27,7 @@ const Ma = () => {
     };
     return (
       <chakra.a
-        href="#"
+        
         mx={1}
         px={4}
         py={2}
