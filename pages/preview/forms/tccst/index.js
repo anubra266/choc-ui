@@ -53,7 +53,7 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-              action="#"
+             
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -273,7 +273,7 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-              action="#"
+             
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -525,7 +525,7 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-              action="#"
+             
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
