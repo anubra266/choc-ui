@@ -8,7 +8,7 @@ import { Alert, Stack } from "@chakra-ui/react";
 import ReactHtmlParser from "react-html-parser";
 
 import { componentsObj } from "categories/parse-categories";
-import { AdBox } from "analytics/ethical-ads";
+import { AdBox } from "analytics/ads";
 
 const Element = ({ category, section }) => {
   const ComponentObj = componentsObj[category]?.sections[section];

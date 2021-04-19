@@ -6,7 +6,7 @@ import DocsLayout from "components/layouts/docs/index";
 import { CodeBlock } from "components/docs/codeblock";
 import Pagination from "@choc-ui/paginator";
 import { Alert, Stack } from "@chakra-ui/react";
-import { AdBox } from "analytics/ethical-ads";
+import { AdBox } from "analytics/ads";
 
 const PaginationPackage = () => {
   return (

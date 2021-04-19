@@ -9,7 +9,6 @@ import NextDocument, {
 import GAScript from "analytics/ga-script";
 import { ColorModeScript } from "@chakra-ui/react";
 import { config } from "theme";
-import EthicalAds from "analytics/ethical-ads";
 class Document extends NextDocument {
   static getInitialProps(ctx: DocumentContext) {
     return NextDocument.getInitialProps(ctx);
@@ -18,9 +17,7 @@ class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <EthicalAds />
-        </Head>
+        <Head></Head>
         <body>
           <ColorModeScript initialColorMode={config.initialColorMode} />
           <Main />
