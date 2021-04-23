@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@anubra266/stickyreact@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@anubra266/stickyreact/-/stickyreact-1.0.0.tgz#44d7d5838e6f5878b25ecd3d2625072d7530d18e"
-  integrity sha512-+OCGmAa3P789OTS5Cl9HYZRrUKvrUL3HsdN5xNK/ricmd80Qfi8H7/oGWZIpYzRgWwLwdoI8qd5WIvVx5peMSw==
+"@anubra266/stickyreact@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@anubra266/stickyreact/-/stickyreact-1.0.1.tgz#56118e2cc7c3ab73c07dd312f7bbc7ca220d5a2d"
+  integrity sha512-U6XAdYjuP+3uIRCHU2rJsD1vFTV42X88hGlWQOByjbrrx69H0J5FG0eGD0CClrGpr8jpjYVes7l/MlkAJNlvAA==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"

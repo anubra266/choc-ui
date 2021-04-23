@@ -11,7 +11,7 @@ const InstallationView = () => {
     <DocsLayout>
       <PageHead title="Installation" />
       <PageHeader>Installation</PageHeader>
-      <AdBox id="installation" />
+      <AdBox />
       <Installation />
     </DocsLayout>
   );

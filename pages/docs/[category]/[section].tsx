@@ -17,7 +17,7 @@ const Element = ({ category, section }) => {
       <React.Fragment>
         <PageHead title={ComponentObj?.title} image={ComponentObj?.image} />
         <PageHeader>{ComponentObj?.title}</PageHeader>
-        <AdBox id={ComponentObj?.title} />
+        <AdBox />
         {ComponentObj?.components.map((comp: any) => (
           <Section key={comp.preview} id={comp.preview}>
             <Section.Content>
