@@ -76,7 +76,7 @@ const Home: NextPage = (props: any) => {
                 justify="center"
                 direction={{ base: "column", sm: "row" }}
               >
-                <NextLink href="docs/installation" passHref>
+                <NextLink href="/docs/installation" passHref>
                   <Button
                     h="4rem"
                     px="40px"

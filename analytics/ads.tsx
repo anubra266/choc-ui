@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { Box } from "@chakra-ui/layout";
 import Carbon from "react-carbon";
 
-export const AdBox = (props: any) => {
+export const AdBox = () => {
   const router = useRouter();
   const { category } = router.query;
   return (

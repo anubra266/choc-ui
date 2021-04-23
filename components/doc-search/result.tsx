@@ -18,7 +18,6 @@ const Result = (props) => {
   return (
     <NextLink href={props.url} passHref>
       <Flex
-        mt={10}
         bg={useColorModeValue("gray.50", "gray.600")}
         _hover={{
           bg: "brand.600",
