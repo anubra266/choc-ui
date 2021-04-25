@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Icon, Flex } from "@chakra-ui/react";
+import { chakra, Icon, Flex, useColorModeValue } from "@chakra-ui/react";
 
 export default function Component() {
   return (
