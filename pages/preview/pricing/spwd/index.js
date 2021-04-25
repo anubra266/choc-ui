@@ -61,7 +61,7 @@ export default function Component() {
         bg={bottomBg}
       >
         <Box pt={20} bg={topBg}>
-          <Box w="full" px={[2, , 4]} mx="auto">
+          <Box w="full" px={[10, , 4]} mx="auto">
             <Text mb={2} fontSize="5xl" fontWeight="bold" lineHeight="tight">
               Simple transparent pricing
             </Text>
@@ -84,6 +84,7 @@ export default function Component() {
               shadow="xl"
               mb="100px"
               textAlign="left"
+              direction={{ base: "column", lg: "row" }}
             >
               <Stack spacing={8} p="45px" flex="0.7">
                 <Text fontSize="3xl" fontWeight="bold" lineHeight="tight">
@@ -115,7 +116,7 @@ export default function Component() {
                     borderTopColor={topBg}
                   />
                 </Flex>
-                <SimpleGrid columns={[1, , 2]} spacingY={4}>
+                <SimpleGrid columns={[1, , 2, 1, 2]} spacingY={4}>
                   <Feature>Unlimited Projects</Feature>
                   <Feature>Email Tracking and Analytics </Feature>
                   <Feature>Email APIs, SMTP Relay, and Webhooks</Feature>
