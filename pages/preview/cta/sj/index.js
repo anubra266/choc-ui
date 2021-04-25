@@ -33,7 +33,6 @@ export default function Sj() {
             fontWeight="extrabold"
             letterSpacing="tight"
             lineHeight="shorter"
-            fontFamily="fantasy"
             color={useColorModeValue("gray.900", "gray.100")}
           >
             <chakra.span display="block">Ready to dive in?</chakra.span>

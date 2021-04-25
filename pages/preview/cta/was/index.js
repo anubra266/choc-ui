@@ -3,11 +3,8 @@ import {
   chakra,
   Box,
   useColorModeValue,
-  Button,
   Stack,
   Image,
-  Text,
-  Icon,
   Flex,
 } from "@chakra-ui/react";
 
@@ -28,10 +25,8 @@ const CTA = () => {
         <chakra.h2
           fontSize={{ base: "3xl", sm: "4xl" }}
           fontWeight="extrabold"
-          letterSpacing="tight"
           lineHeight="shorter"
           color={useColorModeValue("white", "gray.100")}
-          textShadow="2px 0 currentcolor"
           mb={6}
         >
           <chakra.span display="block">Ready to dive in?</chakra.span>
@@ -58,7 +53,6 @@ const CTA = () => {
         >
           <Box display="inline-flex" rounded="md" shadow="md">
             <chakra.a
-              
               display="inline-flex"
               alignItems="center"
               justifyContent="center"

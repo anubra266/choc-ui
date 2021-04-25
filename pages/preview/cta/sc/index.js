@@ -31,7 +31,6 @@ export default function Sj() {
             letterSpacing="tight"
             lineHeight="shorter"
             color={useColorModeValue("gray.900", "gray.100")}
-            fontFamily="fantasy"
             mb={6}
           >
             <chakra.span display="block">Ready to dive in?</chakra.span>
@@ -49,7 +48,6 @@ export default function Sj() {
           >
             <Box display="inline-flex" rounded="md" shadow="md">
               <Link
-                
                 w="full"
                 display="inline-flex"
                 alignItems="center"
@@ -70,7 +68,6 @@ export default function Sj() {
             </Box>
             <Box ml={3} display="inline-flex" rounded="md" shadow="md">
               <Link
-                
                 w="full"
                 display="inline-flex"
                 alignItems="center"
