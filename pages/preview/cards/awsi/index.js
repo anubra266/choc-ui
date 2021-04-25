@@ -5,7 +5,7 @@ import { AiOutlineTwitter, AiOutlineLink, } from "react-icons/ai";
 const Ma = () => {
   return (
     <Flex
-      bg="gray.600"
+      bg={useColorModeValue("#F9FAFB", "gray.600")}
       p={50}
       w="full"
       alignItems="center"

@@ -5,7 +5,7 @@ import { StarIcon } from "@chakra-ui/icons";
 const Ma = () => {
   return (
     <Flex
-      bg="gray.600"
+      bg={useColorModeValue("#F9FAFB", "gray.600")}
       p={50}
       w="full"
       alignItems="center"

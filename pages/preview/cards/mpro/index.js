@@ -4,7 +4,7 @@ import { chakra, Box, Image, Flex, useColorModeValue } from "@chakra-ui/react";
 const Ma = () => {
   return (
     <Flex
-      bg="gray.600"
+      bg={useColorModeValue("#F9FAFB", "gray.600")}
       p={50}
       w="full"
       alignItems="center"

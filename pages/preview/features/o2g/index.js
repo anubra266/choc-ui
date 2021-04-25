@@ -48,7 +48,7 @@ export default function Wfl() {
   };
   return (
     <Flex
-      bg="gray.600"
+      bg={useColorModeValue("#F9FAFB", "gray.600")}
       p={20}
       w="auto"
       justifyContent="center"

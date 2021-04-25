@@ -12,7 +12,7 @@ import {
 export default function Asm() {
   return (
     <Flex
-      bg="gray.600"
+      bg={useColorModeValue("#F9FAFB", "gray.600")}
       p={20}
       w="full"
       justifyContent="center"

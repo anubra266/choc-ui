@@ -33,7 +33,7 @@ export default function Pricing() {
   };
   return (
     <Flex
-      bg="gray.600"
+      bg={useColorModeValue("#F9FAFB", "gray.600")}
       p={10}
       w="full"
       justifyContent="center"
