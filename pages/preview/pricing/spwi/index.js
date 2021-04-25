@@ -23,7 +23,7 @@ export default function Component() {
         px={4}
         mx="auto"
         textAlign={{ base: "left", md: "center" }}
-        bg={useColorModeValue("gray.100", "gray.800")}
+        bg={useColorModeValue("white", "gray.800")}
         rounded="md"
         shadow="base"
       >

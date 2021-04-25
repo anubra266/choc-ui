@@ -48,48 +48,44 @@ export default function Sj() {
             mt={{ base: 8, lg: 0 }}
             shrink={{ lg: 0 }}
           >
-            <Box display="inline-flex" rounded="md" shadow="md">
-              <Link
-                
-                w="full"
-                display="inline-flex"
-                alignItems="center"
-                justifyContent="center"
-                px={5}
-                py={3}
-                border="solid transparent"
-                fontWeight="bold"
-                rounded="md"
-                color={useColorModeValue("white")}
-                bg={useColorModeValue("brand.600", "brand.500")}
-                _hover={{
-                  bg: useColorModeValue("brand.700", "brand.600"),
-                }}
-              >
-                Get started
-              </Link>
-            </Box>
-            <Box ml={3} display="inline-flex" rounded="md" shadow="md">
-              <Link
-                
-                w="full"
-                display="inline-flex"
-                alignItems="center"
-                justifyContent="center"
-                px={5}
-                py={3}
-                border="solid transparent"
-                fontWeight="bold"
-                rounded="md"
-                color="brand.600"
-                bg="white"
-                _hover={{
-                  bg: "brand.50",
-                }}
-              >
-                Learn more
-              </Link>
-            </Box>
+            <Link
+              w={["full", , "auto"]}
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              px={5}
+              py={3}
+              border="solid transparent"
+              fontWeight="bold"
+              rounded="md"
+              shadow="md"
+              color={useColorModeValue("white")}
+              bg={useColorModeValue("brand.600", "brand.500")}
+              _hover={{
+                bg: useColorModeValue("brand.700", "brand.600"),
+              }}
+            >
+              Get started
+            </Link>
+            <Link
+              w={["full", , "auto"]}
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              px={5}
+              py={3}
+              border="solid transparent"
+              fontWeight="bold"
+              rounded="md"
+              shadow="md"
+              color="brand.600"
+              bg="white"
+              _hover={{
+                bg: "brand.50",
+              }}
+            >
+              Learn More
+            </Link>
           </Stack>
         </Box>
       </Box>
