@@ -136,6 +136,11 @@
             "preview": "pricing/spwd"
           },
           {
+            "name": "Two simple tiers",
+            "url": "#",
+            "preview": "pricing/2st"
+          },
+          {
             "name": "Three tiers with emphasized tier",
             "url": "https://tailwindui.com/components/marketing/sections/pricing#component-d91bc5ed1deb87275decb69f70274650",
             "preview": "pricing/twet"

@@ -3,7 +3,6 @@ import {
   chakra,
   Box,
   Flex,
-  Link,
   useColorModeValue,
   Text,
   useToken,
