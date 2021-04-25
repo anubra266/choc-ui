@@ -27,10 +27,10 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [x] Pagination
   - [x] Badges
   - [x] Gradient Icons
-  - [ ] Carousels
+  - [x] Carousels
   - [ ] Empty - Antd
   - [ ] Result - Antd
-  - [ ] Special Elements
+  - [ ] Extra Components
 - [ ] Page Sections
   - [x] Heros
   - [x] Feature Sections

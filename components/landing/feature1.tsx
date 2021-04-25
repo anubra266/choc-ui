@@ -4,7 +4,6 @@ import ComponentDemo from "components/component-demo";
 
 const Feature = () => {
   const card = randomCard();
-  console.log("🚀 ~ file: feature1.tsx ~ line 7 ~ Feature ~ card", card);
   return (
     <Box
       as="section"
@@ -51,7 +50,7 @@ const Feature = () => {
               mx={{ lg: "auto" }}
               color={useColorModeValue("gray.500", "gray.400")}
             >
-              <ComponentDemo path="cards/msp" />
+              <ComponentDemo path={card} />
             </chakra.p>
           </Box>
         </Box>
@@ -63,6 +62,7 @@ const Feature = () => {
 export default Feature;
 
 const randomCard = () => {
-  const elements = require("categories/elements.json");
-  return elements;
+  const { elements } = require("categories/elements.json");
+  const { components } = elements.sections.cards;
+  return components[Math.floor(Math.random() * components.length)].preview;
 };

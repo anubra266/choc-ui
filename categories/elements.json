@@ -246,7 +246,7 @@
       },
 
       "extra": {
-        "title": "Extra Elements",
+        "title": "Extra Components",
         "route": "extra",
         "components": [
           {

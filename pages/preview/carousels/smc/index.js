@@ -67,6 +67,7 @@ const Component = () => {
                 p="8px 12px"
                 pos="absolute"
                 top="0"
+                whiteSpace="nowrap"
               >
                 {sid + 1} / {slidesCount}
               </Text>
