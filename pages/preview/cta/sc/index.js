@@ -17,15 +17,18 @@ export default function Sj() {
       alignItems="center"
       justifyContent="center"
     >
-      <Box bg={useColorModeValue("white", "gray.800")} w="full">
+      <Flex
+        justify="center"
+        bg={useColorModeValue("white", "gray.800")}
+        w="full"
+      >
         <Box
-          w={{ base: "full", md: 3 / 4, lg: 2 / 4 }}
+          w={{ base: "full", md: "75%", lg: "50%" }}
           px={4}
           py={20}
-          mx="auto"
           textAlign={{ base: "left", md: "center" }}
         >
-          <chakra.h2
+          <chakra.span
             fontSize={{ base: "3xl", sm: "4xl" }}
             fontWeight="extrabold"
             letterSpacing="tight"
@@ -40,11 +43,12 @@ export default function Sj() {
             >
               Start your free trial today.
             </chakra.span>
-          </chakra.h2>
+          </chakra.span>
           <Stack
             justifyContent={{ base: "left", md: "center" }}
             direction={{ base: "column", sm: "row" }}
             spacing={2}
+            mt={2}
           >
             <Box display="inline-flex" rounded="md" shadow="md">
               <Link
@@ -88,7 +92,7 @@ export default function Sj() {
             </Box>
           </Stack>
         </Box>
-      </Box>
+      </Flex>
     </Flex>
   );
 }
