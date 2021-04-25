@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineMessage, AiOutlineShoppingCart } from "react-icons/ai";
-import { chakra, Flex, IconButton } from "@chakra-ui/react";
+import { chakra, Flex, IconButton, useColorModeValue } from "@chakra-ui/react";
 
 export default function Component() {
   return (
