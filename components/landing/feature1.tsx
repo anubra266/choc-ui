@@ -3,6 +3,8 @@ import { Box, chakra, useColorModeValue } from "@chakra-ui/react";
 import ComponentDemo from "components/component-demo";
 
 const Feature = () => {
+  const card = randomCard();
+  console.log("🚀 ~ file: feature1.tsx ~ line 7 ~ Feature ~ card", card);
   return (
     <Box
       as="section"
@@ -59,3 +61,8 @@ const Feature = () => {
 };
 
 export default Feature;
+
+const randomCard = () => {
+  const elements = require("categories/elements.json");
+  return elements;
+};
