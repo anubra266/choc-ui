@@ -119,6 +119,7 @@
       "pricing": {
         "title": "pricing",
         "route": "pricing",
+        "image": "pricing.png",
         "alert": {
           "variant": "blue",
           "message": "In Progress"
