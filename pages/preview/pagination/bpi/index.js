@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  chakra,
-  Container,
-  Flex,
-  useColorModeValue,
-  Icon,
-} from "@chakra-ui/react";
+import { chakra, Flex, useColorModeValue, Icon } from "@chakra-ui/react";
 
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
@@ -17,7 +11,6 @@ const Ma = () => {
     };
     return (
       <chakra.a
-        
         mx={1}
         px={4}
         py={2}

@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Container, Flex, useColorModeValue } from "@chakra-ui/react";
+import { chakra, Flex, useColorModeValue } from "@chakra-ui/react";
 
 const Ma = () => {
   const PagButton = (props) => {
@@ -9,7 +9,6 @@ const Ma = () => {
     };
     return (
       <chakra.a
-        
         mx={1}
         px={4}
         py={2}
