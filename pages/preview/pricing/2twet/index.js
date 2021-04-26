@@ -88,7 +88,7 @@ export default function Component() {
             bg={`linear-gradient(180deg, transparent 70%, ${bottomBgHex} 30%)`}
           >
             <SimpleGrid
-              columns={[1, , 2]}
+              columns={[1, , , 2]}
               gap="24px"
               rounded="md"
               mx={[10, , 24]}
