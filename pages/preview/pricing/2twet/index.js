@@ -72,7 +72,7 @@ export default function Component() {
             </chakra.p>
             <Text
               mb={2}
-              fontSize="5xl"
+              fontSize={["2xl", , "5xl"]}
               fontWeight="bold"
               lineHeight="tight"
               color="white"
@@ -91,7 +91,7 @@ export default function Component() {
               columns={[1, , 2]}
               gap="24px"
               rounded="md"
-              mx={24}
+              mx={[10, , 24]}
               textAlign="left"
             >
               <Box
@@ -267,14 +267,15 @@ export default function Component() {
             </SimpleGrid>
             <Flex
               mb="100px"
-              mx={24}
+              mx={[10, , 24]}
               p={10}
               mt={5}
               rounded="md"
               bg={useColorModeValue("#F9FAFB", "gray.700")}
               align="center"
+              direction={["column", , "row"]}
             >
-              <Stack flex="0.8">
+              <Stack flex="0.8" pr={10}>
                 <Badge
                   mb={1}
                   fontSize="xs"
@@ -301,15 +302,16 @@ export default function Component() {
                 justifyContent="center"
                 px={5}
                 py={3}
+                mt={[5, , 0]}
                 border="solid transparent"
                 fontWeight="semibold"
                 rounded="md"
                 shadow="md"
                 h="fit-content"
-                color={useColorModeValue    ("brand.600","white")}
-                bg={useColorModeValue("white","gray.800")}
+                color={useColorModeValue("brand.600", "white")}
+                bg={useColorModeValue("white", "gray.800")}
                 _hover={{
-                  bg: useColorModeValue("brand.50","gray.900"),
+                  bg: useColorModeValue("brand.50", "gray.900"),
                 }}
                 flex="0.2"
               >
