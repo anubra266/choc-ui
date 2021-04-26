@@ -35,7 +35,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [x] Heros
   - [x] Feature Sections
   - [x] CTA Sections
-  - [ ] Pricing Sections
+  - [x] Pricing Sections
   - [ ] Client Sections - WickedBlocks
   - [ ] Content Sections
   - [ ] FAQs
