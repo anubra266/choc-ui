@@ -59,7 +59,7 @@ export default function Component() {
         w="full"
         bg={bottomBg}
       >
-        <Box pt={20} bg={topBg}>
+        <Box pt={20} rounded="md" bg={topBg}>
           <Box w="full" px={[10, , 4]} mx="auto">
             <Text mb={2} fontSize="5xl" fontWeight="bold" lineHeight="tight">
               Simple transparent pricing
@@ -127,7 +127,7 @@ export default function Component() {
                 flex="0.3"
                 justify="center"
                 align="center"
-                bg={useColorModeValue("#F9FAFB", "gray.600")}
+                bg={useColorModeValue("#F9FAFB", "gray.900")}
                 borderRightRadius="md"
               >
                 <Text fontSize="xl" fontWeight="semibold">
