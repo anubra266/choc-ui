@@ -5,7 +5,6 @@ import {
   Flex,
   useColorModeValue,
   Text,
-  useToken,
   Stack,
   SimpleGrid,
   Icon,
@@ -15,7 +14,6 @@ import {
 export default function Component() {
   const topBg = useColorModeValue("gray.100", "gray.700");
   const bottomBg = useColorModeValue("white", "gray.800");
-  const [bottomBgHex] = useToken("colors", [bottomBg]);
   const Feature = (props) => {
     return (
       <Flex align="center">
@@ -61,7 +59,14 @@ export default function Component() {
       >
         <Box pt={20} rounded="md" bg={topBg}>
           <Box w="full" px={[10, , 4]} mx="auto">
-            <Text mb={2} fontSize="5xl" fontWeight="bold" lineHeight="tight">
+            <Text
+              mb={2}
+              fontSize="5xl"
+              fontWeight="bold"
+              lineHeight="tight"
+              bgGradient="linear(to-r, brand.300, brand.600)"
+              bgClip="text"
+            >
               Simple transparent pricing
             </Text>
             <chakra.p
@@ -73,9 +78,7 @@ export default function Component() {
               the first 20 days.
             </chakra.p>
           </Box>
-          <Box
-            bg={`linear-gradient(180deg, transparent 50%, ${bottomBgHex} 50%)`}
-          >
+          <Box bgGradient={`linear(to-b, ${topBg} 50%, ${bottomBg} 50%)`}>
             <Flex
               rounded="md"
               mx={10}

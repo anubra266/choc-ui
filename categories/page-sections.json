@@ -120,10 +120,6 @@
         "title": "pricing",
         "route": "pricing",
         "image": "pricing.png",
-        "alert": {
-          "variant": "blue",
-          "message": "In Progress"
-        },
         "components": [
           {
             "name": "Single price with info",
