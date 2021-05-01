@@ -1896,6 +1896,11 @@
   dependencies:
     "@chakra-ui/utils" "1.3.0"
 
+"@choc-ui/logo@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@choc-ui/logo/-/logo-1.0.0.tgz#23f5e6fc27fd546f6fc90891f332752ffe66066f"
+  integrity sha512-ObD6fhEeBv+UFm4Pnvl8Aj/QA0D5cYi8V/TCDTfnZFddlz+ZxLbydLt8LyFHKcoxonK29MB3D1YQAw+3qU8spw==
+
 "@choc-ui/paginator@^1.1.1":
   version "1.1.1"
   resolved "https://registry.npmjs.org/@choc-ui/paginator/-/paginator-1.1.1.tgz"

@@ -14,7 +14,7 @@ import {
   CloseButton,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
-import Logo from "components/navbar/logo";
+import { Logo } from "@choc-ui/logo";
 
 export default function Gslr() {
   const bg = useColorModeValue("white", "gray.800");

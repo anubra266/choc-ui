@@ -14,13 +14,11 @@ export const App = (code) => {
   return code;
 };
 
-export const index = `import { StrictMode } from "react";
+export const index = `import React from "react";
 import ReactDOM from "react-dom";
-
-// 1. import ChakraProvider component
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-
 import App from "./App";
+
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const colors = {
   brand: {
@@ -33,23 +31,22 @@ const colors = {
     600: "#3c4178",
     700: "#2a2f57",
     800: "#181c37",
-    900: "#080819",
-  },
+    900: "#080819"
+  }
 };
 const config = {
   initialColorMode: "dark",
-  useSystemColorMode: false,
+  useSystemColorMode: false
 };
 
 const theme = extendTheme({ colors, config });
 
 const rootElement = document.getElementById("root");
-ReactDOM.render( 
-  <StrictMode>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
-  </StrictMode>,
+ReactDOM.render(
+  <ChakraProvider theme={theme}>
+    <App />
+  </ChakraProvider>,
   rootElement
 );
+
 `;

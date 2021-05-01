@@ -7,9 +7,9 @@ import {
   Flex,
   Icon,
 } from "@chakra-ui/react";
-import { FaEdit, FaSun, FaCode } from "react-icons/fa";
+import { FaEdit, FaSun, FaMobileAlt } from "react-icons/fa";
 
-const Feature = (props) => {
+const Feature = (props: { title: string; children: any; icon: any }) => {
   return (
     <Box bg={useColorModeValue("white", "gray.700")} p={8} rounded="lg">
       <Flex
@@ -92,9 +92,9 @@ const Features = () => {
               Optimized for multiple color modes. Use light or dark, your
               choice.
             </Feature>
-            <Feature title="Developer Experience" icon={FaCode}>
-              Guaranteed to boost your productivity when building your app or
-              website.
+            <Feature title="Fully Responsive" icon={FaMobileAlt}>
+              From the smallest to the largest, our Components are comfortable
+              on any screen.
             </Feature>
           </SimpleGrid>
         </Box>

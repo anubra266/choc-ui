@@ -21,7 +21,7 @@ import {
   Tab,
   Spacer,
 } from "@chakra-ui/react";
-import Logo from "components/navbar/logo";
+import { Logo } from "@choc-ui/logo";
 import {
   AiOutlineMenu,
   AiFillHome,
@@ -77,19 +77,13 @@ export default function Dsnl() {
                   justifySelf="self-start"
                   onClick={mobileNav.onClose}
                 />
-                <Button
-                  w="full"
-                  variant="ghost"
-                  
-                  leftIcon={<AiFillHome />}
-                >
+                <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
                   Dashboard
                 </Button>
                 <Button
                   w="full"
                   variant="solid"
                   colorScheme="brand"
-                  
                   leftIcon={<AiOutlineInbox />}
                 >
                   Inbox
@@ -97,7 +91,6 @@ export default function Dsnl() {
                 <Button
                   w="full"
                   variant="ghost"
-                  
                   leftIcon={<BsFillCameraVideoFill />}
                 >
                   Videos
@@ -117,18 +110,12 @@ export default function Dsnl() {
           </HStack>
           <HStack spacing={3} display="flex" alignItems="center">
             <HStack spacing={3} display={{ base: "none", md: "inline-flex" }}>
-              <Button
-                variant="ghost"
-                
-                leftIcon={<AiFillHome />}
-                size="sm"
-              >
+              <Button variant="ghost" leftIcon={<AiFillHome />} size="sm">
                 Dashboard
               </Button>
               <Button
                 variant="solid"
                 colorScheme="brand"
-                
                 leftIcon={<AiOutlineInbox />}
                 size="sm"
               >
@@ -136,7 +123,6 @@ export default function Dsnl() {
               </Button>
               <Button
                 variant="ghost"
-                
                 leftIcon={<BsFillCameraVideoFill />}
                 size="sm"
               >
@@ -147,7 +133,6 @@ export default function Dsnl() {
               p={3}
               color={useColorModeValue("gray.800", "inherit")}
               rounded="sm"
-              
               _hover={{ color: useColorModeValue("gray.800", "gray.600") }}
             >
               <AiFillBell />

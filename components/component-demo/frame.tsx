@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState } from "react";
+import React, { useContext, useEffect, useReducer, useState } from "react";
 import { createPortal } from "react-dom";
 
 import createCache from "@emotion/cache";
@@ -8,6 +8,7 @@ import Theme from "theme";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { Resizable } from "re-resizable";
 import { Box } from "@chakra-ui/layout";
+import { ThemeContext } from "theme/context";
 
 const memoizedCreateCacheWithContainer = weakMemoize(
   (container: HTMLElement) => {
@@ -41,12 +42,13 @@ const Frame = (props) => {
     //*Automatically resize Ifram height to fit content
     contentRef && resizeIframe(contentRef);
   }, [contentRef]);
-  //*update Frame when colorMode changes
+  //*update Frame when colorMode or brand changes
+  const { brand } = useContext(ThemeContext);
 
   const { colorMode } = useColorMode();
   useEffect(() => {
     contentRef?.contentWindow?.location.reload();
-  }, [colorMode]);
+  }, [colorMode, brand]);
 
   return (
     <Resizable

@@ -25,7 +25,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { AiFillHome, AiOutlineInbox, AiOutlineMenu } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
-import Logo from "components/navbar/logo";
+import { Logo } from "@choc-ui/logo";
 
 export default function Header(props) {
   const { toggleColorMode: toggleMode } = useColorMode();

@@ -40,7 +40,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [ ] Content Sections
   - [ ] FAQs
   - [ ] Newsletter Sections
-  - [ ] Stats
+  - [ ] Stats - Kutty, TailwindUI
   - [ ] Testimonials
   - [ ] Blog Sections -
   - [ ] Contact Sections

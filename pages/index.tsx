@@ -51,7 +51,8 @@ const Home: NextPage = (props: any) => {
                 Prebuilt
                 <Box
                   as="span"
-                  color={useColorModeValue("brand.500", "brand.300")}
+                  bgGradient="linear(to-r, brand.400, brand.600)"
+                  bgClip="text"
                 >
                   {" "}
                   Chakra UI{" "}

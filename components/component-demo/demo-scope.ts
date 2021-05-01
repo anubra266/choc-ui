@@ -26,7 +26,7 @@ import * as ti from "react-icons/ti";
 import * as vsc from "react-icons/vsc";
 import * as wi from "react-icons/wi";
 
-import Logo from "components/navbar/logo";
+import { Logo } from "@choc-ui/logo";
 
 export const demoScope = {
   ...React,

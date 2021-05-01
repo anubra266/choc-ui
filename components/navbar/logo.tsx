@@ -22,7 +22,7 @@ const Logo = () => {
             d="M443 400.5V252.5L218.5 384L347 456.5L443 400.5Z"
             fill={presets(brand)[400]}
           />
-          <path 
+          <path
             d="M3.5 407L93 457.5L220.5 384.5L127.5 331L3.5 407Z"
             fill={presets(brand)[600]}
           />

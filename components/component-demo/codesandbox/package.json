@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "choc_ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "Choc UI",
   "keywords": [
     "react",
     "choc-ui",
@@ -9,16 +9,17 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "@chakra-ui/icons": "^1.0.3",
-    "@chakra-ui/react": "^1.1.5",
-    "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0",
-    "framer-motion": "^3.2.1",
+    "@chakra-ui/icons": "latest",
+    "@chakra-ui/react": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "framer-motion": "latest",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-icons": "^4.1.0",
+    "react-icons": "latest",
     "react-scripts": "4.0.0",
-    "@choc-ui/paginator": "^0.1.1-0"
+    "@choc-ui/paginator": "2.0.0",
+    "@choc-ui/logo": "latest"
   },
   "devDependencies": {
     "typescript": "4.1.3"

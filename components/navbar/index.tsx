@@ -16,6 +16,7 @@ import {
   MenuList,
   MenuOptionGroup,
   MenuItemOption,
+  BoxProps,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 import { FaMoon, FaSun, FaGithub, FaTwitter } from "react-icons/fa";
@@ -181,8 +182,8 @@ const HeaderContent = () => {
   );
 };
 
-const Header = (props) => {
-  const bg = useColorModeValue("white", "gray.800");
+const Header = (props: BoxProps) => {
+  const bg = useColorModeValue("whiteAlpha.700", "blackAlpha.300");
   const ref = React.useRef(null);
   const [y, setY] = React.useState(0);
   const { height = 0 } = ref?.current?.getBoundingClientRect() ?? {};
@@ -195,18 +196,16 @@ const Header = (props) => {
   return (
     <chakra.header
       ref={ref}
-      shadow={y > height ? "lg" : undefined}
-      transition="box-shadow 0.5s ease-in-out"
+      shadow={y > height ? "md" : undefined}
+      transition="all 0.5s ease-in-out"
       pos="fixed"
       top="0"
       zIndex="modal"
-      bg={bg}
+      bg={y > height ? bg : "transparent"}
       left="0"
       right="0"
       borderTop="0px solid"
       borderTopColor="brand.400"
-      borderBottom="1px solid"
-      borderBottomColor={useColorModeValue("gray.200", "gray.900")}
       w="full"
       {...props}
     >
