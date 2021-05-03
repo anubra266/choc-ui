@@ -24,7 +24,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { AiFillHome, AiOutlineInbox, AiOutlineMenu } from "react-icons/ai";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { Logo } from "@choc-ui/logo";v
+import { Logo } from "@choc-ui/logo";
 
 export default function Header(props) {
   const { toggleColorMode: toggleMode } = useColorMode();
@@ -55,7 +55,6 @@ export default function Header(props) {
         alignItems="start"
         rounded="lg"
         _hover={{ bg: hbg }}
-        
       >
         <chakra.svg
           flexShrink={0}
@@ -170,7 +169,6 @@ export default function Header(props) {
           <Stack direction={{ base: "row" }} spacing={{ base: 6, sm: 10 }}>
             <Box display="flow-root">
               <Link
-                
                 m={-3}
                 p={3}
                 display="flex"
@@ -210,7 +208,6 @@ export default function Header(props) {
 
             <Box display="flow-root">
               <Link
-                
                 m={-3}
                 p={3}
                 display="flex"
@@ -268,24 +265,18 @@ export default function Header(props) {
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="full" variant="ghost"  leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
         w="full"
         variant="solid"
         colorScheme="brand"
-        
         leftIcon={<AiOutlineInbox />}
       >
         Inbox
       </Button>
-      <Button
-        w="full"
-        variant="ghost"
-        
-        leftIcon={<BsFillCameraVideoFill />}
-      >
+      <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
         Videos
       </Button>
     </VStack>
