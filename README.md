@@ -4,6 +4,7 @@
 
 [![License](https://img.shields.io/github/license/anubra266/choc-ui.svg?style=for-the-badge)](https://github.com/anubra266/choc-ui/blob/master/LICENSE)
 [![Author](https://img.shields.io/badge/author-@anubra266-blue.svg?style=for-the-badge)](https://github.com/anubra266)
+[![Made In](https://img.shields.io/badge/made%20in-nigeria-dark.svg?style=for-the-badge)](https://github.com/anubra266)
 
 </div>
 <br />
@@ -49,7 +50,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
 - [ ] Navigation - TailwindUI, Meraki UI
   - [x] Navbars
   - [ ] Vertical Navigation (Menus)
-  - [ ] Sidebar Navigation 
+  - [ ] Sidebar Navigation
 - [ ] Headings - TailwindUI
   - [ ] Card Headings
   - [ ] Section Headings

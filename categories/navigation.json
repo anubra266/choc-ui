@@ -21,6 +21,11 @@
             "name": "Dashboard Sub-Navigation Links",
             "url": "https://kutty.netlify.app/components/headers/",
             "preview": "navbars/dsnl"
+          },
+          {
+            "name": "With Quick Action",
+            "url": "#",
+            "preview": "navbars/wqa"
           }
         ]
       }
