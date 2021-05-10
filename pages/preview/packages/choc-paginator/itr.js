@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Flex, useColorModeValue, Button } from "@chakra-ui/react";
 import Pagination from "@choc-ui/paginator";
 
