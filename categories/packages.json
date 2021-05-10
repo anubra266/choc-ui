@@ -24,6 +24,11 @@
             "preview": "bp"
           },
           {
+            "name": "Focus Ring",
+            "url": "#",
+            "preview": "fr"
+          },
+          {
             "name": "More Pages",
             "url": "#",
             "preview": "mp"

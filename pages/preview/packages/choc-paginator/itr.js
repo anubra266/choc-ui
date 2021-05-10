@@ -3,9 +3,21 @@ import { Flex, useColorModeValue, Button } from "@chakra-ui/react";
 import Pagination from "@choc-ui/paginator";
 
 export default function Component() {
-  const Prev = (props) => <Button {...props}>Prev </Button>;
-  const Next = (props) => <Button {...props}> Next </Button>;
-  const Page = (props) => <Button {...props}> P {props.children} </Button>;
+  const Prev = forwardRef((props, ref) => (
+    <Button ref={ref} {...props}>
+      Prev
+    </Button>
+  ));
+  const Next = forwardRef((props, ref) => (
+    <Button ref={ref} {...props}>
+      Next
+    </Button>
+  ));
+  const Page = forwardRef((props, ref) => (
+    <Button ref={ref} {...props}>
+      P{props.children}
+    </Button>
+  ));
 
   const itemRender = (_, type) => {
     if (type === "prev") {

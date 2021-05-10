@@ -8,7 +8,7 @@ const Ma = () => {
       color: useColorModeValue("white", "gray.200"),
     };
     return (
-      <chakra.a
+      <chakra.button
         mx={1}
         px={4}
         py={2}
@@ -21,7 +21,7 @@ const Ma = () => {
         {...(props.active && activeStyle)}
       >
         {props.children}
-      </chakra.a>
+      </chakra.button>
     );
   };
   return (

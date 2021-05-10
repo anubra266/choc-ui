@@ -9,8 +9,7 @@ const Ma = () => {
       color: useColorModeValue("white", "gray.200"),
     };
     return (
-      <chakra.a
-        
+      <chakra.button
         mx={1}
         px={4}
         py={2}
@@ -24,7 +23,7 @@ const Ma = () => {
         display={props.p && !props.active && { base: "none", sm: "block" }}
       >
         {props.children}
-      </chakra.a>
+      </chakra.button>
     );
   };
   return (

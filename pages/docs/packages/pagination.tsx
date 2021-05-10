@@ -91,6 +91,33 @@ const PaginationPackage = () => {
         </Section.Content>
       </Section>
 
+      <Section id="fr">
+        <Section.Content>
+          <Section.p>
+            <ComponentDemo
+              comp={{ name: "Focus Ring" }}
+              path="packages/choc-paginator/fr"
+              scope={{ Pagination }}
+              height="100px"
+            />
+          </Section.p>
+          <Section.p>
+            <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
+              <Stack>
+                <p>
+                  The optional <code> boolean or string `focusRing` prop</code>{" "}
+                  adds focus rings to your pagination buttons.
+                </p>
+                <p>
+                  Providing a string value sets that string as the color of the
+                  focus ring
+                </p>
+              </Stack>
+            </Alert>
+          </Section.p>
+        </Section.Content>
+      </Section>
+
       <Section id="mp">
         <Section.Content>
           <Section.p>
@@ -296,8 +323,18 @@ const PaginationPackage = () => {
             <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
               <Stack>
                 <p>
-                  The <code>itemRender prop</code> lets you modify the
-                  Pagination elements. It receives page and type parameters
+                  The <code>itemRender prop</code> is a function that lets you
+                  modify the Pagination elements. It receives{" "}
+                  <code>currentpage</code> and <code>type </code>parameters,
+                  except when the type is <code>pageSize</code>, you receive the
+                  current <code>pageSize</code>.
+                </p>
+                <p>
+                  The possible types are{" "}
+                  <code>prev, next, backward, forward, pageSize, page</code>.
+                </p>
+                <p>
+                  You must use the <code>forwardRef</code> to avoid bugs.
                 </p>
               </Stack>
             </Alert>
@@ -388,8 +425,8 @@ const PaginationPackage = () => {
                   The possible keys for the <code>responsive object</code> are{" "}
                   <code>
                     {" "}
-                    activePage, totalRender,
-                    fastBackward,fastForward,pageSize,pageJumper
+                    activePage, totalRender, fastBackward, fastForward,
+                    pageSize, pageJumper
                   </code>
                 </p>
               </Stack>

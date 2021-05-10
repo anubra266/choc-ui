@@ -1430,10 +1430,10 @@
   resolved "https://registry.yarnpkg.com/@choc-ui/logo/-/logo-1.0.0.tgz#23f5e6fc27fd546f6fc90891f332752ffe66066f"
   integrity sha512-ObD6fhEeBv+UFm4Pnvl8Aj/QA0D5cYi8V/TCDTfnZFddlz+ZxLbydLt8LyFHKcoxonK29MB3D1YQAw+3qU8spw==
 
-"@choc-ui/paginator@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@choc-ui/paginator/-/paginator-3.1.0.tgz#f2ee2f398803c1eeaf474393cc6d8c51fc2a90d5"
-  integrity sha512-UiesqZ1/SZYVVd5+yLChHqI+a056Gg41g0nh2MXrMP7n0v+ftitZLJ9rTJ0zCC8iOKUFW9DexA77eIXzpe4YHw==
+"@choc-ui/paginator@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@choc-ui/paginator/-/paginator-3.2.0.tgz#2aca98080d91c5d551887edb3c5a2181dee9ec1a"
+  integrity sha512-TnJXkYPink+6SA2oJWEbylxynKNXULtjFNrOD4iQurROqmH4TFDxruBselbCwbcJ11GKvyyklGtXXJxE2RiGLw==
 
 "@emotion/babel-plugin@^11.3.0":
   version "11.3.0"

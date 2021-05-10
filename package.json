@@ -12,7 +12,7 @@
     "@chakra-ui/icons": "^1.0.3",
     "@chakra-ui/react": "^1.6.0",
     "@choc-ui/logo": "^1.0.0",
-    "@choc-ui/paginator": "^3.1.0",
+    "@choc-ui/paginator": "^3.2.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
     "@loadable/component": "^5.14.1",
