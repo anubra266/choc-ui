@@ -101,6 +101,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/jmcelreavey"><img src="https://avatars.githubusercontent.com/u/6317960?v=4?s=50" width="50px;" alt=""/><br /><sub><b>John McElreavey</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jmcelreavey" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Daggy1234"><img src="https://avatars.githubusercontent.com/u/60603110?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Arnav Jindal</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Daggy1234" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://dipeshwagle.com"><img src="https://avatars.githubusercontent.com/u/4191022?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Dipesh Wagle</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Dipeshwagle" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
