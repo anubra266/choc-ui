@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   useColorModeValue,
   Stack,
@@ -11,14 +11,30 @@ import { BsArrowReturnLeft } from "react-icons/bs";
 import NextLink from "next/link";
 
 const Result = (props) => {
-  const resultsTextColor = useColorModeValue("gray.800", "gray.100");
-  const resultsIconColor = useColorModeValue("gray.800", "gray.400");
   const hoverColor = "gray.100";
+  const resultsTextColor = props.active
+    ? hoverColor
+    : useColorModeValue("gray.800", "gray.100");
+  const resultsIconColor = props.active
+    ? hoverColor
+    : useColorModeValue("gray.800", "gray.400");
 
+  const ref = useRef(null);
+
+  useEffect( () => {
+    if (props.active) {
+      ref.current?.scrollIntoView({ behavior: 'smooth',block: 'center' });
+    }
+  },[props.active])
+  
+  
   return (
     <NextLink href={props.url} passHref>
       <Flex
-        bg={useColorModeValue("gray.50", "gray.600")}
+        ref={ref}
+        bg={
+          props.active ? "brand.600" : useColorModeValue("gray.50", "gray.600")
+        }
         _hover={{
           bg: "brand.600",
         }}
