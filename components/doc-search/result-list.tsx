@@ -5,7 +5,8 @@ import Result from "./result";
 import { StickyViewport, StickyBoundary, Sticky } from "@anubra266/stickyreact";
 
 const Category = (props: any) => {
-  const { results, close, category } = props;
+  const { results, close, category, activeSectionIndex } = props;
+
   return (
     <>
       <Sticky
@@ -19,10 +20,11 @@ const Category = (props: any) => {
         {category}
       </Sticky>
       <Stack spacing={3} mt={3}>
-        {results[category].map(({ section, name, url }, sid: any) => {
+        {results[category].map(({ section, name, url,sectionIndex }, sid: any) => {
           return (
             <Result
               key={sid}
+              active ={activeSectionIndex === sectionIndex}
               section={section}
               component={name}
               url={url}

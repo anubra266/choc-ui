@@ -1,4 +1,5 @@
-import React, { useImperativeHandle, forwardRef } from "react";
+import React, { useState, useImperativeHandle, forwardRef } from "react";
+import { useRouter } from "next/router";
 import {
   chakra,
   Modal,
@@ -16,8 +17,11 @@ import { SearchIcon } from "@chakra-ui/icons";
 
 import SearchResults from "./result-list";
 import { handleSearch } from "./handleSearch";
+import { processSearchResult } from "./processSearchResult";
 
 function SearchModal(_, ref) {
+  const router = useRouter();
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   useImperativeHandle(ref, () => ({
@@ -26,8 +30,12 @@ function SearchModal(_, ref) {
     onClose,
   }));
 
+  const [activeSectionIndex, setActiveSectionIndex] = useState(0);
+
   const [search, setsearch] = React.useState("");
-  const [searchResults, setsearchResults] = React.useState();
+  const [searchResults, setsearchResults] = React.useState([]);
+
+  const { totalSections, processedResult } = processSearchResult(searchResults);
 
   React.useEffect(() => {
     !isOpen && setsearch("");
@@ -36,6 +44,28 @@ function SearchModal(_, ref) {
   React.useEffect(() => {
     isOpen && setsearchResults(handleSearch(search));
   }, [isOpen, search]);
+
+  const onKeyDown: React.KeyboardEventHandler<HTMLInputElement> = (e) => {
+    if (e.key === "Enter") {
+      const activeSectionItem: any = Object.values(processedResult)
+        .flat()
+        .find((item: any) => item.sectionIndex === activeSectionIndex);
+      router.push(activeSectionItem.url);
+      onClose();
+    } else if (e.key === "ArrowUp") {
+      if (activeSectionIndex === 0) {
+        e.preventDefault();
+        return;
+      }
+      setActiveSectionIndex((a) => a - 1);
+      e.preventDefault();
+    } else if (e.key === "ArrowDown") {
+      if (activeSectionIndex === totalSections - 1) {
+        return;
+      }
+      setActiveSectionIndex((a) => a + 1);
+    }
+  };
 
   return (
     <Modal
@@ -54,10 +84,11 @@ function SearchModal(_, ref) {
             />
             <Input
               variant="flushed"
-              placeholder="Search the collection.."
+              placeholder="Search the collection..."
               size="lg"
               value={search}
               onChange={(e) => setsearch(e.target.value)}
+              onKeyDown={onKeyDown}
             />
             <InputRightElement>
               <Kbd
@@ -76,7 +107,11 @@ function SearchModal(_, ref) {
               </Kbd>
             </InputRightElement>
           </InputGroup>
-          <SearchResults results={searchResults} close={onClose} />
+          <SearchResults
+            results={processedResult}
+            close={onClose}
+            activeSectionIndex={activeSectionIndex}
+          />
         </ModalBody>
       </ModalContent>
     </Modal>
