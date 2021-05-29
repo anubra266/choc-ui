@@ -15,6 +15,11 @@
             "name": "Mobile Responsive Table",
             "url": "#",
             "preview": "tables/mrt"
+          },
+          {
+            "name": "Mobile Responsive Table Minimal",
+            "url": "#",
+            "preview": "tables/mrt_b"
           }
         ]
       }
