@@ -20,7 +20,7 @@ const memoizedCreateCacheWithContainer = weakMemoize(
   }
 );
 
-const Frame = (props) => {
+const Frame = (props: any) => {
   const [contentRef, setContentRef] = useState(null);
   const doc = contentRef?.contentWindow?.document;
   const mountNode = doc?.body;
