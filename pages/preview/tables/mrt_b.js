@@ -20,6 +20,7 @@ export default function Component() {
   return (
     <Flex
       w="full"
+      bg="gray.600"
       p={{ base: 5, md: 50 }}
       alignItems="center"
       justifyContent="center"
