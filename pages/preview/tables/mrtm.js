@@ -11,10 +11,10 @@ import {
 
 export default function Component() {
   const data = [
-    { name: "John Covv", email: "contato@johncovv.com" },
-    { name: "Michael Jackson", email: "m_jackson@mail.com" },
-    { name: "Julia", email: "julia@mail.com" },
-    { name: "Martin Madrazo", email: "martin.madrazo@mail.com" },
+    { name: "Segun Adebayo", email: "sage@chakra.com" },
+    { name: "Josef Nikolas", email: "Josef@mail.com" },
+    { name: "Lazar Nikolov", email: "Lazar@mail.com" },
+    { name: "Abraham", email: "abraham@anu.com" },
   ];
   return (
     <Flex
