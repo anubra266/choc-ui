@@ -13,7 +13,7 @@ const PaginationPackage = () => {
     <DocsLayout>
       <PageHead
         title="Autocomplete Package - @choc-ui/chakra-autocomplete"
-        image="paginator.png"
+        image="autocomplete.png"
       />
       <PageHeader>
         <Section.a
