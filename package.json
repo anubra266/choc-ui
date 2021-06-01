@@ -10,10 +10,11 @@
   "dependencies": {
     "@anubra266/stickyreact": "^1.0.1",
     "@chakra-ui/icons": "^1.0.3",
-    "@chakra-ui/react": "^1.6.0",
+    "@chakra-ui/react": "^1.6.3",
+    "@choc-ui/chakra-autocomplete": "^3.3.1",
     "@choc-ui/logo": "^1.0.0",
     "@choc-ui/paginator": "^3.2.0",
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@loadable/component": "^5.14.1",
     "@splitbee/web": "^0.2.4",

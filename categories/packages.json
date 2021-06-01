@@ -89,6 +89,48 @@
             "preview": "wld"
           }
         ]
+      },
+      "autocomplete": {
+        "title": "autocomplete",
+        "route": "autocomplete",
+        "display": "@choc-ui/paginator",
+        "components": [
+          {
+            "name": "Installation",
+            "url": "#",
+            "preview": "installation"
+          },
+          {
+            "name": "Import",
+            "url": "#",
+            "preview": "import"
+          },
+          {
+            "name": "Basic Combobox",
+            "url": "#",
+            "preview": "bc"
+          },
+          {
+            "name": "Groups",
+            "url": "#",
+            "preview": "group"
+          },
+          {
+            "name": "Accessing Internal State",
+            "url": "#",
+            "preview": "ais"
+          },
+          {
+            "name": "Custom Rendering",
+            "url": "#",
+            "preview": "cur"
+          },
+          {
+            "name": "PLayground",
+            "url": "#",
+            "preview": "plg"
+          }
+        ]
       }
     }
   }
