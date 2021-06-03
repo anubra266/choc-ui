@@ -8,6 +8,12 @@ import { ThemeProvider } from "theme/context";
 import { useEffect, useMemo, useState } from "react";
 import NextNprogress from "nextjs-progressbar";
 
+const choc = {
+  bg: "#15151E",
+  primary: "#2A2A3C",
+  secondary: "#3E3E5B",
+};
+
 export const config: ThemeConfig = {
   useSystemColorMode: false,
   initialColorMode: "dark",
@@ -17,7 +23,7 @@ const Theme = (props: any) => {
   const [brand, setBrand] = useState("default");
 
   const overrides: ThemeOverride = {
-    colors: { brand: presets(brand) },
+    colors: { brand: presets(brand), choc },
     config,
     layerStyles,
     styles,

@@ -13,25 +13,27 @@ const Category = (props: any) => {
         as={Box}
         fontWeight="bold"
         textTransform="capitalize"
-        color={useColorModeValue("gray.800", "gray.400")}
-        bg={useColorModeValue("white", "gray.700")}
+        color={useColorModeValue("choc.bg", "gray.400")}
+        bg={useColorModeValue("white", "choc.primary")}
         py={1}
       >
         {category}
       </Sticky>
       <Stack spacing={3} mt={3}>
-        {results[category].map(({ section, name, url,sectionIndex }, sid: any) => {
-          return (
-            <Result
-              key={sid}
-              active ={activeSectionIndex === sectionIndex}
-              section={section}
-              component={name}
-              url={url}
-              onClick={close}
-            />
-          );
-        })}
+        {results[category].map(
+          ({ section, name, url, sectionIndex }, sid: any) => {
+            return (
+              <Result
+                key={sid}
+                active={activeSectionIndex === sectionIndex}
+                section={section}
+                component={name}
+                url={url}
+                onClick={close}
+              />
+            );
+          }
+        )}
       </Stack>
     </>
   );

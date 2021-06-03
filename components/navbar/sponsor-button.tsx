@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Icon } from "@chakra-ui/react";
+import { Box, BoxProps, Icon } from "@chakra-ui/react";
 import { FaHeart } from "react-icons/fa";
 
-const SponsorButton = (props) => (
+const SponsorButton = (props: BoxProps) => (
   <Box
     display={{ base: "none", md: "flex" }}
     alignItems="center"
@@ -18,7 +18,7 @@ const SponsorButton = (props) => (
     minH="36px"
     rounded="md"
     fontSize="sm"
-    color="gray.800"
+    color="gray.900"
     outline="0"
     transition="all 0.3s"
     _hover={{

@@ -6,10 +6,6 @@
       "tables": {
         "title": "tables",
         "route": "tables",
-        "alert": {
-          "variant": "blue",
-          "message": "In Progress"
-        },
         "components": [
           {
             "name": "Mobile Responsive Table Minimal",

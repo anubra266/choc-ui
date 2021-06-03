@@ -75,7 +75,7 @@ function SearchModal(_, ref) {
       size="xl"
     >
       <ModalOverlay />
-      <ModalContent mt="5rem">
+      <ModalContent mt="5rem" bg="choc.primary">
         <ModalBody p={25}>
           <InputGroup>
             <InputLeftElement

@@ -183,7 +183,7 @@ const HeaderContent = () => {
 };
 
 const Header = (props: BoxProps) => {
-  const bg = useColorModeValue("whiteAlpha.700", "blackAlpha.300");
+  const bg = useColorModeValue("white", "choc.bg");
   const ref = React.useRef(null);
   const [y, setY] = React.useState(0);
   const { height = 0 } = ref?.current?.getBoundingClientRect() ?? {};

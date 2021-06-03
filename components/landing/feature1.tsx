@@ -14,7 +14,7 @@ const Feature = () => {
       borderTopColor={useColorModeValue("gray.200", "gray.900")}
       my={12}
     >
-      <Box bg={useColorModeValue("white", "gray.800")} rounded="xl">
+      <Box bg={useColorModeValue("white", "choc.bg")} rounded="xl">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h1

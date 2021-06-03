@@ -14,29 +14,32 @@ const Result = (props) => {
   const hoverColor = "gray.100";
   const resultsTextColor = props.active
     ? hoverColor
-    : useColorModeValue("gray.800", "gray.100");
+    : useColorModeValue("gray.900", "gray.100");
   const resultsIconColor = props.active
     ? hoverColor
-    : useColorModeValue("gray.800", "gray.400");
+    : useColorModeValue("gray.900", "gray.400");
 
   const ref = useRef(null);
 
-  useEffect( () => {
+  useEffect(() => {
     if (props.active) {
-      ref.current?.scrollIntoView({ behavior: 'smooth',block: 'center' });
+      ref.current?.scrollIntoView({ behavior: "smooth", block: "center" });
     }
-  },[props.active])
-  
-  
+  }, [props.active]);
+
+  const ACTIVE_BACKGROUND = "brand.500";
+
   return (
     <NextLink href={props.url} passHref>
       <Flex
         ref={ref}
         bg={
-          props.active ? "brand.600" : useColorModeValue("gray.50", "gray.600")
+          props.active
+            ? ACTIVE_BACKGROUND
+            : useColorModeValue("gray.50", "choc.secondary")
         }
         _hover={{
-          bg: "brand.600",
+          bg: ACTIVE_BACKGROUND,
         }}
         role="group"
         px={4}

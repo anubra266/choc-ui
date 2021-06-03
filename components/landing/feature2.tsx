@@ -47,7 +47,7 @@ const Feature = (props: { title: string; children: any; icon: any }) => {
 const Features = () => {
   return (
     <Box as="section" mt="6rem" pt={{ base: "6rem", md: "10rem" }} my={12}>
-      <Box bg={useColorModeValue("white", "gray.800")} rounded="xl">
+      <Box bg={useColorModeValue("white", "choc.bg")} rounded="xl">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h1

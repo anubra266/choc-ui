@@ -47,7 +47,7 @@ export function MobileNavContent(props) {
             <Flex
               direction="column"
               w="full"
-              bg={useColorModeValue("white", "gray.800")}
+              bg={useColorModeValue("white", "choc.bg")}
               h="100vh"
               overflow="auto"
               pos="absolute"
@@ -114,7 +114,7 @@ export const MobileNavButton: any = React.forwardRef<HTMLButtonElement>(
       ref={ref}
       display={{ base: "flex", md: "none" }}
       fontSize="20px"
-      color={useColorModeValue("gray.800", "inherit")}
+      color={useColorModeValue("gray.900", "inherit")}
       variant="ghost"
       icon={<AiOutlineMenu />}
       {...props}
