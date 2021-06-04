@@ -5889,10 +5889,10 @@ pify@^5.0.0:
   resolved "https://registry.npmjs.org/pify/-/pify-5.0.0.tgz"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-pill-pity@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/pill-pity/-/pill-pity-0.2.1.tgz#bfc8d9e5dde436a3f74088236deed02a511424b4"
-  integrity sha512-gLxPpX638pU2+jjaZO3GBNtQOGzowZ1aiEYDsi+KPrfYc60zK7NV+3oOA30jIHdilMZBUlKubkR44sVS7572Tw==
+pill-pity@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/pill-pity/-/pill-pity-0.2.2.tgz#4bc89d14dfa05afc1adec4214ea89680f07f0e59"
+  integrity sha512-S9qYvKLdzSVv6E3FIeWdt0COGRhtkXw4nt0E9qGtpMGFYsgkAqQI9c6y2mXtRXUdEMO9OIUy3fXBBX9BVUJm9Q==
 
 pinkie-promise@^2.0.0:
   version "2.0.1"
