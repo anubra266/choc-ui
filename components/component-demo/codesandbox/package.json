@@ -14,12 +14,13 @@
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "framer-motion": "latest",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "latest",
+    "react-dom": "latest",
     "react-icons": "latest",
-    "react-scripts": "4.0.0",
-    "@choc-ui/paginator": "2.0.0",
-    "@choc-ui/logo": "latest"
+    "react-scripts": "latest",
+    "@choc-ui/paginator": "latest",
+    "@choc-ui/logo": "latest",
+    "pill-pity": "latest"
   },
   "devDependencies": {
     "typescript": "4.1.3"
