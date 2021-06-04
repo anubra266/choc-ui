@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, SimpleGrid, Wrap } from "@chakra-ui/react";
+import { Flex, SimpleGrid, useColorModeValue } from "@chakra-ui/react";
 import PillPity from "pill-pity";
 
 export default function Component() {
@@ -93,9 +93,19 @@ export default function Component() {
     "wallpaper",
   ];
   return (
-    <SimpleGrid columns={[1, 1, 2, 4]} w="full">
+    <SimpleGrid columns={[1, 1, 2, 4]} spacing="40px" w="full">
       {patterns.map((pattern) => (
-        <PillPity pattern={pattern} as={Flex} boxSize="200px">
+        <PillPity
+          pattern={pattern}
+          as={Flex}
+          align="center"
+          justify="center"
+          fontWeight="bold"
+          boxSize="200px"
+          patternFill={useColorModeValue("brand.200", "brand.300")}
+          bgColor="choc.secondary"
+          patternOpacity={0.3}
+        >
           {pattern}
         </PillPity>
       ))}
