@@ -131,6 +131,28 @@
             "preview": "plg"
           }
         ]
+      },
+      "pill-pity": {
+        "title": "Pill-Pity",
+        "route": "pill-pity",
+        "display": "pill-pity",
+        "components": [
+          {
+            "name": "Installation",
+            "url": "#",
+            "preview": "installation"
+          },
+          {
+            "name": "Import",
+            "url": "#",
+            "preview": "import"
+          },
+          {
+            "name": "Playground",
+            "url": "#",
+            "preview": "plg"
+          }
+        ]
       }
     }
   }

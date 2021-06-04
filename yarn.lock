@@ -5889,6 +5889,11 @@ pify@^5.0.0:
   resolved "https://registry.npmjs.org/pify/-/pify-5.0.0.tgz"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
+pill-pity@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/pill-pity/-/pill-pity-0.2.0.tgz#76c2cad81026d0b483a2887234ea70f9b75ed857"
+  integrity sha512-TGxFDiGfnUBxrXizjzaX70f5OVMSSEmDaTzKrVcYvkwCSkt1tZxKCpAOrUAogMxxdtI3rJGDYFt+w9gGZe1iwA==
+
 pinkie-promise@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz"

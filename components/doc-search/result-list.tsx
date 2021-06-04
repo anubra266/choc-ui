@@ -13,7 +13,7 @@ const Category = (props: any) => {
         as={Box}
         fontWeight="bold"
         textTransform="capitalize"
-        color={useColorModeValue("choc.bg", "gray.400")}
+        color={useColorModeValue("choc.bg", "gray.400")}ack
         bg={useColorModeValue("white", "choc.primary")}
         py={1}
       >
