@@ -1,15 +1,17 @@
 import { IconButton } from "@chakra-ui/button";
 import { useBoolean } from "@chakra-ui/hooks";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
 
 const ToTop = () => {
   const scrollToTop = () => window.scroll({ top: 0, behavior: "smooth" });
   const getVisible = () =>
     document.body.scrollTop > 20 || document.documentElement.scrollTop > 20;
-  const [isVisible, setIsVisible] = useState(() => getVisible());
+  const [isVisible, setIsVisible] = useState(false);
   window.onscroll = () => setIsVisible(() => getVisible());
-
+  useEffect(() => {
+    setIsVisible(() => getVisible());
+  }, []);
   return (
     <IconButton
       aria-label="Back to top"
