@@ -7,10 +7,6 @@
         "title": "Form Layouts",
         "route": "form-layouts",
         "image": "formlayouts.png",
-        "alert": {
-          "variant": "green",
-          "message": "New"
-        },
         "components": [
           {
             "name": "Two-column cards with separate submit actions",

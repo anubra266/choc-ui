@@ -71,7 +71,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [ ] Grid Lists
   - [ ] Feeds
 - [ ] Application Shells
-  - [ ] Sidebar Layouts - Kutty
+  - [ ] Sidebar Layouts
   - [ ] Page Layouts - Antd
   - [ ] Stacked Layouts - TailwindUI
   - [ ] Multi Column Layouts - TailwindUI
