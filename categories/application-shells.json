@@ -15,6 +15,11 @@
             "name": "simple with icons, and brand color",
             "url": "https://kutty.netlify.app/components/light-sidebar/",
             "preview": "sidebar/swibc"
+          },
+          {
+            "name": "Brand Sidebar",
+            "url": "https://tailwindui.com/components/application-ui/application-shells/sidebar",
+            "preview": "sidebar/bs"
           }
         ]
       }
