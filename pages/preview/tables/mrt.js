@@ -54,6 +54,7 @@ export default function Component() {
                   px={{ base: 2, md: 10 }}
                   fontSize="md"
                   fontWeight="hairline"
+                  display="table-header-group"
                 >
                   <span>Name</span>
                   <span>Created</span>

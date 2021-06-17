@@ -29,7 +29,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.tech)
   - [x] Badges
   - [x] Gradient Icons
   - [x] Carousels
-  - [ ] Empty - Antd, https://readyui.co
+  - [ ] Empty - Antd, https://readyui.co, razorui.com
   - [ ] Result - Antd
   - [ ] Extra Components
 - [ ] Page Sections
