@@ -10,8 +10,8 @@ import NextNprogress from "nextjs-progressbar";
 
 const choc = {
   bg: "#1A202C",
-  primary: "#2A2A3C",
-  secondary: "#3E3E5B",
+  primary: "#2D3748",
+  secondary: "#4A5567",
 };
 
 export const config: ThemeConfig = {

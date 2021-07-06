@@ -41,7 +41,7 @@ const Category = (props: any) => {
 function SearchResults(props: any) {
   const { results } = props;
   return (
-    <StickyViewport as={Stack} mt={7} dir="row" maxH="xs" overflowY="auto">
+    <StickyViewport as={Stack} mt={7} dir="row" maxH="md" overflowY="auto">
       {Object.keys(results).map((category, cid) => {
         return (
           <StickyBoundary as={Stack} key={`category-result-${cid}`}>
