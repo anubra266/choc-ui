@@ -103,6 +103,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://dipeshwagle.com"><img src="https://avatars.githubusercontent.com/u/4191022?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Dipesh Wagle</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Dipeshwagle" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/pszafer"><img src="https://avatars.githubusercontent.com/u/690510?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Pawel</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=pszafer" title="Code">💻</a></td>
   </tr>
 </table>
 
