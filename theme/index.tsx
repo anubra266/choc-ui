@@ -9,7 +9,7 @@ import { useEffect, useMemo, useState } from "react";
 import NextNprogress from "nextjs-progressbar";
 
 const choc = {
-  bg: "#15151E",
+  bg: "#1A202C",
   primary: "#2A2A3C",
   secondary: "#3E3E5B",
 };
