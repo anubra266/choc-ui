@@ -116,7 +116,7 @@ export default function C2g() {
 
               <Feature
                 title=" No hidden fees"
-                description={
+                icon={
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -148,7 +148,7 @@ export default function C2g() {
 
               <Feature
                 title="Mobile notifications"
-                description={
+                icon={
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
