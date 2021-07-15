@@ -4,15 +4,7 @@ import * as fs from "fs";
 import PageHead from "components/head";
 import SiteLayout from "components/layouts/site";
 import Credits from "components/credits";
-import {
-  Box,
-  Text,
-  Button,
-  chakra,
-  Stack,
-  useColorModeValue,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Text, Button, chakra, Stack, Link } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import { DiGithubBadge } from "react-icons/di";
 import NextLink from "next/link";
@@ -20,9 +12,9 @@ import Feature1 from "components/landing/feature1";
 import Feature2 from "components/landing/feature2";
 import OpenSource from "components/landing/open-source";
 import Sponsors from "components/landing/sponsors";
+import { Splitbee } from "components/splitbee";
 
 const Home: NextPage = (props: any) => {
-  const splitbeeBadge = useColorModeValue("-dark", "");
   return (
     <SiteLayout>
       <PageHead title="Chakra UI Prebuilt Components" />
@@ -115,16 +107,7 @@ const Home: NextPage = (props: any) => {
         <Feature2 />
         <OpenSource contributors={props.contributors} />
         <Sponsors sponsors={props.sponsors} />
-        <chakra.a
-          display="flex"
-          justifyContent="center"
-          href="https://splitbee.io/?ref=badge"
-        >
-          <img
-            src={`https://splitbee-cdn.fra1.cdn.digitaloceanspaces.com/static/badge/splitbee-badge${splitbeeBadge}.svg`}
-            alt="Analytics by Splitbee.io"
-          />
-        </chakra.a>
+        <Splitbee />
         <Credits />
       </Box>
     </SiteLayout>

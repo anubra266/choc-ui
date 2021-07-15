@@ -7,6 +7,7 @@ import PageTransition from "./page-transition";
 import Container from "./container";
 import { Box } from "@chakra-ui/react";
 import Credits from "components/credits";
+import { Splitbee } from "components/splitbee";
 const Docs = ({ children }) => {
   return (
     <SiteLayout>
@@ -17,6 +18,7 @@ const Docs = ({ children }) => {
           <div style={{ flex: 1 }}>
             <Box id="content" pt={3} px={5} mt="4.5rem" mx="auto" minH="76vh">
               <PageTransition>{children}</PageTransition>
+              <Splitbee />
               <Credits />
             </Box>
           </div>

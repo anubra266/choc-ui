@@ -10,7 +10,7 @@ export default function Credits() {
         textAlign="center"
         opacity={0.7}
         fontSize="sm"
-        mt="16"
+        mt="8"
         mb={3}
       >
         Proudly developed in{" "}
