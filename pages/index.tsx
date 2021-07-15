@@ -22,6 +22,7 @@ import OpenSource from "components/landing/open-source";
 import Sponsors from "components/landing/sponsors";
 
 const Home: NextPage = (props: any) => {
+  const splitbeeBadge = useColorModeValue("-dark", "");
   return (
     <SiteLayout>
       <PageHead title="Chakra UI Prebuilt Components" />
@@ -114,6 +115,16 @@ const Home: NextPage = (props: any) => {
         <Feature2 />
         <OpenSource contributors={props.contributors} />
         <Sponsors sponsors={props.sponsors} />
+        <chakra.a
+          display="flex"
+          justifyContent="center"
+          href="https://splitbee.io/?ref=badge"
+        >
+          <img
+            src={`https://splitbee-cdn.fra1.cdn.digitaloceanspaces.com/static/badge/splitbee-badge${splitbeeBadge}.svg`}
+            alt="Analytics by Splitbee.io"
+          />
+        </chakra.a>
         <Credits />
       </Box>
     </SiteLayout>
