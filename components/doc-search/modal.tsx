@@ -12,6 +12,7 @@ import {
   InputLeftElement,
   InputRightElement,
   Kbd,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
@@ -75,7 +76,7 @@ function SearchModal(_, ref) {
       size="xl"
     >
       <ModalOverlay />
-      <ModalContent mt="5rem" bg="choc.primary">
+      <ModalContent mt="5rem" bg={useColorModeValue("white", "choc.primary")}>
         <ModalBody p={25}>
           <InputGroup>
             <InputLeftElement
