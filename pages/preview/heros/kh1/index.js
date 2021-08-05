@@ -85,6 +85,7 @@ const KuttyHero = () => {
             size="lg"
             type="submit"
             colorScheme="brand"
+            cursor="pointer"
           >
             Get Started
           </Button>
