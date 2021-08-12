@@ -44,16 +44,16 @@ const KuttyHero = () => {
             colorScheme="brand"
             size="lg"
             mb={{ base: 2, sm: 0 }}
-            
+            cursor="pointer"
           >
             Sign up for free
           </Button>
           <Button
             as="a"
             w={{ base: "full", sm: "auto" }}
-            
             mb={{ base: 2, sm: 0 }}
             size="lg"
+            cursor="pointer"
           >
             Read our blog
           </Button>

@@ -63,8 +63,8 @@ const KuttyHero = () => {
             justifyContent="center"
             w={{ base: "full", sm: "auto" }}
             mb={{ base: 2, sm: 0 }}
-            
             size="lg"
+            cursor="pointer"
           >
             Get Started
             <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">
@@ -83,8 +83,8 @@ const KuttyHero = () => {
             justifyContent="center"
             w={{ base: "full", sm: "auto" }}
             mb={{ base: 2, sm: 0 }}
-            
             size="lg"
+            cursor="pointer"
           >
             Book a Demo
             <Icon boxSize={4} ml={1} viewBox="0 0 20 20" fill="currentColor">

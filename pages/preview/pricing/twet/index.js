@@ -109,7 +109,6 @@ export default function Pricing() {
                 shadow="md"
               >
                 <chakra.a
-                  
                   w="full"
                   display="inline-flex"
                   alignItems="center"
@@ -124,6 +123,7 @@ export default function Pricing() {
                   _hover={{
                     bg: useColorModeValue("brand.50", "gray.700"),
                   }}
+                  cursor="pointer"
                 >
                   Start your trial{" "}
                 </chakra.a>
@@ -196,7 +196,6 @@ export default function Pricing() {
                 w="full"
               >
                 <chakra.a
-                  
                   w="full"
                   display="inline-flex"
                   alignItems="center"
@@ -211,6 +210,7 @@ export default function Pricing() {
                   _hover={{
                     bg: useColorModeValue("brand.700", "brand.600"),
                   }}
+                  cursor="pointer"
                 >
                   Get started
                 </chakra.a>
@@ -282,7 +282,6 @@ export default function Pricing() {
                 shadow="md"
               >
                 <chakra.a
-                  
                   w="full"
                   display="inline-flex"
                   alignItems="center"
@@ -297,6 +296,7 @@ export default function Pricing() {
                   _hover={{
                     bg: useColorModeValue("brand.50", "gray.700"),
                   }}
+                  cursor="pointer"
                 >
                   Start your trial
                 </chakra.a>

@@ -81,7 +81,6 @@ const KuttyHero = () => {
               >
                 <Box rounded="full" shadow="md">
                   <chakra.a
-                    
                     w="full"
                     display="flex"
                     alignItems="center"
@@ -94,13 +93,13 @@ const KuttyHero = () => {
                     _hover={{ bg: "brand.700" }}
                     px={{ base: 8, md: 10 }}
                     py={{ base: 3, md: 4 }}
+                    cursor="pointer"
                   >
                     Get started
                   </chakra.a>
                 </Box>
                 <Box mt={[3, 0]} ml={[null, 3]}>
                   <chakra.a
-                    
                     w="full"
                     display="flex"
                     alignItems="center"
@@ -113,6 +112,7 @@ const KuttyHero = () => {
                     color="brand.700"
                     bg="brand.100"
                     _hover={{ bg: "brand.200" }}
+                    cursor="pointer"
                   >
                     Live demo
                   </chakra.a>
