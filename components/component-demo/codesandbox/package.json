@@ -18,6 +18,7 @@
     "react-dom": "latest",
     "react-icons": "latest",
     "react-scripts": "latest",
+    "@choc-ui/chakra-autocomplete": "latest",
     "@choc-ui/paginator": "latest",
     "@choc-ui/logo": "latest",
     "pill-pity": "latest"

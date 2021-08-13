@@ -93,7 +93,7 @@
       "autocomplete": {
         "title": "autocomplete",
         "route": "autocomplete",
-        "display": "@choc-ui/paginator",
+        "display": "@choc-ui/autocomplete",
         "components": [
           {
             "name": "Installation",

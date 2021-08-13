@@ -11,7 +11,7 @@
     "@anubra266/stickyreact": "^1.0.1",
     "@chakra-ui/icons": "^1.0.3",
     "@chakra-ui/react": "^1.6.3",
-    "@choc-ui/chakra-autocomplete": "^3.3.1",
+    "@choc-ui/chakra-autocomplete": "^4.5.3",
     "@choc-ui/logo": "^1.0.0",
     "@choc-ui/paginator": "^3.2.0",
     "@emotion/react": "^11.4.0",
