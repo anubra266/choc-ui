@@ -53,7 +53,7 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-             
+
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -192,7 +192,7 @@ export default function Component() {
                         alignItems="baseline"
                       >
                         <chakra.label
-                          for="file-upload"
+                          htmlFor="file-upload"
                           cursor="pointer"
                           rounded="md"
                           fontSize="md"
@@ -273,7 +273,7 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-             
+
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -289,6 +289,7 @@ export default function Component() {
                 <SimpleGrid columns={6} spacing={6}>
                   <FormControl as={GridItem} colSpan={[6, 3]}>
                     <FormLabel
+                      htmlFor="first_name"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -311,6 +312,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={[6, 3]}>
                     <FormLabel
+                      htmlFor="last_name"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -333,7 +335,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={[6, 4]}>
                     <FormLabel
-                      for="email_address"
+                      htmlFor="email_address"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -356,7 +358,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={[6, 3]}>
                     <FormLabel
-                      for="country"
+                      htmlFor="country"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -383,7 +385,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={6}>
                     <FormLabel
-                      for="street_address"
+                      htmlFor="street_address"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -406,7 +408,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={[6, 6, null, 2]}>
                     <FormLabel
-                      for="city"
+                      htmlFor="city"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -429,7 +431,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={[6, 3, null, 2]}>
                     <FormLabel
-                      for="state"
+                      htmlFor="state"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -452,7 +454,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={[6, 3, null, 2]}>
                     <FormLabel
-                      for="postal_code"
+                      htmlFor="postal_code"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -525,7 +527,7 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-             
+
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -557,7 +559,7 @@ export default function Component() {
                       </Flex>
                       <Box ml={3} fontSize="sm">
                         <chakra.label
-                          for="comments"
+                          htmlFor="comments"
                           fontWeight="md"
                           color={useColorModeValue("gray.700", "gray.50")}
                         >
@@ -579,7 +581,7 @@ export default function Component() {
                       </Flex>
                       <Box ml={3} fontSize="sm">
                         <chakra.label
-                          for="candidates"
+                          htmlFor="candidates"
                           fontWeight="md"
                           color={useColorModeValue("gray.700", "gray.50")}
                         >
@@ -600,7 +602,7 @@ export default function Component() {
                       </Flex>
                       <Box ml={3} fontSize="sm">
                         <chakra.label
-                          for="offers"
+                          htmlFor="offers"
                           fontWeight="md"
                           color={useColorModeValue("gray.700", "gray.50")}
                         >
