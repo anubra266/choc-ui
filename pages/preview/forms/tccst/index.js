@@ -289,6 +289,7 @@ export default function Component() {
                 <SimpleGrid columns={6} spacing={6}>
                   <FormControl as={GridItem} colSpan={[6, 3]}>
                     <FormLabel
+                      htmlFor="first_name"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
@@ -311,6 +312,7 @@ export default function Component() {
 
                   <FormControl as={GridItem} colSpan={[6, 3]}>
                     <FormLabel
+                      htmlFor="last_name"
                       fontSize="sm"
                       fontWeight="md"
                       color={useColorModeValue("gray.700", "gray.50")}
