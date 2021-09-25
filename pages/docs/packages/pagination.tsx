@@ -277,8 +277,11 @@ const PaginationPackage = () => {
                   active page.
                 </p>
                 <p>
-                  The optional <code> function `onChange` prop</code> provides
-                  current page parameter when page changes.
+                  The optional <code> function `onChange` prop</code> provides 4
+                  parameters to the <code>function</code> when the page changes:
+                  the current page number; the total number of pages; total
+                  number of data on the current page and the total number of
+                  data.
                 </p>
               </Stack>
             </Alert>
