@@ -102,6 +102,24 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Ismaaa",
+      "name": "Ismail D.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22240843?v=4",
+      "profile": "https://github.com/Ismaaa",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Buupu",
+      "name": "Sammy Fattah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26443341?v=4",
+      "profile": "https://github.com/Buupu",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,

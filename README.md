@@ -105,6 +105,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://dipeshwagle.com"><img src="https://avatars.githubusercontent.com/u/4191022?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Dipesh Wagle</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Dipeshwagle" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/pszafer"><img src="https://avatars.githubusercontent.com/u/690510?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Pawel</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=pszafer" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/SufianBabri"><img src="https://avatars.githubusercontent.com/u/9989266?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Sufian</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=SufianBabri" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Ismaaa"><img src="https://avatars.githubusercontent.com/u/22240843?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Ismail D.</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Ismaaa" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Buupu"><img src="https://avatars.githubusercontent.com/u/26443341?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Sammy Fattah</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Buupu" title="Documentation">📖</a></td>
   </tr>
 </table>
 
