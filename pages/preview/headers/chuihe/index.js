@@ -41,6 +41,7 @@ const ChakraUIHeader = () => {
   React.useEffect(() => {
     return scrollY.onChange(() => setY(scrollY.get()));
   }, [scrollY]);
+  
   const SponsorButton = (
     <Box
       display={{ base: "none", md: "flex" }}

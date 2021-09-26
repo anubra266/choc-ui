@@ -26,7 +26,7 @@ import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Logo } from "@choc-ui/logo";
 
-export default function WfWf(props) {
+export default function WfWf() {
   const bg = useColorModeValue("white", "gray.800");
   const cl = useColorModeValue("gray.800", "white");
   const mobileNav = useDisclosure();

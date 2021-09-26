@@ -27,7 +27,7 @@ import { BsFillCameraVideoFill } from "react-icons/bs";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { Logo } from "@choc-ui/logo";
 
-export default function Header(props) {
+export default function Header() {
   const { toggleColorMode: toggleMode } = useColorMode();
   const text = useColorModeValue("dark", "light");
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
