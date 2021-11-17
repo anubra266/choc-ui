@@ -49,7 +49,7 @@ export default function Swibc() {
       >
         {icon && (
           <Icon
-            mr="2"
+            mx="2"
             boxSize="4"
             _groupHover={{
               color: useColorModeValue("gray.600", "gray.300"),
