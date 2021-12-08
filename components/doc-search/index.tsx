@@ -20,13 +20,13 @@ export default function SearchBar(props) {
   const [actionKey, setActionKey] = React.useState(ACTION_KEY_APPLE);
   React.useEffect(() => {
     if (typeof navigator === "undefined") return;
-    const isMac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
+    const isMac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.userAgent);
     if (!isMac) {
       setActionKey(ACTION_KEY_DEFAULT);
     }
   }, []);
-  useEventListener("keydown", (event) => {
-    const isMac = /(Mac|iPhone|iPod|iPad)/i.test(navigator?.platform);
+  useEventListener("keydown", event => {
+    const isMac = /(Mac|iPhone|iPod|iPad)/i.test(navigator?.userAgent);
     const hotkey = isMac ? "metaKey" : "ctrlKey";
     if (event.key.toLowerCase() === "k" && event[hotkey]) {
       event.preventDefault();
@@ -72,7 +72,7 @@ export default function SearchBar(props) {
                 title={actionKey[1]}
                 textDecoration="none !important"
               >
-                {ACTION_KEY_APPLE[0]}
+                {actionKey[0]}
               </chakra.div>
             </Kbd>
             <VisuallyHidden> and </VisuallyHidden>
