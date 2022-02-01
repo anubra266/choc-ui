@@ -1,4 +1,4 @@
-<p align="center"><a href="https://choc-ui.tech" target="_blank"><img src="./public/logo.png" width="200"></a></p>
+<p align="center"><a href="https://choc-ui.com" target="_blank"><img src="./public/logo.png" width="200"></a></p>
  
 <div align="center">
 
@@ -11,11 +11,11 @@
 
 ## About Choc UI
 
-[**CHOC**](https://choc-ui.tech) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
+[**CHOC**](https://choc-ui.com) is _acronym_ for [Chakra](https://chakra-ui.com) Higher Order Components. Choc UI is a collection of components, inspired by many sources of well used web components, which are rebuilt based on the Chakra UI library.
 
 ## Official Documentation
 
-See it in action on [Choc-UI's Website.](https://choc-ui.tech)
+See it in action on [Choc-UI's Website.](https://choc-ui.com)
 
 <br/>
 
