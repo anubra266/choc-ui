@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "theme/context";
 import {
   chakra,
   Flex,
@@ -11,24 +10,18 @@ import {
   useUpdateEffect,
   Icon,
   Box,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuOptionGroup,
-  MenuItemOption,
   BoxProps,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 import { FaMoon, FaSun, FaGithub, FaTwitter } from "react-icons/fa";
-import { IoColorPalette } from "react-icons/io5";
 import SponsorButton from "./sponsor-button";
 import DocSearch from "../doc-search";
 import { MobileNavButton, MobileNavContent } from "./mobile-nav";
 import Logo from "components/navbar/logo";
+import CustomThemeEditor from "theme/theme-editor";
 import NextLink from "next/link";
 
 const HeaderContent = () => {
-  const { brand, setBrand, presets } = useContext(ThemeContext);
   const mobileNav = useDisclosure();
 
   const { toggleColorMode: toggleMode } = useColorMode();
@@ -131,43 +124,7 @@ const HeaderContent = () => {
               onClick={toggleMode}
               icon={<SwitchIcon />}
             />
-            <Menu closeOnSelect={false}>
-              <MenuButton
-                as={IconButton}
-                size="md"
-                fontSize="lg"
-                aria-label="Switch Brand Color"
-                variant="ghost"
-                color="current"
-                icon={<IoColorPalette />}
-              ></MenuButton>
-              <MenuList minWidth="240px">
-                <MenuOptionGroup
-                  value={brand}
-                  onChange={(b: string) => setBrand(b)}
-                >
-                  {Object.keys(presets()).map((col, cid) => (
-                    <MenuItemOption
-                      key={cid}
-                      value={col}
-                      textTransform="capitalize"
-                    >
-                      <Flex>
-                        <Box
-                          rounded="md"
-                          shadow="lg"
-                          my="auto"
-                          bg={presets(col)[500]}
-                          boxSize={5}
-                          mr={5}
-                        />
-                        {col}
-                      </Flex>
-                    </MenuItemOption>
-                  ))}
-                </MenuOptionGroup>
-              </MenuList>
-            </Menu>
+            <CustomThemeEditor />
           </HStack>
           <SponsorButton ml="5" />
           <MobileNavButton

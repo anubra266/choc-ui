@@ -7,6 +7,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { ThemeProvider } from "theme/context";
 import { useEffect, useMemo, useState } from "react";
 import NextNprogress from "nextjs-progressbar";
+import { ThemeEditorProvider } from "@hypertheme-editor/chakra-ui";
 
 const choc = {
   bg: "#1A202C",
@@ -20,10 +21,10 @@ export const config: ThemeConfig = {
 };
 
 const Theme = (props: any) => {
-  const [brand, setBrand] = useState("default");
+  const [brand, setBrand] = useState(presets("default"));
 
   const overrides: ThemeOverride = {
-    colors: { brand: presets(brand), choc },
+    colors: { brand, choc },
     config,
     layerStyles,
     styles,
@@ -32,10 +33,12 @@ const Theme = (props: any) => {
   const theme = extendTheme(overrides);
 
   useEffect(() => {
-    setBrand(window.localStorage.getItem("brand") || "default");
+    setBrand(
+      JSON.parse(window.localStorage.getItem("brand")) || presets("default")
+    );
   }, []);
   useEffect(() => {
-    window.localStorage.setItem("brand", brand);
+    window.localStorage.setItem("brand", JSON.stringify(brand));
   }, [brand]);
 
   const themeProps = useMemo(
@@ -46,18 +49,21 @@ const Theme = (props: any) => {
     }),
     [brand]
   );
+
   return (
     <ChakraProvider theme={theme}>
-      <ThemeProvider value={themeProps}>
-        <Fonts />
-        <NextNprogress
-          color={presets(brand)[500]}
-          startPosition={0.3}
-          stopDelayMs={200}
-          height={2}
-        />
-        {props.children}
-      </ThemeProvider>
+      <ThemeEditorProvider>
+        <ThemeProvider value={themeProps}>
+          <Fonts />
+          <NextNprogress
+            color={brand[500]}
+            startPosition={0.3}
+            stopDelayMs={200}
+            height={2}
+          />
+          {props.children}
+        </ThemeProvider>
+      </ThemeEditorProvider>
     </ChakraProvider>
   );
 };
