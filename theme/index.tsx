@@ -21,7 +21,9 @@ export const config: ThemeConfig = {
 };
 
 const Theme = (props: any) => {
-  const [brand, setBrand] = useState(presets("default"));
+  const [brand, setBrand] = useState<string | Record<number, string>>(
+    presets('default'),
+  )
 
   const overrides: ThemeOverride = {
     colors: { brand, choc },
