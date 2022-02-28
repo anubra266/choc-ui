@@ -22,7 +22,7 @@
     "@visx/responsive": "^1.7.0",
     "codesandbox": "^2.2.1",
     "framer-motion": "^4",
-    "fuse.js": "^6.4.6",
+    "fuse.js": "^6.5.3",
     "next": "^12.1.0",
     "next-pwa": "^5.2.21",
     "nextjs-progressbar": "^0.0.7",
