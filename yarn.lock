@@ -1727,10 +1727,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@splitbee/web@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.npmjs.org/@splitbee/web/-/web-0.2.4.tgz"
-  integrity sha512-LMXnN5X/jen4ssBZ8ULXckQgJVvv8Ox2brcK7g2aLrok8ISzO76+DC0b6Cierk8oIXcx/+aflbVuBaKKFqyBCg==
+"@splitbee/web@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@splitbee/web/-/web-0.3.0.tgz#676ebe877b6d82a10ece6527a07f70b1994d242e"
+  integrity sha512-jNPDKg0GQGa4jCaBc6JQsv0NHmBA80WCwZE49nFyhcbo32WF0GyqXeice7ZApy7OUHI16bAUAzm4MOQw3gvxfQ==
 
 "@surma/rollup-plugin-off-main-thread@^1.4.1":
   version "1.4.2"

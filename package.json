@@ -17,7 +17,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@loadable/component": "^5.14.1",
-    "@splitbee/web": "^0.2.4",
+    "@splitbee/web": "^0.3.0",
     "@visx/hierarchy": "^1.7.0",
     "@visx/responsive": "^1.7.0",
     "codesandbox": "^2.2.1",
