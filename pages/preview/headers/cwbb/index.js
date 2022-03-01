@@ -129,8 +129,8 @@ export default function Header() {
           py={6}
           p={{ sm: 8 }}
         >
-          {sections.map(({ title, icon, description }) => (
-            <Section title={title} icon={icon}>
+          {sections.map(({ title, icon, description }, sid) => (
+            <Section title={title} icon={icon} key={sid}>
               {description}
             </Section>
           ))}

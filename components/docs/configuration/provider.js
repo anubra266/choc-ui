@@ -18,12 +18,7 @@ const Provider = () => {
           <CodeBlock lang="jsx">{provider}</CodeBlock>
         </Section.p>
         <Section.p>
-          <Alert
-            status="warning"
-            variant="left-accent"
-            rounded="md"
-            mt={4}
-          >
+          <Alert status="warning" variant="left-accent" rounded="md" mt={4}>
             <Stack>
               <p>
                 For Next.js, you need to set this up in

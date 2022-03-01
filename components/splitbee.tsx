@@ -9,7 +9,7 @@ export const Splitbee = () => {
       justifyContent="center"
       href="https://splitbee.io/?ref=badge"
     >
-      <img
+      <chakra.img
         src={`https://splitbee-cdn.fra1.cdn.digitaloceanspaces.com/static/badge/splitbee-badge${splitbeeBadge}.svg`}
         alt="Analytics by Splitbee.io"
       />

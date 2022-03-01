@@ -15,8 +15,14 @@ const Dynamic = (props) => {
       <meta name="title" content={`${capitalize(props.title)} | Choc UI`} />
       <meta name="description" content={props.description || description} />
 
-      <meta property="og:title" content={`${capitalize(props.title)} | Choc UI`} />
-      <meta property="twitter:title" content={`${capitalize(props.title)} | Choc UI`} />
+      <meta
+        property="og:title"
+        content={`${capitalize(props.title)} | Choc UI`}
+      />
+      <meta
+        property="twitter:title"
+        content={`${capitalize(props.title)} | Choc UI`}
+      />
       <meta
         property="og:description"
         content={props.description || description}

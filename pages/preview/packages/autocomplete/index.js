@@ -16,7 +16,7 @@ export default function Component() {
       h="100vh"
       pos="absolute"
       bg={useColorModeValue("gray.400", "gray.600")}
-      p={30} 
+      p={30}
       justifyContent="center"
     >
       <AutoComplete rollNavigation>

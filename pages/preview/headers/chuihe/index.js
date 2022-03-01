@@ -41,7 +41,7 @@ const ChakraUIHeader = () => {
   React.useEffect(() => {
     return scrollY.onChange(() => setY(scrollY.get()));
   }, [scrollY]);
-  
+
   const SponsorButton = (
     <Box
       display={{ base: "none", md: "flex" }}
@@ -100,24 +100,18 @@ const ChakraUIHeader = () => {
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="full" variant="ghost"  leftIcon={<AiFillHome />}>
+      <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
         Dashboard
       </Button>
       <Button
         w="full"
         variant="solid"
         colorScheme="brand"
-        
         leftIcon={<AiOutlineInbox />}
       >
         Inbox
       </Button>
-      <Button
-        w="full"
-        variant="ghost"
-        
-        leftIcon={<BsFillCameraVideoFill />}
-      >
+      <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
         Videos
       </Button>
     </VStack>

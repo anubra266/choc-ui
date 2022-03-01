@@ -19,7 +19,7 @@ const PaginationPackage = () => {
         <Section.a
           target="_blank"
           rel="noopener"
-          href="hhttps://github.com/anubra266/choc-autocomplete"
+          href="https://github.com/anubra266/choc-autocomplete"
         >
           @choc-ui/chakra-autocomplete
         </Section.a>
@@ -110,8 +110,8 @@ const PaginationPackage = () => {
             >
               To access the internal state of the &nbsp;
               <code> AutoComplete</code>, use a function as children (commonly
-              known as a render prop). You'll get access to the internal state
-              &nbsp;<code>isOpen</code>&nbsp; and method &nbsp;{" "}
+              known as a render prop). You&aposll get access to the internal
+              state &nbsp;<code>isOpen</code>&nbsp; and method &nbsp;{" "}
               <code>onClose</code>.
             </Alert>
             <Alert status="info" variant="left-accent" rounded="md" mb={4}>

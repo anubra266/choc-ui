@@ -92,17 +92,20 @@ export default function Component() {
     "slanted-stars",
     "wallpaper",
   ];
+  const patterFill = useColorModeValue("brand.200", "brand.300");
+
   return (
     <SimpleGrid columns={[1, 1, 2, 4]} spacing="40px" w="full">
-      {patterns.map((pattern) => (
+      {patterns.map((pattern, pid) => (
         <PillPity
+          key={pid}
           pattern={pattern}
           as={Flex}
           align="center"
           justify="center"
           fontWeight="bold"
           boxSize="200px"
-          patternFill={useColorModeValue("brand.200", "brand.300")}
+          patternFill={patterFill}
           bgColor="choc.secondary"
           patternOpacity={0.3}
         >

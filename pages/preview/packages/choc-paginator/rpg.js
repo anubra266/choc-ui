@@ -17,7 +17,7 @@ export default function Component() {
         total={50}
         paginationProps={{ display: "flex", mb: 5 }}
         responsive
-      /> 
+      />
       <Pagination
         defaultCurrent={9}
         total={500}

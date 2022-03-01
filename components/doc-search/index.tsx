@@ -25,7 +25,7 @@ export default function SearchBar(props) {
       setActionKey(ACTION_KEY_DEFAULT);
     }
   }, []);
-  useEventListener("keydown", event => {
+  useEventListener("keydown", (event) => {
     const isMac = /(Mac|iPhone|iPod|iPad)/i.test(navigator?.userAgent);
     const hotkey = isMac ? "metaKey" : "ctrlKey";
     if (event.key.toLowerCase() === "k" && event[hotkey]) {

@@ -4,19 +4,18 @@ import { Box, chakra, Tooltip, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 
 export const SponsorPack = ({ sponsors }) => {
-  const pack = {
-    children: sponsors,
-    name: "root",
-    radius: 0,
-    distance: 0,
-  };
-  const root = React.useMemo(
-    () =>
-      hierarchy(pack)
-        .sum((d: any) => d?.cost * d?.cost)
-        .sort((a: any, b: any) => b.data.cost - a.data.cost),
-    []
-  );
+  const root = React.useMemo(() => {
+    const pack = {
+      children: sponsors,
+      name: "root",
+      radius: 0,
+      distance: 0,
+    };
+
+    return hierarchy(pack)
+      .sum((d: any) => d?.cost * d?.cost)
+      .sort((a: any, b: any) => b.data.cost - a.data.cost);
+  }, [sponsors]);
   const circle_bg = useColorModeValue("gray.50", "gray.400");
   return (
     <ParentSize>

@@ -9,8 +9,6 @@ export default function Component() {
       p={50}
       alignItems="center"
       justifyContent="center"
-    >
-    
-    </Flex>
+    ></Flex>
   );
 }

@@ -81,7 +81,6 @@ export default function Wfl() {
             </chakra.p>
             <Button
               as="a"
-              
               variant="solid"
               w={{ base: "full", sm: "auto" }}
               colorScheme="brand"

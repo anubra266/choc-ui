@@ -53,7 +53,6 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -77,11 +76,12 @@ export default function Component() {
                     </FormLabel>
                     <InputGroup size="sm">
                       <InputLeftAddon
-                        children="http://"
                         bg={useColorModeValue("gray.50", "gray.800")}
                         color={useColorModeValue("gray.500", "gay.50")}
                         rounded="md"
-                      />
+                      >
+                        http://
+                      </InputLeftAddon>
                       <Input
                         type="tel"
                         placeholder="www.example.com"
@@ -273,7 +273,6 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -527,7 +526,6 @@ export default function Component() {
           </GridItem>
           <GridItem mt={[5, null, 0]} colSpan={{ md: 2 }}>
             <chakra.form
-
               method="POST"
               shadow="base"
               rounded={[null, "md"]}
@@ -537,7 +535,7 @@ export default function Component() {
                 px={4}
                 py={5}
                 p={[null, 6]}
-                bg={useColorModeValue("white",'gray.700')}
+                bg={useColorModeValue("white", "gray.700")}
                 spacing={6}
               >
                 <chakra.fieldset>

@@ -27,6 +27,7 @@ import { Logo } from "@choc-ui/logo";
 export default function Swibc() {
   const sidebar = useDisclosure();
   const integrations = useDisclosure();
+  const color = useColorModeValue("gray.600", "gray.300");
 
   const NavItem = (props) => {
     const { icon, children, ...rest } = props;
@@ -52,7 +53,7 @@ export default function Swibc() {
             mx="2"
             boxSize="4"
             _groupHover={{
-              color: useColorModeValue("gray.600", "gray.300"),
+              color: color,
             }}
             as={icon}
           />
@@ -162,7 +163,9 @@ export default function Swibc() {
             size="sm"
           />
           <InputGroup w="96" display={{ base: "none", md: "flex" }}>
-            <InputLeftElement color="gray.500" children={<FiSearch />} />
+            <InputLeftElement color="gray.500">
+              <FiSearch />
+            </InputLeftElement>
             <Input placeholder="Search for articles..." />
           </InputGroup>
 

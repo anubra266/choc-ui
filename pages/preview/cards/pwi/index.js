@@ -50,7 +50,6 @@ const Ma = () => {
 
           <Box mt={8}>
             <Link
-              
               bg="gray.900"
               color="gray.100"
               px={5}

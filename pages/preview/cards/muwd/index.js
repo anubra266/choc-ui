@@ -64,13 +64,7 @@ const Ma = () => {
             mt={4}
             color={useColorModeValue("gray.700", "gray.200")}
           >
-            <Icon
-              as={BsFillBriefcaseFill}
-              as={BsFillBriefcaseFill}
-              h={6}
-              w={6}
-              mr={2}
-            />
+            <Icon as={BsFillBriefcaseFill} h={6} w={6} mr={2} />
 
             <chakra.h1 px={2} fontSize="sm">
               Choc UI

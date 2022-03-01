@@ -6,8 +6,8 @@ import { useRouter } from "next/router";
 export const CopyCode = () => {
   const url = useRouter().pathname;
   const arr = url.split("/");
-  const code = require(`!!raw-loader!pages/preview/${arr[2]}/${arr[3]}`)
-    .default;
+  const code =
+    require(`!!raw-loader!pages/preview/${arr[2]}/${arr[3]}`).default;
   const { hasCopied, onCopy } = useClipboard(code);
   return (
     <Tooltip

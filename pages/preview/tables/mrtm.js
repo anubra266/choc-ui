@@ -16,6 +16,11 @@ export default function Component() {
     { name: "Lazar Nikolov", email: "Lazar@mail.com" },
     { name: "Abraham", email: "abraham@anu.com" },
   ];
+  const breakpoint = useBreakpointValue({ base: true, md: pid === 0 });
+  const dataColor = useColorModeValue("white", "gray.800");
+  const bg = useColorModeValue("white", "gray.800");
+  const bg2 = useColorModeValue("gray.100", "gray.700");
+
   return (
     <Flex
       w="full"
@@ -27,24 +32,24 @@ export default function Component() {
       <Stack
         direction={{ base: "column" }}
         w="full"
-        bg={{ md: useColorModeValue("white", "gray.800") }}
+        bg={{ md: bg }}
         shadow="lg"
       >
         {data.map((person, pid) => {
           return (
             <Flex
               direction={{ base: "row", md: "column" }}
-              bg={useColorModeValue("white", "gray.800")}
+              bg={dataColor}
               key={pid}
             >
-              {useBreakpointValue({ base: true, md: pid === 0 }) && (
+              {breakpoint && (
                 <SimpleGrid
                   spacingY={3}
                   columns={{ base: 1, md: 3 }}
                   w={{ base: 120, md: "full" }}
                   textTransform="uppercase"
-                  bg={useColorModeValue("gray.100", "gray.700")}
-                  color={useColorModeValue("gray.500")}
+                  bg={bg2}
+                  color={"gray.500"}
                   py={{ base: 1, md: 4 }}
                   px={{ base: 2, md: 10 }}
                   fontSize="md"

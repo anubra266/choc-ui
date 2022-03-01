@@ -47,7 +47,7 @@ const ComponentDemo = (props: any) => {
           roundedBottom={!codeEditor.isOpen && "lg"}
           borderStyle="solid"
           borderWidth="1px"
-          borderColor={useColorModeValue("gray.100", "gray.900")} 
+          borderColor={useColorModeValue("gray.100", "gray.900")}
         >
           <Flex px={5} py={1} w="full" alignItems="center">
             <Box fontSize="xl" fontWeight="semibold" textTransform="capitalize">

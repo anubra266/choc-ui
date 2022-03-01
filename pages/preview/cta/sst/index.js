@@ -28,7 +28,6 @@ export default function Sj() {
           columns={{ base: 1, lg: 2, xl: 3 }}
           spacing={4}
           mx="auto"
-          mx="auto"
           py={{ base: 12, lg: 16 }}
           px={{ base: 4, lg: 8 }}
           display={{ lg: "flex" }}
@@ -53,7 +52,6 @@ export default function Sj() {
             <Stack direction={{ base: "column", sm: "row" }} spacing={2}>
               <Box display="inline-flex" rounded="md" shadow="md">
                 <chakra.a
-                  
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"
@@ -75,7 +73,6 @@ export default function Sj() {
               <Box ml={3} display="inline-flex" rounded="md" shadow="md">
                 <chakra.a
                   w="full"
-                  
                   display="inline-flex"
                   alignItems="center"
                   justifyContent="center"

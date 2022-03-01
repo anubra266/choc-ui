@@ -20,8 +20,6 @@ const KuttyHero = () => {
           border="solid 1px transparent"
         >
           <Box
-            mt={{ base: 10 }}
-            mx="auto"
             maxW={{ base: "7xl" }}
             px={{ base: 4, sm: 6, lg: 8 }}
             mt={{ base: 12, md: 16, lg: 20, xl: 28 }}

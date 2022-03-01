@@ -2,7 +2,7 @@ import type { AppProps } from "next/app";
 import Theme from "theme";
 import SiteSettings from "components/site-settings";
 import PageHead from "components/head/static";
-import Script from 'next/script'
+import Script from "next/script";
 
 import splitbee from "@splitbee/web";
 import ToTop from "components/to-top";

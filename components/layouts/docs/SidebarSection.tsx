@@ -9,7 +9,7 @@ const SidebarSection = (props: any) => {
   const subComps = useDisclosure();
   useEffect(() => {
     section.active ? subComps.onOpen() : subComps.onClose();
-  }, [section]);
+  }, [section, subComps]);
 
   return (
     <>

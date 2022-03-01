@@ -26,11 +26,9 @@ export default function Component() {
           <>
             <InputGroup>
               <AutoCompleteInput variant="filled" placeholder="Search..." />
-              <InputRightElement
-                children={
-                  <Icon as={isOpen ? ChevronRightIcon : ChevronDownIcon} />
-                }
-              />
+              <InputRightElement>
+                <Icon as={isOpen ? ChevronRightIcon : ChevronDownIcon} />
+              </InputRightElement>
             </InputGroup>
             <AutoCompleteList>
               {options.map((option, oid) => (
