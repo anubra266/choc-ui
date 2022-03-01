@@ -27,7 +27,7 @@
     "fuse.js": "^6.4.6",
     "next": "^12.1.0",
     "next-pwa": "^5.2.21",
-    "nextjs-progressbar": "^0.0.7",
+    "nextjs-progressbar": "^0.0.14",
     "pill-pity": "^0.2.2",
     "raw-loader": "^4.0.2",
     "re-resizable": "^6.9.0",
