@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@anubra266/stickyreact": "^1.0.1",
-    "@chakra-ui/icons": "^1.0.3",
+    "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.6.6",
     "@choc-ui/chakra-autocomplete": "^4.5.3",
     "@choc-ui/logo": "^1.0.0",
