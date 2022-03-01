@@ -33,6 +33,7 @@ export function MobileNavContent(props) {
   }, [isOpen]);
 
   const [shadow, setShadow] = React.useState<any>();
+  const navBg = useColorModeValue("white", "choc.bg");
 
   return (
     <AnimatePresence>
@@ -47,7 +48,7 @@ export function MobileNavContent(props) {
             <Flex
               direction="column"
               w="full"
-              bg={useColorModeValue("white", "choc.bg")}
+              bg={navBg}
               h="100vh"
               overflow="auto"
               pos="absolute"

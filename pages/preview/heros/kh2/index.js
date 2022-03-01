@@ -11,7 +11,7 @@ import {
 const KuttyHero = () => {
   return (
     <Flex px={4} py={32} mx="auto">
-      <Box w="full" mx="auto" w={{ lg: 8 / 12, xl: 5 / 12 }}>
+      <Box mx="auto" w={{ lg: 8 / 12, xl: 5 / 12 }}>
         <chakra.p
           mb={2}
           fontSize="xs"

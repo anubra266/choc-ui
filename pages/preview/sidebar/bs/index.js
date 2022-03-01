@@ -138,7 +138,9 @@ export default function Swibc() {
             size="sm"
           />
           <InputGroup w="96" display={{ base: "none", md: "flex" }}>
-            <InputLeftElement color="gray.500" children={<FiSearch />} />
+            <InputLeftElement color="gray.500">
+              <FiSearch />
+            </InputLeftElement>
             <Input placeholder="Search for articles..." />
           </InputGroup>
 

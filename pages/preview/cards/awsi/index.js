@@ -1,7 +1,7 @@
 import React from "react";
 import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 
-import { AiOutlineTwitter, AiOutlineLink, } from "react-icons/ai";
+import { AiOutlineTwitter, AiOutlineLink } from "react-icons/ai";
 const Ma = () => {
   return (
     <Flex

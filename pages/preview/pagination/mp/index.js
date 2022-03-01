@@ -31,6 +31,9 @@ const Ma = () => {
   const MButton = (props) => {
     const DoubleArrow = props.left ? ArrowLeftIcon : ArrowRightIcon;
     const [hovered, setHovered] = React.useState(false);
+    const hoverColor = useColorModeValue("brand.800", "brand.700");
+    const unHoverColor = useColorModeValue("gray.100", "gray.200");
+
     return (
       <chakra.a
         w={8}
@@ -46,12 +49,12 @@ const Ma = () => {
             as={DoubleArrow}
             boxSize={3}
             cursor="pointer"
-            color={useColorModeValue("brand.800", "brand.700")}
+            color={hoverColor}
           />
         ) : (
           <Icon
             as={HiDotsHorizontal}
-            color={useColorModeValue("gray.100", "gray.200")}
+            color={unHoverColor}
             boxSize={4}
             opacity={0.5}
           />

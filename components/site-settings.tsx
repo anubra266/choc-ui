@@ -15,6 +15,8 @@ function inIframe() {
 export default function Ss() {
   const router = useRouter();
   const isPreview = router.pathname.includes("preview");
+  const bg = useColorModeValue("white", "gray.700");
+
   return (
     isPreview &&
     !inIframe() && (
@@ -28,7 +30,7 @@ export default function Ss() {
         border="solid transparent"
         shadow="lg"
         roundedLeft="lg"
-        bg={useColorModeValue("white", "gray.700")}
+        bg={bg}
       >
         <CopyCode />
         <HomeLink />

@@ -362,7 +362,7 @@ const PaginationPackage = () => {
                   The <code>colorScheme prop</code> modifies the color Theme
                 </p>
                 <p>
-                  The <code>rounded prop</code> modifies the buttons'
+                  The <code>rounded prop</code> modifies the buttons&apos
                   borderRadius
                 </p>
               </Stack>
@@ -443,7 +443,7 @@ const PaginationPackage = () => {
           <Stack>
             <p>
               Set the <code> boolean hideOnSinglePage prop</code> to false, to
-              stop pagination dissapearing when there's only one page.
+              stop pagination dissapearing when there&aposs only one page.
             </p>
           </Stack>
         </Alert>

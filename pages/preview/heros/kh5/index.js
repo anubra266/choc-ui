@@ -33,7 +33,7 @@ const KuttyHero = () => {
             fontSize={{ base: "3xl", md: "4xl" }}
             fontWeight="bold"
             lineHeight={{ base: "shorter", md: "none" }}
-            color={useColorModeValue("gray.900","gray.200")}
+            color={useColorModeValue("gray.900", "gray.200")}
             letterSpacing={{ base: "normal", md: "tight" }}
           >
             Ready to start your journey?
@@ -52,7 +52,7 @@ const KuttyHero = () => {
         </GridItem>
         <GridItem colSpan={{ base: "auto", md: 4 }}>
           <Box as="form" mb={6} rounded="lg" shadow="xl">
-            <Center pb={0} color={useColorModeValue("gray.700","gray.600")}>
+            <Center pb={0} color={useColorModeValue("gray.700", "gray.600")}>
               <p pt={2}>Start talking now</p>
             </Center>
             <SimpleGrid
@@ -61,7 +61,7 @@ const KuttyHero = () => {
               py={4}
               spacing={4}
               borderBottom="solid 1px"
-              borderColor={useColorModeValue("gray.200","gray.700")}
+              borderColor={useColorModeValue("gray.200", "gray.700")}
             >
               <Flex>
                 <VisuallyHidden>First Name</VisuallyHidden>
@@ -121,9 +121,7 @@ const KuttyHero = () => {
           </Box>
           <chakra.p fontSize="xs" textAlign="center" color="gray.600">
             By signing up you agree to our{" "}
-            <chakra.a color="brand.500" >
-              Terms of Service
-            </chakra.a>
+            <chakra.a color="brand.500">Terms of Service</chakra.a>
           </chakra.p>
         </GridItem>
       </SimpleGrid>

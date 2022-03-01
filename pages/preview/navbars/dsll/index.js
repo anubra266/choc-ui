@@ -129,10 +129,9 @@ export default function Dsll() {
             alignItems="center"
           >
             <InputGroup>
-              <InputLeftElement
-                pointerEvents="none"
-                children={<AiOutlineSearch />}
-              />
+              <InputLeftElement pointerEvents="none">
+                <AiOutlineSearch />
+              </InputLeftElement>
               <Input type="tel" placeholder="Search..." />
             </InputGroup>
 

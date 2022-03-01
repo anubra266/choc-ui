@@ -32,7 +32,6 @@ const KuttyHero = () => {
                   _hover={{
                     color: useColorModeValue("gray.700", "gray.300"),
                   }}
-                  
                 >
                   Brand
                 </chakra.a>
@@ -56,7 +55,6 @@ const KuttyHero = () => {
                 color={useColorModeValue("gray.700", "gray.200")}
                 textTransform="capitalize"
                 _hover={{ color: useColorModeValue("brand.400", "blue.400") }}
-                
               >
                 Web developers
               </chakra.a>
@@ -68,7 +66,6 @@ const KuttyHero = () => {
                 color={useColorModeValue("gray.700", "gray.200")}
                 textTransform="capitalize"
                 _hover={{ color: useColorModeValue("brand.400", "blue.400") }}
-                
               >
                 Web Designers
               </chakra.a>
@@ -80,7 +77,6 @@ const KuttyHero = () => {
                 color={useColorModeValue("gray.700", "gray.200")}
                 textTransform="capitalize"
                 _hover={{ color: useColorModeValue("brand.400", "blue.400") }}
-                
               >
                 UI/UX Designers
               </chakra.a>
@@ -92,7 +88,6 @@ const KuttyHero = () => {
                 color={useColorModeValue("gray.700", "gray.200")}
                 textTransform="capitalize"
                 _hover={{ color: useColorModeValue("brand.400", "blue.400") }}
-                
               >
                 Contact
               </chakra.a>

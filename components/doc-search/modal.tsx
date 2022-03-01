@@ -79,10 +79,9 @@ function SearchModal(_, ref) {
       <ModalContent mt="5rem" bg={useColorModeValue("white", "choc.primary")}>
         <ModalBody p={25}>
           <InputGroup>
-            <InputLeftElement
-              pointerEvents="none"
-              children={<SearchIcon color="brand.400" boxSize={5} mr={5} />}
-            />
+            <InputLeftElement pointerEvents="none">
+              <SearchIcon color="brand.400" boxSize={5} mr={5} />
+            </InputLeftElement>
             <Input
               variant="flushed"
               placeholder="Search the collection..."

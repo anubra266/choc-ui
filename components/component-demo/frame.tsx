@@ -32,14 +32,15 @@ const Frame = (props: any) => {
     forceUpdate();
   };
 
-  function resizeIframe(iframe: HTMLIFrameElement) {
-    if (iframe.contentWindow?.document?.body?.scrollHeight)
-      setHeight(iframe.contentWindow?.document?.body?.scrollHeight);
-    // iframe.height =
-    //   iframe.contentWindow?.document?.body?.scrollHeight + 0 + "px";
-    window.requestAnimationFrame(() => resizeIframe(iframe));
-  }
   useEffect(() => {
+    function resizeIframe(iframe: HTMLIFrameElement) {
+      if (iframe.contentWindow?.document?.body?.scrollHeight)
+        setHeight(iframe.contentWindow?.document?.body?.scrollHeight);
+      // iframe.height =
+      //   iframe.contentWindow?.document?.body?.scrollHeight + 0 + "px";
+      window.requestAnimationFrame(() => resizeIframe(iframe));
+    }
+
     //*Automatically resize Ifram height to fit content
     contentRef && resizeIframe(contentRef);
   }, [contentRef]);
@@ -47,9 +48,10 @@ const Frame = (props: any) => {
   const { brand } = useContext(ThemeContext);
 
   const { colorMode } = useColorMode();
+
   useEffect(() => {
     contentRef?.contentWindow?.location.reload();
-  }, [colorMode, brand]);
+  }, [colorMode, brand, contentRef?.contentWindow?.location]);
 
   return (
     <Resizable

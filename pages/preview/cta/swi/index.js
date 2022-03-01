@@ -50,7 +50,7 @@ const CTA = () => {
           lineHeight="shorter"
           textShadow="2px 0 currentcolor"
         >
-          We're here to help
+          We&apos;re here to help
         </chakra.h1>
         <chakra.p
           pr={{ base: 0, lg: 16 }}
@@ -64,9 +64,7 @@ const CTA = () => {
         </chakra.p>
         <Box display="inline-flex" rounded="md" shadow="md">
           <chakra.a
-            
             mt={2}
-            py={8}
             display="inline-flex"
             alignItems="center"
             justifyContent="center"

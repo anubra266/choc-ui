@@ -179,10 +179,9 @@ export default function Dsnl() {
         <Spacer />
         <HStack spacing={3} alignItems="center">
           <InputGroup display={{ base: "none", lg: "block" }} ml="auto">
-            <InputLeftElement
-              pointerEvents="none"
-              children={<AiOutlineSearch />}
-            />
+            <InputLeftElement pointerEvents="none">
+              <AiOutlineSearch />
+            </InputLeftElement>
             <Input type="tel" placeholder="Search..." />
           </InputGroup>
         </HStack>

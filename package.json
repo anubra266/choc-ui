@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "PORT=4000 next dev",
     "build": "next build",
+    "lint": "next lint",
+    "lintFix": "eslint --fix",
     "start": "next start"
   },
   "dependencies": {
@@ -26,10 +28,10 @@
     "fuse.js": "^6.4.6",
     "next": "^12.1.0",
     "next-pwa": "^5.2.21",
-    "nextjs-progressbar": "^0.0.7",
+    "nextjs-progressbar": "^0.0.14",
     "pill-pity": "^0.2.2",
     "raw-loader": "^4.0.2",
-    "re-resizable": "^6.9.0",
+    "re-resizable": "^6.9.2",
     "react": "^17.0.2",
     "react-carbon": "^1.0.7",
     "react-dom": "^17.0.2",
@@ -47,6 +49,10 @@
     "@types/react-dom": "^17.0.2",
     "@types/react-scroll": "^1.8.2",
     "all-contributors-cli": "^6.19.0",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^6.0.0",
     "prettier": "^2.3.0",
     "pretty-quick": "^3.1.0",

@@ -189,12 +189,7 @@ export default function Pricing() {
                 <Feature>1,000 Email Address Validations</Feature>
                 <Feature>Limited 24/7 Ticket Support</Feature>
               </VStack>
-              <Box
-                display="inline-flex"
-                rounded="md"
-                shadow="md"
-                w="full"
-              >
+              <Box display="inline-flex" rounded="md" shadow="md" w="full">
                 <chakra.a
                   w="full"
                   display="inline-flex"

@@ -12,12 +12,11 @@ import NextLink from "next/link";
 
 const Result = (props) => {
   const hoverColor = "gray.100";
-  const resultsTextColor = props.active
-    ? hoverColor
-    : useColorModeValue("gray.900", "gray.100");
-  const resultsIconColor = props.active
-    ? hoverColor
-    : useColorModeValue("gray.900", "gray.400");
+  const inactiveResultsTextColor = useColorModeValue("gray.900", "gray.100");
+  const inactiveResultsIconColor = useColorModeValue("gray.900", "gray.400");
+  const inactiveBg = useColorModeValue("gray.50", "choc.secondary");
+  const resultsTextColor = props.active ? hoverColor : inactiveResultsTextColor;
+  const resultsIconColor = props.active ? hoverColor : inactiveResultsIconColor;
 
   const ref = useRef(null);
 
@@ -33,11 +32,7 @@ const Result = (props) => {
     <NextLink href={props.url} passHref>
       <Flex
         ref={ref}
-        bg={
-          props.active
-            ? ACTIVE_BACKGROUND
-            : useColorModeValue("gray.50", "choc.secondary")
-        }
+        bg={props.active ? ACTIVE_BACKGROUND : inactiveBg}
         _hover={{
           bg: ACTIVE_BACKGROUND,
         }}

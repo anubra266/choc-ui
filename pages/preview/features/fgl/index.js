@@ -80,7 +80,8 @@ export default function Fgl() {
             mx={{ lg: "auto" }}
             color={useColorModeValue("gray.500", "gray.400")}
           >
-            Get insights to dig down into what's powering your growth the most.
+            Get insights to dig down into what&apos;s powering your growth the
+            most.
           </chakra.p>
         </Box>
         <SimpleGrid
