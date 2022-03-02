@@ -16,7 +16,6 @@ export default function Component() {
     { name: "Lazar Nikolov", email: "Lazar@mail.com" },
     { name: "Abraham", email: "abraham@anu.com" },
   ];
-  const breakpoint = useBreakpointValue({ base: true, md: pid === 0 });
   const dataColor = useColorModeValue("white", "gray.800");
   const bg = useColorModeValue("white", "gray.800");
   const bg2 = useColorModeValue("gray.100", "gray.700");
@@ -42,25 +41,22 @@ export default function Component() {
               bg={dataColor}
               key={pid}
             >
-              {breakpoint && (
-                <SimpleGrid
-                  spacingY={3}
-                  columns={{ base: 1, md: 3 }}
-                  w={{ base: 120, md: "full" }}
-                  textTransform="uppercase"
-                  bg={bg2}
-                  color={"gray.500"}
-                  py={{ base: 1, md: 4 }}
-                  px={{ base: 2, md: 10 }}
-                  fontSize="md"
-                  fontWeight="hairline"
-                  display="table-header-group"
-                >
-                  <span>Name</span>
-                  <span>Email</span>
-                  <chakra.span textAlign={{ md: "right" }}>Actions</chakra.span>
-                </SimpleGrid>
-              )}
+              <SimpleGrid
+                spacingY={3}
+                columns={{ base: 1, md: 3 }}
+                w={{ base: 120, md: "full" }}
+                textTransform="uppercase"
+                bg={bg2}
+                color={"gray.500"}
+                py={{ base: 1, md: 4 }}
+                px={{ base: 2, md: 10 }}
+                fontSize="md"
+                fontWeight="hairline"
+              >
+                <span>Name</span>
+                <span>Email</span>
+                <chakra.span textAlign={{ md: "right" }}>Actions</chakra.span>
+              </SimpleGrid>
               <SimpleGrid
                 spacingY={3}
                 columns={{ base: 1, md: 3 }}

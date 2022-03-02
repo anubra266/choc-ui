@@ -21,7 +21,6 @@ export default function Component() {
     { name: "Josef", created: "A few seconds ago" },
     { name: "Sage", created: "A few hours ago" },
   ];
-  const breakpoint = useBreakpointValue({ base: true, md: tid === 0 });
   const bg = useColorModeValue("white", "gray.800");
   const bg2 = useColorModeValue("white", "gray.800");
   const bg3 = useColorModeValue("gray.100", "gray.700");
@@ -43,26 +42,23 @@ export default function Component() {
         {data.map((token, tid) => {
           return (
             <Flex direction={{ base: "row", md: "column" }} bg={bg2} key={tid}>
-              {breakpoint && (
-                <SimpleGrid
-                  spacingY={3}
-                  columns={{ base: 1, md: 4 }}
-                  w={{ base: 120, md: "full" }}
-                  textTransform="uppercase"
-                  bg={bg3}
-                  color={"gray.500"}
-                  py={{ base: 1, md: 4 }}
-                  px={{ base: 2, md: 10 }}
-                  fontSize="md"
-                  fontWeight="hairline"
-                  display="table-header-group"
-                >
-                  <span>Name</span>
-                  <span>Created</span>
-                  <span>Data</span>
-                  <chakra.span textAlign={{ md: "right" }}>Actions</chakra.span>
-                </SimpleGrid>
-              )}
+              <SimpleGrid
+                spacingY={3}
+                columns={{ base: 1, md: 4 }}
+                w={{ base: 120, md: "full" }}
+                textTransform="uppercase"
+                bg={bg3}
+                color={"gray.500"}
+                py={{ base: 1, md: 4 }}
+                px={{ base: 2, md: 10 }}
+                fontSize="md"
+                fontWeight="hairline"
+              >
+                <span>Name</span>
+                <span>Created</span>
+                <span>Data</span>
+                <chakra.span textAlign={{ md: "right" }}>Actions</chakra.span>
+              </SimpleGrid>
               <SimpleGrid
                 spacingY={3}
                 columns={{ base: 1, md: 4 }}
