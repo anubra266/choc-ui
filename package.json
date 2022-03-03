@@ -21,7 +21,7 @@
     "@hypertheme-editor/chakra-ui": "0.1.4-rc.0",
     "@loadable/component": "^5.14.1",
     "@splitbee/web": "^0.2.4",
-    "@visx/hierarchy": "^1.7.0",
+    "@visx/hierarchy": "^2.1.2",
     "@visx/responsive": "^1.7.0",
     "codesandbox": "^2.2.1",
     "framer-motion": "^4",
