@@ -1,8 +1,8 @@
 import { createContext } from "react";
 
 export type ThemeContextProps = {
-  brand?: Record<number, string | undefined>;
-  setBrand?: (brand: Record<number, string | undefined>) => void;
+  brand?: Record<number, string>;
+  setBrand?: (brand: Record<number, string>) => void;
   presets?: (brand?: string) => any;
 };
 

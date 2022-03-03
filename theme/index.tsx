@@ -21,7 +21,7 @@ export const config: ThemeConfig = {
 };
 
 const Theme = (props: any) => {
-  const [brand, setBrand] = useState<Record<number, string | undefined>>(
+  const [brand, setBrand] = useState<Record<number, string>>(
     presets("default")
   );
 
