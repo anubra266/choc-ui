@@ -19,7 +19,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@hypertheme-editor/chakra-ui": "0.1.4-rc.0",
-    "@loadable/component": "^5.14.1",
+    "@loadable/component": "^5.15.2",
     "@splitbee/web": "^0.2.4",
     "@visx/hierarchy": "^1.7.0",
     "@visx/responsive": "^1.7.0",
