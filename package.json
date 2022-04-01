@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@types/node": "^14.14.33",
-    "@types/react": "^17.0.3",
+    "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.2",
     "@types/react-scroll": "^1.8.3",
     "all-contributors-cli": "^6.19.0",
