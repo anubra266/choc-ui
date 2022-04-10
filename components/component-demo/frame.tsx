@@ -9,6 +9,7 @@ import { useColorMode } from "@chakra-ui/color-mode";
 import { Resizable } from "re-resizable";
 import { Box } from "@chakra-ui/layout";
 import { ThemeContext } from "theme/context";
+import { useCallback } from "react";
 
 const memoizedCreateCacheWithContainer = weakMemoize(
   (container: HTMLElement) => {
@@ -51,7 +52,8 @@ const Frame = (props: any) => {
 
   useEffect(() => {
     contentRef?.contentWindow?.location.reload();
-  }, [colorMode, brand, contentRef?.contentWindow?.location]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [colorMode, brand]);
 
   return (
     <Resizable

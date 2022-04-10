@@ -12,6 +12,7 @@ import { AdBox } from "analytics/ads";
 
 const Element = ({ category, section }) => {
   const ComponentObj = componentsObj[category]?.sections[section];
+  console.log("section :>> ", componentsObj[category]);
   return (
     <DocsLayout>
       <React.Fragment>

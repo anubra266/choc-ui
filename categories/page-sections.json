@@ -70,6 +70,18 @@
           }
         ]
       },
+      "footers": {
+        "title": "footers",
+        "route": "footers",
+        "image": "pricing.png",
+        "components": [
+          {
+            "name": "Simple",
+            "url": "#",
+            "preview": "footers/simple"
+          }
+        ]
+      },
       "heros": {
         "title": "heros",
         "route": "heros",
@@ -116,6 +128,7 @@
           }
         ]
       },
+
       "pricing": {
         "title": "pricing",
         "route": "pricing",

@@ -56,6 +56,7 @@ const ComponentDemo = (props: any) => {
             <Spacer />
             <CodeActions {...props} {...editorProps} path={path} />
           </Flex>
+          {/* <LivePreview /> */}
           <Frame path={path}>
             <LivePreview />
           </Frame>
