@@ -1612,40 +1612,40 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@hypertheme-editor/chakra-ui-colors@^0.1.4-rc.0":
-  version "0.1.4-rc.0"
-  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.4-rc.0.tgz#c4f677cd7be4902373434d583d924988ef2e54ba"
-  integrity sha512-lA9Tw3qHVPopsMN50ZL1SIjZcGvCcYdyOpjmF9NrT6k0vLaq9h75lIHOALWrZNmfp2yFnKiadr1Qxkvtbd+43A==
+"@hypertheme-editor/chakra-ui-colors@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-colors/-/chakra-ui-colors-0.1.5.tgz#368f1d14ea430553f66361e842b8373de26e6b5e"
+  integrity sha512-+BqxFPmpHEX38eDEBw7NeYv40xXZsHagEorhPI9DxaVlPoBkZcaTOcojIAad/+WNRNQtEIsZ2sk6E4UMIPbFJQ==
   dependencies:
     colord "^2.1.0"
     react-colorful "^5.2.3"
 
-"@hypertheme-editor/chakra-ui-core@^0.1.4-rc.0":
-  version "0.1.4-rc.0"
-  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.4-rc.0.tgz#bc2a633ceff975645e21a0b3908413c14308fcd8"
-  integrity sha512-ChfDFubtFktC1xE1fjYKQEdpPFRwDJPO3mf+zqH0kqhKuVSuJHAz8aeWY01DiNuMr5gGT1FkEY272muxgdo13w==
+"@hypertheme-editor/chakra-ui-core@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-core/-/chakra-ui-core-0.1.5.tgz#39cc1cc2d6b24cde8cae1e05f32db66def2c37eb"
+  integrity sha512-Apts51/aWAYMH28SBpgNbzAAvxg44jGseJWQTkDoxEcGcZgAFjUD49FdxxX3GGZn57yNrLIKkCQ2WNDbSZecGw==
   dependencies:
-    "@hypertheme-editor/chakra-ui-theme" "^0.1.4-rc.0"
+    "@hypertheme-editor/chakra-ui-theme" "^0.1.5"
     react-google-font-loader "^1.1.0"
 
-"@hypertheme-editor/chakra-ui-font-sizes@^0.1.4-rc.0":
-  version "0.1.4-rc.0"
-  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.4-rc.0.tgz#9863ee5e45d0d2aea623c0ec700dcdf94bd80968"
-  integrity sha512-PXYPk7DdgXVuh+M93yNdIAtCNSHVKjTLyF7ApcwZnMPb5bXCjA4g5k8EYnQq26LnuJRnjmLh+YFfOnr5MhF0/g==
+"@hypertheme-editor/chakra-ui-font-sizes@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-font-sizes/-/chakra-ui-font-sizes-0.1.5.tgz#b085247a95736310a0854d2d54a0fc3724e37134"
+  integrity sha512-5zJLHC2Cmchmj/DJqO3a7NHg/JbMQ932ozDSjBEj0X8UjOLyUit8B1ypfKTwAb7CJjkbuk+XVmgqBzFEDvzYhg==
 
-"@hypertheme-editor/chakra-ui-theme@^0.1.4-rc.0":
-  version "0.1.4-rc.0"
-  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-theme/-/chakra-ui-theme-0.1.4-rc.0.tgz#5f3ea950db2ebbeeddf677bb352b7cac8594e682"
-  integrity sha512-xWAdKfTuevRyU1iqX1CeLWn3SZi73KqcLTrs0RlVCmVviEnzWbFKM1/21kkCH16q9XC+cAdJx4o7i0hR4IASuw==
+"@hypertheme-editor/chakra-ui-theme@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui-theme/-/chakra-ui-theme-0.1.5.tgz#42c18ea9ada6f3be80621bd918611c031fc4a1a8"
+  integrity sha512-MEPLGzuU2ihgHcxZEj0/jpuKJDJ+jv+/VaXhQR83ehP0HHu5VdK8TSIhoEL1NA2sUe4XsvxmEUs6bFUw1JxoYw==
 
-"@hypertheme-editor/chakra-ui@0.1.4-rc.0":
-  version "0.1.4-rc.0"
-  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui/-/chakra-ui-0.1.4-rc.0.tgz#f444b461e97970b939257316992ff4243e961127"
-  integrity sha512-dtIPfXWh1ywaPcONq36IlGV8SAgMeLgauMaSBm1TeCLf7MhKE3SizWFKRdKYOglj/BjiHQsvs5ocC3Oa+RB4mw==
+"@hypertheme-editor/chakra-ui@0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@hypertheme-editor/chakra-ui/-/chakra-ui-0.1.5.tgz#f5bed351c1f5c1a74f1f8820c14cea94a9c878ca"
+  integrity sha512-ENC4CYhw+cu7G4UDwSXXZvEs/K3i2IwEPyCK7s9mF6y60iVCU1XmAxLa8Iz679nlR9gM9jGU80/O+qOwysNeEg==
   dependencies:
-    "@hypertheme-editor/chakra-ui-colors" "^0.1.4-rc.0"
-    "@hypertheme-editor/chakra-ui-core" "^0.1.4-rc.0"
-    "@hypertheme-editor/chakra-ui-font-sizes" "^0.1.4-rc.0"
+    "@hypertheme-editor/chakra-ui-colors" "^0.1.5"
+    "@hypertheme-editor/chakra-ui-core" "^0.1.5"
+    "@hypertheme-editor/chakra-ui-font-sizes" "^0.1.5"
     immer "^9.0.6"
     react-icons "^4.2.0"
     recoil "^0.4.1"
@@ -1902,10 +1902,10 @@
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.4.tgz"
   integrity sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==
 
-"@types/node@*", "@types/node@^14.14.33":
-  version "14.14.37"
-  resolved "https://registry.npmjs.org/@types/node/-/node-14.14.37.tgz"
-  integrity sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
+"@types/node@*", "@types/node@^17.0.23":
+  version "17.0.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.23.tgz#3b41a6e643589ac6442bdbd7a4a3ded62f33f7da"
+  integrity sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==
 
 "@types/object-assign@4.0.30":
   version "4.0.30"
@@ -6654,10 +6654,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.0.tgz#b6a5bf1284026ae640f17f7ff5658a7567fc0d18"
-  integrity sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==
+prettier@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.1.tgz#d472797e0d7461605c1609808e27b80c0f9cfe17"
+  integrity sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==
 
 pretty-bytes@^5.3.0, pretty-bytes@^5.4.1:
   version "5.6.0"
@@ -6926,12 +6926,7 @@ react-html-parser@^2.0.2:
   dependencies:
     htmlparser2 "^3.9.0"
 
-react-icons@^4.1.0:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.2.0.tgz"
-  integrity sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
-
-react-icons@^4.2.0:
+react-icons@^4.1.0, react-icons@^4.2.0:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"
   integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
