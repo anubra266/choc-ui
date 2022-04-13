@@ -14,7 +14,7 @@ export default function Component() {
       <linearGradient id="gradient" x2="1" y2="1">
         <stop offset="0%" stopColor="#447799" />
         <stop offset="50%" stopColor={red500} />
-        <stop offset="full" stopColor={brand600} />
+        <stop offset="100%" stopColor={brand600} />
       </linearGradient>
     </chakra.svg>
   );
