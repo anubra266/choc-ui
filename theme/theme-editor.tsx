@@ -1,4 +1,4 @@
-import { IconButton } from "@chakra-ui/react";
+import { IconButton, useDisclosure } from "@chakra-ui/react";
 import {
   ThemeEditor,
   ThemeEditorDrawer,
@@ -7,28 +7,21 @@ import {
 } from "@hypertheme-editor/chakra-ui";
 import { CgColorPicker } from "react-icons/cg";
 import { IoColorPalette } from "react-icons/io5";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { ThemeContext } from "./context";
 
-const CustomThemeEditor = (props: any) => {
-  const [isOpen, setIsOpen] = useState(false);
+const CustomThemeEditor = () => {
   const { setBrand } = useContext(ThemeContext);
   const { theme } = useThemeEditor();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   // update brand colors if theme updates from hypertheme
   useEffect(() => {
     setBrand(theme?.colors?.brand);
   }, [theme]);
 
-  const onOpen = () => {
-    setIsOpen(true);
-  };
-  const onClose = () => {
-    setIsOpen(false);
-  };
-
   return (
-    <ThemeEditor isOpen={isOpen} onOpen={onOpen} onClose={onClose}>
+    <>
       <IconButton
         size="md"
         fontSize="lg"
@@ -38,10 +31,12 @@ const CustomThemeEditor = (props: any) => {
         onClick={onOpen}
         icon={<IoColorPalette />}
       />
-      <ThemeEditorDrawer hideUpgradeToPro hideCredits>
-        <ThemeEditorColors icon={CgColorPicker} title="Colors" />
-      </ThemeEditorDrawer>
-    </ThemeEditor>
+      <ThemeEditor isOpen={isOpen} onOpen={onOpen} onClose={onClose}>
+        <ThemeEditorDrawer hideUpgradeToPro hideCredits>
+          <ThemeEditorColors icon={CgColorPicker} title="Colors" />
+        </ThemeEditorDrawer>
+      </ThemeEditor>
+    </>
   );
 };
 
