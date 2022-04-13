@@ -15,7 +15,7 @@
     "@chakra-ui/react": "^1.8.8",
     "@choc-ui/chakra-autocomplete": "^4.5.3",
     "@choc-ui/logo": "^1.0.0",
-    "@choc-ui/paginator": "^3.2.0",
+    "@choc-ui/paginator": "^3.4.0",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@hypertheme-editor/chakra-ui": "0.1.5",
