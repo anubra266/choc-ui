@@ -41,6 +41,7 @@
     "react-live": "^2.4.0",
     "react-remove-scroll": "^2.4.1",
     "react-scroll": "^1.8.2",
+    "tinycolor2": "^1.4.2",
     "transform-imports": "^2.1.1"
   },
   "devDependencies": {
