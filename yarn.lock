@@ -6579,10 +6579,10 @@ pify@^5.0.0:
   resolved "https://registry.npmjs.org/pify/-/pify-5.0.0.tgz"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-pill-pity@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/pill-pity/-/pill-pity-0.2.2.tgz#4bc89d14dfa05afc1adec4214ea89680f07f0e59"
-  integrity sha512-S9qYvKLdzSVv6E3FIeWdt0COGRhtkXw4nt0E9qGtpMGFYsgkAqQI9c6y2mXtRXUdEMO9OIUy3fXBBX9BVUJm9Q==
+pill-pity@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/pill-pity/-/pill-pity-0.2.3.tgz#cb34bf5c0f573ff2bc787b145b6856a0f916b0a0"
+  integrity sha512-d0J9pDFwaivD15I6dgFdljXL8vlaXtbFlmn+oGCEW4eC0IpXcUHge2AwLAnbiWr6qICfmxwaM8BWrbUkaN2/ug==
 
 pinkie-promise@^2.0.0:
   version "2.0.1"
@@ -8030,11 +8030,6 @@ tiny-invariant@^1.0.6:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
   integrity sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
-
-tinycolor2@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
-  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
 
 tmp@^0.0.33:
   version "0.0.33"
