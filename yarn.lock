@@ -6929,10 +6929,10 @@ react-is@^16.12.0, react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-live@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/react-live/-/react-live-2.4.0.tgz#c550a6e3e344ad047c71a7776b9bf96a485d5762"
-  integrity sha512-1/JOjxPFBoXNgeEC4AqDyhw34qI2RJH1+3M4bXGnQTbwfA9qaUi66j4FfeRk0CBV05Lu8v80Maa1QZS/wmT/Pw==
+react-live@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/react-live/-/react-live-2.4.1.tgz#65e674ff9ca9a9a95f83117acc21ffd968aca619"
+  integrity sha512-r+32f7oV/kBs3QZBRvaT+9vOkQW47UZrDpgwUe5FiIMOl7sdo5pmISgb7Zpj5PGHgY6XQaiXs3FEh+IWw3KbRg==
   dependencies:
     "@types/buble" "^0.20.0"
     buble "0.19.6"
