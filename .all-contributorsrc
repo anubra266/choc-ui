@@ -129,6 +129,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "vhnam",
+      "name": "Nam Vo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7885874?v=4",
+      "profile": "https://vhnam.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
