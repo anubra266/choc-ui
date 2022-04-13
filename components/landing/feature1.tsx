@@ -42,8 +42,8 @@ const Feature = () => {
             >
               Spend less time building blocks and more time building a great
               experience for your customers.
-            </chakra.p>{" "}
-            <chakra.p
+            </chakra.p>
+            <chakra.div
               mt={4}
               maxW="2xl"
               fontSize="xl"
@@ -51,7 +51,7 @@ const Feature = () => {
               color={useColorModeValue("gray.500", "gray.400")}
             >
               <ComponentDemo path={card} />
-            </chakra.p>
+            </chakra.div>
           </Box>
         </Box>
       </Box>
