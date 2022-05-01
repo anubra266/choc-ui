@@ -1409,10 +1409,10 @@
   dependencies:
     "@chakra-ui/utils" "1.10.4"
 
-"@choc-ui/chakra-autocomplete@^4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@choc-ui/chakra-autocomplete/-/chakra-autocomplete-4.5.3.tgz#cdb57caafa60c6f25a725329eed8cf80ed322681"
-  integrity sha512-B5kwQW30afvzEqqETomTjcQUmiSFnOZUivbN9VpZrMgoF+9PnC3hioDoLS8svftieQnOfBWPXSDTFNbx/2BiVw==
+"@choc-ui/chakra-autocomplete@^4.22.0":
+  version "4.22.0"
+  resolved "https://registry.yarnpkg.com/@choc-ui/chakra-autocomplete/-/chakra-autocomplete-4.22.0.tgz#540b9f561309cc7a64e9fbd4f44ff30336189aa7"
+  integrity sha512-jP1IBM8Xtm7iNs4mB1ky/HRFpJQeNUDbVwA2CQ/UZyPHsoMGbo6dH2iHofaE1H4KuGPJV1gWvjmQ6o/uMYeT0g==
   dependencies:
     react-nanny "^2.9.0"
 
