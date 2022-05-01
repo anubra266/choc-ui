@@ -51,7 +51,7 @@
     "all-contributors-cli": "^6.19.0",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
-    "eslint-config-prettier": "^8.4.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^6.0.0",
     "prettier": "^2.6.2",
