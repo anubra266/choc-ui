@@ -39,7 +39,7 @@
     "react-html-parser": "^2.0.2",
     "react-icons": "^4.3.1",
     "react-live": "^2.4.0",
-    "react-remove-scroll": "^2.4.1",
+    "react-remove-scroll": "^2.5.3",
     "react-scroll": "^1.8.7",
     "transform-imports": "^2.1.1"
   },
