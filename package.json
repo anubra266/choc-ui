@@ -22,7 +22,7 @@
     "@loadable/component": "^5.15.2",
     "@splitbee/web": "^0.2.4",
     "@visx/hierarchy": "^2.1.2",
-    "@visx/responsive": "^1.7.0",
+    "@visx/responsive": "^2.10.0",
     "codesandbox": "^2.2.3",
     "framer-motion": "^6",
     "fuse.js": "^6.4.6",
