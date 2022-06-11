@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  chakra,
-  Box,
-  Stack,
-  Flex,
-  useColorModeValue,
-  Link,
-} from "@chakra-ui/react";
+import { chakra, Box, Stack, Flex, Link } from "@chakra-ui/react";
 
 const Choc = () => {
   return (
@@ -60,7 +53,9 @@ const Choc = () => {
                 border="solid transparent"
                 fontWeight="bold"
                 rounded="md"
-                color={useColorModeValue("white")}
+                _light={{
+                  color: "white",
+                }}
                 bg="brand.600"
                 _dark={{ bg: "brand.500" }}
                 _hover={{
