@@ -21,7 +21,6 @@
     "@emotion/react": "^11.9.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.8.1",
-    "@hypertheme-editor/chakra-ui": "0.1.5",
     "@loadable/component": "^5.15.2",
     "@splitbee/web": "^0.2.4",
     "@visx/hierarchy": "^2.1.2",
