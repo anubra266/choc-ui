@@ -68,7 +68,6 @@ const Choc = () => {
             fontSize="lg"
             color="gray.600"
             _dark={{ color: "gray.500" }}
-            class="mb-6 text-lg text-gray-600"
           >
             One plan for any organization—from startups to Fortune 500s. We
             offer 50% off of for all students and universities. Please get in
@@ -166,7 +165,6 @@ const Choc = () => {
             fontSize="lg"
             color="gray.600"
             _dark={{ color: "gray.500" }}
-            class="mb-6 text-lg text-gray-600"
           >
             One plan for any organization—from startups to Fortune 500s. We
             offer 50% off of for all students and universities. Please get in
