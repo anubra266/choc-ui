@@ -1,14 +1,14 @@
 import React from "react";
 import PageHead from "components/head";
 import { PageHeader, Section } from "components/docs";
-import ComponentDemo from "components/component-demo";
+import { ComponentDemo } from "components/component-demo";
 import DocsLayout from "components/layouts/docs/index";
 import { CodeBlock } from "components/docs/codeblock";
 import PillPity from "pill-pity";
 import { Alert, Stack } from "@chakra-ui/react";
 import { AdBox } from "analytics/ads";
 
-const PaginationPackage = () => {
+const PillPityPackage = () => {
   return (
     <DocsLayout>
       <PageHead
@@ -68,7 +68,8 @@ const PaginationPackage = () => {
               comp={{ name: "Playground" }}
               path="packages/pill-pity/plg"
               scope={{ PillPity }}
-              height="100px"
+              height="96"
+              overflow="auto"
             />
           </Section.p>
         </Section.Content>
@@ -77,4 +78,4 @@ const PaginationPackage = () => {
   );
 };
 
-export default PaginationPackage;
+export default PillPityPackage;

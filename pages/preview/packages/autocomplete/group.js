@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, useColorModeValue } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import {
   AutoComplete,
   AutoCompleteGroup,
@@ -8,7 +8,7 @@ import {
   AutoCompleteList,
 } from "@choc-ui/chakra-autocomplete";
 
-export default function Component() {
+const Choc = () => {
   const fruits = ["Apple", "Grape", "Pawpaw"];
   const countries = ["Korea", "Nigeria", "India"];
 
@@ -17,7 +17,8 @@ export default function Component() {
       boxSize="full"
       h="100vh"
       pos="absolute"
-      bg={useColorModeValue("gray.400", "gray.600")}
+      bg={"gray.400"}
+      _dark={{ bg: "gray.600" }}
       p={30}
       justifyContent="center"
     >
@@ -50,4 +51,5 @@ export default function Component() {
       </AutoComplete>
     </Flex>
   );
-}
+};
+export default Choc;

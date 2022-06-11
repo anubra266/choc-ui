@@ -1,0 +1,20 @@
+{
+  "forms": {
+    "title": "forms",
+    "prefix": "/docs/forms/",
+    "sections": {
+      "form-layouts": {
+        "title": "Form Layouts",
+        "route": "form-layouts",
+        "image": "formlayouts.png",
+        "components": [
+          {
+            "name": "Two-column cards with separate submit actions",
+            "url": "#",
+            "preview": "forms/tccst"
+          }
+        ]
+      }
+    }
+  }
+}

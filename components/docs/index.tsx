@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Box, Link, useColorModeValue } from "@chakra-ui/react";
+import { Text, Box, Link } from "@chakra-ui/react";
 
 export const linkStyle = {
   textDecoration: "underline",

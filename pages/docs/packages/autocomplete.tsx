@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "components/head";
 import { PageHeader, Section } from "components/docs";
-import ComponentDemo from "components/component-demo";
+import { ComponentDemo } from "components/component-demo";
 import DocsLayout from "components/layouts/docs/index";
 import { CodeBlock } from "components/docs/codeblock";
 import * as AutoComplete from "@choc-ui/chakra-autocomplete";

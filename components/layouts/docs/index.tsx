@@ -1,29 +1,32 @@
 // a
 
+import { Flex, chakra } from "@chakra-ui/react";
 import React from "react";
 import SiteLayout from "components/layouts/site";
-import Sidebar from "./sidebar";
-import PageTransition from "./page-transition";
-import Container from "./container";
-import { Box } from "@chakra-ui/react";
 import Credits from "components/credits";
 import { Splitbee } from "components/splitbee";
+import { motion } from "framer-motion";
+import { Sidebar } from "components/sidebar";
+import { useRouter } from "next/router";
+
 const Docs = ({ children }) => {
+  const router = useRouter();
   return (
     <SiteLayout>
-      <Container as="main" className="main-content">
-        <Box display={{ base: "block", md: "flex" }}>
-          <Sidebar />
-
-          <div style={{ flex: 1 }}>
-            <Box id="content" pt={3} px={5} mt="4.5rem" mx="auto" minH="76vh">
-              <PageTransition>{children}</PageTransition>
-              <Splitbee />
-              <Credits />
-            </Box>
-          </div>
-        </Box>
-      </Container>
+      <Flex as="main" className="main-content">
+        <Sidebar />
+        <chakra.div flex={1} px="5" pt="5">
+          <motion.div
+            initial={{ y: -16, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            key={router.asPath}
+          >
+            {children}
+            <Splitbee />
+            <Credits />
+          </motion.div>
+        </chakra.div>
+      </Flex>
     </SiteLayout>
   );
 };

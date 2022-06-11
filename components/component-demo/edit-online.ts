@@ -1,9 +1,10 @@
 import { getParameters } from "codesandbox/lib/api/define";
 import package_json from "./codesandbox/package.json";
-import { index, App } from "./codesandbox/src";
+import { App, index } from "./codesandbox/src";
 import { html } from "./codesandbox/html";
 
-export const editOnlineCds = (code, path) => {
+export const editOnlineCds = (code: string, path?: string) => {
+  if (!path || !code) return "";
   const section = path.split("/")[0];
   const json_config = {
     ...package_json,
@@ -17,11 +18,11 @@ export const editOnlineCds = (code, path) => {
         content: html(path),
         isBinary: false,
       },
-      "src/index.js": {
+      "src/index.tsx": {
         content: index,
         isBinary: false,
       },
-      "src/App.js": {
+      "src/App.tsx": {
         content: App(code),
         isBinary: false,
       },

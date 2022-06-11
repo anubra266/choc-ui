@@ -1,24 +1,26 @@
 import React, { useEffect, useRef } from "react";
-import {
-  useColorModeValue,
-  Stack,
-  Box,
-  Flex,
-  Spacer,
-  Icon,
-} from "@chakra-ui/react";
+import { Box, Flex, Icon, Spacer, Stack } from "@chakra-ui/react";
 import { BsArrowReturnLeft } from "react-icons/bs";
-import NextLink from "next/link";
+import Link from "next/link";
 
-const Result = (props) => {
+type ResultProps = {
+  active: boolean;
+  url: string;
+  onClick: () => void;
+  section: string;
+  component: string;
+};
+
+const Result = (props: ResultProps) => {
   const hoverColor = "gray.100";
-  const inactiveResultsTextColor = useColorModeValue("gray.900", "gray.100");
-  const inactiveResultsIconColor = useColorModeValue("gray.900", "gray.400");
-  const inactiveBg = useColorModeValue("gray.50", "choc.secondary");
-  const resultsTextColor = props.active ? hoverColor : inactiveResultsTextColor;
-  const resultsIconColor = props.active ? hoverColor : inactiveResultsIconColor;
+  const resultsTextColor = props.active
+    ? hoverColor
+    : "inactiveResultsTextColor";
+  const resultsIconColor = props.active
+    ? hoverColor
+    : "inactiveResultsIconColor";
 
-  const ref = useRef(null);
+  const ref = useRef<(HTMLAnchorElement & HTMLDivElement) | null>(null);
 
   useEffect(() => {
     if (props.active) {
@@ -29,10 +31,11 @@ const Result = (props) => {
   const ACTIVE_BACKGROUND = "brand.500";
 
   return (
-    <NextLink href={props.url} passHref>
+    <Link href={props.url} passHref>
       <Flex
+        as="a"
         ref={ref}
-        bg={props.active ? ACTIVE_BACKGROUND : inactiveBg}
+        bg={props.active ? ACTIVE_BACKGROUND : "inactiveBg"}
         _hover={{
           bg: ACTIVE_BACKGROUND,
         }}
@@ -86,7 +89,7 @@ const Result = (props) => {
           as={BsArrowReturnLeft}
         />
       </Flex>
-    </NextLink>
+    </Link>
   );
 };
 

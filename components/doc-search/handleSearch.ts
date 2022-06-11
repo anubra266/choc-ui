@@ -1,5 +1,5 @@
 import Fuse from "fuse.js";
-import { categoriesObj } from "categories/parse-categories";
+import { categoriesObj } from "components/utils/route-categories/parse-categories";
 
 export const handleSearch = (keyword: any) => {
   const data = parser();
@@ -30,7 +30,7 @@ const catGroup = (res: any) => {
 };
 
 const parser = () => {
-  var collection = [];
+  var collection: any[] = [];
   Object.keys(categoriesObj).forEach((catKey) => {
     const { title: catTitle, prefix, sections } = categoriesObj[catKey];
 

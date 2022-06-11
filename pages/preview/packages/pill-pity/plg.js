@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, SimpleGrid, useColorModeValue } from "@chakra-ui/react";
 import PillPity from "pill-pity";
 
-export default function Component() {
+const Choc = () => {
   const patterns = [
     "jigsaw",
     "overcast",
@@ -95,7 +95,7 @@ export default function Component() {
   const patterFill = useColorModeValue("brand.200", "brand.300");
 
   return (
-    <SimpleGrid columns={[1, 1, 2, 4]} spacing="40px" w="full">
+    <SimpleGrid columns={[1, 1, 2, 4]} spacing="40px" w="full" p="6">
       {patterns.map((pattern, pid) => (
         <PillPity
           key={pid}
@@ -114,4 +114,6 @@ export default function Component() {
       ))}
     </SimpleGrid>
   );
-}
+};
+
+export default Choc;

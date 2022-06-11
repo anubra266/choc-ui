@@ -1,8 +1,9 @@
 import React from "react";
-import { useColorModeValue, Stack, Box } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
 
 import Result from "./result";
-import { StickyViewport, StickyBoundary, Sticky } from "@anubra266/stickyreact";
+import { Sticky, StickyBoundary, StickyViewport } from "@anubra266/stickyreact";
+import type { Dict } from "@zag-js/core/dist/types";
 
 const Category = (props: any) => {
   const { results, close, category, activeSectionIndex } = props;
@@ -13,15 +14,19 @@ const Category = (props: any) => {
         as={Box}
         fontWeight="bold"
         textTransform="capitalize"
-        color={useColorModeValue("choc.bg", "gray.400")}
-        bg={useColorModeValue("white", "choc.primary")}
+        color="choc.bg"
+        bg="white"
+        _dark={{
+          color: "gray.400",
+          bg: "blackAlpha.100",
+        }}
         py={1}
       >
         {category}
       </Sticky>
       <Stack spacing={3} mt={3}>
         {results[category].map(
-          ({ section, name, url, sectionIndex }, sid: any) => {
+          ({ section, name, url, sectionIndex }: Dict, sid: any) => {
             return (
               <Result
                 key={sid}
