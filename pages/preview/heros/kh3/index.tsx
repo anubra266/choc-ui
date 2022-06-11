@@ -67,7 +67,6 @@ const Choc = () => {
               type="email"
               placeholder="Enter your email..."
               bg="white"
-              required="true"
             />
             <Button
               w="full"
@@ -88,7 +87,6 @@ const Choc = () => {
               type="email"
               placeholder="Enter your email..."
               bg="white"
-              required="true"
             />
             <InputRightElement w="auto">
               <Button

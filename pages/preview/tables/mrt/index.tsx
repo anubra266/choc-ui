@@ -90,12 +90,18 @@ const Choc = () => {
                     <IconButton
                       colorScheme="blue"
                       icon={<BsBoxArrowUpRight />}
+                      aria-label="Up"
                     />
-                    <IconButton colorScheme="green" icon={<AiFillEdit />} />
+                    <IconButton
+                      colorScheme="green"
+                      icon={<AiFillEdit />}
+                      aria-label="Edit"
+                    />
                     <IconButton
                       colorScheme="red"
                       variant="outline"
                       icon={<BsFillTrashFill />}
+                      aria-label="Delete"
                     />
                   </ButtonGroup>
                 </Flex>

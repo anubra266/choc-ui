@@ -11,7 +11,6 @@ const Choc = () => {
       bg: "brand.600",
       _dark: { bg: "brand.500" },
       color: "white",
-      _dark: { color: "gray.200" },
     };
     return (
       <chakra.button

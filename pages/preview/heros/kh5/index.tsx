@@ -52,7 +52,7 @@ const Choc = () => {
         <GridItem colSpan={{ base: "auto", md: 4 }}>
           <Box as="form" mb={6} rounded="lg" shadow="xl">
             <Center pb={0} color="gray.700" _dark={{ color: "gray.600" }}>
-              <p pt={2}>Start talking now</p>
+              <chakra.p pt={2}>Start talking now</chakra.p>
             </Center>
             <SimpleGrid
               columns={1}
@@ -60,36 +60,20 @@ const Choc = () => {
               py={4}
               spacing={4}
               borderBottom="solid 1px"
-              border
               color="gray.200"
               _dark={{ color: "gray.700" }}
             >
               <Flex>
                 <VisuallyHidden>First Name</VisuallyHidden>
-                <Input
-                  mt={0}
-                  type="text"
-                  placeholder="First Name"
-                  required="true"
-                />
+                <Input mt={0} type="text" placeholder="First Name" />
               </Flex>
               <Flex>
                 <VisuallyHidden>Email Address</VisuallyHidden>
-                <Input
-                  mt={0}
-                  type="email"
-                  placeholder="Email Address"
-                  required="true"
-                />
+                <Input mt={0} type="email" placeholder="Email Address" />
               </Flex>
               <Flex>
                 <VisuallyHidden>Password</VisuallyHidden>
-                <Input
-                  mt={0}
-                  type="password"
-                  placeholder="Password"
-                  required="true"
-                />
+                <Input mt={0} type="password" placeholder="Password" />
               </Flex>
               <Button colorScheme="brand" w="full" py={2} type="submit">
                 Sign up for free

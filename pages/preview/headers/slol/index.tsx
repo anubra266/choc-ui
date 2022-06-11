@@ -32,9 +32,9 @@ const Choc = () => {
   const text = useColorModeValue("dark", "light");
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
   const bg = useColorModeValue("white", "gray.800");
-  const ref = React.useRef();
+  const ref = React.useRef<HTMLDivElement | null>(null);
   const [y, setY] = React.useState(0);
-  const { height = 0 } = ref.current ? ref.current.getBoundingClientRect() : {};
+  const { height = 0 } = ref.current.getBoundingClientRect();
 
   const { scrollY } = useViewportScroll();
   React.useEffect(() => {

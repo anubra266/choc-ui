@@ -25,7 +25,6 @@ const Choc = () => {
           px={[0, , 4]}
           py={20}
           borderWidth="1"
-          border
           color="gray.100"
           _dark={{ color: "gray.700" }}
         >
