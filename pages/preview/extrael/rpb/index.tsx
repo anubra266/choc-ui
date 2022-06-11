@@ -49,3 +49,5 @@ const Choc = () => {
     </Stack>
   );
 };
+
+export default Choc;

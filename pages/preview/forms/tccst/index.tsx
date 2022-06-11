@@ -708,3 +708,5 @@ const Choc = () => {
     </Box>
   );
 };
+
+export default Choc;

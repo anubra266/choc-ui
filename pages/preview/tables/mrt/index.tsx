@@ -113,3 +113,5 @@ const Choc = () => {
     </Flex>
   );
 };
+
+export default Choc;
