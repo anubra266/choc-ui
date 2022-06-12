@@ -48,7 +48,7 @@ export const SponsorPack = ({ sponsors }) => {
                       return (
                         <Tooltip
                           hasArrow
-                          label={`${circle.data.name}- $${circle.data.cost} / month`}
+                          label={`${circle.data.name}- $${circle.data.cost} (USD) / month`}
                           placement={placement}
                           key={`circle-${i}`}
                         >
