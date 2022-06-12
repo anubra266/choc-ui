@@ -15,7 +15,13 @@ const Docs = ({ children }) => {
     <SiteLayout>
       <Flex as="main" className="main-content">
         <Sidebar />
-        <chakra.div flex={1} px="5" pt="5">
+        <chakra.div
+          flex={1}
+          px="5"
+          pt="5"
+          overflow="auto"
+          maxH="calc(100vh - var(--chakra-sizes-16))"
+        >
           <motion.div
             initial={{ y: -16, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

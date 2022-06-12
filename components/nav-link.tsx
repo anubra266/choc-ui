@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import PropTypes from "prop-types";
 import Link from "next/link";
 import React from "react";
 import { runIfFn } from "@chakra-ui/utils";
@@ -25,10 +24,6 @@ const NavLink = ({ children, href, ...props }) => {
       {runIfFn(children, { isActive: active })}
     </Link>
   );
-};
-
-NavLink.propTypes = {
-  activeClassName: PropTypes.string.isRequired,
 };
 
 export default NavLink;
