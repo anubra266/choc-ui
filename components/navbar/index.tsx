@@ -14,7 +14,7 @@ import { CONSTANTS } from "components/utils/constants";
 function Navbar() {
   const ref = React.useRef<HTMLDivElement>(null);
   const [y, setY] = React.useState(0);
-  const { height = 0 } = ref?.current?.getBoundingClientRect() ?? {};
+  const height = ref?.current?.getBoundingClientRect() || 0;
   const { scrollY } = useViewportScroll();
   React.useEffect(() => {
     return scrollY.onChange(() => setY(scrollY.get()));
