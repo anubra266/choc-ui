@@ -10,6 +10,7 @@ import OpenSource from "components/landing/open-source";
 import Sponsors from "components/landing/sponsors";
 import { Splitbee } from "components/splitbee";
 import { LandingHero } from "components/landing/landing-hero";
+import { ComponentSample } from "components/landing/component-sample";
 
 const Home: NextPage = (props: any) => {
   return (
@@ -17,7 +18,7 @@ const Home: NextPage = (props: any) => {
       <PageHead title="Chakra UI Prebuilt Components" />
       <Box mb={20}>
         <LandingHero />
-
+        <ComponentSample />
         <Feature2 />
         <OpenSource contributors={props.contributors} />
         <Sponsors sponsors={props.sponsors} />
