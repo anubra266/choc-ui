@@ -11,7 +11,14 @@ import { FaEdit, FaSun, FaMobileAlt } from "react-icons/fa";
 
 const Feature = (props: { title: string; children: any; icon: any }) => {
   return (
-    <Box bg={useColorModeValue("white", "gray.700")} p={8} rounded="lg">
+    <Box
+      bg="blackAlpha.50"
+      _dark={{
+        bg: "blackAlpha.200",
+      }}
+      p={8}
+      rounded="lg"
+    >
       <Flex
         alignItems="center"
         justifyContent="center"
@@ -47,7 +54,7 @@ const Feature = (props: { title: string; children: any; icon: any }) => {
 const Features = () => {
   return (
     <Box as="section" mt="6rem" pt={{ base: "6rem", md: "10rem" }} my={12}>
-      <Box bg={useColorModeValue("white", "choc.bg")} rounded="xl">
+      <Box>
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign={{ lg: "center" }}>
             <chakra.h1
