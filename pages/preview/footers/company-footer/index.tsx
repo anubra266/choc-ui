@@ -6,7 +6,6 @@ import {
   Link,
   Stack,
   Text,
-  useColorModeValue,
   VStack,
   Divider,
   Icon,
@@ -18,7 +17,7 @@ import { FiTwitter } from "react-icons/fi";
 
 const CompanyFooter = () => {
   return (
-    <Box bg={useColorModeValue("#F9FAFB", "gray.600")}>
+    <Box bg="white" _dark={{ bg: "gray.600" }}>
       <Stack
         direction={{ base: "column", lg: "row" }}
         w="full"
@@ -40,6 +39,8 @@ const CompanyFooter = () => {
           flex={1}
           justify="space-around"
           fontSize={{ base: "14px", md: "16px" }}
+          color="gray.800"
+          _dark={{ color: "white" }}
         >
           <Flex justify="start" direction="column">
             <Link textTransform="uppercase">Pre-Sale FAQS</Link>
@@ -55,6 +56,8 @@ const CompanyFooter = () => {
           flex={1}
           justify="space-around"
           fontSize={{ base: "14px", md: "16px" }}
+          color="gray.800"
+          _dark={{ color: "white" }}
         >
           <Flex justify="start" direction="column">
             <Link textTransform="uppercase">Show Case</Link>
@@ -71,26 +74,49 @@ const CompanyFooter = () => {
       <Divider
         w="95%"
         mx="auto"
-        color={useColorModeValue("gray.600", "#F9FAFB")}
+        color="gray.600"
+        _dark={{ color: "#F9FAFB" }}
         h="3.5px"
       />
       <VStack py={3}>
         <HStack justify="center">
           <Link>
-            <Icon h="20px" w="20px" as={FaFacebookF} />
+            <Icon
+              color="gray.800"
+              _dark={{ color: "white" }}
+              h="20px"
+              w="20px"
+              as={FaFacebookF}
+            />
           </Link>
           <Link>
-            <Icon h="20px" w="20px" as={FiTwitter} />
+            <Icon
+              color="gray.800"
+              _dark={{ color: "white" }}
+              h="20px"
+              w="20px"
+              as={FiTwitter}
+            />
           </Link>
           <Link>
-            <Icon h="20px" w="20px" as={GrInstagram} />
+            <Icon
+              _dark={{ color: "white" }}
+              h="20px"
+              w="20px"
+              as={GrInstagram}
+            />
           </Link>
           <Link>
-            <Icon h="20px" w="20px" as={FaLinkedinIn} />
+            <Icon
+              _dark={{ color: "white" }}
+              h="20px"
+              w="20px"
+              as={FaLinkedinIn}
+            />
           </Link>
         </HStack>
 
-        <Text textAlign="center" fontSize="smaller">
+        <Text textAlign="center" fontSize="smaller" _dark={{ color: "white" }}>
           &copy;Copyright. All rights reserved.
         </Text>
       </VStack>
