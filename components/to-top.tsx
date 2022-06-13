@@ -1,5 +1,4 @@
 import { IconButton } from "@chakra-ui/button";
-import { useBoolean } from "@chakra-ui/hooks";
 import React, { useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
 

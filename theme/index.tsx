@@ -7,7 +7,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { ThemeProvider } from "theme/context";
 import { useEffect, useMemo, useState } from "react";
 import NextNprogress from "nextjs-progressbar";
-import { ThemeEditorProvider } from "@hypertheme-editor/chakra-ui";
 
 const choc = {
   bg: "#1A202C",
@@ -54,18 +53,16 @@ const Theme = (props: any) => {
 
   return (
     <ChakraProvider theme={theme}>
-      <ThemeEditorProvider>
-        <ThemeProvider value={themeProps}>
-          <Fonts />
-          <NextNprogress
-            color={brand[500]}
-            startPosition={0.3}
-            stopDelayMs={200}
-            height={2}
-          />
-          {props.children}
-        </ThemeProvider>
-      </ThemeEditorProvider>
+      <ThemeProvider value={themeProps}>
+        <Fonts />
+        <NextNprogress
+          color={brand[500]}
+          startPosition={0.3}
+          stopDelayMs={200}
+          height={2}
+        />
+        {props.children}
+      </ThemeProvider>
     </ChakraProvider>
   );
 };

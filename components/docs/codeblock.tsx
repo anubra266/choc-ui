@@ -1,5 +1,5 @@
 import React from "react";
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import { LiveProvider, LiveEditor, LiveError } from "react-live";
 
 import { Box, Button, useClipboard } from "@chakra-ui/react";
 
@@ -9,8 +9,11 @@ export const CodeBlock = (props) => {
     <Box
       pos="relative"
       role="group"
-      shadow="lg"
-      bg="brand.900"
+      shadow="base"
+      bg="blackAlpha.900"
+      _dark={{
+        bg: "blackAlpha.500",
+      }}
       rounded="lg"
       p={2}
       my={6}

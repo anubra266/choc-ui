@@ -1,4 +1,4 @@
-export const App = (code) => {
+export const App = (code: string) => {
   // Handle components initiated as constants
   code = code.replace(
     /const\s\w+\s=\s\(\)\s=>\s/,

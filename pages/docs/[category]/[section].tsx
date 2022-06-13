@@ -1,7 +1,7 @@
 import React from "react";
 import PageHead from "components/head";
 import { PageHeader, Section } from "components/docs";
-import ComponentDemo from "components/component-demo";
+import { ComponentDemo } from "components/component-demo";
 import DocsLayout from "components/layouts/docs/index";
 import { Alert, Stack } from "@chakra-ui/react";
 
@@ -12,7 +12,6 @@ import { AdBox } from "analytics/ads";
 
 const Element = ({ category, section }) => {
   const ComponentObj = componentsObj[category]?.sections[section];
-  console.log("section :>> ", componentsObj[category]);
   return (
     <DocsLayout>
       <React.Fragment>

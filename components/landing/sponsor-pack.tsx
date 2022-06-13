@@ -1,6 +1,6 @@
 import { hierarchy, Pack } from "@visx/hierarchy";
 import { ParentSize } from "@visx/responsive";
-import { Box, chakra, Tooltip, useColorModeValue } from "@chakra-ui/react";
+import { Box, chakra, Tooltip } from "@chakra-ui/react";
 import React from "react";
 
 export const SponsorPack = ({ sponsors }) => {
@@ -16,7 +16,6 @@ export const SponsorPack = ({ sponsors }) => {
       .sum((d: any) => d?.cost * d?.cost)
       .sort((a: any, b: any) => b.data.cost - a.data.cost);
   }, [sponsors]);
-  const circle_bg = useColorModeValue("gray.50", "gray.400");
   return (
     <ParentSize>
       {({ width }) => {
@@ -48,18 +47,30 @@ export const SponsorPack = ({ sponsors }) => {
                       return (
                         <Tooltip
                           hasArrow
-                          label={`${circle.data.name}- $${circle.data.cost} / month`}
+                          label={`${circle.data.name}- $${circle.data.cost} (USD) / month`}
                           placement={placement}
+                          _dark={{
+                            "&, .chakra-tooltip__arrow": {
+                              bg: "blackAlpha.500 !important",
+                              color: "white",
+                            },
+                          }}
                           key={`circle-${i}`}
                         >
                           <chakra.a
                             href={circle.data.href}
                             zIndex="0"
                             rounded="full"
-                            shadow="lg"
                             pos="absolute"
                             aria-label={circle.data.name}
-                            bg={circle_bg}
+                            bg="blackAlpha.50"
+                            _dark={{
+                              bg: "blackAlpha.200",
+                              _hover: {
+                                shadow: "dark-lg",
+                              },
+                            }}
+                            shadow="base"
                             className="spon-link"
                             left={circle.x}
                             top={circle.y}

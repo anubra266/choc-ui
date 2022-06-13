@@ -1,12 +1,13 @@
 import React from "react";
-import { Flex, useColorModeValue, Button } from "@chakra-ui/react";
+import { Flex, Button } from "@chakra-ui/react";
 import Pagination from "@choc-ui/paginator";
 
-export default function Component() {
+const Choc = () => {
   return (
     <Flex
       w="full"
-      bg={useColorModeValue("gray.400", "gray.600")}
+      bg={"gray.400"}
+      _dark={{ bg: "gray.600" }}
       p={50}
       alignItems="center"
       justifyContent="center"
@@ -27,4 +28,5 @@ export default function Component() {
       />
     </Flex>
   );
-}
+};
+export default Choc;

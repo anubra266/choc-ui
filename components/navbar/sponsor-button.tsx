@@ -1,14 +1,15 @@
-import React from "react";
-import { Box, BoxProps, Icon } from "@chakra-ui/react";
+import { chakra, Icon } from "@chakra-ui/react";
+import type { HTMLChakraProps } from "@chakra-ui/react";
 import { FaHeart } from "react-icons/fa";
+import { CONSTANTS } from "components/utils/constants";
 
-const SponsorButton = (props: BoxProps) => (
-  <Box
+const SponsorButton = (props: HTMLChakraProps<"div">) => (
+  <chakra.div
     display={{ base: "none", md: "flex" }}
     alignItems="center"
     as="a"
     aria-label="Sponsor Choc UI on Open Collective"
-    href={process.env.sponsorLink}
+    href={CONSTANTS.SPONSOR_LINK}
     target="_blank"
     rel="noopener noreferrer"
     bg="gray.50"
@@ -34,10 +35,10 @@ const SponsorButton = (props: BoxProps) => (
     {...props}
   >
     <Icon as={FaHeart} w="4" h="4" color="red.500" mr="2" />
-    <Box as="strong" lineHeight="inherit" fontWeight="semibold">
+    <chakra.div as="strong" lineHeight="inherit" fontWeight="semibold">
       Sponsor
-    </Box>
-  </Box>
+    </chakra.div>
+  </chakra.div>
 );
 
 export default SponsorButton;

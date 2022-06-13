@@ -1,0 +1,27 @@
+{
+  "elements": {
+    "title": "elements",
+    "prefix": "/docs/elements/",
+    "sections": {
+      "alerts": {
+        "title": "Alerts",
+        "route": "alerts",
+        "alert": {
+          "variant": "green",
+          "message": "New"
+        },
+        "components": [
+          {
+            "name": "success",
+            "url": "https://merakiui.com/",
+            "preview": "alerts/success",
+            "alerts": {
+              "status": "warning",
+              "content": ["Alert in <b>HTML</b>"]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,16 +1,16 @@
-import { mode } from "@chakra-ui/theme-tools";
-
 const styles = {
-  global: (props) => ({
+  global: {
     body: {
       fontFamily: "body",
-      color: mode("gray.800", "whiteAlpha.900")(props),
-      bg: mode("white", "choc.bg")(props),
+      _dark: {
+        bg: "#141517",
+      },
       transition: "background .4s ease-in-out",
     },
     html: {
       minH: "100%",
     },
-  }),
+  },
 };
+
 export default styles;

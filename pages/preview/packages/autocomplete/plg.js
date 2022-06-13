@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, useColorModeValue, VStack } from "@chakra-ui/react";
+import { Flex, VStack } from "@chakra-ui/react";
 import {
   AutoComplete,
   AutoCompleteInput,
@@ -7,7 +7,7 @@ import {
   AutoCompleteList,
 } from "@choc-ui/chakra-autocomplete";
 
-export default function Component() {
+const Choc = () => {
   const options = ["apple", "appoint", "zap", "cap", "japan"];
 
   return (
@@ -15,7 +15,8 @@ export default function Component() {
       boxSize="full"
       h="100vh"
       pos="absolute"
-      bg={useColorModeValue("gray.400", "gray.600")}
+      bg={"gray.400"}
+      _dark={{ bg: "gray.600" }}
       p={30}
       justifyContent="center"
     >
@@ -41,4 +42,5 @@ export default function Component() {
       </VStack>
     </Flex>
   );
-}
+};
+export default Choc;

@@ -1,26 +1,30 @@
-import React, { useState, useImperativeHandle, forwardRef } from "react";
-import { useRouter } from "next/router";
+import React, { useImperativeHandle, useState } from "react";
+import type { UseDisclosureReturn } from "@chakra-ui/react";
 import {
-  chakra,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalBody,
-  useDisclosure,
   Input,
   InputGroup,
   InputLeftElement,
   InputRightElement,
   Kbd,
-  useColorModeValue,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalOverlay,
+  chakra,
+  forwardRef,
+  useDisclosure,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
 import SearchResults from "./result-list";
 import { handleSearch } from "./handleSearch";
 import { processSearchResult } from "./processSearchResult";
+import { useRouter } from "next/router";
 
-function SearchModal(_, ref) {
+export default forwardRef<
+  { ref: React.MutableRefObject<UseDisclosureReturn | null> },
+  "div"
+>(function SearchModal(_, ref) {
   const router = useRouter();
 
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -75,8 +79,8 @@ function SearchModal(_, ref) {
       motionPreset="slideInBottom"
       size="xl"
     >
-      <ModalOverlay />
-      <ModalContent mt="5rem" bg={useColorModeValue("white", "choc.primary")}>
+      <ModalOverlay backdropFilter="blur(2px)" />
+      <ModalContent mt="5rem" bg="white" _dark={{ bg: "#111" }}>
         <ModalBody p={25}>
           <InputGroup>
             <InputLeftElement pointerEvents="none">
@@ -116,6 +120,4 @@ function SearchModal(_, ref) {
       </ModalContent>
     </Modal>
   );
-}
-
-export default forwardRef(SearchModal);
+});

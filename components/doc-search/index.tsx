@@ -1,12 +1,12 @@
 import React from "react";
+import type { FlexProps, UseDisclosureReturn } from "@chakra-ui/react";
 import {
   Flex,
-  chakra,
-  useColorModeValue,
   HStack,
   Kbd,
   Text,
   VisuallyHidden,
+  chakra,
   useEventListener,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
@@ -15,8 +15,8 @@ import SearchModal from "./modal";
 const ACTION_KEY_DEFAULT = ["Ctrl", "Control"];
 const ACTION_KEY_APPLE = ["⌘", "Command"];
 
-export default function SearchBar(props) {
-  const searchModal = React.useRef(null);
+export function DocSearch(props: FlexProps) {
+  const searchModal = React.useRef<UseDisclosureReturn | null>(null);
   const [actionKey, setActionKey] = React.useState(ACTION_KEY_APPLE);
   React.useEffect(() => {
     if (typeof navigator === "undefined") return;
@@ -35,7 +35,7 @@ export default function SearchBar(props) {
   });
 
   const openSearchModal = () => {
-    searchModal.current.onOpen();
+    searchModal.current?.onOpen();
   };
   return (
     <Flex {...props}>
@@ -46,7 +46,9 @@ export default function SearchBar(props) {
         role="search"
         lineHeight="1.2"
         w="full"
-        bg={useColorModeValue("white", "gray.700")}
+        _dark={{
+          bg: "blackAlpha.400",
+        }}
         whiteSpace="nowrap"
         display="flex"
         alignItems="center"

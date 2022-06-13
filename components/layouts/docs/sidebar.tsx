@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, useDisclosure, IconButton, SlideFade } from "@chakra-ui/react";
+import { Box, useDisclosure, IconButton } from "@chakra-ui/react";
 import SidebarContent from "./sidebar-content";
 import { MdMenu, MdClose } from "react-icons/md";
 

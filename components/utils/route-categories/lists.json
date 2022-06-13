@@ -1,0 +1,29 @@
+{
+  "lists": {
+    "title": "lists",
+    "prefix": "/docs/lists/",
+    "sections": {
+      "tables": {
+        "title": "tables",
+        "route": "tables",
+        "components": [
+          {
+            "name": "Mobile Responsive Table Minimal",
+            "url": "#",
+            "preview": "tables/mrtm"
+          },
+          {
+            "name": "Mobile Responsive Table",
+            "url": "#",
+            "preview": "tables/mrt"
+          },
+          {
+            "name": "Mobile Responsive Table with Print support",
+            "url": "#",
+            "preview": "tables/mrtp"
+          }
+        ]
+      }
+    }
+  }
+}

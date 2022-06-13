@@ -1,0 +1,261 @@
+{
+  "elements": {
+    "title": "elements",
+    "prefix": "/docs/elements/",
+    "sections": {
+      "alerts": {
+        "title": "Alerts",
+        "route": "alerts",
+        "image": "alerts.png",
+        "components": [
+          {
+            "name": "success",
+            "url": "https://merakiui.com/",
+            "preview": "alerts/success"
+          },
+          {
+            "name": "info",
+            "url": "https://merakiui.com/",
+            "preview": "alerts/info"
+          },
+          {
+            "name": "warning",
+            "url": "https://merakiui.com/",
+            "preview": "alerts/warning"
+          },
+          {
+            "name": "error",
+            "url": "https://merakiui.com/",
+            "preview": "alerts/error"
+          },
+          {
+            "name": "notification",
+            "url": "https://merakiui.com/",
+            "preview": "alerts/notification"
+          }
+        ]
+      },
+      "badges": {
+        "title": "Badges",
+        "route": "badges",
+        "image": "badges.png",
+        "components": [
+          {
+            "name": "Icon with badge",
+            "url": "https://material-ui.com/components/badges/",
+            "preview": "badges/bwi"
+          },
+          {
+            "name": "Button with badge",
+            "url": null,
+            "preview": "badges/bwb"
+          },
+          {
+            "name": "Unread Notifications",
+            "url": null,
+            "preview": "badges/unt"
+          }
+        ]
+      },
+      "cards": {
+        "title": "Cards",
+        "route": "cards",
+        "image": "cards.png",
+        "components": [
+          {
+            "name": "Article",
+            "url": "https://merakiui.com/",
+            "preview": "cards/ma"
+          },
+          {
+            "name": "Article With SM icons",
+            "url": "https://merakiui.com/",
+            "preview": "cards/awsi"
+          },
+          {
+            "name": "Article With Image",
+            "url": "https://merakiui.com/",
+            "preview": "cards/awi"
+          },
+          {
+            "name": "Paragraph With Image",
+            "url": "https://merakiui.com/",
+            "preview": "cards/pwi"
+          },
+          {
+            "name": "Product",
+            "url": "https://merakiui.com/",
+            "preview": "cards/mpro"
+          },
+          {
+            "name": "Product With Evaluation",
+            "url": "https://merakiui.com/",
+            "preview": "cards/pwe"
+          },
+          {
+            "name": "Product with Evaluation 2",
+            "url": "https://merakiui.com/",
+            "preview": "cards/cpwe"
+          },
+          {
+            "name": "Simple Product",
+            "url": "https://merakiui.com/",
+            "preview": "cards/msp"
+          },
+          {
+            "name": "Testimonial",
+            "url": "https://merakiui.com/",
+            "preview": "cards/mtes"
+          },
+          {
+            "name": "User",
+            "url": "https://merakiui.com/",
+            "preview": "cards/muser"
+          },
+          {
+            "name": "User with Details",
+            "url": "https://merakiui.com/",
+            "preview": "cards/muwd"
+          }
+        ]
+      },
+      "carousels": {
+        "title": "Carousels",
+        "route": "carousels",
+        "image": "carousels.png",
+
+        "components": [
+          {
+            "name": "Simple Carousel",
+            "url": "#",
+            "preview": "carousels/smc"
+          },
+          {
+            "name": "With Controls",
+            "url": "#",
+            "preview": "carousels/wcn"
+          },
+          {
+            "name": "With Indicators",
+            "url": "#",
+            "preview": "carousels/win"
+          },
+          {
+            "name": "With Captions",
+            "url": "#",
+            "preview": "carousels/wcp"
+          }
+        ]
+      },
+      "gicons": {
+        "title": "Gradient Icons",
+        "route": "gicons",
+        "image": "gicons.png",
+
+        "components": [
+          {
+            "name": "Data URL Method",
+            "url": "#",
+            "preview": "gicons/dum",
+
+            "alerts": {
+              "status": "warning",
+              "content": [
+                "The <code> linearGradient id</code> is appended after the svg element in the data url."
+              ]
+            }
+          },
+          {
+            "name": "Component Method",
+            "url": "#",
+            "preview": "gicons/cm"
+          }
+        ]
+      },
+
+      "headers": {
+        "title": "Headers",
+        "route": "headers",
+        "image": "headers.png",
+        "components": [
+          {
+            "name": "Chakra UI Site Header",
+            "url": "https://chakra-ui.com",
+            "preview": "headers/chuihe"
+          },
+          {
+            "name": "Centered with bottom border",
+            "url": "https://tailwindui.com/components/marketing/elements/headers#component-1c0390a81b16cf5028aeff08be955766",
+            "preview": "headers/cwbb"
+          },
+          {
+            "name": "Simple links centered",
+            "url": "https://tailwindui.com/components/marketing/elements/headers#component-a2aed5adfe85cafed1898b5def5eb40a",
+            "preview": "headers/slce"
+          },
+          {
+            "name": "Simple links on left",
+            "url": "https://tailwindui.com/components/marketing/elements/headers#component-c2e98654c961b126b887a7909c121d4b",
+            "preview": "headers/slol"
+          },
+          {
+            "name": "With full-width flyouts",
+            "url": "https://tailwindui.com/components/marketing/elements/headers#component-363ff3ec22979c3722842d62aa751178",
+            "preview": "headers/wfwf",
+            "height": "350px"
+          }
+        ]
+      },
+
+      "pagination": {
+        "title": "Pagination",
+        "route": "pagination",
+        "image": "pagination.png",
+        "components": [
+          {
+            "name": "Basic Pagination",
+            "url": "#",
+            "preview": "pagination/bp"
+          },
+          {
+            "name": "Basic Pagination with Icon",
+            "url": "#",
+            "preview": "pagination/bpi"
+          },
+          {
+            "name": "More Pages",
+            "url": "#",
+            "preview": "pagination/mp"
+          },
+          {
+            "name": "Size Changer",
+            "url": "#",
+            "preview": "pagination/scp"
+          },
+          {
+            "name": "Page Jumper",
+            "url": "#",
+            "preview": "pagination/pg"
+          },
+          {
+            "name": "Responsive Pagination",
+            "url": "#",
+            "preview": "pagination/rpg"
+          }
+        ]
+      },
+
+      "extra": {
+        "title": "Extra Components",
+        "route": "extra",
+        "components": [
+          {
+            "name": "Rippled Buttons",
+            "url": "#",
+            "preview": "extrael/rpb"
+          }
+        ]
+      }
+    }
+  }
+}

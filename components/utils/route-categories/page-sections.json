@@ -1,0 +1,171 @@
+{
+  "page-sections": {
+    "title": "page sections",
+    "prefix": "/docs/page-sections/",
+    "sections": {
+      "cta": {
+        "title": "call to action",
+        "route": "cta",
+        "components": [
+          {
+            "name": "Simple Justified",
+            "url": "https://tailwindui.com/components/marketing/sections/cta-sections#component-90c79fbd0596cc4e601da985ca825994",
+            "preview": "cta/sj"
+          },
+          {
+            "name": "Simple Stacked",
+            "url": "https://tailwindui.com/components/marketing/sections/cta-sections#component-8f2857c2b9324bb3fe8b1c455438ae07",
+            "preview": "cta/sst"
+          },
+          {
+            "name": "Simple Centered",
+            "url": "https://tailwindui.com/components/marketing/sections/cta-sections#component-25ce2a81d17545994655ccc4062651a4",
+            "preview": "cta/sc"
+          },
+          {
+            "name": "Split with Image",
+            "url": "https://tailwindui.com/components/marketing/sections/cta-sections#component-25ce2a81d17545994655ccc4062651a4",
+            "preview": "cta/swi"
+          },
+          {
+            "name": "Brand Panel with App Screenshot",
+            "url": "https://tailwindui.com/components/marketing/sections/cta-sections#component-b731164a9948a780a5a346d9e637b053",
+            "preview": "cta/was"
+          }
+        ]
+      },
+      "features": {
+        "title": "features",
+        "route": "features",
+        "components": [
+          {
+            "name": "Simple 3 Column",
+            "url": "https://kutty.netlify.app/components/features//",
+            "preview": "features/s3c"
+          },
+          {
+            "name": "Centered 2x2 grid",
+            "url": "https://tailwindui.com/components/marketing/sections/feature-sections#component-64ac58e032276db96bf343a8d4f332a8",
+            "preview": "features/c2g"
+          },
+          {
+            "name": "With feature grid list",
+            "url": "https://kutty.netlify.app/components/features/",
+            "preview": "features/fgl"
+          },
+          {
+            "name": "With feature list",
+            "url": "https://kutty.netlify.app/components/features/",
+            "preview": "features/wfl"
+          },
+          {
+            "name": "Offset 2x2 grid",
+            "url": "https://tailwindui.com/components/marketing/sections/feature-sections#component-a49bfb9517be12ba0fe0dd841c3a8766",
+            "preview": "features/o2g"
+          },
+          {
+            "name": "Alternative side-by-side with media",
+            "url": "https://kutty.netlify.app/components/features/",
+            "preview": "features/asm"
+          }
+        ]
+      },
+      "footers": {
+        "title": "footers",
+        "route": "footers",
+        "image": "pricing.png",
+        "components": [
+          {
+            "name": "Simple",
+            "url": "#",
+            "preview": "footers/simple"
+          }
+        ]
+      },
+      "heros": {
+        "title": "heros",
+        "route": "heros",
+        "components": [
+          {
+            "name": "With Signup",
+            "url": "https://kutty.netlify.app/components/heroes/",
+            "preview": "heros/kh1"
+          },
+          {
+            "name": "Simple Centered",
+            "url": "https://kutty.netlify.app/components/heroes/",
+            "preview": "heros/kh2"
+          },
+          {
+            "name": "Split",
+            "url": "https://kutty.netlify.app/components/heroes/",
+            "preview": "heros/kh3"
+          },
+          {
+            "name": "With App Screenshot",
+            "url": "https://kutty.netlify.app/components/heroes/",
+            "preview": "heros/kh4"
+          },
+          {
+            "name": "Kutty Signup form",
+            "url": "https://kutty.netlify.app/components/heroes/",
+            "preview": "heros/kh5"
+          },
+          {
+            "name": "With Angled Image",
+            "url": "https://kutty.netlify.app/components/heroes/",
+            "preview": "heros/twai"
+          },
+          {
+            "name": "Simple Centered 2",
+            "url": "https://kutty.netlify.app/components/heroes/",
+            "preview": "heros/tsc"
+          },
+          {
+            "name": "With Background Image",
+            "url": "https://merakiui.com/",
+            "preview": "heros/wbi"
+          }
+        ]
+      },
+
+      "pricing": {
+        "title": "pricing",
+        "route": "pricing",
+        "image": "pricing.png",
+        "components": [
+          {
+            "name": "Single price with info",
+            "url": "#",
+            "preview": "pricing/spwi"
+          },
+          {
+            "name": "Single price with details",
+            "url": "#",
+            "preview": "pricing/spwd"
+          },
+          {
+            "name": "Two simple tiers",
+            "url": "#",
+            "preview": "pricing/2st"
+          },
+          {
+            "name": "Two tiers with extra tier",
+            "url": "#",
+            "preview": "pricing/2twet"
+          },
+          {
+            "name": "Three tiers with emphasized tier",
+            "url": "https://tailwindui.com/components/marketing/sections/pricing#component-d91bc5ed1deb87275decb69f70274650",
+            "preview": "pricing/twet"
+          },
+          {
+            "name": "Three tiers with toggle",
+            "url": "#",
+            "preview": "pricing/3twt"
+          }
+        ]
+      }
+    }
+  }
+}

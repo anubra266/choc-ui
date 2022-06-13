@@ -49,7 +49,7 @@ const Sponsors = ({ sponsors }) => {
         </div>
       </VStack>
 
-      <Box mx="auto" maxW={{ xl: "2xl" }} className="xl:max-w-2xl mx-auto">
+      <Box mx="auto" maxW={{ xl: "2xl" }}>
         <SponsorPack sponsors={sponsors} />
       </Box>
     </Box>

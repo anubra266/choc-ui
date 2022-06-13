@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, useColorModeValue } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import {
   AutoComplete,
   AutoCompleteInput,
@@ -9,7 +9,7 @@ import {
 import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { Icon, InputGroup, InputRightElement } from "@chakra-ui/react";
 
-export default function Component() {
+const Choc = () => {
   const options = ["apple", "appoint", "zap", "cap", "japan"];
 
   return (
@@ -17,7 +17,8 @@ export default function Component() {
       boxSize="full"
       h="100vh"
       pos="absolute"
-      bg={useColorModeValue("gray.400", "gray.600")}
+      bg={"gray.400"}
+      _dark={{ bg: "gray.600" }}
       p={30}
       justifyContent="center"
     >
@@ -47,4 +48,5 @@ export default function Component() {
       </AutoComplete>
     </Flex>
   );
-}
+};
+export default Choc;
