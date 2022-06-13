@@ -16,7 +16,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 
-export default function CompanyFooter() {
+const CompanyFooter = () => {
   return (
     <Box bg={useColorModeValue("#F9FAFB", "gray.600")}>
       <Stack
@@ -96,4 +96,6 @@ export default function CompanyFooter() {
       </VStack>
     </Box>
   );
-}
+};
+
+export default CompanyFooter;
