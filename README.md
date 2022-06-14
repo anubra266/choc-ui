@@ -108,7 +108,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Ismaaa"><img src="https://avatars.githubusercontent.com/u/22240843?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Ismail D.</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Ismaaa" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Buupu"><img src="https://avatars.githubusercontent.com/u/26443341?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Sammy Fattah</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Buupu" title="Documentation">📖</a></td>
     <td align="center"><a href="http://bensonpan.com"><img src="https://avatars.githubusercontent.com/u/15132025?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Benson Pan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=panbenson" title="Code">💻</a></td>
-    <td align="center"><a href="https://vhnam.github.io/"><img src="https://avatars.githubusercontent.com/u/7885874?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Nam Vo</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=vhnam" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/AbbyB97"><img src="https://avatars.githubusercontent.com/u/19248801?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abby</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=AbbyB97" title="Code">💻</a></td>
   </tr>
 </table>
 
