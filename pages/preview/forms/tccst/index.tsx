@@ -23,12 +23,13 @@ import {
   Textarea,
   VisuallyHidden,
   chakra,
+  Divider,
 } from "@chakra-ui/react";
 import { FaUser } from "react-icons/fa";
 
 const Choc = () => {
   return (
-    <Box bg="gray.50" _dark={{ bg: "inherit" }} p={10}>
+    <Box bg="#edf3f8" _dark={{ bg: "#111" }} p={10}>
       <Box>
         <SimpleGrid
           display={{ base: "initial", md: "grid" }}
@@ -62,7 +63,7 @@ const Choc = () => {
                 px={4}
                 py={5}
                 bg="white"
-                _dark={{ bg: "gray.700" }}
+                _dark={{ bg: "#141517" }}
                 spacing={6}
                 p={{ sm: 6 }}
               >
@@ -240,7 +241,7 @@ const Choc = () => {
                 px={{ base: 4, sm: 6 }}
                 py={3}
                 bg="gray.50"
-                _dark={{ bg: "gray.900" }}
+                _dark={{ bg: "#121212" }}
                 textAlign="right"
               >
                 <Button
@@ -256,15 +257,13 @@ const Choc = () => {
           </GridItem>
         </SimpleGrid>
       </Box>
-      <Box visibility={{ base: "hidden", sm: "visible" }} aria-hidden="true">
-        <Box py={5}>
-          <Box
-            borderTop="solid 1px"
-            color="gray.200"
-            _dark={{ color: "whiteAlpha.200" }}
-          ></Box>
-        </Box>
-      </Box>
+
+      <Divider
+        my="5"
+        borderColor="gray.300"
+        _dark={{ borderColor: "whiteAlpha.300" }}
+        visibility={{ base: "hidden", sm: "visible" }}
+      />
 
       <Box mt={[10, 0]}>
         <SimpleGrid
@@ -299,7 +298,7 @@ const Choc = () => {
                 py={5}
                 p={[null, 6]}
                 bg="white"
-                _dark={{ bg: "gray.700" }}
+                _dark={{ bg: "#141517" }}
                 spacing={6}
               >
                 <SimpleGrid columns={6} spacing={6}>
@@ -504,7 +503,7 @@ const Choc = () => {
                 px={{ base: 4, sm: 6 }}
                 py={3}
                 bg="gray.50"
-                _dark={{ bg: "gray.900" }}
+                _dark={{ bg: "#121212" }}
                 textAlign="right"
               >
                 <Button
@@ -521,15 +520,12 @@ const Choc = () => {
         </SimpleGrid>
       </Box>
 
-      <Box visibility={{ base: "hidden", sm: "visible" }} aria-hidden="true">
-        <Box py={5}>
-          <Box
-            borderTop="solid 1px"
-            color="gray.200"
-            _dark={{ color: "whiteAlpha.200" }}
-          ></Box>
-        </Box>
-      </Box>
+      <Divider
+        my="5"
+        borderColor="gray.300"
+        _dark={{ borderColor: "whiteAlpha.300" }}
+        visibility={{ base: "hidden", sm: "visible" }}
+      />
 
       <Box mt={[10, 0]}>
         <SimpleGrid
@@ -564,7 +560,7 @@ const Choc = () => {
                 py={5}
                 p={[null, 6]}
                 bg="white"
-                _dark={{ bg: "gray.700" }}
+                _dark={{ bg: "#141517" }}
                 spacing={6}
               >
                 <chakra.fieldset>
@@ -689,7 +685,7 @@ const Choc = () => {
                 px={{ base: 4, sm: 6 }}
                 py={3}
                 bg="gray.50"
-                _dark={{ bg: "gray.900" }}
+                _dark={{ bg: "#121212" }}
                 textAlign="right"
               >
                 <Button

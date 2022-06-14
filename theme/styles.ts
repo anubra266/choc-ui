@@ -4,6 +4,7 @@ const styles = {
       fontFamily: "body",
       _dark: {
         bg: "#141517",
+        color: "white",
       },
       transition: "background .4s ease-in-out",
     },
