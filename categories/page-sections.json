@@ -79,6 +79,11 @@
             "name": "Simple",
             "url": "#",
             "preview": "footers/simple"
+          },
+          {
+            "name": "Company Footer",
+            "url": "#",
+            "preview": "footers/company-footer"
           }
         ]
       },
