@@ -38,9 +38,10 @@ const CompanyFooter = () => {
           alignItems="start"
           flex={1}
           justify="space-around"
-          fontSize={{ base: "14px", md: "16px" }}
+          fontSize={{ base: "12px", md: "16px" }}
           color="gray.800"
           _dark={{ color: "white" }}
+          textAlign={{ base: "center", md: "left" }}
         >
           <Flex justify="start" direction="column">
             <Link textTransform="uppercase">Pre-Sale FAQS</Link>
@@ -55,9 +56,10 @@ const CompanyFooter = () => {
           alignItems="start"
           flex={1}
           justify="space-around"
-          fontSize={{ base: "14px", md: "16px" }}
+          fontSize={{ base: "12px", md: "16px" }}
           color="gray.800"
           _dark={{ color: "white" }}
+          textAlign={{ base: "center", md: "left" }}
         >
           <Flex justify="start" direction="column">
             <Link textTransform="uppercase">Show Case</Link>
