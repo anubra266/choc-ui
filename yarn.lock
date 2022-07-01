@@ -1871,10 +1871,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "18.0.8"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.8.tgz#a051eb380a9fbcaa404550543c58e1cf5ce4ab87"
-  integrity sha512-+j2hk9BzCOrrOSJASi5XiOyBbERk9jG5O73Ya4M0env5Ixi6vUNli4qy994AINcEF+1IEHISYFfIT4zwr++LKw==
+"@types/react@*", "@types/react@^18.0.0", "@types/react@^18.0.5":
+  version "18.0.12"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.12.tgz#cdaa209d0a542b3fcf69cf31a03976ec4cdd8840"
+  integrity sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -1884,15 +1884,6 @@
   version "17.0.39"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
   integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@^18.0.0", "@types/react@^18.0.5":
-  version "18.0.12"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.12.tgz#cdaa209d0a542b3fcf69cf31a03976ec4cdd8840"
-  integrity sha512-duF1OTASSBQtcigUvhuiTB1Ya3OvSy+xORCiEf20H0P0lzx+/KeVsA99U5UjLXSbyo1DRJDlLKqTeM1ngosqtg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -1959,23 +1950,23 @@
     "@typescript-eslint/types" "5.13.0"
     eslint-visitor-keys "^3.0.0"
 
-"@visx/group@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@visx/group/-/group-2.1.0.tgz#65d4a72feb20dd09443f73cdc12ad5fb339792ef"
-  integrity sha512-bZKa54yVjGYPZZhzYHLz4AVlidSr4ET9B/xmSa7nnictMJWr7e/IuZThB/bMfDQlgdtvhcfTgs+ZluySc5SBUg==
+"@visx/group@2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@visx/group/-/group-2.10.0.tgz#95839851832545621eb0d091866a61dafe552ae1"
+  integrity sha512-DNJDX71f65Et1+UgQvYlZbE66owYUAfcxTkC96Db6TnxV221VKI3T5l23UWbnMzwFBP9dR3PWUjjqhhF12N5pA==
   dependencies:
     "@types/react" "*"
     classnames "^2.3.1"
     prop-types "^15.6.2"
 
-"@visx/hierarchy@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@visx/hierarchy/-/hierarchy-2.1.2.tgz#7ca88d12e93b5b0089d6efd7f70ed9af8d3ef8e4"
-  integrity sha512-dza9X3OpX5vvw/mZ14OpuZSkWP+8ig8Mfm1c4yE6bK2TmobiqR9uJ1D8ouw1dBit5zUVb03XWuY2VqG6yzyKAg==
+"@visx/hierarchy@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@visx/hierarchy/-/hierarchy-2.10.0.tgz#622205d718432e4c5f7bbd9e95a973ef85304ab9"
+  integrity sha512-ActiV0XRjRyYn4QTC8gK7HMRHg9zN+ot7rJGknjyWfmJc1I7COxsvAL/8+uRo5Lh56OI36eriV48/pLwoWTUTA==
   dependencies:
     "@types/d3-hierarchy" "^1.1.6"
     "@types/react" "*"
-    "@visx/group" "2.1.0"
+    "@visx/group" "2.10.0"
     classnames "^2.3.1"
     d3-hierarchy "^1.1.4"
     prop-types "^15.6.1"
