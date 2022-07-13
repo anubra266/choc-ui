@@ -110,6 +110,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://bensonpan.com"><img src="https://avatars.githubusercontent.com/u/15132025?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Benson Pan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=panbenson" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AbbyB97"><img src="https://avatars.githubusercontent.com/u/19248801?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abby</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=AbbyB97" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://www.jacksonhardaker.dev"><img src="https://avatars.githubusercontent.com/u/7596320?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Jackson Hardaker</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jacksonhardaker" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
