@@ -55,7 +55,7 @@ export const LandingHero = () => {
       >
         Choc UI is a set of accessible and reusable components that are commonly
         used in web applications. Provides premade responsive and color mode
-        felxible components to help you build faster than ever.
+        flexible components to help you build faster than ever.
       </chakra.p>
 
       <Flex
