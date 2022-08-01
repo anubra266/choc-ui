@@ -32,7 +32,7 @@
     "codesandbox": "^2.2.3",
     "framer-motion": "^6.3.11",
     "fuse.js": "^6.6.2",
-    "next": "^12.1.6",
+    "next": "^12.2.3",
     "next-pwa": "^5.5.2",
     "nextjs-progressbar": "^0.0.14",
     "patch-package": "^6.4.7",
