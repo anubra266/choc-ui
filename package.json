@@ -20,7 +20,7 @@
     "@choc-ui/paginator": "^3.4.0",
     "@emotion/react": "^11.9.0",
     "@emotion/server": "^11.4.0",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/styled": "^11.10.4",
     "@loadable/component": "^5.15.2",
     "@splitbee/web": "^0.2.4",
     "@visx/hierarchy": "^2.1.2",
