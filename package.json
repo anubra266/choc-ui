@@ -28,7 +28,7 @@
     "@zag-js/core": "^0.1.6",
     "@zag-js/dom-utils": "^0.1.3",
     "@zag-js/react": "^0.1.8",
-    "@zag-js/types": "^0.1.2",
+    "@zag-js/types": "^0.2.4",
     "codesandbox": "^2.2.3",
     "framer-motion": "^6.3.11",
     "fuse.js": "^6.6.2",
