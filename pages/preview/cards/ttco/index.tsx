@@ -47,7 +47,6 @@ const Choc = () => {
                         shadow="lg"
                         border="5px solid"
                         mb={-20}
-                        //clip to the border
                         borderColor="gray.800"
                         _dark={{ borderColor: "gray.200" }}
                     />
