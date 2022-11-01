@@ -30,7 +30,7 @@
     "@zag-js/react": "^0.1.8",
     "@zag-js/types": "^0.1.2",
     "codesandbox": "^2.2.3",
-    "framer-motion": "^6.3.11",
+    "framer-motion": "^7.6.2",
     "fuse.js": "^6.6.2",
     "next": "^12.1.6",
     "next-pwa": "^5.5.2",
