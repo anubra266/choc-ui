@@ -253,6 +253,11 @@
             "name": "Rippled Buttons",
             "url": "#",
             "preview": "extrael/rpb"
+          },
+          {
+            "name": "Snackbar",
+            "url": "#",
+            "preview": "extrael/snackbar"
           }
         ]
       }
