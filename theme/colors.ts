@@ -11,7 +11,6 @@ export const presets = (brand: string) => {
       700: "#2a2f57",
       800: "#181c37",
       900: "#080819",
-       
     },
     red: {
       50: "#ffe1e1",

@@ -8,15 +8,15 @@ This document describes our development process. Following these guidelines show
 
 1. [Code of Conduct](#code-of-conduct)
 2. [Important Resources](#important-resources)
-4. [Feature Requests](#feature-requests)
-5. [Improving Documentation](#improving-documentation)
-6. [Reporting Bugs](#reporting-bugs)
-7. [Contributing Code](#contributing-code)
+3. [Feature Requests](#feature-requests)
+4. [Improving Documentation](#improving-documentation)
+5. [Reporting Bugs](#reporting-bugs)
+6. [Contributing Code](#contributing-code)
    1. [Getting Started](#getting-started)
    1. [Finding an Issue!](#finding-an-issue)
    1. [Building the Project](#building-the-project)
    1. [Whitespace Cleanup](#whitespace-cleanup)
-8. [Pull Request Guidelines](#pull-request-guidelines)
+7. [Pull Request Guidelines](#pull-request-guidelines)
    1. [Addressing Feedback](#addressing-feedback)
 
 ## Code of Conduct
@@ -174,8 +174,6 @@ git push origin newfeature
 
 Once you've committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. If you need to make any adjustments to your pull request, just push the updates to your branch. Your pull request will automatically track the changes on your development branch and update.
 
- 
-
 ### Addressing Feedback
 
 Once a PR has been submitted, your changes will be reviewed and constructive feedback may be provided. Feedback isn't meant as an attack, but to help make sure the highest-quality code makes it into our project. Changes will be approved once required feedback has been addressed.
@@ -204,4 +202,3 @@ git push -f
 ```
 
 Note that this will overwrite the old branch on the server, so make sure you are happy with your changes first!
-
