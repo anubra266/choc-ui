@@ -113,7 +113,12 @@
             "preview": "cards/muser"
           },
           {
-            "name": "User with Details",
+            "name": "User with Less Details",
+            "url": "https://merakiui.com/",
+            "preview": "cards/ttco"
+          },
+          {
+            "name": "User with More Details",
             "url": "https://merakiui.com/",
             "preview": "cards/muwd"
           }
