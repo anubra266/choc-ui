@@ -92,27 +92,30 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/anubra266"><img src="https://avatars.githubusercontent.com/u/30869823?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abraham</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=anubra266" title="Code">💻</a> <a href="#design-anubra266" title="Design">🎨</a> <a href="#maintenance-anubra266" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/GabrielFemi"><img src="https://avatars.githubusercontent.com/u/39733548?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Akinyosoye Gabriel</b></sub></a><br /><a href="#maintenance-GabrielFemi" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://michaelgrigoryan.com"><img src="https://avatars.githubusercontent.com/u/56165400?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Michael Grigoryan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=MichaelGrigoryan25" title="Code">💻</a> <a href="#design-MichaelGrigoryan25" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/abraham266"><img src="https://avatars.githubusercontent.com/u/73303261?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Anu</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=abraham266" title="Code">💻</a></td>
-    <td align="center"><a href="http://geniushub.com.ng/"><img src="https://avatars.githubusercontent.com/u/12122519?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Julius Idowu</b></sub></a><br /><a href="#maintenance-JuliRash" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://github.com/jmcelreavey"><img src="https://avatars.githubusercontent.com/u/6317960?v=4?s=50" width="50px;" alt=""/><br /><sub><b>John McElreavey</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jmcelreavey" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Daggy1234"><img src="https://avatars.githubusercontent.com/u/60603110?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Arnav Jindal</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Daggy1234" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://dipeshwagle.com"><img src="https://avatars.githubusercontent.com/u/4191022?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Dipesh Wagle</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Dipeshwagle" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/pszafer"><img src="https://avatars.githubusercontent.com/u/690510?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Pawel</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=pszafer" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/SufianBabri"><img src="https://avatars.githubusercontent.com/u/9989266?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Sufian</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=SufianBabri" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Ismaaa"><img src="https://avatars.githubusercontent.com/u/22240843?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Ismail D.</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Ismaaa" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Buupu"><img src="https://avatars.githubusercontent.com/u/26443341?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Sammy Fattah</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Buupu" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://bensonpan.com"><img src="https://avatars.githubusercontent.com/u/15132025?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Benson Pan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=panbenson" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/AbbyB97"><img src="https://avatars.githubusercontent.com/u/19248801?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Abby</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=AbbyB97" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://www.jacksonhardaker.dev"><img src="https://avatars.githubusercontent.com/u/7596320?v=4?s=50" width="50px;" alt=""/><br /><sub><b>Jackson Hardaker</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jacksonhardaker" title="Code">💻</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/anubra266"><img src="https://avatars.githubusercontent.com/u/30869823?v=4?s=50" width="50px;" alt="Abraham"/><br /><sub><b>Abraham</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=anubra266" title="Code">💻</a> <a href="#design-anubra266" title="Design">🎨</a> <a href="#maintenance-anubra266" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/GabrielFemi"><img src="https://avatars.githubusercontent.com/u/39733548?v=4?s=50" width="50px;" alt="Akinyosoye Gabriel"/><br /><sub><b>Akinyosoye Gabriel</b></sub></a><br /><a href="#maintenance-GabrielFemi" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://michaelgrigoryan.com"><img src="https://avatars.githubusercontent.com/u/56165400?v=4?s=50" width="50px;" alt="Michael Grigoryan"/><br /><sub><b>Michael Grigoryan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=MichaelGrigoryan25" title="Code">💻</a> <a href="#design-MichaelGrigoryan25" title="Design">🎨</a></td>
+      <td align="center"><a href="https://github.com/abraham266"><img src="https://avatars.githubusercontent.com/u/73303261?v=4?s=50" width="50px;" alt="Anu"/><br /><sub><b>Anu</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=abraham266" title="Code">💻</a></td>
+      <td align="center"><a href="http://geniushub.com.ng/"><img src="https://avatars.githubusercontent.com/u/12122519?v=4?s=50" width="50px;" alt="Julius Idowu"/><br /><sub><b>Julius Idowu</b></sub></a><br /><a href="#maintenance-JuliRash" title="Maintenance">🚧</a></td>
+      <td align="center"><a href="https://github.com/jmcelreavey"><img src="https://avatars.githubusercontent.com/u/6317960?v=4?s=50" width="50px;" alt="John McElreavey"/><br /><sub><b>John McElreavey</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jmcelreavey" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/Daggy1234"><img src="https://avatars.githubusercontent.com/u/60603110?v=4?s=50" width="50px;" alt="Arnav Jindal"/><br /><sub><b>Arnav Jindal</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Daggy1234" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://dipeshwagle.com"><img src="https://avatars.githubusercontent.com/u/4191022?v=4?s=50" width="50px;" alt="Dipesh Wagle"/><br /><sub><b>Dipesh Wagle</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Dipeshwagle" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/pszafer"><img src="https://avatars.githubusercontent.com/u/690510?v=4?s=50" width="50px;" alt="Pawel"/><br /><sub><b>Pawel</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=pszafer" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/SufianBabri"><img src="https://avatars.githubusercontent.com/u/9989266?v=4?s=50" width="50px;" alt="Sufian"/><br /><sub><b>Sufian</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=SufianBabri" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/Ismaaa"><img src="https://avatars.githubusercontent.com/u/22240843?v=4?s=50" width="50px;" alt="Ismail D."/><br /><sub><b>Ismail D.</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Ismaaa" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/Buupu"><img src="https://avatars.githubusercontent.com/u/26443341?v=4?s=50" width="50px;" alt="Sammy Fattah"/><br /><sub><b>Sammy Fattah</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=Buupu" title="Documentation">📖</a></td>
+      <td align="center"><a href="http://bensonpan.com"><img src="https://avatars.githubusercontent.com/u/15132025?v=4?s=50" width="50px;" alt="Benson Pan"/><br /><sub><b>Benson Pan</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=panbenson" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/AbbyB97"><img src="https://avatars.githubusercontent.com/u/19248801?v=4?s=50" width="50px;" alt="Abby"/><br /><sub><b>Abby</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=AbbyB97" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://www.jacksonhardaker.dev"><img src="https://avatars.githubusercontent.com/u/7596320?v=4?s=50" width="50px;" alt="Jackson Hardaker"/><br /><sub><b>Jackson Hardaker</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=jacksonhardaker" title="Code">💻</a></td>
+      <td align="center"><a href="https://geethg.com"><img src="https://avatars.githubusercontent.com/u/47117192?v=4?s=50" width="50px;" alt="Geeth Gunnampalli"/><br /><sub><b>Geeth Gunnampalli</b></sub></a><br /><a href="https://github.com/anubra266/choc-ui/commits?author=thetechie7" title="Code">💻</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
