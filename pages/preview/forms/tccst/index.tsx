@@ -577,6 +577,8 @@ const Choc = () => {
                       <Flex alignItems="center" h={5}>
                         <Checkbox
                           colorScheme="brand"
+                          borderColor="brand.700"
+                          _dark={{ borderColor: "gray.50" }}
                           id="comments"
                           rounded="md"
                         />
@@ -600,6 +602,8 @@ const Choc = () => {
                       <Flex alignItems="center" h={5}>
                         <Checkbox
                           colorScheme="brand"
+                          borderColor="brand.700"
+                          _dark={{ borderColor: "gray.50" }}
                           id="candidates"
                           rounded="md"
                         />
@@ -622,6 +626,8 @@ const Choc = () => {
                       <Flex alignItems="center" h={5}>
                         <Checkbox
                           colorScheme="brand"
+                          borderColor="brand.700"
+                          _dark={{ borderColor: "gray.50" }}
                           id="offers"
                           rounded="md"
                         />
@@ -662,10 +668,11 @@ const Choc = () => {
                   <RadioGroup
                     fontSize="sm"
                     color="gray.700"
-                    _dark={{ color: "gray.50" }}
+                    _dark={{ color: "gray.50", borderColor: "gray.50" }}
                     colorScheme="brand"
                     mt={4}
                     defaultValue="1"
+                    borderColor="brand.700"
                   >
                     <Stack spacing={4}>
                       <Radio spacing={3} value="1">
