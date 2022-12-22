@@ -9,7 +9,7 @@ import NextDocument, {
 import GAScript from "analytics/ga-script";
 import { ColorModeScript } from "@chakra-ui/react";
 import { config } from "theme";
-import Script from 'next/script'
+import Script from "next/script"
 
 class Document extends NextDocument {
   static getInitialProps(ctx: DocumentContext) {
