@@ -9,7 +9,6 @@ import NextDocument, {
 import GAScript from "analytics/ga-script";
 import { ColorModeScript } from "@chakra-ui/react";
 import { config } from "theme";
-import Script from "next/script";
 
 class Document extends NextDocument {
   static getInitialProps(ctx: DocumentContext) {
@@ -25,10 +24,6 @@ class Document extends NextDocument {
           <Main />
           <NextScript />
           <GAScript />
-          <Script
-            src="https://app.embed.im/snow.jss"
-            strategy="afterInteractive"
-          />
         </body>
       </Html>
     );
