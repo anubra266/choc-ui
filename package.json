@@ -23,7 +23,7 @@
     "@emotion/styled": "^11.8.1",
     "@loadable/component": "^5.15.2",
     "@splitbee/web": "^0.2.4",
-    "@visx/hierarchy": "^2.1.2",
+    "@visx/hierarchy": "^2.17.0",
     "@visx/responsive": "^2.10.0",
     "@zag-js/core": "^0.1.6",
     "@zag-js/dom-utils": "^0.1.3",
