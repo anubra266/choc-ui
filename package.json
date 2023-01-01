@@ -13,7 +13,7 @@
   "dependencies": {
     "@anubra266/stickyreact": "^1.0.1",
     "@babel/standalone": "^7.18.4",
-    "@chakra-ui/icons": "^1.1.7",
+    "@chakra-ui/icons": "^2.0.15",
     "@chakra-ui/react": "^2.2.1",
     "@choc-ui/chakra-autocomplete": "^4.22.0",
     "@choc-ui/logo": "^1.0.0",
