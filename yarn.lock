@@ -2050,10 +2050,12 @@
     "@zag-js/core" "0.1.6"
     valtio "^1.6.0"
 
-"@zag-js/types@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@zag-js/types/-/types-0.1.2.tgz#86135800a6301632933ac7dc8baddcfd46c0d054"
-  integrity sha512-GkWSnbsEI5CtNU0aSh2SPbYBoaB5agt9MTFtIVWHgq3QPpK5KO50AntCDdCJr7FaF/XPH8m3V0rWixZ5QUeO5w==
+"@zag-js/types@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@zag-js/types/-/types-0.3.4.tgz#9443590d80d4bad8861fcee1e0b1939611964c5c"
+  integrity sha512-KkZOMNqFZA0TaVF70O6WIRJPWTcDyRQjhXLDkLVfo99gwJdsC1bMZWfjrCiR8g1CfzvCyGNSWzdArIgzTJVEMA==
+  dependencies:
+    csstype "3.1.1"
 
 "@zag-js/utils@0.1.2":
   version "0.1.2"
@@ -3383,15 +3385,10 @@ css-box-model@1.2.1:
   dependencies:
     tiny-invariant "^1.0.6"
 
-csstype@^3.0.11:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
-  integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
-
-csstype@^3.0.2:
-  version "3.0.9"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.9.tgz#6410af31b26bd0520933d02cbc64fce9ce3fbf0b"
-  integrity sha512-rpw6JPxK6Rfg1zLOYCSwle2GFOOsnjmDYDaBwEcwoOg4qlsIVCN789VkBZDJAGi4T07gI4YSutR43t9Zz4Lzuw==
+csstype@3.1.1, csstype@^3.0.11, csstype@^3.0.2:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
+  integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
 cwd@^0.9.1:
   version "0.9.1"
