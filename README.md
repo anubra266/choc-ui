@@ -86,7 +86,7 @@ Distributed under the MIT License. See [LICENSE](./LICENSE.md) for more informat
 
 ## Sponsors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
 
 <p align="center">
   <a href="https://patreon.com/anubra266?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link">
