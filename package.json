@@ -70,5 +70,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged --pattern './**/*.{js,jsx,ts,tsx,json,css,scss,md,html}'"
     }
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
