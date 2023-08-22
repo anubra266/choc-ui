@@ -45,7 +45,7 @@ See it in action on [Choc-UI's Website.](https://choc-ui.com)
   - [ ] Testimonials
   - [ ] Blog Sections -
   - [ ] Contact Sections
-  - [ ] Footers - Meraki UI
+  - [x] Footers - Meraki UI
   - [ ] Logo Clouds
 - [ ] Navigation - TailwindUI, Meraki UI
   - [x] Navbars
