@@ -34,7 +34,7 @@
     "fuse.js": "^6.6.2",
     "next": "^13.1.0",
     "next-pwa": "^5.5.2",
-    "nextjs-progressbar": "^0.0.14",
+    "nextjs-progressbar": "^0.0.16",
     "patch-package": "^6.4.7",
     "pill-pity": "^0.2.3",
     "raw-loader": "^4.0.2",
