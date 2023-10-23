@@ -4265,11 +4265,6 @@ fast-levenshtein@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-memoize@^2.5.1:
-  version "2.5.2"
-  resolved "https://registry.npmjs.org/fast-memoize/-/fast-memoize-2.5.2.tgz"
-  integrity sha512-Ue0LwpDYErFbmNnZSF0UH6eImUwDmogUO1jyE+JbN2gsQz/jICm1Ve7t9QT0rNSsfJt+Hs4/S3GnsDVjL4HVrw==
-
 fastq@^1.6.0:
   version "1.11.0"
   resolved "https://registry.npmjs.org/fastq/-/fastq-1.11.0.tgz"
@@ -7210,12 +7205,10 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-re-resizable@^6.9.2:
-  version "6.9.2"
-  resolved "https://registry.yarnpkg.com/re-resizable/-/re-resizable-6.9.2.tgz#24f882260cb4ea1713cbc1e8c4d80e8e1ae1c202"
-  integrity sha512-+aJT81zg43JwPaqTANOpR2Scqo8Z4uTlwNASKmPVqRFposxxyeWPvegjyL4BYMX0GA3HqRI1c+eKD3rEJB01Lw==
-  dependencies:
-    fast-memoize "^2.5.1"
+re-resizable@^6.9.9:
+  version "6.9.9"
+  resolved "https://registry.yarnpkg.com/re-resizable/-/re-resizable-6.9.9.tgz#99e8b31c67a62115dc9c5394b7e55892265be216"
+  integrity sha512-l+MBlKZffv/SicxDySKEEh42hR6m5bAHfNu3Tvxks2c4Ah+ldnWjfnVRwxo/nxF27SsUsxDS0raAzFuJNKABXA==
 
 react-carbon@^1.0.7:
   version "1.0.7"
