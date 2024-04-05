@@ -21,7 +21,7 @@ const Home: NextPage = (props: any) => {
         <ComponentSample />
         <Feature2 />
         <OpenSource contributors={props.contributors} />
-        <Sponsors sponsors={props.sponsors} />
+        <Sponsors />
         <Splitbee />
         <Credits />
       </Box>
@@ -35,9 +35,8 @@ export async function getStaticProps() {
   const { contributors } = JSON.parse(
     fs.readFileSync(contributorsRaw, "utf-8")
   );
-  const sponsors = require("sponsors.json");
   return {
-    props: { contributors, sponsors },
+    props: { contributors },
   };
 }
 export default Home;

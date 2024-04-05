@@ -3,9 +3,9 @@ import Icon from "@chakra-ui/icon";
 import { Box, Link, Text, VStack } from "@chakra-ui/layout";
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
-import { SponsorPack } from "./sponsor-pack";
+import { chakra } from "@chakra-ui/react";
 
-const Sponsors = ({ sponsors }) => {
+const Sponsors = () => {
   return (
     <Box px={6} mx="auto" textAlign="center" maxW="7xl">
       <VStack spacing={{ base: 7, xl: 10 }}>
@@ -49,8 +49,14 @@ const Sponsors = ({ sponsors }) => {
         </div>
       </VStack>
 
-      <Box mx="auto" maxW={{ xl: "2xl" }}>
-        <SponsorPack sponsors={sponsors} />
+      <Box mx="auto">
+        <chakra.img
+          w="full"
+          mx="auto"
+          mt="20"
+          alt="sponsors"
+          src="https://raw.githubusercontent.com/anubra266/static/main/sponsors.svg"
+        />
       </Box>
     </Box>
   );
