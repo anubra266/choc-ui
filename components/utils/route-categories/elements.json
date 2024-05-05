@@ -149,6 +149,11 @@
             "name": "With Captions",
             "url": "#",
             "preview": "carousels/wcp"
+          },
+          {
+            "name": "With Swipe / Drag",
+            "url": "#",
+            "preview": "carousels/wsw"
           }
         ]
       },
