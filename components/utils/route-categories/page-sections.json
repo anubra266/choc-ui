@@ -127,8 +127,7 @@
             "preview": "heros/wbi"
           }
         ]
-      },
-
+      }, 
       "pricing": {
         "title": "pricing",
         "route": "pricing",
@@ -163,6 +162,23 @@
             "name": "Three tiers with toggle",
             "url": "#",
             "preview": "pricing/3twt"
+          }
+        ]
+      },
+      "faqs": {
+        "title": "FAQs",
+        "route": "faqs",
+        "image": "faqs.png",
+        "components": [
+          {
+            "name": "Accordion",
+            "url": "#",
+            "preview": "faqs/acc"
+          },
+          {
+            "name": "With Icons",
+            "url": "#",
+            "preview": "faqs/wic"
           }
         ]
       }
