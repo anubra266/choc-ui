@@ -60,11 +60,12 @@ const Choc = () => {
             as="h4"
             lineHeight="tight"
             noOfLines={1}
+            _dark={{ color: "white" }}
           >
             {property.title}
           </Text>
 
-          <Box>
+          <Box _dark={{ color: "white" }}>
             {property.formattedPrice}
             <Box as="span" color="gray.600" fontSize="sm">
               / wk
