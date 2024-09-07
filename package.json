@@ -20,6 +20,7 @@
     "@choc-ui/chakra-autocomplete": "^4.22.0",
     "@choc-ui/logo": "^1.0.0",
     "@choc-ui/paginator": "^3.4.0",
+    "@ctrl/tinycolor": "^4.1.0",
     "@emotion/cache": "^11.13.1",
     "@emotion/react": "^11.9.0",
     "@emotion/server": "^11.4.0",
@@ -74,5 +75,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged --pattern './**/*.{js,jsx,ts,tsx,json,css,scss,md,html}'"
     }
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
