@@ -1,10 +1,6 @@
 const withPWA = require("next-pwa");
 
-module.exports = withPWA({
-  pwa: {
-    dest: "public",
-    disable: process.env.NODE_ENV === "development",
-  },
+module.exports = {
   env: {
     siteUrl: "https://choc-ui.tech",
     githubRepo: "anubra266/choc-ui",
@@ -17,4 +13,4 @@ module.exports = withPWA({
     twitterChoc: "https://twitter.com/choc_ui",
     sponsorLink: "https://patreon.com/anubra266",
   },
-});
+};
