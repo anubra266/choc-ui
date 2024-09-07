@@ -55,11 +55,11 @@ export const PreviewFrame = (props: PreviewFrameProps) => {
   }, [contentRef]);
 
   const { colorMode } = useColorMode();
-  const loc = router.asPath;
 
   useEffect(() => {
     if (contentRef?.contentWindow) {
-      contentRef.contentWindow.document.body.className = `chakra-ui-${colorMode}`;
+      const body = contentRef.contentWindow.document.body;
+      if (body) body.className = `chakra-ui-${colorMode}`;
     }
   });
 
