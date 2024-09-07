@@ -1,4 +1,4 @@
-import { BoxProps } from "@chakra-ui/layout";
+import { BoxProps } from "@chakra-ui/react";
 import { mode } from "./styles-mode";
 
 const layerStyles: { [key: string]: BoxProps } = {

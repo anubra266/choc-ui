@@ -1,9 +1,14 @@
-import { useColorModeValue } from "@chakra-ui/color-mode";
-import Icon from "@chakra-ui/icon";
-import { Box, Link, Text, VStack } from "@chakra-ui/layout";
 import React from "react";
 import { FiExternalLink } from "react-icons/fi";
-import { chakra } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Link,
+  Text,
+  VStack,
+  Icon,
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 const Sponsors = () => {
   return (

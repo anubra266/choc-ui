@@ -1,4 +1,4 @@
-import { IconButton } from "@chakra-ui/button";
+import { IconButton } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { FiArrowUp } from "react-icons/fi";
 

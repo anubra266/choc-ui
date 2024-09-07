@@ -3,7 +3,7 @@ import { Box, Stack } from "@chakra-ui/react";
 
 import Result from "./result";
 import { Sticky, StickyBoundary, StickyViewport } from "@anubra266/stickyreact";
-import type { Dict } from "@zag-js/core/dist/types";
+import type { Dict } from "@chakra-ui/utils";
 
 const Category = (props: any) => {
   const { results, close, category, activeSectionIndex } = props;

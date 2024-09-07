@@ -18,8 +18,7 @@ import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
 
 import * as componentDemo from "./machine";
 import { ActionButton } from "components/navbar/action-button";
-import { useMachine, useSetup } from "@zag-js/react";
-import { useId } from "react";
+import { useMachine } from "@zag-js/react";
 import { FaEye } from "react-icons/fa";
 import { DeviceView } from "components/component-demo/machine/component-demo.types";
 import { demoScope } from "components/component-demo/demo-scope";
@@ -45,7 +44,6 @@ export const ComponentDemo = (props: ComponentDemoProps) => {
     useClipboard(initialCode);
 
   const [state, send] = useMachine(componentDemo.machine({ initialCode }));
-  const ref = useSetup({ send, id: useId() });
 
   const api = componentDemo.connect(state, send);
 
@@ -68,7 +66,6 @@ export const ComponentDemo = (props: ComponentDemoProps) => {
         id={name}
       >
         <Flex
-          ref={ref}
           px="2"
           py="2"
           align="center"
